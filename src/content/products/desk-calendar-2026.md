@@ -2,8 +2,8 @@
 name: Desk Calendar 2026
 slug: desk-calendar-2026
 sku: EH-DC-746
-category: calendars
-categoryName: Calendars
+category: festive-corporate-gifting
+categoryName: Festive & Seasonal Corporate Gifting
 price: 499
 salePrice: 399.2
 currency: INR

@@ -2,8 +2,8 @@
 name: Pencil Box - Set of 2 boxes
 slug: newspaper-pencil-box-set-of-2
 sku: HP002
-category: seed-pencils-and-pens
-categoryName: Seed Pencils & Pens
+category: corporate-bulk-and-branding
+categoryName: Bulk Gifting & Branding
 price: 130
 currency: INR
 availability: InStock

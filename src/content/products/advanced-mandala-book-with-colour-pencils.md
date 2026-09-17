@@ -2,8 +2,8 @@
 name: Advanced Mandala Book + One box of Colour Pencils
 slug: advanced-mandala-book-with-colour-pencils
 sku: EH-AMB-307
-category: kits-and-seeds
-categoryName: Kits & Seeds
+category: employee-welcome-kits
+categoryName: Employee Welcome Kits
 price: 299
 currency: INR
 availability: InStock

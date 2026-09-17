@@ -2,8 +2,8 @@
 name: Recycled Paper Notebook- Set of 2
 slug: recycled-paper-notebook-set-of-2
 sku: '100'
-category: notebooks-diaries-and-planners
-categoryName: Notebooks, Diaries & Planners
+category: everyday-desk-essentials
+categoryName: Everyday Desk Essentials
 price: 249
 salePrice: 200
 currency: INR

@@ -2,8 +2,8 @@
 name: DIY animal keychain kit
 slug: diy-animal-keychain-kit
 sku: EH-DAK-688
-category: kits-and-seeds
-categoryName: Kits & Seeds
+category: corporate-bulk-and-branding
+categoryName: Bulk Gifting & Branding
 price: 399
 salePrice: 250
 currency: INR

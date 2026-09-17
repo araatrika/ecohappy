@@ -2,8 +2,8 @@
 name: Sunflower Seed Rakhi
 slug: seed-rakhi-sunflower
 sku: EH-SSR-907
-category: festive
-categoryName: Festive & Seasonal
+category: festive-corporate-gifting
+categoryName: Festive & Seasonal Corporate Gifting
 price: 75
 currency: INR
 availability: InStock

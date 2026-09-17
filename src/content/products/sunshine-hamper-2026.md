@@ -2,8 +2,8 @@
 name: Sunshine Hamper 2026
 slug: sunshine-hamper-2026
 sku: EH-SH-202
-category: gift-hampers
-categoryName: Gift Hampers & Boxes
+category: client-gift-hampers
+categoryName: Client & Leadership Hampers
 price: 999
 salePrice: 799.2
 currency: INR

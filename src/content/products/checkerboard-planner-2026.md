@@ -2,8 +2,8 @@
 name: Checkerboard Planner 2026
 slug: checkerboard-planner-2026
 sku: EH-CP-881
-category: notebooks-diaries-and-planners
-categoryName: Notebooks, Diaries & Planners
+category: festive-corporate-gifting
+categoryName: Festive & Seasonal Corporate Gifting
 price: 499
 salePrice: 374.25
 currency: INR

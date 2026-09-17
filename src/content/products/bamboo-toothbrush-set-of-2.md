@@ -2,8 +2,8 @@
 name: Bamboo Toothbrush - Set of 2
 slug: bamboo-toothbrush-set-of-2
 sku: HBT001
-category: home-and-travel
-categoryName: Home & Travel
+category: employee-welcome-kits
+categoryName: Employee Welcome Kits
 price: 199
 salePrice: 139.3
 currency: INR

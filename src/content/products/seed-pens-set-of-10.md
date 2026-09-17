@@ -2,8 +2,8 @@
 name: Seed Pen - Set of 10
 slug: seed-pens-set-of-10
 sku: HSPP002
-category: seed-pencils-and-pens
-categoryName: Seed Pencils & Pens
+category: corporate-bulk-and-branding
+categoryName: Bulk Gifting & Branding
 price: 249
 currency: INR
 availability: InStock

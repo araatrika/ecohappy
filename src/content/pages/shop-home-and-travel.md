@@ -1,7 +1,7 @@
 ---
 title: "HAPPY HOME & TRAVEL ESSENTIALS | Eco Happy"
 slug: shop-home-and-travel
-newUrl: /shop/home-and-travel/
+newUrl: /shop/employee-welcome-kits/
 description: Eco Happy is an attempt towards creating a conscious retail of Eco Happy products in India dealing with stationery and gifting.
 h1: []
 forms: []

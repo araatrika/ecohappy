@@ -2,8 +2,8 @@
 name: Upcycled Patchwork Fabric
 slug: upcycled-patchwork-fabric
 sku: EH-UPF-528
-category: upcycled-fabric
-categoryName: Upcycled Fabric
+category: everyday-desk-essentials
+categoryName: Everyday Desk Essentials
 price: 699
 currency: INR
 availability: InStock

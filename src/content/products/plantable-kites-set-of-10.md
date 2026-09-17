@@ -2,8 +2,8 @@
 name: Eco happy kites- set of 10
 slug: plantable-kites-set-of-10
 sku: EH-EHK-923
-category: festive
-categoryName: Festive & Seasonal
+category: festive-corporate-gifting
+categoryName: Festive & Seasonal Corporate Gifting
 price: 200
 currency: INR
 availability: InStock

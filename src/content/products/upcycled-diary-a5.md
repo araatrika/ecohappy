@@ -2,8 +2,8 @@
 name: Upcycled Diary - A5 Size
 slug: upcycled-diary-a5
 sku: DIAR002
-category: notebooks-diaries-and-planners
-categoryName: Notebooks, Diaries & Planners
+category: everyday-desk-essentials
+categoryName: Everyday Desk Essentials
 price: 349
 currency: INR
 availability: InStock

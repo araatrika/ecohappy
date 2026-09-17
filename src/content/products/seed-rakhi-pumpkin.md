@@ -2,8 +2,8 @@
 name: Pumpkin Seed Rakhi
 slug: seed-rakhi-pumpkin
 sku: EH-PSR-802
-category: festive
-categoryName: Festive & Seasonal
+category: festive-corporate-gifting
+categoryName: Festive & Seasonal Corporate Gifting
 price: 80
 currency: INR
 availability: InStock

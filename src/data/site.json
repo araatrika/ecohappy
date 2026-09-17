@@ -1,176 +1,161 @@
 {
- "brand": "Eco Happy",
- "legalName": "Araatrika",
- "alternateName": [
-  "Happy Pencils",
-  "Eco Happy by Araatrika"
- ],
- "tagline": "Plantable stationery and eco-friendly gifts, made in Pune by a women-led team since 2017",
- "foundingDate": "2017",
- "founder": {
-  "name": "Jagruti Khabiya Jain",
-  "jobTitle": "Founder & Creative Head",
-  "honorific": "Ar.",
-  "bio": "Architect (Savitribai Phule Pune University), worked in Auroville and Delhi before founding Araatrika in Pune in 2017.",
+  "brand": "Eco Happy",
+  "legalName": "Araatrika",
+  "alternateName": [
+    "Happy Pencils",
+    "Eco Happy by Araatrika"
+  ],
+  "tagline": "Plantable stationery and eco-friendly gifts, made in Pune by a women-led team since 2017",
+  "foundingDate": "2017",
+  "founder": {
+    "name": "Jagruti Khabiya Jain",
+    "jobTitle": "Founder & Creative Head",
+    "honorific": "Ar.",
+    "bio": "Architect (Savitribai Phule Pune University), worked in Auroville and Delhi before founding Araatrika in Pune in 2017.",
+    "sameAs": [
+      "https://echai.ventures/founders/jagruti-khabiya",
+      "https://www.sororedit.com/blog/jagruti-khabiya-founder-and-creative-head-at-araatrika/568"
+    ]
+  },
+  "team": "Eight women (and growing), per the About page",
+  "recognition": [
+    "Runner-up, Maharashtra Start-Up Week (per About page; year to confirm)"
+  ],
+  "address": {
+    "streetAddress": "Gurudatta Niwas, 95/791, Lane next to Ambedkar School, Gajanan Maharaj Chowk, Laxmi Nagar, Parvati Paytha",
+    "addressLocality": "Pune",
+    "addressRegion": "Maharashtra",
+    "postalCode": "411009",
+    "addressCountry": "IN",
+    "displayName_onWix": "Happy Pencils"
+  },
+  "telephone": "+91 94220 62333",
+  "telephoneE164": "+919422062333",
+  "whatsapp": {
+    "business": "https://wa.me/message/MWIAW4NCEF6VF1",
+    "direct": "https://wa.me/919422062333",
+    "enquiries": "+91 94220 62333"
+  },
+  "hosts": {
+    "canonical": "https://ecohappy.in",
+    "alias": "https://www.ecohappy.in",
+    "legacy": [
+      "https://www.happypencils.in",
+      "https://happypencils.in"
+    ]
+  },
   "sameAs": [
-   "https://echai.ventures/founders/jagruti-khabiya",
-   "https://www.sororedit.com/blog/jagruti-khabiya-founder-and-creative-head-at-araatrika/568"
-  ]
- },
- "team": "Eight women (and growing), per the About page",
- "recognition": [
-  "Runner-up, Maharashtra Start-Up Week (per About page; year to confirm)"
- ],
- "address": {
-  "streetAddress": "Gurudatta Niwas, 95/791, Lane next to Ambedkar School, Gajanan Maharaj Chowk, Laxmi Nagar, Parvati Paytha",
-  "addressLocality": "Pune",
-  "addressRegion": "Maharashtra",
-  "postalCode": "411009",
-  "addressCountry": "IN",
-  "displayName_onWix": "Happy Pencils"
- },
- "telephone": "+91 94220 62333",
- "telephoneE164": "+919422062333",
- "whatsapp": {
-  "business": "https://wa.me/message/MWIAW4NCEF6VF1",
-  "direct": "https://wa.me/919422062333",
-  "enquiries": "+91 94220 62333"
- },
- "hosts": {
-  "canonical": "https://ecohappy.in",
-  "alias": "https://www.ecohappy.in",
-  "legacy": [
-   "https://www.happypencils.in",
-   "https://happypencils.in"
-  ]
- },
- "sameAs": [
-  "https://www.instagram.com/araatrika",
-  "https://www.facebook.com/araatrika",
-  "https://www.linkedin.com/company/araatrika",
-  "https://g.page/r/CXWlZa1tKwciEB0/review",
-  "https://echai.ventures/founders/jagruti-khabiya"
- ],
- "googleBusinessProfile": {
-  "name": "Happy Pencils",
-  "kgmid": "/g/11f5d4c57t",
-  "reviewUrl": "https://g.page/r/CXWlZa1tKwciEB0/review"
- },
- "press": [
-  {
-   "outlet": "Citizen Matters",
-   "date": "2024-03-02",
-   "title": "Meet these three women in Pune who are waging a tireless battle against plastic",
-   "url": "https://citizenmatters.in/pune-sustainable-alternatives-from-plastic-waste/"
+    "https://www.instagram.com/araatrika",
+    "https://www.facebook.com/araatrika",
+    "https://www.linkedin.com/company/araatrika",
+    "https://g.page/r/CXWlZa1tKwciEB0/review",
+    "https://echai.ventures/founders/jagruti-khabiya"
+  ],
+  "googleBusinessProfile": {
+    "name": "Happy Pencils",
+    "kgmid": "/g/11f5d4c57t",
+    "reviewUrl": "https://g.page/r/CXWlZa1tKwciEB0/review"
   },
-  {
-   "outlet": "LBB Pune",
-   "date": "2021-08-05",
-   "title": "Plantable Pencils & Upcycled Diaries: This Store Has Cute, Eco-Friendly Stationery",
-   "url": "https://lbb.in/pune/plantable-pencils-upcycled-diaries-125126/"
+  "press": [
+    {
+      "outlet": "Citizen Matters",
+      "date": "2024-03-02",
+      "title": "Meet these three women in Pune who are waging a tireless battle against plastic",
+      "url": "https://citizenmatters.in/pune-sustainable-alternatives-from-plastic-waste/"
+    },
+    {
+      "outlet": "LBB Pune",
+      "date": "2021-08-05",
+      "title": "Plantable Pencils & Upcycled Diaries: This Store Has Cute, Eco-Friendly Stationery",
+      "url": "https://lbb.in/pune/plantable-pencils-upcycled-diaries-125126/"
+    },
+    {
+      "outlet": "The EarthView",
+      "date": "2021-05-21",
+      "title": "Araatrika is Redefining Norms of Daily Lives with Sustainable Products",
+      "url": "https://theearthview.in/best-of-carbon-waste-this-goa-based-startup-creates-tiles-out-of-upcycled-carbon-887048-2/"
+    },
+    {
+      "outlet": "Sororedit",
+      "date": "2022-01-02",
+      "title": "Jagruti Khabiya, Founder & Creative Head at Araatrika (interview)",
+      "url": "https://www.sororedit.com/blog/jagruti-khabiya-founder-and-creative-head-at-araatrika/568"
+    },
+    {
+      "outlet": "eChai Ventures",
+      "date": "",
+      "title": "Founder profile",
+      "url": "https://echai.ventures/founders/jagruti-khabiya"
+    }
+  ],
+  "partners": [
+    "Skretting (Nutreco)",
+    "KNAG (verify name)",
+    "Society of Women Engineers (SWE)",
+    "Trouv",
+    "Amulya Boondh",
+    "Santé Spa Cuisine",
+    "LuLu Mall",
+    "Reliance Industries Limited",
+    "Savitribai Phule Pune University",
+    "BNCA (Dr. Bhanuben Nanavati College of Architecture for Women, Pune)",
+    "Sakal Times",
+    "Badlaav (Be the Change)",
+    "Springer Nature",
+    "Four Points by Sheraton",
+    "Ayatana Coorg",
+    "Schindler",
+    "TEDx",
+    "Hyatt",
+    "Six Senses"
+  ],
+  "shipping": {
+    "dispatchDays": "2–3 working days",
+    "freeShipping": "Free shipping pan-India (stated on Wix listings and LinkedIn); confirm threshold",
+    "policySource": "/shipping-and-returns/"
   },
-  {
-   "outlet": "The EarthView",
-   "date": "2021-05-21",
-   "title": "Araatrika is Redefining Norms of Daily Lives with Sustainable Products",
-   "url": "https://theearthview.in/best-of-carbon-waste-this-goa-based-startup-creates-tiles-out-of-upcycled-carbon-887048-2/"
+  "wixVerificationTokens_oldDomain": {
+    "google-site-verification": "5i2p61vPLL240X-JfGoZGGg5cJOcf0RoVyDMWlg2gDg",
+    "msvalidate.01": "C256ACBBB1AAE069181637FA5451EDE2",
+    "facebook-domain-verification": "schlz14bhlp9i8c9b1prlislo6203p",
+    "p:domain_verify": "949651d1f5b2015d333421162ae47104",
+    "yandex-verification": "284db860f1aef2e0",
+    "naver-site-verification": "0f131cad5d38c130377bb9b6ed20ed5182d73843",
+    "note": "These verify happypencils.in only; new tokens are needed for ecohappy.in"
   },
-  {
-   "outlet": "Sororedit",
-   "date": "2022-01-02",
-   "title": "Jagruti Khabiya, Founder & Creative Head at Araatrika (interview)",
-   "url": "https://www.sororedit.com/blog/jagruti-khabiya-founder-and-creative-head-at-araatrika/568"
+  "categories": [
+    {
+      "slug": "corporate-bulk-and-branding",
+      "name": "Bulk Gifting & Branding",
+      "url": "/shop/corporate-bulk-and-branding/"
+    },
+    {
+      "slug": "festive-corporate-gifting",
+      "name": "Festive & Seasonal Corporate Gifting",
+      "url": "/shop/festive-corporate-gifting/"
+    },
+    {
+      "slug": "employee-welcome-kits",
+      "name": "Employee Welcome Kits",
+      "url": "/shop/employee-welcome-kits/"
+    },
+    {
+      "slug": "client-gift-hampers",
+      "name": "Client & Leadership Hampers",
+      "url": "/shop/client-gift-hampers/"
+    },
+    {
+      "slug": "everyday-desk-essentials",
+      "name": "Everyday Desk Essentials",
+      "url": "/shop/everyday-desk-essentials/"
+    }
+  ],
+  "email": "hi@ecohappy.in",
+  "email_legacy_wix": "contact@happypencils.in",
+  "geo_approx": {
+    "latitude": 18.4774257,
+    "longitude": 73.8508126,
+    "source": "OpenStreetMap Nominatim pincode-centroid for 411009 (Pune), 16 Sep 2026 — NOT the exact building; owner should replace with the precise pin from Google Business Profile before launch."
   },
-  {
-   "outlet": "eChai Ventures",
-   "date": "",
-   "title": "Founder profile",
-   "url": "https://echai.ventures/founders/jagruti-khabiya"
-  }
- ],
- "partners": [
-  "Skretting (Nutreco)",
-  "KNAG (verify name)",
-  "Society of Women Engineers (SWE)",
-  "Trouv",
-  "Amulya Boondh",
-  "Santé Spa Cuisine",
-  "LuLu Mall",
-  "Reliance Industries Limited",
-  "Savitribai Phule Pune University",
-  "BNCA (Dr. Bhanuben Nanavati College of Architecture for Women, Pune)",
-  "Sakal Times",
-  "Badlaav (Be the Change)",
-  "Springer Nature",
-  "Four Points by Sheraton",
-  "Ayatana Coorg",
-  "Schindler",
-  "TEDx",
-  "Hyatt",
-  "Six Senses"
- ],
- "shipping": {
-  "dispatchDays": "2–3 working days",
-  "freeShipping": "Free shipping pan-India (stated on Wix listings and LinkedIn); confirm threshold",
-  "policySource": "/shipping-and-returns/"
- },
- "wixVerificationTokens_oldDomain": {
-  "google-site-verification": "5i2p61vPLL240X-JfGoZGGg5cJOcf0RoVyDMWlg2gDg",
-  "msvalidate.01": "C256ACBBB1AAE069181637FA5451EDE2",
-  "facebook-domain-verification": "schlz14bhlp9i8c9b1prlislo6203p",
-  "p:domain_verify": "949651d1f5b2015d333421162ae47104",
-  "yandex-verification": "284db860f1aef2e0",
-  "naver-site-verification": "0f131cad5d38c130377bb9b6ed20ed5182d73843",
-  "note": "These verify happypencils.in only; new tokens are needed for ecohappy.in"
- },
- "categories": [
-  {
-   "slug": "seed-pencils-and-pens",
-   "name": "Seed Pencils & Pens",
-   "url": "/shop/seed-pencils-and-pens/"
-  },
-  {
-   "slug": "notebooks-diaries-and-planners",
-   "name": "Notebooks, Diaries & Planners",
-   "url": "/shop/notebooks-diaries-and-planners/"
-  },
-  {
-   "slug": "calendars",
-   "name": "Calendars",
-   "url": "/shop/calendars/"
-  },
-  {
-   "slug": "festive",
-   "name": "Festive & Seasonal",
-   "url": "/shop/festive/"
-  },
-  {
-   "slug": "home-and-travel",
-   "name": "Home & Travel",
-   "url": "/shop/home-and-travel/"
-  },
-  {
-   "slug": "upcycled-fabric",
-   "name": "Upcycled Fabric",
-   "url": "/shop/upcycled-fabric/"
-  },
-  {
-   "slug": "kits-and-seeds",
-   "name": "Kits & Seeds",
-   "url": "/shop/kits-and-seeds/"
-  },
-  {
-   "slug": "gift-hampers",
-   "name": "Gift Hampers & Boxes",
-   "url": "/shop/gift-hampers/"
-  }
- ],
- "email": "hi@ecohappy.in",
- "email_legacy_wix": "contact@happypencils.in",
- "geo_approx": {
-  "latitude": 18.4774257,
-  "longitude": 73.8508126,
-  "source": "OpenStreetMap Nominatim pincode-centroid for 411009 (Pune), 16 Sep 2026 — NOT the exact building; owner should replace with the precise pin from Google Business Profile before launch."
- },
- "mapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=Gurudatta+Niwas+95%2F791+Gajanan+Maharaj+Chowk+Laxmi+Nagar+Parvati+Peth+Pune+411009"
+  "mapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=Gurudatta+Niwas+95%2F791+Gajanan+Maharaj+Chowk+Laxmi+Nagar+Parvati+Peth+Pune+411009"
 }

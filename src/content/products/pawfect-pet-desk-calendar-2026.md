@@ -2,8 +2,8 @@
 name: Pawfect Pet Desk Calendar 2026
 slug: pawfect-pet-desk-calendar-2026
 sku: EH-PPD-193
-category: calendars
-categoryName: Calendars
+category: festive-corporate-gifting
+categoryName: Festive & Seasonal Corporate Gifting
 price: 550
 currency: INR
 availability: InStock

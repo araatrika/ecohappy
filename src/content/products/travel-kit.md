@@ -2,8 +2,8 @@
 name: Travel Kit
 slug: travel-kit
 sku: HKT001
-category: home-and-travel
-categoryName: Home & Travel
+category: employee-welcome-kits
+categoryName: Employee Welcome Kits
 price: 550
 salePrice: 440
 currency: INR

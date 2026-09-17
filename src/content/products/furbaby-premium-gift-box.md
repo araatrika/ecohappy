@@ -2,8 +2,8 @@
 name: Furbaby Premium Gift Box
 slug: furbaby-premium-gift-box
 sku: HFB001
-category: gift-hampers
-categoryName: Gift Hampers & Boxes
+category: client-gift-hampers
+categoryName: Client & Leadership Hampers
 price: 499
 currency: INR
 availability: InStock

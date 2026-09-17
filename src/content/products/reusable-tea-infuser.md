@@ -2,8 +2,8 @@
 name: Reusable Tea Infuser
 slug: reusable-tea-infuser
 sku: HT001
-category: home-and-travel
-categoryName: Home & Travel
+category: employee-welcome-kits
+categoryName: Employee Welcome Kits
 price: 249
 currency: INR
 availability: InStock

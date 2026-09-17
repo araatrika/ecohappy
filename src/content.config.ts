@@ -7,7 +7,7 @@ const products = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/products" }),
   schema: z.object({
     name: z.string(), slug: z.string(), sku: z.string().default(""),
-    category: z.enum(["seed-pencils-and-pens","notebooks-diaries-and-planners","calendars","festive","home-and-travel","upcycled-fabric","kits-and-seeds","gift-hampers"]),
+    category: z.enum(["corporate-bulk-and-branding","festive-corporate-gifting","employee-welcome-kits","client-gift-hampers","everyday-desk-essentials"]),
     categoryName: z.string(),
     price: z.number(), salePrice: z.number().optional(), currency: z.literal("INR").default("INR"),
     availability: z.enum(["InStock","OutOfStock","MadeToOrder","PreOrder"]).default("InStock"),

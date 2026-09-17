@@ -2,8 +2,8 @@
 name: Plantable Coasters-  30 units
 slug: plantable-coasters-30-units
 sku: EH-PCU-512
-category: home-and-travel
-categoryName: Home & Travel
+category: employee-welcome-kits
+categoryName: Employee Welcome Kits
 price: 300
 currency: INR
 availability: InStock

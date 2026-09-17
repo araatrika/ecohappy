@@ -2,8 +2,8 @@
 name: Plantable Flags - Pack of 30
 slug: plantable-tricolour-flags-pack-of-30
 sku: EH-PFP-857
-category: festive
-categoryName: Festive & Seasonal
+category: festive-corporate-gifting
+categoryName: Festive & Seasonal Corporate Gifting
 price: 299
 currency: INR
 availability: InStock

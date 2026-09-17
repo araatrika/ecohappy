@@ -2,8 +2,8 @@
 name: Seed Color Pencils - Set of 2 Boxes
 slug: seed-colour-pencils-set-of-2-boxes
 sku: HCP002
-category: seed-pencils-and-pens
-categoryName: Seed Pencils & Pens
+category: corporate-bulk-and-branding
+categoryName: Bulk Gifting & Branding
 price: 300
 currency: INR
 availability: InStock

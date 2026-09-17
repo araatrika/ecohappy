@@ -2,8 +2,8 @@
 name: Desk Calendar 2024
 slug: desk-calendar-2024
 sku: EH-DC-229
-category: calendars
-categoryName: Calendars
+category: festive-corporate-gifting
+categoryName: Festive & Seasonal Corporate Gifting
 price: 399
 salePrice: 349
 currency: INR

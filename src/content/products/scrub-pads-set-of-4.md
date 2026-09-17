@@ -2,8 +2,8 @@
 name: Scrub Pads - Set of 4
 slug: scrub-pads-set-of-4
 sku: HSCP001
-category: home-and-travel
-categoryName: Home & Travel
+category: employee-welcome-kits
+categoryName: Employee Welcome Kits
 price: 149
 salePrice: 104.3
 currency: INR

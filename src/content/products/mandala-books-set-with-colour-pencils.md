@@ -2,8 +2,8 @@
 name: One Beginner & one Advanced Mandala Book
 slug: mandala-books-set-with-colour-pencils
 sku: EH-OBO-553
-category: kits-and-seeds
-categoryName: Kits & Seeds
+category: employee-welcome-kits
+categoryName: Employee Welcome Kits
 price: 699
 salePrice: 419.4
 currency: INR

@@ -2,8 +2,8 @@
 name: Upcycled Bedsheet
 slug: upcycled-bedsheet
 sku: EH-UB-763
-category: upcycled-fabric
-categoryName: Upcycled Fabric
+category: client-gift-hampers
+categoryName: Client & Leadership Hampers
 price: 1599
 currency: INR
 availability: InStock

@@ -2,8 +2,8 @@
 name: Customized Seed Pencils - 50 units
 slug: customised-seed-pencils-50
 sku: EH-CSP-857
-category: seed-pencils-and-pens
-categoryName: Seed Pencils & Pens
+category: corporate-bulk-and-branding
+categoryName: Bulk Gifting & Branding
 price: 700
 currency: INR
 availability: MadeToOrder

@@ -2,8 +2,8 @@
 name: Beginner's Mandala Book + One Box of Colour Pencils
 slug: beginners-mandala-book-with-colour-pencils
 sku: EH-BMB-637
-category: kits-and-seeds
-categoryName: Kits & Seeds
+category: employee-welcome-kits
+categoryName: Employee Welcome Kits
 price: 299
 currency: INR
 availability: InStock

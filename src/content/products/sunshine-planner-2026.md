@@ -2,8 +2,8 @@
 name: Sunshine Planner 2026
 slug: sunshine-planner-2026
 sku: EH-SP-652
-category: notebooks-diaries-and-planners
-categoryName: Notebooks, Diaries & Planners
+category: festive-corporate-gifting
+categoryName: Festive & Seasonal Corporate Gifting
 price: 499
 salePrice: 374.25
 currency: INR

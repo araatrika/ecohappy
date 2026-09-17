@@ -76,7 +76,7 @@ https://happypencils.in/*  https://ecohappy.in/:splat  301!
 /shop  /shop/  301
 /shop-1  /gifting/return-gifts/  301
 /shop-2  /gifting/corporate/  301
-/shop-3  /shop/home-and-travel/  301
+/shop-3  /shop/employee-welcome-kits/  301
 /bulkbuy  /gifting/bulk-and-custom/  301
 /sale  /shop/?sale=1  301
 # Wix product-page and category pages with query strings
@@ -86,3 +86,14 @@ https://happypencils.in/*  https://ecohappy.in/:splat  301!
 # Wix internal paths that should never resolve on the new host
 /_partials/*  /  301
 /lightbox/*  /  301
+
+# Category taxonomy change 2026-09-17: old product-type categories -> new
+# corporate/occasion-based categories
+/shop/seed-pencils-and-pens/  /shop/corporate-bulk-and-branding/  301
+/shop/notebooks-diaries-and-planners/  /shop/everyday-desk-essentials/  301
+/shop/calendars/  /shop/festive-corporate-gifting/  301
+/shop/festive/  /shop/festive-corporate-gifting/  301
+/shop/home-and-travel/  /shop/employee-welcome-kits/  301
+/shop/upcycled-fabric/  /shop/everyday-desk-essentials/  301
+/shop/kits-and-seeds/  /shop/employee-welcome-kits/  301
+/shop/gift-hampers/  /shop/client-gift-hampers/  301

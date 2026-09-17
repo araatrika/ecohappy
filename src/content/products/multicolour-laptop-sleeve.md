@@ -2,8 +2,8 @@
 name: Multicolor Laptop Sleeve
 slug: multicolour-laptop-sleeve
 sku: EH-MLS-714
-category: upcycled-fabric
-categoryName: Upcycled Fabric
+category: client-gift-hampers
+categoryName: Client & Leadership Hampers
 price: 1099
 salePrice: 849
 currency: INR

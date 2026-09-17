@@ -2,8 +2,8 @@
 name: Spinach and Bittergourd Rakhi
 slug: seed-rakhi-spinach-and-bittergourd
 sku: EH-SAB-973
-category: festive
-categoryName: Festive & Seasonal
+category: festive-corporate-gifting
+categoryName: Festive & Seasonal Corporate Gifting
 price: 80
 currency: INR
 availability: InStock

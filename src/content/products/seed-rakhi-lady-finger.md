@@ -2,8 +2,8 @@
 name: Lady Finger Seed Rakhi
 slug: seed-rakhi-lady-finger
 sku: EH-LFS-582
-category: festive
-categoryName: Festive & Seasonal
+category: festive-corporate-gifting
+categoryName: Festive & Seasonal Corporate Gifting
 price: 80
 currency: INR
 availability: InStock

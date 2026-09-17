@@ -2,8 +2,8 @@
 name: Seed Paper A4 Size  - Set Of 4
 slug: seed-paper-a4-set-of-4
 sku: EH-SPA-851
-category: kits-and-seeds
-categoryName: Kits & Seeds
+category: corporate-bulk-and-branding
+categoryName: Bulk Gifting & Branding
 price: 150
 currency: INR
 availability: InStock

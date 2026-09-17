@@ -2,8 +2,8 @@
 name: Plant Me Diary - A5 Notebook
 slug: plant-me-diary-a5
 sku: HPT002
-category: notebooks-diaries-and-planners
-categoryName: Notebooks, Diaries & Planners
+category: everyday-desk-essentials
+categoryName: Everyday Desk Essentials
 price: 329
 salePrice: 296.1
 currency: INR

@@ -2,8 +2,8 @@
 name: Seed Pencils - Set of 4 boxes
 slug: seed-pencils-set-of-4-boxes
 sku: HSP001
-category: seed-pencils-and-pens
-categoryName: Seed Pencils & Pens
+category: corporate-bulk-and-branding
+categoryName: Bulk Gifting & Branding
 price: 470
 salePrice: 376
 currency: INR

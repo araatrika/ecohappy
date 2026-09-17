@@ -2,8 +2,8 @@
 name: Cutlery Kit
 slug: cutlery-kit
 sku: HSKT001
-category: home-and-travel
-categoryName: Home & Travel
+category: employee-welcome-kits
+categoryName: Employee Welcome Kits
 price: 299
 currency: INR
 availability: InStock

@@ -2,8 +2,8 @@
 name: Foldable Cloth Bag
 slug: foldable-cloth-bag
 sku: EH-FCB-762
-category: upcycled-fabric
-categoryName: Upcycled Fabric
+category: everyday-desk-essentials
+categoryName: Everyday Desk Essentials
 price: 399
 salePrice: 349
 currency: INR

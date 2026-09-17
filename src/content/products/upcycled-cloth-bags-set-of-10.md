@@ -2,8 +2,8 @@
 name: Upcycled Cloth Bags - Set of 10
 slug: upcycled-cloth-bags-set-of-10
 sku: EH-UCB-288
-category: upcycled-fabric
-categoryName: Upcycled Fabric
+category: everyday-desk-essentials
+categoryName: Everyday Desk Essentials
 price: 350
 currency: INR
 availability: InStock

@@ -2,8 +2,8 @@
 name: Paddy Toran
 slug: paddy-toran
 sku: ESPT001
-category: festive
-categoryName: Festive & Seasonal
+category: festive-corporate-gifting
+categoryName: Festive & Seasonal Corporate Gifting
 price: 649
 salePrice: 551.65
 currency: INR

@@ -2,8 +2,8 @@
 name: Eco Seed Rakhi festive kit
 slug: seed-rakhi-festive-kit
 sku: EH-ESR-933
-category: festive
-categoryName: Festive & Seasonal
+category: festive-corporate-gifting
+categoryName: Festive & Seasonal Corporate Gifting
 price: 399
 salePrice: 349
 currency: INR

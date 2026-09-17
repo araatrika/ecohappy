@@ -30,14 +30,11 @@ collections:
         name: category
         widget: select
         options:
-          - seed-pencils-and-pens
-          - notebooks-diaries-and-planners
-          - calendars
-          - festive
-          - home-and-travel
-          - upcycled-fabric
-          - kits-and-seeds
-          - gift-hampers
+          - corporate-bulk-and-branding
+          - festive-corporate-gifting
+          - employee-welcome-kits
+          - client-gift-hampers
+          - everyday-desk-essentials
       - { label: "Category display name", name: categoryName, widget: string }
       - { label: "Price (INR)", name: price, widget: number, value_type: float }
       - { label: "Sale price (INR, optional)", name: salePrice, widget: number, value_type: float, required: false }

@@ -2,8 +2,8 @@
 name: Seed Rakhi-Evil Eye Band
 slug: seed-rakhi-evil-eye-band
 sku: EH-SRE-177
-category: festive
-categoryName: Festive & Seasonal
+category: festive-corporate-gifting
+categoryName: Festive & Seasonal Corporate Gifting
 price: 119
 salePrice: 107.1
 currency: INR

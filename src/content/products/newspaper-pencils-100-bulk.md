@@ -2,8 +2,8 @@
 name: Pencils - Set of 100 (Bulk Buy)
 slug: newspaper-pencils-100-bulk
 sku: HP001A
-category: seed-pencils-and-pens
-categoryName: Seed Pencils & Pens
+category: corporate-bulk-and-branding
+categoryName: Bulk Gifting & Branding
 price: 650
 currency: INR
 availability: MadeToOrder

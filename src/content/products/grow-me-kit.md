@@ -2,8 +2,8 @@
 name: Grow Me Kit
 slug: grow-me-kit
 sku: HGKT001
-category: kits-and-seeds
-categoryName: "Kits & Seeds"
+category: employee-welcome-kits
+categoryName: Employee Welcome Kits
 price: 299
 currency: INR
 availability: InStock

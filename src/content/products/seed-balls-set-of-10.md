@@ -2,8 +2,8 @@
 name: Seed Balls - Set of 10 balls
 slug: seed-balls-set-of-10
 sku: HSB001
-category: kits-and-seeds
-categoryName: Kits & Seeds
+category: employee-welcome-kits
+categoryName: Employee Welcome Kits
 price: 249
 salePrice: 186.75
 currency: INR
