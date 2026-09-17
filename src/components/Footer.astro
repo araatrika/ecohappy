@@ -1,0 +1,79 @@
+---
+import site from '../data/site.json';
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="container grid">
+    <div>
+      <h2>{site.brand}</h2>
+      <p>{site.tagline}</p>
+      <p>
+        {site.address.streetAddress},<br />
+        {site.address.addressLocality}, {site.address.addressRegion} {site.address.postalCode}, India
+      </p>
+      <p><a href={`tel:${site.telephoneE164}`}>{site.telephone}</a></p>
+      <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+    </div>
+    <div>
+      <h3>Shop</h3>
+      <ul>
+        <li><a href="/shop/">All products</a></li>
+        <li><a href="/gifting/corporate/">Corporate gifting</a></li>
+        <li><a href="/gifting/return-gifts/">Return gifts</a></li>
+        <li><a href="/gifting/bulk-and-custom/">Bulk & custom</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Company</h3>
+      <ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/learn/">Learn</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+        <li><a href="/shipping-and-returns/">Shipping & returns</a></li>
+        <li><a href="/terms/">Terms & conditions</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Follow &amp; chat</h3>
+      <ul class="social">
+        {site.sameAs.filter((u) => u.includes('instagram')).map((u) => (
+          <li><a class="social-link" href={u} rel="me noopener" target="_blank"><span class="ico" aria-hidden="true">IG</span> Instagram</a></li>
+        ))}
+        {site.sameAs.filter((u) => u.includes('facebook')).map((u) => (
+          <li><a class="social-link" href={u} rel="me noopener" target="_blank"><span class="ico" aria-hidden="true">FB</span> Facebook</a></li>
+        ))}
+        {site.sameAs.filter((u) => u.includes('linkedin')).map((u) => (
+          <li><a class="social-link" href={u} rel="me noopener" target="_blank"><span class="ico" aria-hidden="true">in</span> LinkedIn</a></li>
+        ))}
+        <li><a class="social-link" href={site.whatsapp.direct} rel="noopener" target="_blank"><span class="ico" aria-hidden="true">WA</span> WhatsApp us</a></li>
+      </ul>
+      <p class="enquiries">Enquiries: <a href={site.whatsapp.direct} rel="noopener" target="_blank">{site.whatsapp.enquiries}</a></p>
+    </div>
+  </div>
+  <div class="container fine">
+    <p>&copy; {year} {site.legalName}, trading as {site.brand}. Made in Pune, India.</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer { background: var(--ink); color: var(--white); margin-top: 3rem; padding-block: 2.5rem 1rem; }
+  .site-footer a { color: var(--gold); }
+  .site-footer h2, .site-footer h3 { color: var(--white); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem; }
+  .grid ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.4em; }
+  .social-link { display: inline-flex; align-items: center; gap: 0.5em; transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.15s ease; }
+  .social-link:hover { transform: translateX(3px); color: var(--white); }
+  .social-link .ico {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 1.6em; height: 1.6em; border-radius: 50%; background: rgba(255, 214, 0, 0.15);
+    color: var(--gold); font-size: 0.7rem; font-weight: 800; letter-spacing: 0;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+  }
+  .social-link:hover .ico { background: var(--gold); color: var(--ink); transform: scale(1.08) rotate(-4deg); }
+  .enquiries { margin-top: 0.9em; font-size: 0.85rem; opacity: 0.85; }
+  .fine { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.15); font-size: 0.85rem; opacity: 0.85; }
+  @media (max-width: 780px) {
+    .grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>

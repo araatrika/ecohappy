@@ -1,0 +1,152 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Netlify Identity + Git Gateway handles login once the site is deployed on
+# Netlify with Identity enabled and the owner invited as a user. Until then
+# this panel will show a login screen it can't authenticate against.
+site_url: https://ecohappy.in
+display_url: https://ecohappy.in
+logo_url: /assets/brand/logo-eco-happy.png
+
+media_folder: "public/assets/products"
+public_folder: "/assets/products"
+
+collections:
+  - name: products
+    label: "Products"
+    label_singular: "Product"
+    folder: "src/content/products"
+    create: true
+    delete: false
+    slug: "{{fields.slug}}"
+    identifier_field: name
+    summary: "{{name}} — ₹{{price}} — {{availability}}"
+    fields:
+      - { label: "Product name", name: name, widget: string }
+      - { label: "URL slug", name: slug, widget: string, hint: "Must match the filename, don't change after publishing — it's the live URL." }
+      - { label: "SKU", name: sku, widget: string, required: false }
+      - label: "Category"
+        name: category
+        widget: select
+        options:
+          - seed-pencils-and-pens
+          - notebooks-diaries-and-planners
+          - calendars
+          - festive
+          - home-and-travel
+          - upcycled-fabric
+          - kits-and-seeds
+          - gift-hampers
+      - { label: "Category display name", name: categoryName, widget: string }
+      - { label: "Price (INR)", name: price, widget: number, value_type: float }
+      - { label: "Sale price (INR, optional)", name: salePrice, widget: number, value_type: float, required: false }
+      - label: "Availability"
+        name: availability
+        widget: select
+        options: [InStock, OutOfStock, MadeToOrder, PreOrder]
+        hint: "MadeToOrder/PreOrder switches the product page from 'Buy now' to a WhatsApp 'Reach out' button."
+      - { label: "Track inventory?", name: trackInventory, widget: boolean, default: false }
+      - { label: "Stock quantity", name: stockQuantity, widget: number, required: false, hint: "Only used if 'Track inventory' is on." }
+      - { label: "Lead time (days)", name: leadTimeDays, widget: number, default: 3 }
+      - { label: "Ribbon badge (e.g. 'Best seller')", name: ribbon, widget: string, required: false }
+      - { label: "Bulk / corporate product?", name: bulk, widget: boolean, default: false }
+      - { label: "Customisable?", name: customisable, widget: boolean, default: false }
+      - { label: "Brand", name: brand, widget: string, default: "Eco Happy" }
+      - { label: "SEO title", name: seoTitle, widget: string, required: false, hint: "Keep to ~50-60 characters." }
+      - { label: "SEO / meta description", name: seoDescription, widget: text, required: false, hint: "120-160 characters." }
+      - { label: "Answer summary (shown at top of page)", name: answer, widget: text, hint: "1-2 sentence direct answer, ~40-60 words." }
+      - label: "Images"
+        name: images
+        widget: list
+        required: false
+        fields:
+          - { label: Image, name: src, widget: image }
+          - { label: Alt text, name: alt, widget: string }
+      - label: "Specs"
+        name: specs
+        widget: keyvalue
+        required: false
+      - label: "How to use (steps)"
+        name: howToUse
+        widget: list
+        field: { label: Step, name: step, widget: string }
+        required: false
+      - label: "FAQs"
+        name: faq
+        widget: list
+        required: false
+        fields:
+          - { label: Question, name: q, widget: string }
+          - { label: Answer, name: a, widget: text }
+      - label: "Related product slugs"
+        name: related
+        widget: list
+        field: { label: slug, name: slug, widget: string }
+        required: false
+      - { label: "Retired (hide from site)", name: retired, widget: boolean, default: false }
+      - { label: "Date published", name: datePublished, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: "Date modified", name: dateModified, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: guides
+    label: "Blog / Guides"
+    label_singular: "Guide"
+    folder: "src/content/guides"
+    create: true
+    delete: true
+    slug: "{{fields.slug}}"
+    identifier_field: title
+    summary: "{{title}} — {{dateModified}}"
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: "URL slug", name: slug, widget: string }
+      - { label: "Meta description", name: description, widget: text, hint: "120-160 characters." }
+      - { label: Author, name: author, widget: string, default: "Jagruti Khabiya Jain" }
+      - { label: "Date published", name: datePublished, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: "Date modified", name: dateModified, widget: datetime, format: "YYYY-MM-DD" }
+      - { label: "Cover image", name: cover, widget: image, required: false }
+      - { label: "Cover alt text", name: coverAlt, widget: string, required: false }
+      - { label: "Cover is stock photo?", name: coverIsStock, widget: boolean, default: false }
+      - label: Tags
+        name: tags
+        widget: list
+        field: { label: Tag, name: tag, widget: string }
+        required: false
+      - { label: "Time to read", name: timeToRead, widget: string, required: false }
+      - label: FAQs
+        name: faq
+        widget: list
+        required: false
+        fields:
+          - { label: Question, name: q, widget: string }
+          - { label: Answer, name: a, widget: text }
+      - { label: "Draft (hide from site)", name: draft, widget: boolean, default: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: pages
+    label: "Site Pages"
+    label_singular: "Page"
+    folder: "src/content/pages"
+    create: false
+    delete: false
+    slug: "{{fields.slug}}"
+    identifier_field: title
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: "URL slug", name: slug, widget: string }
+      - { label: "Meta description", name: description, widget: text, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: site_settings
+    label: "Site Settings"
+    files:
+      - name: site
+        label: "Business info (site.json)"
+        file: "src/data/site.json"
+        fields:
+          - { label: "Brand name", name: brand, widget: string }
+          - { label: "Legal name", name: legalName, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: "Phone (E.164)", name: telephoneE164, widget: string }
+          - { label: Tagline, name: tagline, widget: string, required: false }

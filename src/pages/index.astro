@@ -1,0 +1,156 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import site from '../data/site.json';
+
+const homePage = await getEntry('pages', 'home');
+const allProducts = await getCollection('products');
+const featuredNames = homePage?.data.productsListed || [];
+const featured = featuredNames
+  .map((name) => allProducts.find((p) => p.data.name.toLowerCase() === name.toLowerCase()))
+  .filter(Boolean);
+
+const values = [
+  ['No plastic', 'Every product and its packaging are plastic-free, start to finish.'],
+  ['Hand-made in Pune', 'Rolled and assembled by our women-led team in Parvati Paytha.'],
+  ['Plant it after use', 'Seed pencils, paper and rakhis are made to be planted, not thrown away.'],
+  ['Real, not stock', 'Every photo on this site is our own product — nothing AI-generated.'],
+];
+---
+<BaseLayout
+  title="Eco Friendly Products In India | Eco Happy"
+  description="Plantable seed pencils, upcycled diaries and sustainable gifts — hand-made in Pune by a women-led team since 2017, from waste newspaper and upcycled fabric."
+>
+  <p class="announce">
+    <a href="/gifting/corporate/">Planning Diwali gifting? Bulk seed pencils with your logo — ask us on WhatsApp →</a>
+  </p>
+
+  <section class="hero section-cream">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">Made in Pune since 2017</span>
+        <h1>Stationery that grows into a plant, not landfill</h1>
+        <p class="lede">
+          Hand-rolled from waste newspaper by a women-led team in Pune.
+          Write with it, plant it, watch it grow — no plastic, ever.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="/shop/">Shop now</a>
+          <a class="btn btn-outline" href="/gifting/corporate/">Corporate gifting</a>
+        </div>
+      </div>
+      <img class="hero-img" src="/assets/brand/home-hero-product-range.jpg" alt="A flat-lay of Eco Happy's seed pencils, upcycled diaries and plantable kits on a cream cloth" width="640" height="480" />
+    </div>
+  </section>
+
+  <section class="container values">
+    <div class="grid four">
+      {values.map(([title, body]) => (
+        <div class="value">
+          <span class="value-dot" aria-hidden="true"></span>
+          <h3>{title}</h3>
+          <p>{body}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="container featured">
+    <h2>Shop our favourites</h2>
+    {featured.length > 0 ? (
+      <div class="grid">
+        {featured.map((p) => <ProductCard product={p} />)}
+      </div>
+    ) : (
+      <p><a href="/shop/">See everything we make →</a></p>
+    )}
+    <p class="see-all"><a class="btn btn-outline" href="/shop/">See all products</a></p>
+  </section>
+
+  <section class="section-dark trust">
+    <div class="container trust-inner">
+      <span class="eyebrow eyebrow-dark">Honesty, not greenwashing</span>
+      <h2>Made by hand, in the open</h2>
+      <p>
+        Every pencil is rolled by hand from old newspaper by our team of eight women in Parvati Paytha, Pune.
+        We're building an honest, dated record of what we actually make and use — no invented numbers, ever.
+        Read <a href="/about/">how Eco Happy works</a> and <a href="/learn/">what actually happens when you plant a seed pencil</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="container gifting-strip">
+    <h2>Gifting, done right</h2>
+    <div class="grid three">
+      <a class="card gift-card" href="/gifting/corporate/">
+        <h3>Corporate gifting</h3>
+        <p>MOQ, branding and lead times for Diwali, onboarding and client gifts.</p>
+        <span class="card-link">Explore →</span>
+      </a>
+      <a class="card gift-card" href="/gifting/return-gifts/">
+        <h3>Return gifts</h3>
+        <p>Birthday and celebration gifts kids and parents actually keep.</p>
+        <span class="card-link">Explore →</span>
+      </a>
+      <a class="card gift-card" href="/gifting/bulk-and-custom/">
+        <h3>Bulk & custom</h3>
+        <p>Logo printing and custom text on seed pencils, diaries and more.</p>
+        <span class="card-link">Explore →</span>
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .announce {
+    margin: 0; text-align: center; background: var(--red); color: var(--ink);
+    font-weight: 700; font-size: 0.85rem; padding: 0.6em 1em; letter-spacing: 0.02em;
+  }
+  .announce a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
+
+  .hero { padding-block: 3.5rem; }
+  .hero-inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 3rem; align-items: center; }
+  .eyebrow {
+    display: inline-block; font-family: var(--font-body); font-weight: 700; font-size: 0.78rem;
+    letter-spacing: 0.08em; text-transform: uppercase; color: var(--red-deep); margin-bottom: 0.75rem;
+  }
+  .eyebrow-dark { color: var(--gold); }
+  .lede { font-size: 1.15rem; max-width: 46ch; }
+  .hero-img { width: 100%; height: auto; border-radius: var(--radius); object-fit: cover; box-shadow: var(--shadow-card); }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
+
+  .values { padding-block: 2.75rem 0.5rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.25rem; margin-top: 1rem; }
+  .grid.four { grid-template-columns: repeat(4, 1fr); gap: 1.75rem; }
+  .value { position: relative; padding-left: 1.5rem; }
+  .value-dot { position: absolute; left: 0; top: 0.35em; width: 10px; height: 10px; border-radius: 50%; background: var(--gold); border: 2px solid var(--ink); }
+  .value h3 { font-size: 1rem; text-transform: none; margin-bottom: 0.25em; }
+  .value p { font-size: 0.88rem; color: var(--gray-500); margin: 0; }
+
+  .featured { padding-block: 3rem; }
+  .see-all { text-align: center; margin-top: 2rem; }
+  .grid.three { grid-template-columns: repeat(3, 1fr); }
+
+  .trust { padding-block: 3rem; }
+  .trust-inner { max-width: 68ch; }
+
+  .gifting-strip { padding-block: 1rem 3.5rem; }
+  .gift-card {
+    display: block; padding: 1.5rem; text-decoration: none; color: var(--ink);
+    border-top: 4px solid var(--gold); transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .gift-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(13,13,13,0.12); }
+  .gift-card h3 { margin-bottom: 0.4em; }
+  .gift-card p { margin: 0 0 0.75em; font-size: 0.9rem; }
+  .card-link { font-weight: 700; color: var(--red-deep); font-size: 0.85rem; }
+
+  @media (max-width: 900px) {
+    .grid.four { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 780px) {
+    .hero-inner { grid-template-columns: 1fr; }
+    .grid.three { grid-template-columns: 1fr; }
+    .grid.four { grid-template-columns: 1fr 1fr; }
+  }
+</style>

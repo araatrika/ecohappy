@@ -1,0 +1,103 @@
+---
+import '@fontsource/barlow-condensed/500.css';
+import '@fontsource/barlow-condensed/600.css';
+import '@fontsource/barlow-condensed/700.css';
+import '@fontsource/dm-sans/400.css';
+import '@fontsource/dm-sans/500.css';
+import '@fontsource/dm-sans/700.css';
+import '../styles/tokens.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import site from '../data/site.json';
+
+interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  imageAlt?: string;
+  noindex?: boolean;
+}
+const {
+  title,
+  description = site.tagline,
+  image = '/assets/brand/og-image-default.jpg',
+  imageAlt = title,
+  noindex = false,
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, site.hosts.canonical);
+
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': ['Organization', 'LocalBusiness'],
+  '@id': `${site.hosts.canonical}/#organization`,
+  name: site.brand,
+  legalName: site.legalName,
+  alternateName: site.alternateName,
+  url: site.hosts.canonical,
+  logo: `${site.hosts.canonical}/assets/brand/logo-eco-happy.png`,
+  foundingDate: site.foundingDate,
+  telephone: site.telephoneE164,
+  email: site.email,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: site.address.streetAddress,
+    addressLocality: site.address.addressLocality,
+    addressRegion: site.address.addressRegion,
+    postalCode: site.address.postalCode,
+    addressCountry: site.address.addressCountry,
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: site.geo_approx.latitude,
+    longitude: site.geo_approx.longitude,
+  },
+  hasMap: site.mapsSearchUrl,
+  founder: {
+    '@type': 'Person',
+    name: site.founder.name,
+    jobTitle: site.founder.jobTitle,
+    sameAs: site.founder.sameAs,
+  },
+  sameAs: site.sameAs,
+  priceRange: '₹99–₹2,999',
+  areaServed: 'IN',
+};
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicons/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/favicons/favicon-16.png" sizes="16x16" type="image/png" />
+    <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#FFD600" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex,nofollow" />}
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, site.hosts.canonical)} />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL(image, site.hosts.canonical)} />
+    <meta name="twitter:image:alt" content={imageAlt} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Nav />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,89 @@
+---
+import site from '../data/site.json';
+const nav = [
+  { label: 'Shop', href: '/shop/' },
+  {
+    label: 'Gifting', href: '/gifting/corporate/',
+    children: [
+      { label: 'Corporate Gifting', href: '/gifting/corporate/' },
+      { label: 'Return Gifts', href: '/gifting/return-gifts/' },
+      { label: 'Bulk & Custom', href: '/gifting/bulk-and-custom/' },
+    ],
+  },
+  { label: 'Learn', href: '/learn/' },
+  { label: 'About', href: '/about/' },
+  { label: 'Contact', href: '/contact/' },
+];
+---
+<header class="site-header">
+  <div class="container bar">
+    <a class="brand" href="/">
+      <img src="/assets/brand/logo-eco-happy.png" alt={`${site.brand} — ${site.tagline}`} height="40" />
+    </a>
+    <nav aria-label="Main navigation">
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="visually-hidden">Menu</span>
+        <span aria-hidden="true">☰</span>
+      </button>
+      <ul id="primary-nav" class="primary-nav">
+        {nav.map((item) => (
+          <li class:list={{ 'has-children': item.children }}>
+            <a href={item.href}>{item.label}</a>
+            {item.children && (
+              <ul class="submenu">
+                {item.children.map((c) => (
+                  <li><a href={c.href}>{c.label}</a></li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header { background: var(--white); position: sticky; top: 0; z-index: 50; border-bottom: 1px solid var(--cream); }
+  .bar { display: flex; align-items: center; justify-content: space-between; padding-block: 0.75rem; gap: 1rem; }
+  .brand img { display: block; }
+  .primary-nav { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
+  .primary-nav > li { position: relative; }
+  .primary-nav > li > a {
+    text-decoration: none; color: var(--ink); font-weight: 700; padding: 0.5em 0.2em; display: inline-block;
+  }
+  .primary-nav > li > a:hover { color: var(--red-deep); }
+  .submenu {
+    display: none; position: absolute; left: 0; top: 100%; background: var(--white);
+    list-style: none; margin: 0; padding: 0.5rem 0; border-radius: var(--radius); box-shadow: var(--shadow-card);
+    min-width: 200px;
+  }
+  .has-children:hover .submenu, .has-children:focus-within .submenu { display: block; }
+  .submenu li a { display: block; padding: 0.5em 1em; text-decoration: none; color: var(--ink); white-space: nowrap; }
+  .submenu li a:hover { background: var(--cream); color: var(--ink); }
+  .nav-toggle { display: none; background: none; border: none; font-size: 1.5rem; color: var(--ink); min-height: 44px; min-width: 44px; }
+  @media (max-width: 780px) {
+    .nav-toggle { display: inline-flex; align-items: center; justify-content: center; }
+    .primary-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); flex-direction: column; gap: 0; padding: 0.5rem 1.25rem 1rem; border-bottom: 1px solid var(--cream); }
+    .primary-nav.open { display: flex; }
+    .submenu { position: static; box-shadow: none; display: none; }
+    .has-children.open .submenu { display: block; }
+  }
+</style>
+
+<script>
+  const toggle = document.getElementById('nav-toggle');
+  const nav = document.getElementById('primary-nav');
+  toggle?.addEventListener('click', () => {
+    const open = nav?.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  document.querySelectorAll('.has-children > a').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      if (window.innerWidth <= 780) {
+        e.preventDefault();
+        a.parentElement?.classList.toggle('open');
+      }
+    });
+  });
+</script>

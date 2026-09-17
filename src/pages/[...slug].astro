@@ -1,0 +1,33 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Generic renderer for simple content pages (about, contact, faq, gifting-*, shipping, terms).
+// Home, Shop and Learn have their own custom-built pages and are excluded here.
+export async function getStaticPaths() {
+  const excludedSlugs = ['home', 'shop', 'learn', 'sale', 'payment-request', 'shop-home-and-travel'];
+  const pages = await getCollection('pages');
+  return pages
+    .filter((p) => !excludedSlugs.includes(p.data.slug) && p.data.newUrl)
+    .map((p) => {
+      const clean = p.data.newUrl.replace(/^\/|\/$/g, '');
+      return { params: { slug: clean || undefined }, props: { entry: p } };
+    });
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const p = entry.data;
+---
+<BaseLayout title={p.title} description={p.description}>
+  <article class="container page">
+    <h1>{p.title.replace(/\s*\|\s*Eco Happy\s*$/i, '')}</h1>
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .page { max-width: 72ch; padding-block: 1.5rem 3rem; }
+</style>

@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import site from '../../data/site.json';
+
+const allProducts = (await getCollection('products')).filter((p) => !p.data.retired);
+allProducts.sort((a, b) => a.data.name.localeCompare(b.data.name));
+---
+<BaseLayout title="Shop Plantable Stationery | Eco Happy" description="Plantable stationery and eco-friendly gifts, made in Pune by a women-led team since 2017. Seed pencils, upcycled diaries, festive kits and more.">
+  <section class="container hero">
+    <h1>Shop all products</h1>
+    <p>{allProducts.length} eco-friendly products, made by hand in our Pune workshop.</p>
+    <nav class="cat-filter" aria-label="Shop by category">
+      {site.categories.map((c) => (
+        <a class="btn btn-outline" href={c.url}>{c.name}</a>
+      ))}
+    </nav>
+  </section>
+  <section class="container grid">
+    {allProducts.map((product) => <ProductCard product={product} />)}
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { padding-block: 2rem 1rem; }
+  .cat-filter { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.25rem; padding-block: 1.5rem 3rem; }
+</style>

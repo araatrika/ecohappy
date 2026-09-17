@@ -1,0 +1,108 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import site from '../../data/site.json';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides');
+  return guides.map((g) => ({ params: { slug: g.data.slug }, props: { entry: g } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const g = entry.data;
+
+const fallbackCover = '/assets/brand/og-image-default.jpg';
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: site.hosts.canonical + '/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: new URL('/learn/', site.hosts.canonical).toString() },
+    { '@type': 'ListItem', position: 3, name: g.title, item: new URL(`/learn/${g.slug}/`, site.hosts.canonical).toString() },
+  ],
+};
+const faqSchema = g.faq && g.faq.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: g.faq.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    }
+  : null;
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: g.title,
+  description: g.description,
+  image: [new URL(g.cover || fallbackCover, site.hosts.canonical).toString()],
+  datePublished: g.datePublished,
+  dateModified: g.dateModified,
+  author: { '@type': 'Person', name: g.author, sameAs: site.founder.sameAs },
+  publisher: {
+    '@type': 'Organization',
+    name: site.brand,
+    logo: {
+      '@type': 'ImageObject',
+      url: new URL('/assets/brand/logo-eco-happy.png', site.hosts.canonical).toString(),
+    },
+  },
+};
+---
+<BaseLayout title={`${g.title} | Eco Happy`} description={g.description} image={g.cover || fallbackCover}>
+  <article class="container article">
+    <p class="crumb"><a href="/learn/">Learn</a> / {g.title}</p>
+    <h1>{g.title}</h1>
+    <p class="byline">By {g.author} &middot; updated {g.dateModified} &middot; {g.timeToRead}</p>
+    <img class="cover" src={g.cover || fallbackCover} alt={g.coverAlt || g.title} width="900" height="500" />
+    <div class="prose">
+      <Content />
+    </div>
+
+    {g.faq && g.faq.length > 0 && (
+      <section class="faqs" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Frequently asked questions</h2>
+        {g.faq.map((f) => (
+          <details>
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </section>
+    )}
+
+    <section class="social-cta section-cream">
+      <h2>Enjoyed this? Come say hi.</h2>
+      <p>Follow Eco Happy for more sustainable living tips, new drops, and behind-the-scenes from our Pune workshop.</p>
+      <div class="social-links">
+        {site.sameAs.filter((u) => u.includes('instagram') || u.includes('facebook') || u.includes('linkedin')).map((u) => (
+          <a class="btn btn-outline" href={u} rel="me noopener" target="_blank">
+            {u.includes('instagram') ? 'Instagram' : u.includes('facebook') ? 'Facebook' : 'LinkedIn'}
+          </a>
+        ))}
+        <a class="btn btn-primary" href={site.whatsapp.direct} rel="noopener" target="_blank">WhatsApp us</a>
+      </div>
+    </section>
+  </article>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
+</BaseLayout>
+
+<style>
+  .article { max-width: 72ch; padding-block: 1.5rem 3rem; }
+  .crumb { font-size: 0.85rem; }
+  .byline { color: var(--gray-500); font-size: 0.85rem; margin-bottom: 1.25rem; }
+  .cover { width: 100%; height: auto; border-radius: var(--radius); margin-bottom: 1.5rem; background: var(--cream); }
+  .prose :global(h2) { margin-top: 1.5em; }
+  .prose :global(a) { text-decoration-thickness: 1px; }
+  .faqs { margin-top: 2.5rem; }
+  .faqs details { border-bottom: 1px solid var(--cream); padding: 0.75em 0; }
+  .faqs summary { cursor: pointer; font-weight: 700; color: var(--ink); }
+  .faqs summary:hover { color: var(--red-deep); }
+  .social-cta { margin: 2.5rem -1.25rem -3rem; padding: 2rem 1.25rem; border-radius: var(--radius); text-align: center; }
+  .social-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-top: 1rem; }
+</style>

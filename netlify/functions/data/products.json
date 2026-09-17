@@ -1,0 +1,472 @@
+[
+  {
+    "slug": "advanced-mandala-book-with-colour-pencils",
+    "name": "Advanced Mandala Book + One box of Colour Pencils",
+    "sku": "EH-AMB-307",
+    "price": 299,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "bamboo-toothbrush-set-of-2",
+    "name": "Bamboo Toothbrush - Set of 2",
+    "sku": "HBT001",
+    "price": 199,
+    "salePrice": 139.3,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "beginners-mandala-book-with-colour-pencils",
+    "name": "Beginner's Mandala Book + One Box of Colour Pencils",
+    "sku": "EH-BMB-637",
+    "price": 299,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "checkerboard-planner-2026",
+    "name": "Checkerboard Planner 2026",
+    "sku": "EH-CP-881",
+    "price": 499,
+    "salePrice": 374.25,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "colour-pencils-set-of-2-boxes",
+    "name": "Color Pencils - Set of 2 boxes",
+    "sku": "HCP001",
+    "price": 250,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "customised-seed-pencils-100-bulk",
+    "name": "Customized Seed Pencils -Set of 100 (Bulk Buy)",
+    "sku": "HSP001A",
+    "price": 2000,
+    "salePrice": 1300,
+    "currency": "INR",
+    "availability": "MadeToOrder",
+    "retired": false
+  },
+  {
+    "slug": "customised-seed-pencils-50",
+    "name": "Customized Seed Pencils - 50 units",
+    "sku": "EH-CSP-857",
+    "price": 700,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "MadeToOrder",
+    "retired": false
+  },
+  {
+    "slug": "cutlery-kit",
+    "name": "Cutlery Kit",
+    "sku": "HSKT001",
+    "price": 299,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "desk-calendar-2024",
+    "name": "Desk Calendar 2024",
+    "sku": "EH-DC-229",
+    "price": 399,
+    "salePrice": 349,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": true
+  },
+  {
+    "slug": "desk-calendar-2026",
+    "name": "Desk Calendar 2026",
+    "sku": "EH-DC-746",
+    "price": 499,
+    "salePrice": 399.2,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "diy-animal-keychain-kit",
+    "name": "DIY animal keychain kit",
+    "sku": "EH-DAK-688",
+    "price": 399,
+    "salePrice": 250,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "foldable-cloth-bag",
+    "name": "Foldable Cloth Bag",
+    "sku": "EH-FCB-762",
+    "price": 399,
+    "salePrice": 349,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "furbaby-premium-gift-box",
+    "name": "Furbaby Premium Gift Box",
+    "sku": "HFB001",
+    "price": 499,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "grow-me-kit",
+    "name": "Grow Me Kit",
+    "sku": "HGKT001",
+    "price": 299,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "mandala-books-set-with-colour-pencils",
+    "name": "One Beginner & one Advanced Mandala Book",
+    "sku": "EH-OBO-553",
+    "price": 699,
+    "salePrice": 419.4,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "multicolour-laptop-sleeve",
+    "name": "Multicolor Laptop Sleeve",
+    "sku": "EH-MLS-714",
+    "price": 1099,
+    "salePrice": 849,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "newspaper-pencil-box-set-of-2",
+    "name": "Pencil Box - Set of 2 boxes",
+    "sku": "HP002",
+    "price": 130,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "newspaper-pencils-100-bulk",
+    "name": "Pencils - Set of 100 (Bulk Buy)",
+    "sku": "HP001A",
+    "price": 650,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "MadeToOrder",
+    "retired": false
+  },
+  {
+    "slug": "paddy-toran",
+    "name": "Paddy Toran",
+    "sku": "ESPT001",
+    "price": 649,
+    "salePrice": 551.65,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "pawfect-pet-desk-calendar-2026",
+    "name": "Pawfect Pet Desk Calendar 2026",
+    "sku": "EH-PPD-193",
+    "price": 550,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "plant-me-diary-a5",
+    "name": "Plant Me Diary - A5 Notebook",
+    "sku": "HPT002",
+    "price": 329,
+    "salePrice": 296.1,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "plantable-coasters-30-units",
+    "name": "Plantable Coasters-  30 units",
+    "sku": "EH-PCU-512",
+    "price": 300,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "plantable-kites-set-of-10",
+    "name": "Eco happy kites- set of 10",
+    "sku": "EH-EHK-923",
+    "price": 200,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "plantable-tricolour-flags-pack-of-30",
+    "name": "Plantable Flags - Pack of 30",
+    "sku": "EH-PFP-857",
+    "price": 299,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "recycled-paper-notebook-set-of-2",
+    "name": "Recycled Paper Notebook- Set of 2",
+    "sku": "100",
+    "price": 249,
+    "salePrice": 200,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "reusable-tea-infuser",
+    "name": "Reusable Tea Infuser",
+    "sku": "HT001",
+    "price": 249,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "scrub-pads-set-of-4",
+    "name": "Scrub Pads - Set of 4",
+    "sku": "HSCP001",
+    "price": 149,
+    "salePrice": 104.3,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "seed-balls-set-of-10",
+    "name": "Seed Balls - Set of 10 balls",
+    "sku": "HSB001",
+    "price": 249,
+    "salePrice": 186.75,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "seed-colour-pencils-set-of-2-boxes",
+    "name": "Seed Color Pencils - Set of 2 Boxes",
+    "sku": "HCP002",
+    "price": 300,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "seed-paper-a4-set-of-4",
+    "name": "Seed Paper A4 Size  - Set Of 4",
+    "sku": "EH-SPA-851",
+    "price": 150,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "seed-pencils-set-of-4-boxes",
+    "name": "Seed Pencils - Set of 4 boxes",
+    "sku": "HSP001",
+    "price": 470,
+    "salePrice": 376,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "seed-pens-100-bulk",
+    "name": "Seed Pens - Set of 100 (Bulk Buy)",
+    "sku": "HSPP002A",
+    "price": 1600,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "MadeToOrder",
+    "retired": false
+  },
+  {
+    "slug": "seed-pens-set-of-10",
+    "name": "Seed Pen - Set of 10",
+    "sku": "HSPP002",
+    "price": 249,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "seed-rakhi-evil-eye-band",
+    "name": "Seed Rakhi-Evil Eye Band",
+    "sku": "EH-SRE-177",
+    "price": 119,
+    "salePrice": 107.1,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "seed-rakhi-festive-kit",
+    "name": "Eco Seed Rakhi festive kit",
+    "sku": "EH-ESR-933",
+    "price": 399,
+    "salePrice": 349,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "seed-rakhi-lady-finger",
+    "name": "Lady Finger Seed Rakhi",
+    "sku": "EH-LFS-582",
+    "price": 80,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "seed-rakhi-pumpkin",
+    "name": "Pumpkin Seed Rakhi",
+    "sku": "EH-PSR-802",
+    "price": 80,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "seed-rakhi-spinach-and-bittergourd",
+    "name": "Spinach and Bittergourd Rakhi",
+    "sku": "EH-SAB-973",
+    "price": 80,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "seed-rakhi-sunflower",
+    "name": "Sunflower Seed Rakhi",
+    "sku": "EH-SSR-907",
+    "price": 75,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "sunshine-hamper-2026",
+    "name": "Sunshine Hamper 2026",
+    "sku": "EH-SH-202",
+    "price": 999,
+    "salePrice": 799.2,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "sunshine-planner-2026",
+    "name": "Sunshine Planner 2026",
+    "sku": "EH-SP-652",
+    "price": 499,
+    "salePrice": 374.25,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "travel-kit",
+    "name": "Travel Kit",
+    "sku": "HKT001",
+    "price": 550,
+    "salePrice": 440,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "upcycled-bedsheet",
+    "name": "Upcycled Bedsheet",
+    "sku": "EH-UB-763",
+    "price": 1599,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "upcycled-cloth-bags-set-of-10",
+    "name": "Upcycled Cloth Bags - Set of 10",
+    "sku": "EH-UCB-288",
+    "price": 350,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "upcycled-cloth-bags-set-of-5",
+    "name": "Upcycled Cloth Bags - Set of 5",
+    "sku": "EH-UCB-328",
+    "price": 200,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "upcycled-diary-a5",
+    "name": "Upcycled Diary - A5 Size",
+    "sku": "DIAR002",
+    "price": 349,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
+    "slug": "upcycled-patchwork-fabric",
+    "name": "Upcycled Patchwork Fabric",
+    "sku": "EH-UPF-528",
+    "price": 699,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  }
+]

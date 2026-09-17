@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const guides = (await getCollection('guides')).filter((g) => !g.data.draft);
+guides.sort((a, b) => new Date(b.data.datePublished).getTime() - new Date(a.data.datePublished).getTime());
+---
+<BaseLayout title="Learn — Sustainability Guides | Eco Happy" description="Honest guides on plantable stationery, sustainable gifting and spotting greenwashing, written from Eco Happy's own Pune workshop and production floor.">
+  <section class="container hero">
+    <h1>Learn</h1>
+    <p>Straight answers on plantable stationery, sustainable gifting and how to tell a real green claim from marketing — written by the people who make the products.</p>
+  </section>
+  <section class="container grid">
+    {guides.map((g) => (
+      <a class="guide-card card" href={`/learn/${g.data.slug}/`}>
+        {g.data.cover && <img src={g.data.cover} alt={g.data.coverAlt || g.data.title} loading="lazy" width="400" height="240" />}
+        <div class="body">
+          <h2>{g.data.title}</h2>
+          <p>{g.data.description}</p>
+          <p class="meta">{g.data.timeToRead}</p>
+        </div>
+      </a>
+    ))}
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { padding-block: 2rem 1rem; max-width: 68ch; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; padding-block: 1.5rem 3rem; }
+  .guide-card { display: block; text-decoration: none; color: var(--ink); overflow: hidden; }
+  .guide-card img { width: 100%; aspect-ratio: 5/3; object-fit: cover; background: var(--cream); }
+  .guide-card .body { padding: 1rem; }
+  .guide-card h2 { font-size: 1.05rem; margin-bottom: 0.4em; }
+  .guide-card p { font-size: 0.9rem; color: var(--ink); margin-bottom: 0.4em; }
+  .guide-card .meta { color: var(--red-deep); font-size: 0.8rem; }
+</style>

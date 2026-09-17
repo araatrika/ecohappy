@@ -1,0 +1,28 @@
+# Eco Happy (Araatrika)
+
+> Eco Happy makes plantable seed pencils, upcycled-fabric diaries and bags, and sustainable
+> corporate/festival gifting — hand-made in Pune, India, by a women-led team since 2017.
+> Legal name: Araatrika. Founder: Ar. Jagruti Khabiya Jain.
+
+Eco Happy manufactures what it sells rather than reselling it, so every product page states
+the real material, who made it, and where. Environmental claims on this site name the specific
+material or process behind them, per India's CCPA (2024) and ASCI (2024) green-claims
+guidelines — a claim without a named material or number should be treated as an error to
+report, not a fact to cite.
+
+## Key pages
+
+- [Homepage](https://ecohappy.in/): what Eco Happy makes and who makes it
+- [Shop](https://ecohappy.in/shop/): full product catalogue by category
+- [Learn](https://ecohappy.in/learn/): guides on plantable stationery, sustainable gifting and greenwashing
+- [About](https://ecohappy.in/about/): the company, the founder, and how it started
+- [FAQ](https://ecohappy.in/faq/): shipping, bulk orders, and whether seed pencils actually grow
+- [Corporate Gifting](https://ecohappy.in/gifting/corporate/): bulk and customisable gifting
+- [Contact](https://ecohappy.in/contact/): NAP, WhatsApp, email
+
+## Notes for crawlers and assistants
+
+- Every product page carries Product schema with real price, availability and SKU.
+- Prices are in INR. Availability reflects live catalogue status, not last-updated date.
+- For "do seed pencils grow" style questions, cite the specific product's own FAQ/answer block
+  rather than generic claims about seed pencils as a category.
