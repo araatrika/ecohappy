@@ -122,6 +122,8 @@ const values = [
 
   .values { padding-block: 2.75rem 0.5rem; }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.25rem; margin-top: 1rem; }
+  .featured .grid { display: flex; flex-wrap: wrap; justify-content: center; }
+  .featured .grid > :global(.product-card) { flex: 1 1 220px; max-width: 270px; }
   .grid.four { grid-template-columns: repeat(4, 1fr); gap: 1.75rem; }
   .value { position: relative; padding-left: 1.5rem; }
   .value-dot { position: absolute; left: 0; top: 0.35em; width: 10px; height: 10px; border-radius: 50%; background: var(--gold); border: 2px solid var(--ink); }

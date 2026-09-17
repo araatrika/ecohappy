@@ -35,5 +35,5 @@ products.sort((a, b) => a.data.name.localeCompare(b.data.name));
 <style>
   .hero { padding-block: 2rem 1rem; }
   .crumb { font-size: 0.85rem; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.25rem; padding-block: 1.5rem 3rem; }
+  .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; padding-block: 1.5rem 3rem; } .grid > :global(.product-card) { flex: 1 1 220px; max-width: 270px; }
 </style>

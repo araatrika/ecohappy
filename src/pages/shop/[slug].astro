@@ -276,7 +276,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
   .faqs { max-width: 68ch; margin-bottom: 2.5rem; }
   .faqs details { border-bottom: 1px solid var(--cream); padding: 0.75em 0; }
   .faqs summary { cursor: pointer; font-weight: 700; color: var(--ink); }
-  .related .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.25rem; }
+  .related .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; } .related .grid > :global(.product-card) { flex: 1 1 220px; max-width: 270px; }
   @media (max-width: 780px) {
     .layout { grid-template-columns: 1fr; }
   }
