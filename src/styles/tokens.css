@@ -175,3 +175,45 @@ a:hover { color: var(--ink); }
   transition: top 0.15s ease;
 }
 .skip-link:focus { top: 1rem; }
+
+/* ---- Motion utilities: scroll-reveal + marquee (added 17 Sep 2026, "make it lively") ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+.marquee { overflow: hidden; position: relative; }
+.marquee::before, .marquee::after {
+  content: ''; position: absolute; top: 0; bottom: 0; width: 48px; z-index: 2; pointer-events: none;
+}
+.marquee::before { left: 0; background: linear-gradient(90deg, var(--marquee-fade, var(--white)), transparent); }
+.marquee::after { right: 0; background: linear-gradient(270deg, var(--marquee-fade, var(--white)), transparent); }
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 1.5rem;
+  animation: marquee-scroll var(--marquee-duration, 42s) linear infinite;
+}
+.marquee:hover .marquee-track, .marquee:focus-within .marquee-track { animation-play-state: paused; }
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; overflow-x: auto; }
+}
+
+/* ---- Stat blocks: for infographic-style numbers instead of prose ---- */
+.stat-block {
+  display: flex; align-items: center; gap: 1rem;
+  background: var(--cream); border-radius: var(--radius); padding: 1.1rem 1.4rem;
+}
+.stat-block .stat-num {
+  font-family: var(--font-heading); font-size: 2.4rem; line-height: 1; color: var(--forest); white-space: nowrap;
+}
+.stat-block .stat-label { color: var(--gray-500); font-size: 0.9rem; line-height: 1.3; }

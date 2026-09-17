@@ -46,31 +46,41 @@ const steps = [
 ];
 
 // Real customer reviews, quoted verbatim from Eco Happy's public Google Business Profile
-// (google.com/maps listing for "Happy Pencils", 4.8★ from 157 reviews as of Sep 2026).
+// (google.com/maps listing for "Happy Pencils"). Individual per-review star ratings are
+// intentionally NOT displayed here: Google's own overlay renders them as un-labelled sprite
+// icons that are easy to misread at a glance, and we'd rather not risk showing the wrong
+// number next to a real customer's name. The one number below IS verified precisely (Google's
+// own aggregate-rating label) and is shown as the headline stat instead.
 const testimonials = [
   {
     quote: 'They even gave us the option of Branding the diary with our logo, which looks beautiful!! The diaries are covered with beautiful piece of cloth (upcycled) with bookmark which makes us feel proud as we are contributing a little towards conserving mother earth!! This is our second order with them — earlier we ordered paper pencils with seeds and the brand name on it.',
     name: 'Beamish Preschool',
     context: 'Institutional order — branded teacher diaries',
-    rating: 3,
   },
   {
     quote: 'We had ordered customized Seed pens from Happy Pencils (Araatrika) for our college Library Conference. It is really a very good initiative and innovative concept which works towards promoting eco-friendly and sustainable environment. We are happy with the product. Thank you for accepting and delivering our order within a short period of time.',
     name: 'DMCRC Library and Information Centre',
     context: 'Bulk order — conference giveaways',
-    rating: 3,
   },
   {
     quote: 'I ordered Happy Calendars as a return gift for my son’s naming ceremony. It was beautifully customized, I had my son’s name written. The idea of having eco friendly and nature friendly gifts was loved by everyone in the family and by the ones to whom I gifted... I am your forever customer!',
     name: 'Jui Bijapurkar',
     context: 'Personalised return gifts',
-    rating: 3,
   },
   {
     quote: 'Had requested for customized Pencil set for my daughter’s birthday. The order was received well before time. The return gift was liked by one and all. The kids’ mother loved the unique concept.',
     name: 'Ruchi Agarwal',
     context: 'Personalised return gifts',
-    rating: 3,
+  },
+  {
+    quote: 'Stop scrolling and just order already! Jagruti and the team at Happy Pencils have built something genuine. Every product is exactly what they claim to be: eco-friendly, thoughtfully made, and honestly just happy. I’ve been reordering their diaries, calendars, pencils and colouring books for a couple of years now.',
+    name: 'Manasi Bharati',
+    context: 'Repeat customer',
+  },
+  {
+    quote: 'They even gave us the option of Branding the diary with our logo… P.S: This is our second order with them. Earlier we ordered paper pencils with seeds and the brand name on it. Our parents and children totally love them and so do our teachers!!',
+    name: 'Beamish Preschool',
+    context: 'Repeat institutional order',
   },
 ];
 ---
@@ -78,7 +88,7 @@ const testimonials = [
   title="Customised Eco-Friendly Gifts & Stationery | Eco Happy"
   description="Every product we make can be customised — logo, colours, names and packaging, on bulk and export orders. See what we customise and what customers say."
 >
-  <section class="container hero">
+  <section class="container hero reveal">
     <span class="eyebrow">The Eco Happy difference</span>
     <h1>Made your way, every single time</h1>
     <p class="lede">
@@ -93,16 +103,18 @@ const testimonials = [
     </div>
   </section>
 
-  <section class="container customise-grid">
-    <h2>What you can customise</h2>
-    <div class="grid four">
-      {customisable.map((c) => (
-        <div class="custom-card card">
-          <span class="custom-icon" aria-hidden="true" set:html={c.icon} />
-          <h3>{c.title}</h3>
-          <p>{c.body}</p>
-        </div>
-      ))}
+  <section class="section-cream customise-grid">
+    <div class="container">
+      <h2>What you can customise</h2>
+      <div class="grid four">
+        {customisable.map((c, i) => (
+          <div class={`custom-card card reveal reveal-${i}`}>
+            <span class="custom-icon" aria-hidden="true" set:html={c.icon} />
+            <h3>{c.title}</h3>
+            <p>{c.body}</p>
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 
@@ -110,8 +122,8 @@ const testimonials = [
     <div class="container">
       <h2>How customisation works</h2>
       <div class="grid three steps-grid">
-        {steps.map((s) => (
-          <div class="step">
+        {steps.map((s, i) => (
+          <div class={`step reveal reveal-${i}`}>
             <span class="step-n">{s.n}</span>
             <h3>{s.title}</h3>
             <p>{s.body}</p>
@@ -123,24 +135,37 @@ const testimonials = [
 
   <section class="container testimonials-section">
     <h2>What customers say about it</h2>
-    <p class="testimonials-sub">
-      Quoted as written, from Eco Happy’s public Google Business listing (4.8★ from 157 reviews as of September
-      2026). <a href="https://share.google/Uzs5cpE7FHkdCzA9u" target="_blank" rel="noopener">See all reviews on Google →</a>
-    </p>
-    <div class="grid two testimonials-grid">
-      {testimonials.map((t) => (
-        <blockquote class="testimonial card">
-          <div class="stars" aria-label={`${t.rating} out of 5 stars`}>
-            {'★'.repeat(t.rating)}<span class="stars-empty">{'★'.repeat(5 - t.rating)}</span>
-          </div>
-          <p class="quote">“{t.quote}”</p>
-          <footer>
-            <span class="name">{t.name}</span>
-            <span class="context">{t.context} · Google review</span>
-          </footer>
-        </blockquote>
-      ))}
+
+    <a class="stat-block review-stat reveal" href="https://share.google/Uzs5cpE7FHkdCzA9u" target="_blank" rel="noopener">
+      <span class="stat-num">4.8<span class="stat-star" aria-hidden="true">★</span></span>
+      <span class="stat-label">from 157 Google reviews for Happy Pencils (Eco Happy), as of September 2026 — see them all →</span>
+    </a>
+
+    <div class="marquee testimonials-marquee reveal">
+      <div class="marquee-track">
+        {testimonials.map((t) => (
+          <blockquote class="testimonial card">
+            <p class="quote">“{t.quote}”</p>
+            <footer>
+              <span class="name">{t.name}</span>
+              <span class="context">{t.context} · Google review</span>
+            </footer>
+          </blockquote>
+        ))}
+        <div class="marquee-dup" aria-hidden="true">
+          {testimonials.map((t) => (
+            <blockquote class="testimonial card">
+              <p class="quote">“{t.quote}”</p>
+              <footer>
+                <span class="name">{t.name}</span>
+                <span class="context">{t.context} · Google review</span>
+              </footer>
+            </blockquote>
+          ))}
+        </div>
+      </div>
     </div>
+    <p class="marquee-hint">Hover or tap a card to pause · quoted as written, unedited</p>
   </section>
 
   <section class="section-dark cta-banner">
@@ -164,9 +189,9 @@ const testimonials = [
   .lede { font-size: 1.1rem; max-width: 68ch; color: var(--gray-500); }
   .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
 
-  .customise-grid { padding-block: 1rem 2.5rem; }
+  .customise-grid { padding-block: 2.5rem; }
   .grid.four { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-top: 1.25rem; }
-  .custom-card { padding: 1.5rem 1.25rem; display: flex; flex-direction: column; gap: 0.6rem; }
+  .custom-card { padding: 1.5rem 1.25rem; display: flex; flex-direction: column; gap: 0.6rem; background: var(--white); }
   .custom-card h3 { font-size: 1.1rem; margin: 0; }
   .custom-card p { margin: 0; color: var(--gray-500); font-size: 0.95rem; }
   .custom-icon {
@@ -174,6 +199,8 @@ const testimonials = [
     border-radius: 50%; background: var(--cream); color: var(--forest);
   }
   .custom-icon :global(svg) { width: 24px; height: 24px; }
+  .reveal-0 { transition-delay: 0s; } .reveal-1 { transition-delay: 0.08s; }
+  .reveal-2 { transition-delay: 0.16s; } .reveal-3 { transition-delay: 0.24s; }
 
   .steps-section { padding-block: 2.5rem; }
   .grid.three.steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; margin-top: 1.5rem; }
@@ -186,15 +213,24 @@ const testimonials = [
   .step p { margin: 0; color: var(--gray-500); font-size: 0.95rem; }
 
   .testimonials-section { padding-block: 2.5rem 3rem; }
-  .testimonials-sub { color: var(--gray-500); max-width: 60ch; margin-top: -0.5rem; margin-bottom: 1.5rem; }
-  .grid.two.testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
-  .testimonial { padding: 1.5rem; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; }
-  .stars { color: var(--gold); font-size: 1rem; letter-spacing: 0.1em; }
-  .stars-empty { color: var(--gray-300); }
+  .review-stat {
+    text-decoration: none; margin: 1.25rem 0 2rem; max-width: 620px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .review-stat:hover { transform: translateY(-2px); box-shadow: var(--shadow-card); }
+  .stat-star { color: var(--gold); font-size: 1.6rem; margin-left: 0.15em; }
+  .review-stat .stat-label { color: var(--ink); }
+
+  .testimonials-marquee { --marquee-fade: var(--white); --marquee-duration: 55s; margin: 0 -1.25rem; padding: 0 1.25rem; }
+  .marquee-dup { display: contents; }
+  .testimonials-marquee .testimonial {
+    width: 360px; flex-shrink: 0; padding: 1.5rem; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;
+  }
   .testimonial .quote { margin: 0; font-style: italic; color: var(--ink); }
   .testimonial footer { display: flex; flex-direction: column; gap: 0.1rem; margin-top: auto; }
   .testimonial .name { font-weight: 700; }
   .testimonial .context { font-size: 0.85rem; color: var(--gray-500); }
+  .marquee-hint { text-align: center; color: var(--gray-400); font-size: 0.82rem; margin-top: 0.75rem; }
 
   .cta-banner { padding-block: 3rem; margin-top: 1rem; }
   .cta-inner { text-align: center; max-width: 640px; margin: 0 auto; }

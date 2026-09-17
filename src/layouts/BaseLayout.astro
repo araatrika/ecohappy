@@ -103,5 +103,30 @@ const orgSchema = {
       <slot />
     </main>
     <Footer />
+    <script>
+      // Scroll-reveal for .reveal elements. Skips entirely for prefers-reduced-motion
+      // (handled in CSS too, this just avoids the observer overhead).
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const io = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                io.unobserve(entry.target);
+              }
+            }
+          },
+          { threshold: 0.05, rootMargin: '0px 0px 100px 0px' }
+        );
+        document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+        // Safety net: never leave content permanently invisible (e.g. a fast scroll/flick
+        // that skips the intersection threshold, or a direct #anchor jump).
+        setTimeout(() => {
+          document.querySelectorAll('.reveal:not(.is-visible)').forEach((el) => el.classList.add('is-visible'));
+        }, 2500);
+      } else {
+        document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-visible'));
+      }
+    </script>
   </body>
 </html>

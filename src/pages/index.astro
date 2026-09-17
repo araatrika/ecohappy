@@ -17,6 +17,13 @@ const categoryTiles = site.categories.map((cat) => {
   return { ...cat, count: inCategory.length, cover };
 });
 
+const yearsActive = new Date().getFullYear() - Number(site.foundingDate);
+const trustStats = [
+  { num: String(allProducts.length) + '+', label: 'products made in-house' },
+  { num: '8', label: 'women in the production team' },
+  { num: String(yearsActive), label: 'years rolling pencils by hand' },
+];
+
 const values = [
   {
     title: 'No plastic',
@@ -66,7 +73,7 @@ const values = [
     </div>
   </section>
 
-  <section class="container values">
+  <section class="container values reveal">
     <div class="grid four">
       {values.map((v) => (
         <div class="value">
@@ -78,7 +85,8 @@ const values = [
     </div>
   </section>
 
-  <section class="container shop-by-cat">
+  <section class="section-cream shop-by-cat-section">
+    <div class="container shop-by-cat reveal">
     <h2>Shop by category</h2>
     <div class="cat-grid">
       {categoryTiles.map((cat) => (
@@ -97,9 +105,10 @@ const values = [
         </a>
       ))}
     </div>
+    </div>
   </section>
 
-  <section class="container featured">
+  <section class="container featured reveal">
     <h2>Shop our favourites</h2>
     {featured.length > 0 ? (
       <div class="grid">
@@ -111,7 +120,7 @@ const values = [
     <p class="see-all"><a class="btn btn-outline" href="/shop/all-products/">See all products</a></p>
   </section>
 
-  <section class="container impact-teaser">
+  <section class="container impact-teaser reveal">
     <div class="impact-inner">
       <div class="impact-copy">
         <span class="eyebrow">New</span>
@@ -136,10 +145,18 @@ const values = [
         We're building an honest, dated record of what we actually make and use — no invented numbers, ever.
         Read <a href="/about/">how Eco Happy works</a> and <a href="/learn/">what actually happens when you plant a seed pencil</a>.
       </p>
+      <div class="trust-stats">
+        {trustStats.map((t) => (
+          <div class="trust-stat">
+            <span class="trust-num">{t.num}</span>
+            <span class="trust-label">{t.label}</span>
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 
-  <section class="container gifting-strip">
+  <section class="container gifting-strip reveal">
     <h2>Gifting, done right</h2>
     <div class="grid four">
       <a class="card gift-card gift-card-highlight" href="/customisation/">
@@ -208,11 +225,12 @@ const values = [
   .value h3 { font-size: 1rem; text-transform: none; margin: 0; }
   .value p { font-size: 0.88rem; color: var(--gray-500); margin: 0; }
 
-  .shop-by-cat { padding-block: 1rem 0.5rem; }
+  .shop-by-cat-section { padding-block: 2.5rem; }
+  .shop-by-cat { padding-block: 0; }
   .cat-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.25rem; margin-top: 1.25rem; }
   .cat-card {
     display: block; text-decoration: none; color: var(--ink); overflow: hidden; border: 1px solid var(--gray-200);
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    background: var(--white); transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
   .cat-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(13,13,13,0.1); }
   .cat-media { aspect-ratio: 4 / 3; background: var(--gray-100); overflow: hidden; }
@@ -240,6 +258,10 @@ const values = [
 
   .trust { padding-block: 3rem; }
   .trust-inner { max-width: 68ch; }
+  .trust-stats { display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 1.75rem; }
+  .trust-stat { display: flex; flex-direction: column; }
+  .trust-num { font-family: var(--font-heading); font-size: 2.25rem; color: var(--gold); line-height: 1; }
+  .trust-label { color: var(--white); opacity: 0.75; font-size: 0.85rem; max-width: 16ch; margin-top: 0.3em; }
 
   .gifting-strip { padding-block: 1rem 3.5rem; }
   .gift-card-highlight { border-top-color: var(--forest); background: var(--cream); }
