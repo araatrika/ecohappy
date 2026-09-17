@@ -5,7 +5,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 // Generic renderer for simple content pages (about, contact, faq, gifting-*, shipping, terms).
 // Home, Shop and Learn have their own custom-built pages and are excluded here.
 export async function getStaticPaths() {
-  const excludedSlugs = ['home', 'shop', 'learn', 'sale', 'payment-request', 'shop-home-and-travel'];
+  const excludedSlugs = ['home', 'shop', 'learn', 'sale', 'payment-request', 'shop-home-and-travel', 'gifting-corporate', 'gifting-return-gifts', 'gifting-bulk-and-custom'];
   const pages = await getCollection('pages');
   return pages
     .filter((p) => !excludedSlugs.includes(p.data.slug) && p.data.newUrl)

@@ -21,6 +21,20 @@ const related = p.related
   .filter(Boolean)
   .slice(0, 3);
 
+// Spec keys are stored camelCase in frontmatter; the table needs human labels.
+const SPEC_LABELS = {
+  material: 'Material',
+  size: 'Size',
+  pages: 'Pages',
+  seeds: 'Seeds',
+  contents: 'Contents',
+  packaging: 'Packaging',
+  madeIn: 'Made in',
+  madeBy: 'Made by',
+};
+// Unknown keys (a new one added through /admin) de-camelCase rather than print raw.
+const specLabel = (k) =>
+  SPEC_LABELS[k] || k.replace(/([a-z0-9])([A-Z])/g, '$1 $2').replace(/^./, (c) => c.toUpperCase());
 const specsEntries = Object.entries(p.specs || {});
 
 const productSchema = {
@@ -134,7 +148,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
             <caption class="visually-hidden">Product specifications</caption>
             <tbody>
               {specsEntries.map(([k, v]) => (
-                <tr><th scope="row">{k}</th><td>{String(v)}</td></tr>
+                <tr><th scope="row">{specLabel(k)}</th><td>{String(v)}</td></tr>
               ))}
             </tbody>
           </table>

@@ -1,8 +1,8 @@
 ---
-title: "BIRTHDAY RETURN GIFTS | Eco Happy"
+title: "Birthday Return Gifts | Eco Happy"
 slug: gifting-return-gifts
 newUrl: /gifting/return-gifts/
-description: Eco Happy is an attempt towards creating a conscious retail of Eco Happy products in India dealing with stationery and gifting.
+description: Plantable, plastic-free bulk return gifts — seed pencils and pens kids can plant, made to order for birthdays and celebrations.
 h1: []
 forms: []
 productsListed:

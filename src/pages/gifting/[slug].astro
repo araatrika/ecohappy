@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import site from '../../data/site.json';
+
+// Custom template for the 3 gifting collection pages (corporate, return-gifts, bulk-and-custom).
+// These came from the Wix migration as raw scraped product-list markdown (duplicate images,
+// full-width thumbnails rendering "zoomed in"), so they get their own ProductCard grid here
+// instead of going through the generic [...slug].astro prose renderer.
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  const giftingPages = pages.filter((p) => p.data.slug.startsWith('gifting-'));
+  return giftingPages.map((p) => {
+    const clean = p.data.newUrl.replace(/^\/gifting\/|\/$/g, '');
+    return { params: { slug: clean }, props: { entry: p } };
+  });
+}
+
+const { entry } = Astro.props;
+const p = entry.data;
+const title = p.title.replace(/^"|"$/g, '').replace(/\s*\|\s*Eco Happy\s*$/i, '');
+
+const allProducts = (await getCollection('products')).filter((prod) => !prod.data.retired);
+const featured = (p.productsListed || [])
+  .map((name) => allProducts.find((prod) => prod.data.name.toLowerCase() === name.toLowerCase()))
+  .filter(Boolean);
+
+const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about ${title.toLowerCase()}.`);
+---
+<BaseLayout title={p.title} description={p.description}>
+  <section class="container hero">
+    <h1>{title}</h1>
+    <p class="lede">{p.description}</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href={`${site.whatsapp.direct}?text=${whatsappMsg}`} target="_blank" rel="noopener">Ask on WhatsApp</a>
+      <a class="btn btn-outline" href="/contact/">Contact us</a>
+    </div>
+  </section>
+
+  {featured.length > 0 && (
+    <section class="container grid">
+      {featured.map((product) => <ProductCard product={product} />)}
+    </section>
+  )}
+</BaseLayout>
+
+<style>
+  .hero { max-width: 62ch; padding-block: 2rem 1rem; }
+  .lede { font-size: 1.05rem; color: var(--gray-500); }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
+  .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; padding-block: 2rem 3rem; }
+  .grid > :global(.product-card) { flex: 1 1 220px; max-width: 270px; }
+</style>

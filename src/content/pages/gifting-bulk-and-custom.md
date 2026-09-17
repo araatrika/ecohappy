@@ -1,8 +1,8 @@
 ---
-title: "BIRTHDAY RETURN GIFTS | Eco Happy"
+title: "Bulk & Custom Gifting | Eco Happy"
 slug: gifting-bulk-and-custom
 newUrl: /gifting/bulk-and-custom/
-description: Eco Happy is an attempt towards creating a conscious retail of Eco Happy products in India dealing with stationery and gifting.
+description: Bulk seed pencils, pens and diaries with your logo — pricing and lead times for large corporate and event orders from Eco Happy.
 h1: []
 forms: []
 productsListed:
