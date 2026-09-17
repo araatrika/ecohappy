@@ -5,11 +5,17 @@ import ProductCard from '../components/ProductCard.astro';
 import site from '../data/site.json';
 
 const homePage = await getEntry('pages', 'home');
-const allProducts = await getCollection('products');
+const allProducts = (await getCollection('products')).filter((p) => !p.data.retired);
 const featuredNames = homePage?.data.productsListed || [];
 const featured = featuredNames
   .map((name) => allProducts.find((p) => p.data.name.toLowerCase() === name.toLowerCase()))
   .filter(Boolean);
+
+const categoryTiles = site.categories.map((cat) => {
+  const inCategory = allProducts.filter((p) => p.data.category === cat.slug);
+  const cover = inCategory.find((p) => p.data.images?.length)?.data.images?.[0];
+  return { ...cat, count: inCategory.length, cover };
+});
 
 const values = [
   {
@@ -72,6 +78,27 @@ const values = [
     </div>
   </section>
 
+  <section class="container shop-by-cat">
+    <h2>Shop by category</h2>
+    <div class="cat-grid">
+      {categoryTiles.map((cat) => (
+        <a class="cat-card card" href={cat.url}>
+          <div class="cat-media">
+            {cat.cover ? (
+              <img src={cat.cover.src} alt={cat.cover.alt || cat.name} loading="lazy" width="300" height="220" />
+            ) : (
+              <div class="cat-media placeholder" aria-hidden="true"></div>
+            )}
+          </div>
+          <div class="cat-body">
+            <h3>{cat.name}</h3>
+            <span class="cat-count">{cat.count} product{cat.count === 1 ? '' : 's'} &rarr;</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+
   <section class="container featured">
     <h2>Shop our favourites</h2>
     {featured.length > 0 ? (
@@ -79,9 +106,25 @@ const values = [
         {featured.map((p) => <ProductCard product={p} />)}
       </div>
     ) : (
-      <p><a href="/shop/">See everything we make →</a></p>
+      <p><a href="/shop/all-products/">See everything we make →</a></p>
     )}
-    <p class="see-all"><a class="btn btn-outline" href="/shop/">See all products</a></p>
+    <p class="see-all"><a class="btn btn-outline" href="/shop/all-products/">See all products</a></p>
+  </section>
+
+  <section class="container impact-teaser">
+    <div class="impact-inner">
+      <div class="impact-copy">
+        <span class="eyebrow">New</span>
+        <h2>How much does switching actually save?</h2>
+        <p>Three quick calculators for pens, pencils, notebooks and corporate bulk orders &mdash; built on published emission factors, not invented numbers.</p>
+        <a class="btn btn-primary" href="/impact-calculator/">Try the impact calculator</a>
+      </div>
+      <div class="impact-stats" aria-hidden="true">
+        <div class="mini-stat"><span>~2.5</span>kg CO2e per kg of plastic avoided</div>
+        <div class="mini-stat"><span>~10g</span>plastic in a typical pen, per unit</div>
+        <div class="mini-stat"><span>45%</span>less CO2e from recycled vs virgin paper</div>
+      </div>
+    </div>
   </section>
 
   <section class="section-dark trust">
@@ -160,9 +203,35 @@ const values = [
   .value h3 { font-size: 1rem; text-transform: none; margin: 0; }
   .value p { font-size: 0.88rem; color: var(--gray-500); margin: 0; }
 
+  .shop-by-cat { padding-block: 1rem 0.5rem; }
+  .cat-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.25rem; margin-top: 1.25rem; }
+  .cat-card {
+    display: block; text-decoration: none; color: var(--ink); overflow: hidden; border: 1px solid var(--gray-200);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .cat-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(13,13,13,0.1); }
+  .cat-media { aspect-ratio: 4 / 3; background: var(--gray-100); overflow: hidden; }
+  .cat-media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease; }
+  .cat-card:hover .cat-media img { transform: scale(1.08); }
+  .cat-body { padding: 0.85rem 0.9rem 1rem; }
+  .cat-body h3 { font-size: 0.95rem; text-transform: none; margin-bottom: 0.35em; }
+  .cat-count { font-weight: 700; color: var(--red-deep); font-size: 0.78rem; }
+
   .featured { padding-block: 3rem; }
   .see-all { text-align: center; margin-top: 2rem; }
   .grid.three { grid-template-columns: repeat(3, 1fr); }
+
+  .impact-teaser { padding-block: 1rem 3rem; }
+  .impact-inner {
+    display: grid; grid-template-columns: 1.1fr 1fr; gap: 2.5rem; align-items: center;
+    background: var(--blush); border-radius: var(--radius); padding: 2rem;
+  }
+  .impact-copy .eyebrow { display: inline-block; background: var(--ink); color: var(--white); font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 0.25em 0.6em; border-radius: 4px; margin-bottom: 0.75em; }
+  .impact-copy h2 { margin-bottom: 0.4em; }
+  .impact-copy p { color: var(--gray-500); margin-bottom: 1.25em; max-width: 42ch; }
+  .impact-stats { display: flex; flex-direction: column; gap: 0.9rem; }
+  .mini-stat { background: var(--white); border-radius: var(--radius); padding: 0.85rem 1rem; font-size: 0.82rem; color: var(--gray-500); }
+  .mini-stat span { display: block; font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--ink); }
 
   .trust { padding-block: 3rem; }
   .trust-inner { max-width: 68ch; }
@@ -179,10 +248,16 @@ const values = [
 
   @media (max-width: 900px) {
     .grid.four { grid-template-columns: repeat(2, 1fr); }
+    .cat-grid { grid-template-columns: repeat(3, 1fr); }
+    .impact-inner { grid-template-columns: 1fr; }
   }
   @media (max-width: 780px) {
     .hero-inner { grid-template-columns: 1fr; }
     .grid.three { grid-template-columns: 1fr; }
     .grid.four { grid-template-columns: 1fr 1fr; }
+    .cat-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 480px) {
+    .cat-grid { grid-template-columns: 1fr; }
   }
 </style>

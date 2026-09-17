@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ProductCard from '../../../components/ProductCard.astro';
+import site from '../../../data/site.json';
+
+const allProducts = (await getCollection('products')).filter((p) => !p.data.retired);
+allProducts.sort((a, b) => a.data.name.localeCompare(b.data.name));
+---
+<BaseLayout title="All Products | Eco Happy" description="Every plantable and eco-friendly product Eco Happy makes, in one list — or browse by category from the main shop page.">
+  <section class="container hero">
+    <p class="crumb"><a href="/shop/">Shop</a> / All products</p>
+    <h1>All products</h1>
+    <p>{allProducts.length} eco-friendly products, made by hand in our Pune workshop.</p>
+    <nav class="cat-filter" aria-label="Shop by category">
+      {site.categories.map((c) => (
+        <a class="btn btn-outline" href={c.url}>{c.name}</a>
+      ))}
+    </nav>
+  </section>
+  <section class="container grid">
+    {allProducts.map((product) => <ProductCard product={product} />)}
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { padding-block: 2rem 1rem; }
+  .crumb { font-size: 0.85rem; }
+  .cat-filter { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
+  .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; padding-block: 1.5rem 3rem; }
+  .grid > :global(.product-card) { flex: 1 1 180px; max-width: 220px; }
+</style>

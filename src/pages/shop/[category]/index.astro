@@ -27,7 +27,7 @@ products.sort((a, b) => a.data.name.localeCompare(b.data.name));
     {products.length > 0 ? (
       products.map((product) => <ProductCard product={product} />)
     ) : (
-      <p>New products in this category are on the way — meanwhile, see <a href="/shop/">everything we make</a>.</p>
+      <p>New products in this category are on the way — meanwhile, see <a href="/shop/all-products/">everything we make</a>.</p>
     )}
   </section>
 </BaseLayout>

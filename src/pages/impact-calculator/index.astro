@@ -1,0 +1,190 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Impact Calculator — Estimate Plastic & CO2e Avoided | Eco Happy"
+  description="Three quick calculators estimating the plastic and CO2e avoided by switching from conventional pens, pencils, notebooks and corporate gifts to Eco Happy's plantable and upcycled versions, using published third-party emission factors."
+>
+  <section class="container hero">
+    <p class="eyebrow">Honesty, not greenwashing</p>
+    <h1>Estimate your impact</h1>
+    <p class="lede">
+      Three quick calculators for switching everyday stationery and corporate gifting to plastic-free,
+      plantable alternatives. Every number below comes from a published third-party source, applied to a
+      typical product weight &mdash; these are estimates for illustration, not a measurement of your exact order.
+      See <a href="#methodology">methodology &amp; sources</a> below.
+    </p>
+  </section>
+
+  <section class="container tools">
+    <div class="tool card">
+      <h2>1. Pens &amp; pencils swap</h2>
+      <p class="tool-copy">How many pens or pencils does your team get through in a year?</p>
+      <label class="field">
+        <span>Pens/pencils per year</span>
+        <input type="number" id="tool1-qty" min="0" value="500" step="10" />
+      </label>
+      <div class="result" id="tool1-result" aria-live="polite">
+        <div class="stat"><span class="stat-num" id="tool1-plastic">0</span><span class="stat-label">kg plastic avoided</span></div>
+        <div class="stat"><span class="stat-num" id="tool1-co2">0</span><span class="stat-label">kg CO2e avoided</span></div>
+      </div>
+      <p class="tool-note">Assumes each conventional pen/pencil is ~10g of plastic, replaced with a newspaper or seed pencil that adds none.</p>
+    </div>
+
+    <div class="tool card">
+      <h2>2. Corporate bulk order</h2>
+      <p class="tool-copy">How many seed pens or pencils are you ordering for a corporate gift run?</p>
+      <label class="field">
+        <span>Units in the order</span>
+        <input type="number" id="tool2-qty" min="0" value="200" step="10" />
+      </label>
+      <div class="result" id="tool2-result" aria-live="polite">
+        <div class="stat"><span class="stat-num" id="tool2-plastic">0</span><span class="stat-label">kg plastic avoided</span></div>
+        <div class="stat"><span class="stat-num" id="tool2-co2">0</span><span class="stat-label">kg CO2e avoided</span></div>
+        <div class="stat"><span class="stat-num" id="tool2-seeds">0</span><span class="stat-label">seeds handed out</span></div>
+      </div>
+      <p class="tool-note">Same plastic/CO2e assumption as above. "Seeds handed out" simply counts one embedded seed per unit &mdash; whether it gets planted is up to the recipient.</p>
+    </div>
+
+    <div class="tool card">
+      <h2>3. Notebooks &amp; diaries</h2>
+      <p class="tool-copy">How many notebooks or diaries does your team use in a year?</p>
+      <label class="field">
+        <span>Notebooks/diaries per year</span>
+        <input type="number" id="tool3-qty" min="0" value="100" step="5" />
+      </label>
+      <div class="result" id="tool3-result" aria-live="polite">
+        <div class="stat"><span class="stat-num" id="tool3-co2">0</span><span class="stat-label">kg CO2e avoided</span></div>
+      </div>
+      <p class="tool-note">Assumes ~100g of paper per A5 notebook, comparing virgin-paper production against recycled/upcycled paper production.</p>
+    </div>
+  </section>
+
+  <section class="container cta-strip">
+    <p>Want these numbers for a real order?</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://wa.me/919422062333" target="_blank" rel="noopener">Ask on WhatsApp</a>
+      <a class="btn btn-outline" href="/gifting/corporate/">See corporate gifting</a>
+    </div>
+  </section>
+
+  <section class="container methodology" id="methodology">
+    <h2>Methodology &amp; sources</h2>
+    <p>
+      These calculators multiply a typical product weight by a published emissions factor. They are rough,
+      illustrative estimates &mdash; not a certified carbon audit of your specific order &mdash; and none of the
+      figures below are Eco Happy's own measured impact data (we don't publish invented numbers; see
+      <a href="/about/">how Eco Happy works</a>).
+    </p>
+    <ul>
+      <li><strong>Plastic production footprint:</strong> ~2.5 kg CO2e per kg of plastic (cradle-to-gate), from the UK Government's 2021 GHG Conversion Factors for average plastic film, via <a href="https://www.climatiq.io/data/emission-factor/e8eed92f-6260-418f-ad53-32839143e48b" target="_blank" rel="noopener">Climatiq</a>.</li>
+      <li><strong>Paper production footprint:</strong> virgin paper ~1.0 kg CO2e/kg, recycled paper ~0.55 kg CO2e/kg, midpoints of the ranges published by <a href="https://ecohedge.com/data/factors/paper" target="_blank" rel="noopener">EcoHedge</a>.</li>
+      <li><strong>Typical pen weight:</strong> ~10g of plastic, based on a standard ballpoint pen (e.g. a BIC Cristal), per <a href="https://measuringly.com/how-much-does-pen-weigh/" target="_blank" rel="noopener">measuringly.com</a>.</li>
+      <li><strong>Typical notebook weight:</strong> ~100g of paper for a standard A5 notebook &mdash; our own rounded estimate for a ~100-page notebook, not a third-party figure.</li>
+    </ul>
+    <p class="fine">Have better data for your specific products or order volumes? Tell us and we'll refine these assumptions.</p>
+  </section>
+</BaseLayout>
+
+<script>
+  const PLASTIC_CO2_PER_KG = 2.5;
+  const PEN_PLASTIC_G = 10;
+  const PAPER_VIRGIN_CO2_PER_KG = 1.0;
+  const PAPER_RECYCLED_CO2_PER_KG = 0.55;
+  const NOTEBOOK_PAPER_G = 100;
+
+  function fmt(n) {
+    return n.toLocaleString('en-IN', { maximumFractionDigits: 1 });
+  }
+
+  function bindTool1() {
+    const qtyEl = document.getElementById('tool1-qty');
+    const plasticEl = document.getElementById('tool1-plastic');
+    const co2El = document.getElementById('tool1-co2');
+    function update() {
+      const qty = Math.max(0, Number(qtyEl.value) || 0);
+      const plasticKg = (qty * PEN_PLASTIC_G) / 1000;
+      const co2Kg = plasticKg * PLASTIC_CO2_PER_KG;
+      plasticEl.textContent = fmt(plasticKg);
+      co2El.textContent = fmt(co2Kg);
+    }
+    qtyEl.addEventListener('input', update);
+    update();
+  }
+
+  function bindTool2() {
+    const qtyEl = document.getElementById('tool2-qty');
+    const plasticEl = document.getElementById('tool2-plastic');
+    const co2El = document.getElementById('tool2-co2');
+    const seedsEl = document.getElementById('tool2-seeds');
+    function update() {
+      const qty = Math.max(0, Number(qtyEl.value) || 0);
+      const plasticKg = (qty * PEN_PLASTIC_G) / 1000;
+      const co2Kg = plasticKg * PLASTIC_CO2_PER_KG;
+      plasticEl.textContent = fmt(plasticKg);
+      co2El.textContent = fmt(co2Kg);
+      seedsEl.textContent = fmt(qty);
+    }
+    qtyEl.addEventListener('input', update);
+    update();
+  }
+
+  function bindTool3() {
+    const qtyEl = document.getElementById('tool3-qty');
+    const co2El = document.getElementById('tool3-co2');
+    function update() {
+      const qty = Math.max(0, Number(qtyEl.value) || 0);
+      const paperKg = (qty * NOTEBOOK_PAPER_G) / 1000;
+      const co2Kg = paperKg * (PAPER_VIRGIN_CO2_PER_KG - PAPER_RECYCLED_CO2_PER_KG);
+      co2El.textContent = fmt(co2Kg);
+    }
+    qtyEl.addEventListener('input', update);
+    update();
+  }
+
+  bindTool1();
+  bindTool2();
+  bindTool3();
+</script>
+
+<style>
+  .hero { max-width: 68ch; padding-block: 2rem 1rem; }
+  .eyebrow { font-family: var(--font-body); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red-deep); }
+  .lede { font-size: 1.05rem; color: var(--gray-500); }
+  .lede a { color: var(--red-deep); }
+
+  .tools { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; padding-block: 1rem 2.5rem; }
+  .tool { padding: 1.5rem; border: 1px solid var(--gray-200); }
+  .tool h2 { font-size: 1.15rem; margin-bottom: 0.4em; }
+  .tool-copy { font-size: 0.9rem; color: var(--gray-500); margin-bottom: 1rem; }
+  .field { display: block; margin-bottom: 1.25rem; }
+  .field span { display: block; font-size: 0.8rem; font-weight: 700; margin-bottom: 0.4em; }
+  .field input {
+    width: 100%; padding: 0.6em 0.75em; border: 1px solid var(--gray-300); border-radius: var(--radius);
+    font-size: 1rem; font-family: var(--font-body);
+  }
+  .field input:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+  .result { display: flex; flex-wrap: wrap; gap: 1rem; background: var(--cream); border-radius: var(--radius); padding: 1rem; margin-bottom: 0.75rem; }
+  .stat { flex: 1 1 auto; min-width: 90px; }
+  .stat-num { display: block; font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; color: var(--red-deep); }
+  .stat-label { display: block; font-size: 0.72rem; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.04em; }
+  .tool-note { font-size: 0.78rem; color: var(--gray-500); margin: 0; }
+
+  .cta-strip { text-align: center; padding-block: 1rem 3rem; }
+  .cta-strip p { font-weight: 700; margin-bottom: 0.75rem; }
+  .cta-row { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.75rem; }
+
+  .methodology { max-width: 72ch; padding-block: 2rem 3.5rem; border-top: 1px solid var(--gray-200); }
+  .methodology h2 { font-size: 1.1rem; }
+  .methodology ul { padding-left: 1.2rem; }
+  .methodology li { margin-bottom: 0.6em; font-size: 0.9rem; color: var(--gray-500); }
+  .methodology li strong { color: var(--ink); }
+  .methodology .fine { font-size: 0.85rem; font-style: italic; }
+
+  @media (max-width: 900px) {
+    .tools { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 600px) {
+    .tools { grid-template-columns: 1fr; }
+  }
+</style>

@@ -95,7 +95,7 @@
     "Society of Women Engineers (SWE)",
     "Trouv",
     "Amulya Boondh",
-    "Santé Spa Cuisine",
+    "Sant\u00e9 Spa Cuisine",
     "LuLu Mall",
     "Reliance Industries Limited",
     "Savitribai Phule Pune University",
@@ -111,7 +111,7 @@
     "Six Senses"
   ],
   "shipping": {
-    "dispatchDays": "2–3 working days",
+    "dispatchDays": "2\u20133 working days",
     "freeShipping": "Free shipping pan-India (stated on Wix listings and LinkedIn); confirm threshold",
     "policySource": "/shipping-and-returns/"
   },
@@ -128,27 +128,32 @@
     {
       "slug": "corporate-bulk-and-branding",
       "name": "Bulk Gifting & Branding",
-      "url": "/shop/corporate-bulk-and-branding/"
+      "url": "/shop/corporate-bulk-and-branding/",
+      "description": "Logo printing and bulk pricing on seed pens, pencils and paper -- made to order for large corporate runs."
     },
     {
       "slug": "festive-corporate-gifting",
       "name": "Festive & Seasonal Corporate Gifting",
-      "url": "/shop/festive-corporate-gifting/"
+      "url": "/shop/festive-corporate-gifting/",
+      "description": "Rakhis, calendars, planners and festive kits for Diwali, Raksha Bandhan and year-round celebrations."
     },
     {
       "slug": "employee-welcome-kits",
       "name": "Employee Welcome Kits",
-      "url": "/shop/employee-welcome-kits/"
+      "url": "/shop/employee-welcome-kits/",
+      "description": "Travel and desk kits, toothbrushes and mandala books for onboarding, wellness and appreciation."
     },
     {
       "slug": "client-gift-hampers",
       "name": "Client & Leadership Hampers",
-      "url": "/shop/client-gift-hampers/"
+      "url": "/shop/client-gift-hampers/",
+      "description": "Premium boxed hampers for clients, leadership gifting and milestone moments."
     },
     {
       "slug": "everyday-desk-essentials",
       "name": "Everyday Desk Essentials",
-      "url": "/shop/everyday-desk-essentials/"
+      "url": "/shop/everyday-desk-essentials/",
+      "description": "Diaries, notebooks and cloth bags people actually use at their desk, every day."
     }
   ],
   "email": "hi@ecohappy.in",
@@ -156,7 +161,7 @@
   "geo_approx": {
     "latitude": 18.4774257,
     "longitude": 73.8508126,
-    "source": "OpenStreetMap Nominatim pincode-centroid for 411009 (Pune), 16 Sep 2026 — NOT the exact building; owner should replace with the precise pin from Google Business Profile before launch."
+    "source": "OpenStreetMap Nominatim pincode-centroid for 411009 (Pune), 16 Sep 2026 \u2014 NOT the exact building; owner should replace with the precise pin from Google Business Profile before launch."
   },
   "mapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=Gurudatta+Niwas+95%2F791+Gajanan+Maharaj+Chowk+Laxmi+Nagar+Parvati+Peth+Pune+411009"
 }

@@ -1,29 +1,70 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ProductCard from '../../components/ProductCard.astro';
 import site from '../../data/site.json';
 
 const allProducts = (await getCollection('products')).filter((p) => !p.data.retired);
-allProducts.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+// One representative image per category, so the tile always matches a real in-stock product.
+const categoryTiles = site.categories.map((cat) => {
+  const inCategory = allProducts.filter((p) => p.data.category === cat.slug);
+  const cover = inCategory.find((p) => p.data.images?.length)?.data.images?.[0];
+  return { ...cat, count: inCategory.length, cover };
+});
 ---
-<BaseLayout title="Shop Plantable Stationery | Eco Happy" description="Plantable stationery and eco-friendly gifts, made in Pune by a women-led team since 2017. Seed pencils, upcycled diaries, festive kits and more.">
+<BaseLayout title="Shop Plantable Stationery | Eco Happy" description="Plantable stationery and eco-friendly gifts, made in Pune by a women-led team since 2017 — browse by corporate gifting, festive, welcome kits, hampers or everyday essentials.">
   <section class="container hero">
     <h1>Shop all products</h1>
-    <p>{allProducts.length} eco-friendly products, made by hand in our Pune workshop.</p>
-    <nav class="cat-filter" aria-label="Shop by category">
-      {site.categories.map((c) => (
-        <a class="btn btn-outline" href={c.url}>{c.name}</a>
-      ))}
-    </nav>
+    <p>{allProducts.length} eco-friendly products, made by hand in our Pune workshop — browse by category to find the right fit.</p>
   </section>
-  <section class="container grid">
-    {allProducts.map((product) => <ProductCard product={product} />)}
+
+  <section class="container cat-grid">
+    {categoryTiles.map((cat) => (
+      <a class="cat-card card" href={cat.url}>
+        <div class="cat-media">
+          {cat.cover ? (
+            <img src={cat.cover.src} alt={cat.cover.alt || cat.name} loading="lazy" width="400" height="300" />
+          ) : (
+            <div class="cat-media placeholder" aria-hidden="true"></div>
+          )}
+        </div>
+        <div class="cat-body">
+          <h2>{cat.name}</h2>
+          <p>{cat.description}</p>
+          <span class="cat-count">{cat.count} product{cat.count === 1 ? '' : 's'} &rarr;</span>
+        </div>
+      </a>
+    ))}
+  </section>
+
+  <section class="container all-link">
+    <p>Know exactly what you're after? <a href="/shop/all-products/">See the full catalogue</a> instead.</p>
   </section>
 </BaseLayout>
 
 <style>
-  .hero { padding-block: 2rem 1rem; }
-  .cat-filter { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1rem; }
-  .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; padding-block: 1.5rem 3rem; } .grid > :global(.product-card) { flex: 1 1 180px; max-width: 220px; }
+  .hero { padding-block: 2rem 1rem; max-width: 68ch; }
+  .cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; padding-block: 1rem 1rem; }
+  .cat-card {
+    display: block; text-decoration: none; color: var(--ink); overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .cat-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(13,13,13,0.12); }
+  .cat-media { aspect-ratio: 4 / 3; background: var(--gray-100); overflow: hidden; }
+  .cat-media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease; }
+  .cat-card:hover .cat-media img { transform: scale(1.08); }
+  .cat-body { padding: 1.1rem 1.1rem 1.3rem; }
+  .cat-body h2 { font-size: 1.15rem; margin-bottom: 0.4em; }
+  .cat-body p { font-size: 0.88rem; color: var(--gray-500); margin-bottom: 0.75em; }
+  .cat-count { font-weight: 700; color: var(--red-deep); font-size: 0.85rem; }
+  .all-link { padding-block: 0.5rem 3rem; font-size: 0.9rem; color: var(--gray-500); }
+  @media (prefers-reduced-motion: reduce) {
+    .cat-card:hover .cat-media img { transform: none; }
+  }
+  @media (max-width: 900px) {
+    .cat-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 560px) {
+    .cat-grid { grid-template-columns: 1fr; }
+  }
 </style>
