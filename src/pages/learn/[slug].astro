@@ -57,7 +57,9 @@ const articleSchema = {
     <p class="crumb"><a href="/learn/">Learn</a> / {g.title}</p>
     <h1>{g.title}</h1>
     <p class="byline">By {g.author} &middot; updated {g.dateModified} &middot; {g.timeToRead}</p>
-    <img class="cover" src={g.cover || fallbackCover} alt={g.coverAlt || g.title} width="900" height="500" />
+    <div class="cover-wrap">
+      <img class="cover" src={g.cover || fallbackCover} alt={g.coverAlt || g.title} width="900" height="500" />
+    </div>
     <div class="prose">
       <Content />
     </div>
@@ -96,7 +98,10 @@ const articleSchema = {
   .article { max-width: 72ch; padding-block: 1.5rem 3rem; }
   .crumb { font-size: 0.85rem; }
   .byline { color: var(--gray-500); font-size: 0.85rem; margin-bottom: 1.25rem; }
-  .cover { width: 100%; height: auto; border-radius: var(--radius); margin-bottom: 1.5rem; background: var(--cream); }
+  .cover-wrap { max-width: 640px; margin: 0 auto 1.5rem; border-radius: var(--radius); overflow: hidden; }
+  .cover { display: block; width: 100%; height: auto; background: var(--cream); transition: transform 0.35s ease; }
+  .cover-wrap:hover .cover { transform: scale(1.08); }
+  @media (prefers-reduced-motion: reduce) { .cover-wrap:hover .cover { transform: none; } }
   .prose :global(h2) { margin-top: 1.5em; }
   .prose :global(a) { text-decoration-thickness: 1px; }
   .faqs { margin-top: 2.5rem; }
