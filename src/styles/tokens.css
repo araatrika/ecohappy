@@ -1,29 +1,36 @@
-/* Eco Happy design tokens — brand v2, pulled from mysanta.fun's palette + fonts, 16 Sep 2026.
-   Full rationale + contrast table: files/package/brand-kit-v2/BRAND-KIT.md */
+/* Eco Happy design tokens -- brand v3, 17 Sep 2026.
+   Palette + type direction blended from appointed.co (warm neutrals, tracked-caps nav/labels,
+   light serif display headline) and brownliving.in (forest green, serif headings, calm earthy mood).
+   Prior v2 (mysanta.fun-derived bright gold/red) retired in favour of a quieter, editorial palette.
+   Full rationale + contrast table: files/package/brand-kit-v2/BRAND-KIT.md (superseded by this file's comments). */
 :root {
-  --ink: #0D0D0D;          /* primary text, headings, links, focus ring */
+  --ink: #1E2B23;          /* primary text, headings, links, focus ring -- dark forest-charcoal, not flat black */
   --white: #FFFFFF;
 
-  --gold: #FFD600;         /* primary accent SURFACE — buttons, badges, highlights · ink-on-gold 13.76:1 */
-  --gold-dark: #D8B500;    /* hover state for gold surfaces */
+  --forest: #2F4739;       /* NEW primary brand accent -- nav highlight, category/trust accents, alt buttons */
+  --forest-deep: #16211A;  /* hover/pressed state for forest surfaces, dark section backgrounds */
 
-  --red: #E63946;          /* secondary/festive accent surface — sale badges, decorative · pair with ink text, or red-deep for white text */
-  --red-deep: #C3303B;     /* accessible red for buttons/links carrying white text · 5.5:1+ everywhere it's used */
+  --gold: #C98A2B;         /* accent SURFACE -- buttons, badges, highlights -- muted ochre (was bright yellow) */
+  --gold-dark: #A8711F;    /* hover state for gold surfaces */
 
-  --cream: #FFF8CC;        /* soft section background · ink-on-cream 18.09:1 */
-  --blush: #FEE2E4;        /* soft section background / alt surface · ink-on-blush 15.93:1 */
+  --red: #B5541E;          /* secondary/festive accent surface -- sale badges, decorative -- warm terracotta (was bright red) */
+  --red-deep: #8F4118;     /* accessible terracotta for buttons/links carrying white text */
 
-  --gray-100: #F5F5F5;     /* card / light surface background */
-  --gray-200: #E8E8E8;     /* border / divider */
-  --gray-300: #E5E5E5;     /* border / divider (slightly darker) */
-  --gray-500: #6B7280;     /* secondary text — safe on white/cream/blush, NOT on gray-100 */
-  --gray-400: #9CA3AF;     /* decorative / placeholder ONLY — never real text (fails AA) */
+  --cream: #F6F1E7;        /* soft warm paper section background (was bright yellow-cream) */
+  --blush: #DEE6E0;        /* soft sage-mist section background / alt surface (was pink) */
 
-  --font-heading: "Barlow Condensed", system-ui, sans-serif;
+  --gray-100: #F4F1EC;     /* card / light surface background */
+  --gray-200: #E6E1D8;     /* border / divider */
+  --gray-300: #DED8CC;     /* border / divider (slightly darker) */
+  --gray-500: #6B6862;     /* secondary text -- warm gray, safe on white/cream/blush */
+  --gray-400: #9C978C;     /* decorative / placeholder ONLY -- never real text (fails AA) */
+
+  --font-heading: "Fraunces", Georgia, serif;             /* display serif -- Appointed/Brown Living inspired, mixed case */
+  --font-label: "Barlow Condensed", system-ui, sans-serif; /* tracked uppercase -- nav, buttons, badges, kickers */
   --font-body: "DM Sans", system-ui, sans-serif;
 
   --radius: 10px;
-  --shadow-card: 0 1px 3px rgba(13, 13, 13, 0.08), 0 1px 2px rgba(13, 13, 13, 0.06);
+  --shadow-card: 0 1px 3px rgba(30, 43, 35, 0.08), 0 1px 2px rgba(30, 43, 35, 0.06);
   --max-width: 1200px;
 }
 
@@ -57,18 +64,18 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
-  font-weight: 600;
+  font-weight: 500;
   color: var(--ink);
-  line-height: 1.1;
+  line-height: 1.15;
   margin: 0 0 0.5em;
-  letter-spacing: 0.01em;
+  letter-spacing: 0;
 }
-h1 { font-size: clamp(2.1rem, 3.6vw, 3.1rem); text-transform: uppercase; }
-h2 { font-size: clamp(1.5rem, 2.4vw, 2.1rem); text-transform: uppercase; }
-h3 { font-size: 1.25rem; font-weight: 700; }
+h1 { font-size: clamp(2.1rem, 3.6vw, 3.1rem); font-weight: 500; }
+h2 { font-size: clamp(1.5rem, 2.4vw, 2.1rem); font-weight: 500; }
+h3 { font-size: 1.25rem; font-weight: 600; }
 
 p { margin: 0 0 1em; }
-a { color: var(--red-deep); text-decoration-thickness: 1px; }
+a { color: var(--forest); text-decoration-thickness: 1px; }
 a:hover { color: var(--ink); }
 
 .container {
@@ -82,11 +89,13 @@ a:hover { color: var(--ink); }
   align-items: center;
   justify-content: center;
   gap: 0.5em;
-  padding: 0.75em 1.5em;
+  padding: 0.75em 1.6em;
   border-radius: var(--radius);
-  font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 1rem;
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 1.02rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   text-decoration: none;
   border: 2px solid transparent;
   cursor: pointer;
@@ -94,13 +103,14 @@ a:hover { color: var(--ink); }
   transition: filter 0.15s ease, background-color 0.15s ease, transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.15s ease;
   will-change: transform;
 }
-.btn:hover { filter: brightness(0.94); transform: translateY(-2px); box-shadow: 0 6px 14px rgba(13, 13, 13, 0.14); }
-.btn:active { transform: translateY(0) scale(0.97); box-shadow: 0 1px 3px rgba(13, 13, 13, 0.14); filter: brightness(0.9); }
+.btn:hover { filter: brightness(0.94); transform: translateY(-2px); box-shadow: 0 6px 14px rgba(30, 43, 35, 0.14); }
+.btn:active { transform: translateY(0) scale(0.97); box-shadow: 0 1px 3px rgba(30, 43, 35, 0.14); filter: brightness(0.9); }
 .btn-primary { background: var(--gold); color: var(--ink); }
 .btn-primary:hover { background: var(--gold-dark); filter: none; }
-.btn-secondary { background: var(--red-deep); color: var(--white); }
+.btn-secondary { background: var(--forest); color: var(--white); }
+.btn-secondary:hover { background: var(--forest-deep); filter: none; }
 .btn-outline { background: transparent; color: var(--ink); border-color: var(--ink); }
-.btn-outline:hover { background: var(--gray-100); filter: none; border-color: var(--red-deep); color: var(--red-deep); }
+.btn-outline:hover { background: var(--gray-100); filter: none; border-color: var(--forest); color: var(--forest); }
 @media (prefers-reduced-motion: reduce) {
   .btn, .btn:hover, .btn:active { transform: none; transition: filter 0.15s ease, background-color 0.15s ease; }
 }
@@ -109,12 +119,15 @@ a:hover { color: var(--ink); }
   display: inline-block;
   background: var(--gold);
   color: var(--ink);
-  font-weight: 700;
-  font-size: 0.8rem;
-  padding: 0.2em 0.7em;
+  font-family: var(--font-label);
+  font-weight: 600;
+  font-size: 0.82rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.25em 0.75em;
   border-radius: 999px;
 }
-.badge.sale { background: var(--red); color: var(--ink); }
+.badge.sale { background: var(--red); color: var(--white); }
 
 .card {
   background: var(--white);
@@ -131,6 +144,8 @@ a:hover { color: var(--ink); }
 .section-dark { background: var(--ink); color: var(--white); }
 .section-dark h1, .section-dark h2, .section-dark h3 { color: var(--gold); }
 .section-dark a { color: var(--gold); }
+.section-dark .btn-primary, .section-dark .btn-primary:hover { color: var(--ink); }
+.section-dark .btn-secondary, .section-dark .btn-secondary:hover { color: var(--white); }
 
 :focus-visible {
   outline: 2px solid var(--ink);

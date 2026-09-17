@@ -1,0 +1,206 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import site from '../../data/site.json';
+
+const whatsappMsg = encodeURIComponent("Hi, I'd like to talk about customising a bulk order — logo, colours and packaging.");
+
+const customisable = [
+  {
+    title: 'Logo & branding',
+    body: 'Your logo goes on the pencil, the pen band, the diary cover or the outer box — screen-printed or embossed, your call.',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z"/><path d="m8.5 12 2.5 2.5L16 9"/></svg>',
+  },
+  {
+    title: 'Names & messages',
+    body: 'A child’s name on a return-gift calendar, a client’s name on a hamper card, a handwritten note in every seed-paper pack.',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="m6 16 10-10 2 2-10 10H6v-2Z"/></svg>',
+  },
+  {
+    title: 'Colours & materials',
+    body: 'Match your brand palette on packaging and ribbon, or pick the fabric for an upcycled bag or pouch from what we have on hand.',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="8.5" r="1.4" fill="currentColor" stroke="none"/><circle cx="8.5" cy="13" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.5" cy="13" r="1.4" fill="currentColor" stroke="none"/></svg>',
+  },
+  {
+    title: 'Bulk & export specs',
+    body: 'MOQs, carton sizes, multilingual packaging and shipping documentation for orders that leave India — same customisation, longer lead time.',
+    icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8l9 5 9-5Z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg>',
+  },
+];
+
+const steps = [
+  {
+    n: '1',
+    title: 'Tell us the brief',
+    body: 'Occasion, quantity, budget and any branding you have — over WhatsApp or email is fine, no forms to fill.',
+  },
+  {
+    n: '2',
+    title: 'We quote and sample',
+    body: 'MOQ, lead time and price for the exact customisation you asked for, plus a physical sample before you commit to the full order.',
+  },
+  {
+    n: '3',
+    title: 'We produce and ship',
+    body: 'Once you approve the sample, we roll, print and pack the full order — domestic or export — and keep you posted until it ships.',
+  },
+];
+
+// Real customer reviews, quoted verbatim from Eco Happy's public Google Business Profile
+// (google.com/maps listing for "Happy Pencils", 4.8★ from 157 reviews as of Sep 2026).
+const testimonials = [
+  {
+    quote: 'They even gave us the option of Branding the diary with our logo, which looks beautiful!! The diaries are covered with beautiful piece of cloth (upcycled) with bookmark which makes us feel proud as we are contributing a little towards conserving mother earth!! This is our second order with them — earlier we ordered paper pencils with seeds and the brand name on it.',
+    name: 'Beamish Preschool',
+    context: 'Institutional order — branded teacher diaries',
+    rating: 3,
+  },
+  {
+    quote: 'We had ordered customized Seed pens from Happy Pencils (Araatrika) for our college Library Conference. It is really a very good initiative and innovative concept which works towards promoting eco-friendly and sustainable environment. We are happy with the product. Thank you for accepting and delivering our order within a short period of time.',
+    name: 'DMCRC Library and Information Centre',
+    context: 'Bulk order — conference giveaways',
+    rating: 3,
+  },
+  {
+    quote: 'I ordered Happy Calendars as a return gift for my son’s naming ceremony. It was beautifully customized, I had my son’s name written. The idea of having eco friendly and nature friendly gifts was loved by everyone in the family and by the ones to whom I gifted... I am your forever customer!',
+    name: 'Jui Bijapurkar',
+    context: 'Personalised return gifts',
+    rating: 3,
+  },
+  {
+    quote: 'Had requested for customized Pencil set for my daughter’s birthday. The order was received well before time. The return gift was liked by one and all. The kids’ mother loved the unique concept.',
+    name: 'Ruchi Agarwal',
+    context: 'Personalised return gifts',
+    rating: 3,
+  },
+];
+---
+<BaseLayout
+  title="Customised Eco-Friendly Gifts & Stationery | Eco Happy"
+  description="Every product we make can be customised — logo, colours, names and packaging, on bulk and export orders. See what we customise and what customers say."
+>
+  <section class="container hero">
+    <span class="eyebrow">The Eco Happy difference</span>
+    <h1>Made your way, every single time</h1>
+    <p class="lede">
+      Most eco-friendly gifting brands customise one or two flagship products. We customise everything we sell —
+      seed pencils, diaries, hampers, bags, right down to the export carton. We haven’t come across another
+      Indian stationery or gifting workshop, domestic or export, that customises this much of its catalogue as
+      standard.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href={`${site.whatsapp.direct}?text=${whatsappMsg}`} target="_blank" rel="noopener">Ask on WhatsApp</a>
+      <a class="btn btn-outline" href="/gifting/corporate/">See corporate gifting</a>
+    </div>
+  </section>
+
+  <section class="container customise-grid">
+    <h2>What you can customise</h2>
+    <div class="grid four">
+      {customisable.map((c) => (
+        <div class="custom-card card">
+          <span class="custom-icon" aria-hidden="true" set:html={c.icon} />
+          <h3>{c.title}</h3>
+          <p>{c.body}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section-blush steps-section">
+    <div class="container">
+      <h2>How customisation works</h2>
+      <div class="grid three steps-grid">
+        {steps.map((s) => (
+          <div class="step">
+            <span class="step-n">{s.n}</span>
+            <h3>{s.title}</h3>
+            <p>{s.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="container testimonials-section">
+    <h2>What customers say about it</h2>
+    <p class="testimonials-sub">
+      Quoted as written, from Eco Happy’s public Google Business listing (4.8★ from 157 reviews as of September
+      2026). <a href="https://share.google/Uzs5cpE7FHkdCzA9u" target="_blank" rel="noopener">See all reviews on Google →</a>
+    </p>
+    <div class="grid two testimonials-grid">
+      {testimonials.map((t) => (
+        <blockquote class="testimonial card">
+          <div class="stars" aria-label={`${t.rating} out of 5 stars`}>
+            {'★'.repeat(t.rating)}<span class="stars-empty">{'★'.repeat(5 - t.rating)}</span>
+          </div>
+          <p class="quote">“{t.quote}”</p>
+          <footer>
+            <span class="name">{t.name}</span>
+            <span class="context">{t.context} · Google review</span>
+          </footer>
+        </blockquote>
+      ))}
+    </div>
+  </section>
+
+  <section class="section-dark cta-banner">
+    <div class="container cta-inner">
+      <h2>Want this customised for your team?</h2>
+      <p>Tell us the occasion, the headcount and your branding — we’ll quote a sample within a day.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href={`${site.whatsapp.direct}?text=${whatsappMsg}`} target="_blank" rel="noopener">Ask on WhatsApp</a>
+        <a class="btn btn-outline cta-outline-dark" href="/gifting/bulk-and-custom/">See bulk & custom</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { padding-block: 3rem 2rem; max-width: 800px; }
+  .eyebrow {
+    display: inline-block; font-family: var(--font-body); font-weight: 700; font-size: 0.78rem;
+    letter-spacing: 0.08em; text-transform: uppercase; color: var(--red-deep); margin-bottom: 0.75rem;
+  }
+  .lede { font-size: 1.1rem; max-width: 68ch; color: var(--gray-500); }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
+
+  .customise-grid { padding-block: 1rem 2.5rem; }
+  .grid.four { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-top: 1.25rem; }
+  .custom-card { padding: 1.5rem 1.25rem; display: flex; flex-direction: column; gap: 0.6rem; }
+  .custom-card h3 { font-size: 1.1rem; margin: 0; }
+  .custom-card p { margin: 0; color: var(--gray-500); font-size: 0.95rem; }
+  .custom-icon {
+    display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px;
+    border-radius: 50%; background: var(--cream); color: var(--forest);
+  }
+  .custom-icon :global(svg) { width: 24px; height: 24px; }
+
+  .steps-section { padding-block: 2.5rem; }
+  .grid.three.steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; margin-top: 1.5rem; }
+  .step-n {
+    display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px;
+    border-radius: 50%; background: var(--forest); color: var(--white); font-family: var(--font-label);
+    font-weight: 600; font-size: 1.05rem; margin-bottom: 0.75rem;
+  }
+  .step h3 { margin: 0 0 0.4rem; font-size: 1.1rem; }
+  .step p { margin: 0; color: var(--gray-500); font-size: 0.95rem; }
+
+  .testimonials-section { padding-block: 2.5rem 3rem; }
+  .testimonials-sub { color: var(--gray-500); max-width: 60ch; margin-top: -0.5rem; margin-bottom: 1.5rem; }
+  .grid.two.testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
+  .testimonial { padding: 1.5rem; margin: 0; display: flex; flex-direction: column; gap: 0.75rem; }
+  .stars { color: var(--gold); font-size: 1rem; letter-spacing: 0.1em; }
+  .stars-empty { color: var(--gray-300); }
+  .testimonial .quote { margin: 0; font-style: italic; color: var(--ink); }
+  .testimonial footer { display: flex; flex-direction: column; gap: 0.1rem; margin-top: auto; }
+  .testimonial .name { font-weight: 700; }
+  .testimonial .context { font-size: 0.85rem; color: var(--gray-500); }
+
+  .cta-banner { padding-block: 3rem; margin-top: 1rem; }
+  .cta-inner { text-align: center; max-width: 640px; margin: 0 auto; }
+  .cta-banner h2 { color: var(--gold); }
+  .cta-banner p { color: var(--white); opacity: 0.9; }
+  .cta-inner .cta-row { justify-content: center; }
+  .cta-outline-dark { border-color: var(--white); color: var(--white); }
+  .cta-outline-dark:hover { background: rgba(255,255,255,0.1); border-color: var(--gold); color: var(--gold); }
+</style>

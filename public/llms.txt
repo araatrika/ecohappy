@@ -13,7 +13,9 @@ report, not a fact to cite.
 ## Key pages
 
 - [Homepage](https://ecohappy.in/): what Eco Happy makes and who makes it
-- [Shop](https://ecohappy.in/shop/): full product catalogue by category
+- [Shop](https://ecohappy.in/shop/): product categories; [All products](https://ecohappy.in/shop/all-products/) for the full flat catalogue
+- [Customisation](https://ecohappy.in/customisation/): what can be customised (logo, names, colours, bulk/export specs), how it works, and real customer testimonials
+- [Impact Calculator](https://ecohappy.in/impact-calculator/): sourced, illustrative plastic/CO2e estimates for switching to plantable stationery
 - [Learn](https://ecohappy.in/learn/): guides on plantable stationery, sustainable gifting and greenwashing
 - [About](https://ecohappy.in/about/): the company, the founder, and how it started
 - [FAQ](https://ecohappy.in/faq/): shipping, bulk orders, and whether seed pencils actually grow

@@ -1,6 +1,7 @@
 ---
 import site from '../data/site.json';
 const nav = [
+  { label: 'Customisation', href: '/customisation/', highlight: true },
   { label: 'Shop', href: '/shop/' },
   {
     label: 'Gifting', href: '/gifting/corporate/',
@@ -28,7 +29,7 @@ const nav = [
       </button>
       <ul id="primary-nav" class="primary-nav">
         {nav.map((item) => (
-          <li class:list={{ 'has-children': item.children }}>
+          <li class:list={{ 'has-children': item.children, 'nav-highlight': item.highlight }}>
             <a href={item.href}>{item.label}</a>
             {item.children && (
               <ul class="submenu">
@@ -51,9 +52,19 @@ const nav = [
   .primary-nav { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
   .primary-nav > li { position: relative; }
   .primary-nav > li > a {
-    text-decoration: none; color: var(--ink); font-weight: 700; padding: 0.5em 0.2em; display: inline-block;
+    text-decoration: none; color: var(--ink); font-family: var(--font-label); font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.95rem;
+    padding: 0.5em 0.2em; display: inline-block;
   }
-  .primary-nav > li > a:hover { color: var(--red-deep); }
+  .primary-nav > li > a:hover { color: var(--forest); }
+  .nav-highlight > a {
+    background: var(--gold); color: var(--ink); padding: 0.5em 0.9em; border-radius: 999px;
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+  .nav-highlight > a:hover { background: var(--gold-dark); color: var(--ink); transform: translateY(-1px); }
+  @media (max-width: 780px) {
+    .nav-highlight > a { display: inline-block; margin-bottom: 0.4rem; }
+  }
   .submenu {
     display: none; position: absolute; left: 0; top: 100%; background: var(--white);
     list-style: none; margin: 0; padding: 0.5rem 0; border-radius: var(--radius); box-shadow: var(--shadow-card);
