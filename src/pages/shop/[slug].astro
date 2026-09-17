@@ -141,6 +141,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
           )}
         </div>
         {p.bulk && <p class="made-to-order-note">Made to order — usually ready in about {p.leadTimeDays} days after we confirm your order on WhatsApp.</p>}
+        {site.gstin && <p class="gst-note">GST invoice available on request</p>}
         <p id="buy-status" class="buy-status" role="status" aria-live="polite"></p>
 
         {specsEntries.length > 0 && (
@@ -283,6 +284,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
   .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.25rem; }
   .buy-status { min-height: 1.2em; font-size: 0.9rem; color: var(--red-deep); font-weight: 600; }
   .made-to-order-note { font-size: 0.85rem; color: var(--gray-500); margin: -0.75rem 0 1rem; }
+  .gst-note { font-size: 0.85rem; color: var(--gray-500); margin: -0.75rem 0 1rem; }
   .specs { border-collapse: collapse; width: 100%; margin-top: 1rem; }
   .specs th, .specs td { text-align: left; padding: 0.4em 0.6em 0.4em 0; border-bottom: 1px solid var(--cream); font-size: 0.9rem; }
   .specs th { color: var(--ink); font-weight: 700; width: 40%; }

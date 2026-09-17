@@ -21,7 +21,7 @@ const p = entry.data;
 ---
 <BaseLayout title={p.title} description={p.description}>
   <article class="container page">
-    <h1>{p.title.replace(/\s*\|\s*Eco Happy\s*$/i, '')}</h1>
+    <h1 set:html={p.title.replace(/\s*\|\s*Eco Happy\s*$/i, '').replace(/\bEco Happy\b(?!\u00ae)/, 'Eco Happy<span class="tm">&reg;</span>')} />
     <div class="prose">
       <Content />
     </div>
@@ -30,4 +30,5 @@ const p = entry.data;
 
 <style>
   .page { max-width: 72ch; padding-block: 1.5rem 3rem; }
+  .page h1 :global(.tm) { font-size: 0.5em; vertical-align: super; margin-left: 0.05em; }
 </style>

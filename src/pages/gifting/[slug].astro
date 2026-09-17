@@ -20,6 +20,7 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const p = entry.data;
 const title = p.title.replace(/^"|"$/g, '').replace(/\s*\|\s*Eco Happy\s*$/i, '');
+const h1Html = title.replace(/\bEco Happy\b(?!\u00ae)/, 'Eco Happy<span class="tm">&reg;</span>');
 
 const allProducts = (await getCollection('products')).filter((prod) => !prod.data.retired);
 const featured = (p.productsListed || [])
@@ -30,7 +31,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about ${title.toLowe
 ---
 <BaseLayout title={p.title} description={p.description}>
   <section class="container hero">
-    <h1>{title}</h1>
+    <h1 set:html={h1Html} />
     <p class="lede">{p.description}</p>
     <div class="cta-row">
       <a class="btn btn-primary" href={`${site.whatsapp.direct}?text=${whatsappMsg}`} target="_blank" rel="noopener">Ask on WhatsApp</a>
@@ -47,6 +48,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about ${title.toLowe
 
 <style>
   .hero { max-width: 62ch; padding-block: 2rem 1rem; }
+  .hero h1 :global(.tm) { font-size: 0.5em; vertical-align: super; margin-left: 0.05em; }
   .lede { font-size: 1.05rem; color: var(--gray-500); }
   .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.25rem; }
   .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; padding-block: 2rem 3rem; }

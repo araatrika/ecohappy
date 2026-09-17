@@ -5,7 +5,7 @@ const year = new Date().getFullYear();
 <footer class="site-footer">
   <div class="container grid">
     <div>
-      <h2>{site.brand}</h2>
+      <h2>{site.brand}<span class="tm">&reg;</span></h2>
       <p>{site.tagline}</p>
       <p>
         {site.address.streetAddress},<br />
@@ -13,6 +13,7 @@ const year = new Date().getFullYear();
       </p>
       <p><a href={`tel:${site.telephoneE164}`}>{site.telephone}</a></p>
       <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+      {site.gstin && <p class="gstin">GSTIN: {site.gstin} &middot; GST invoice available on request</p>}
     </div>
     <div>
       <h3>Shop</h3>
@@ -52,7 +53,7 @@ const year = new Date().getFullYear();
     </div>
   </div>
   <div class="container fine">
-    <p>&copy; {year} {site.legalName}, trading as {site.brand}. Made in Pune, India.</p>
+    <p>&copy; {year} {site.legalName}, trading as {site.brand}&reg;. Made in Pune, India.</p>
   </div>
 </footer>
 
@@ -60,6 +61,7 @@ const year = new Date().getFullYear();
   .site-footer { background: var(--ink); color: var(--white); margin-top: 3rem; padding-block: 2.5rem 1rem; }
   .site-footer a { color: var(--gold); }
   .site-footer h2, .site-footer h3 { color: var(--white); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; }
+  .tm { font-size: 0.6em; vertical-align: super; margin-left: 0.1em; }
   .grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem; }
   .grid ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.4em; }
   .social-link { display: inline-flex; align-items: center; gap: 0.5em; transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.15s ease; }
@@ -72,6 +74,7 @@ const year = new Date().getFullYear();
   }
   .social-link:hover .ico { background: var(--gold); color: var(--ink); transform: scale(1.08) rotate(-4deg); }
   .enquiries { margin-top: 0.9em; font-size: 0.85rem; opacity: 0.85; }
+  .gstin { font-size: 0.8rem; opacity: 0.75; margin-top: 0.75em; }
   .fine { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.15); font-size: 0.85rem; opacity: 0.85; }
   @media (max-width: 780px) {
     .grid { grid-template-columns: 1fr 1fr; }
