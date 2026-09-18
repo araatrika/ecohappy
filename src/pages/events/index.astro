@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import site from '../../data/site.json';
+import InstagramSlider from '../../components/InstagramSlider.astro';
 
 const title = 'Events & Exhibitions | Eco Happy';
 const description = 'Where to find Eco Happy in person: exhibitions, workshops and pop-ups around Pune, and how to know about the next one.';
@@ -39,21 +40,12 @@ const waysToFind = [
     ))}
   </section>
 
-  <section class="section-cream follow-cta reveal">
-    <div class="container follow-inner">
-      <img src="/assets/social/ig-ganpati-seedballs.jpg" alt="Eco Happy seed balls made as Ganpati visarjan prasad, sold at a Pune pop-up" loading="lazy" />
-      <div>
-        <p class="eyebrow">The most current source</p>
-        <h2>Follow @araatrika on Instagram</h2>
-        <p>
-          Our Instagram highlights ("Exhibitions" and "Workshops") are where we post real photos from
-          each stall and session as they happen, which makes it the most current source for where
-          we'll be next, more current than we can promise this page will stay.
-        </p>
-        <a class="btn btn-primary" href="https://www.instagram.com/araatrika/" target="_blank" rel="noopener">Follow on Instagram</a>
-      </div>
-    </div>
-  </section>
+  <div class="section-cream">
+    <InstagramSlider
+      title="Follow @araatrika on Instagram"
+      intro={`Our Instagram highlights ("Exhibitions" and "Workshops") are where we post real photos from each stall and session as they happen, which makes it the most current source for where we'll be next, more current than we can promise this page will stay.`}
+    />
+  </div>
 
   <section class="container container-cta reveal">
     <h2>Want us at your event or campus instead?</h2>

@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import InstagramMini from '../../components/InstagramMini.astro';
 
 const guides = (await getCollection('guides')).filter((g) => !g.data.draft);
 guides.sort((a, b) => new Date(b.data.datePublished).getTime() - new Date(a.data.datePublished).getTime());
@@ -36,6 +37,7 @@ const grouped = categoryOrder
       </div>
     </section>
   ))}
+  <InstagramMini />
 </BaseLayout>
 
 <style>

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import site from '../../data/site.json';
+import InstagramSlider from '../../components/InstagramSlider.astro';
 
 const title = 'About Eco Happy | Sustainable Stationery, Made in Pune';
 const description = "How Eco Happy makes plastic-free, plantable stationery by hand in Pune: who makes it, what it's made of, and how the founder started it in 2017.";
@@ -115,17 +116,10 @@ const facts = [
     </ul>
   </section>
 
-  <section class="container follow reveal">
-    <div class="follow-card">
-      <img src="/assets/social/ig-ganpati-seedballs.jpg" alt="Eco Happy Instagram post: seed balls made as Ganpati visarjan prasad" loading="lazy" />
-      <div class="follow-copy">
-        <p class="eyebrow">From our Instagram</p>
-        <h3>Real workshop days, real seasonal projects</h3>
-        <p>We post what we're actually making and where you'll find us next, exhibitions, workshops and everyday orders included.</p>
-        <a class="btn btn-primary" href="https://www.instagram.com/araatrika/" target="_blank" rel="noopener">Follow @araatrika</a>
-      </div>
-    </div>
-  </section>
+  <InstagramSlider
+    title="Real workshop days, real seasonal projects"
+    intro="We post what we're actually making and where you'll find us next, exhibitions, workshops and everyday orders included."
+  />
 </BaseLayout>
 
 <style>

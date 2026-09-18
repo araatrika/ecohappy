@@ -1,0 +1,63 @@
+---
+// Moving Instagram slider: shows several real @araatrika posts (not just one photo),
+// each one a real, actual post with a real permalink or the profile link when we don't
+// have the specific post URL saved. Pauses on hover/focus and respects reduced-motion
+// (handled by the shared .marquee / .marquee-track rules in tokens.css).
+import { instagramPosts } from '../data/instagram-posts';
+
+interface Props {
+  title?: string;
+  intro?: string;
+}
+const { title = 'From our Instagram', intro } = Astro.props;
+---
+
+<section class="container ig-slider reveal">
+  <div class="ig-slider-head">
+    <p class="eyebrow">Real posts, not stock photos</p>
+    <h2>{title}</h2>
+    {intro && <p class="lede">{intro}</p>}
+  </div>
+  <div class="marquee ig-marquee">
+    <div class="marquee-track">
+      {instagramPosts.map((post) => (
+        <a class="ig-tile" href={post.href} target="_blank" rel="noopener">
+          <img src={post.img} alt={post.alt} loading="lazy" width="320" height="400" />
+          <span class="ig-caption">{post.caption}</span>
+        </a>
+      ))}
+      <div class="marquee-dup" aria-hidden="true">
+        {instagramPosts.map((post) => (
+          <a class="ig-tile" href={post.href} tabindex="-1">
+            <img src={post.img} alt="" loading="lazy" width="320" height="400" />
+            <span class="ig-caption">{post.caption}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+  <a class="btn btn-primary" href="https://www.instagram.com/araatrika/" target="_blank" rel="noopener">Follow @araatrika</a>
+</section>
+
+<style>
+  .ig-slider { padding-block: 2.5rem 3rem; }
+  .ig-slider-head { max-width: 60ch; margin-bottom: 1.25rem; }
+  .ig-slider-head .eyebrow {
+    font-family: var(--font-label); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--red-deep); margin: 0 0 0.4em;
+  }
+  .ig-marquee { --marquee-fade: var(--white); --marquee-duration: 38s; margin: 0 -1.25rem 1.5rem; padding: 0 1.25rem; }
+  .ig-tile {
+    display: flex; flex-direction: column; width: 220px; flex-shrink: 0; text-decoration: none; color: var(--ink);
+    border-radius: var(--radius); overflow: hidden; background: var(--cream);
+    box-shadow: var(--shadow-card); transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .ig-tile:hover, .ig-tile:focus-visible { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(13,13,13,0.14); }
+  .ig-tile img { display: block; width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+  .ig-caption {
+    display: block; padding: 0.55rem 0.75rem; font-size: 0.82rem; font-weight: 600; color: var(--ink);
+  }
+  @media (max-width: 480px) {
+    .ig-tile { width: 168px; }
+  }
+</style>

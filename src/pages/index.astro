@@ -1,6 +1,7 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import InstagramMini from '../components/InstagramMini.astro';
 import ProductCard from '../components/ProductCard.astro';
 import site from '../data/site.json';
 
@@ -176,6 +177,7 @@ const values = [
       </a>
     </div>
   </section>
+  <InstagramMini />
 </BaseLayout>
 
 <style>

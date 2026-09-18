@@ -1,0 +1,43 @@
+---
+// Compact "More on our Instagram" block: a couple of real posts + a follow link.
+// Used on pages where a full slider would be too much, but a live-brand touchpoint
+// still earns its place (home, customisation, blogs, gifting).
+import { instagramPosts } from '../data/instagram-posts';
+
+const posts = instagramPosts.slice(0, 2);
+---
+
+<section class="container ig-mini reveal">
+  <div class="ig-mini-photos">
+    {posts.map((post) => (
+      <a href={post.href} target="_blank" rel="noopener" class="ig-mini-photo">
+        <img src={post.img} alt={post.alt} loading="lazy" width="220" height="275" />
+      </a>
+    ))}
+  </div>
+  <div class="ig-mini-copy">
+    <h2>More on our Instagram</h2>
+    <p>Real photos from workshops, pop-ups and orders as they happen, posted at <strong>@araatrika</strong>.</p>
+    <a class="btn btn-outline" href="https://www.instagram.com/araatrika/" target="_blank" rel="noopener">See more on Instagram</a>
+  </div>
+</section>
+
+<style>
+  .ig-mini {
+    display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap;
+    padding-block: 2rem; border-top: 1px solid var(--blush);
+  }
+  .ig-mini-photos { display: flex; gap: 0.75rem; flex-shrink: 0; }
+  .ig-mini-photo {
+    display: block; width: 110px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-card);
+    transition: transform 0.15s ease;
+  }
+  .ig-mini-photo:hover, .ig-mini-photo:focus-visible { transform: translateY(-2px); }
+  .ig-mini-photo img { display: block; width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+  .ig-mini-copy { flex: 1 1 240px; min-width: 240px; }
+  .ig-mini-copy h2 { font-size: 1.35rem; margin-bottom: 0.3em; }
+  .ig-mini-copy p { color: var(--gray-500); margin-bottom: 0.75em; max-width: 46ch; }
+  @media (max-width: 480px) {
+    .ig-mini-photo { width: 88px; }
+  }
+</style>
