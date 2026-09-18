@@ -19,23 +19,23 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/plant-me-diary-a5/plant-me-diary-a5-1.jpg
-  alt: Plant Me Diary - A5 Notebook — Notebooks, Diaries & Planners, made in Pune
+  alt: Plant Me Diary - A5 Notebook, Notebooks, Diaries & Planners, made in Pune
     by Eco Happy
   width: 1350
   height: 1800
   original: originals/assets/products/plant-me-diary-a5/plant-me-diary-a5-1.jpg
 - src: /assets/products/plant-me-diary-a5/plant-me-diary-a5-2.jpg
-  alt: Plant Me Diary - A5 Notebook — shown from another angle
+  alt: Plant Me Diary - A5 Notebook, shown from another angle
   width: 1800
   height: 1350
   original: originals/assets/products/plant-me-diary-a5/plant-me-diary-a5-2.jpg
 - src: /assets/products/plant-me-diary-a5/plant-me-diary-a5-3.jpg
-  alt: Plant Me Diary - A5 Notebook — shown from another angle
+  alt: Plant Me Diary - A5 Notebook, shown from another angle
   width: 1800
   height: 1350
   original: originals/assets/products/plant-me-diary-a5/plant-me-diary-a5-3.jpg
 - src: /assets/products/plant-me-diary-a5/plant-me-diary-a5-4.jpg
-  alt: Plant Me Diary - A5 Notebook — close-up detail
+  alt: Plant Me Diary - A5 Notebook, close-up detail
   width: 1350
   height: 1800
   original: originals/assets/products/plant-me-diary-a5/plant-me-diary-a5-4.jpg
@@ -45,10 +45,10 @@ wixCollections:
 brand: Eco Happy
 seoTitle: Plant Me Diary - A5 Notebook | Eco Happy
 seoDescription: Plant Me Diary - A5 Notebook is a plantable, plastic-free product
-  from Eco Happy's Pune workshop. Use it as intended, then plant it in soil — with
+  from Eco Happy's Pune workshop. Use it as intended, then plant it in soil, with
   water an
 answer: Plant Me Diary - A5 Notebook is a plantable, plastic-free product from Eco
-  Happy's Pune workshop. Use it as intended, then plant it in soil — with water and
+  Happy's Pune workshop. Use it as intended, then plant it in soil, with water and
   a little sun, it can sprout depending on the season.
 specs:
   material: 100% Recycled Paper with Seeds embedded in the cover
@@ -61,16 +61,16 @@ howToUse:
 - Sprouting time varies by seed variety and season.
 faq:
 - q: Does this actually grow?
-  a: Yes — plant the seed-bearing part in soil, keep it watered and give it some sunlight.
+  a: Yes, plant the seed-bearing part in soil, keep it watered and give it some sunlight.
     Germination depends on the seed variety and the season.
 - q: What happens if it doesn't sprout?
-  a: Not every seed germinates — this depends on soil, water and season. If nothing
+  a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy Plant Me Diary - A5 Notebook in bulk for a gifting order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - checkerboard-planner-2026
 - recycled-paper-notebook-set-of-2
@@ -91,18 +91,18 @@ migration:
   - write alt text (none in Wix)
 ---
 
-Made from 100% recycled paper with seeds embedded in the cover — plant the cover once you're done with the diary.
+Made from 100% recycled paper with seeds embedded in the cover, plant the cover once you're done with the diary.
 
 Key Features:
 
 - Material: 100% Recycled Paper with Seeds embedded in the cover.
 - Zero Waste: Plastic-free packaging.
-- Use & Grow: Don't throw it away—plant it!
+- Use & Grow: Don't throw it away, plant it!
 - Made in India, supports local craftsmanship, women empowerment and sustainability.
 
 Why Buy?
 
-Perfect for personal use. A recycled-paper diary with a plantable cover — write in it, then plant it.
+Perfect for personal use. A recycled-paper diary with a plantable cover, write in it, then plant it.
 
 Plant Me Diary - A5 Notebook is part of Eco Happy's Notebooks, Diaries & Planners range. It's made from 100% Recycled Paper with Seeds embedded in the cover. Made in Pune, India by Araatrika women-led production team.
 

@@ -19,17 +19,17 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/scrub-pads-set-of-4/scrub-pads-set-of-4-1.jpg
-  alt: Scrub Pads - Set of 4 — Home & Travel, made in Pune by Eco Happy
+  alt: Scrub Pads - Set of 4, Home & Travel, made in Pune by Eco Happy
   width: 1350
   height: 1800
   original: originals/assets/products/scrub-pads-set-of-4/scrub-pads-set-of-4-1.jpg
 - src: /assets/products/scrub-pads-set-of-4/scrub-pads-set-of-4-2.jpg
-  alt: Scrub Pads - Set of 4 — shown from another angle
+  alt: Scrub Pads - Set of 4, shown from another angle
   width: 1800
   height: 1350
   original: originals/assets/products/scrub-pads-set-of-4/scrub-pads-set-of-4-2.jpg
 - src: /assets/products/scrub-pads-set-of-4/scrub-pads-set-of-4-3.jpg
-  alt: Scrub Pads - Set of 4 — close-up detail
+  alt: Scrub Pads - Set of 4, close-up detail
   width: 1350
   height: 1800
   original: originals/assets/products/scrub-pads-set-of-4/scrub-pads-set-of-4-3.jpg
@@ -47,10 +47,10 @@ specs:
 howToUse: []
 faq:
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy Scrub Pads - Set of 4 in bulk for a gifting order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - bamboo-toothbrush-set-of-2
 - cutlery-kit
@@ -73,7 +73,7 @@ migration:
 
 **Tough on Stains, Kind to the Earth **
 
-A set of 4 scrub pads made from natural coconut fibre and organic latex — a plastic-free alternative for cleaning, from glassware to heavy-duty pots and pans.
+A set of 4 scrub pads made from natural coconut fibre and organic latex, a plastic-free alternative for cleaning, from glassware to heavy-duty pots and pans.
 
 - 100% Biodegradable: Made from natural coconut fibers and organic latex.
 - Non-Toxic & Hygienic: Naturally antimicrobial and breathable, so they don't hold onto bad odors like synthetic sponges.

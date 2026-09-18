@@ -1,5 +1,5 @@
 ---
-title: Shop Eco Happy — Plantable Stationery & Gifts
+title: "Shop Plantable Stationery & Gifts | Eco Happy"
 slug: shop
 newUrl: /shop/
 description: Explore our latest eco-conscious stationery collections. Find the perfect

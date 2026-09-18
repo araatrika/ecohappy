@@ -18,17 +18,17 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/reusable-tea-infuser/reusable-tea-infuser-1.jpg
-  alt: Reusable Tea Infuser — Home & Travel, made in Pune by Eco Happy
+  alt: Reusable Tea Infuser, Home & Travel, made in Pune by Eco Happy
   width: 1350
   height: 1800
   original: originals/assets/products/reusable-tea-infuser/reusable-tea-infuser-1.jpg
 - src: /assets/products/reusable-tea-infuser/reusable-tea-infuser-2.jpg
-  alt: Reusable Tea Infuser — shown from another angle
+  alt: Reusable Tea Infuser, shown from another angle
   width: 1350
   height: 1800
   original: originals/assets/products/reusable-tea-infuser/reusable-tea-infuser-2.jpg
 - src: /assets/products/reusable-tea-infuser/reusable-tea-infuser-3.jpg
-  alt: Reusable Tea Infuser — close-up detail
+  alt: Reusable Tea Infuser, close-up detail
   width: 1350
   height: 1800
   original: originals/assets/products/reusable-tea-infuser/reusable-tea-infuser-3.jpg
@@ -47,10 +47,10 @@ specs:
 howToUse: []
 faq:
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy Reusable Tea Infuser in bulk for a gifting order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - bamboo-toothbrush-set-of-2
 - cutlery-kit
@@ -71,11 +71,11 @@ migration:
   - write alt text (none in Wix)
 ---
 
-A reusable steel tea infuser — no disposable tea bags needed. Our tea infuser is the ultimate tool for a plastic-free kitchen, helping you eliminate thousands of single-use tea bags every year.
+A reusable steel tea infuser, no disposable tea bags needed. Our tea infuser is the ultimate tool for a plastic-free kitchen, helping you eliminate thousands of single-use tea bags every year.
 
 - Premium Quality: Made from high-grade, food-safe stainless steel that won't rust or leach.
 - Fine Mesh Design: Ensures a smooth, sediment-free tea while allowing full flavor extraction.
-- Easy to Clean: Simply rinse or pop it in the dishwasher—built to last for years of daily use.
+- Easy to Clean: Simply rinse or pop it in the dishwasher, built to last for years of daily use.
 - Made by Araatrika (Eco Happy), a women-led team in Pune making reusable steel alternatives to disposables.
 
 Reusable Tea Infuser is part of Eco Happy's Home & Travel range. Made in Pune, India by Araatrika women-led production team.

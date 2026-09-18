@@ -18,17 +18,17 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/furbaby-premium-gift-box/furbaby-premium-gift-box-1.jpg
-  alt: Furbaby Premium Gift Box — Gift Hampers & Boxes, made in Pune by Eco Happy
+  alt: Furbaby Premium Gift Box, Gift Hampers & Boxes, made in Pune by Eco Happy
   width: 1350
   height: 1800
   original: originals/assets/products/furbaby-premium-gift-box/furbaby-premium-gift-box-1.jpg
 - src: /assets/products/furbaby-premium-gift-box/furbaby-premium-gift-box-2.jpg
-  alt: Furbaby Premium Gift Box — shown from another angle
+  alt: Furbaby Premium Gift Box, shown from another angle
   width: 1350
   height: 1800
   original: originals/assets/products/furbaby-premium-gift-box/furbaby-premium-gift-box-2.jpg
 - src: /assets/products/furbaby-premium-gift-box/furbaby-premium-gift-box-3.jpg
-  alt: Furbaby Premium Gift Box — close-up detail
+  alt: Furbaby Premium Gift Box, close-up detail
   width: 1800
   height: 1350
   original: originals/assets/products/furbaby-premium-gift-box/furbaby-premium-gift-box-3.jpg
@@ -36,7 +36,7 @@ wixCollections: []
 brand: Eco Happy
 seoTitle: Furbaby Premium Gift Box | Gift Hampers & Boxes | Eco Happy
 seoDescription: A gift box for pet lovers with upcycled-fabric and plantable-paper
-  items, hand-packed by Eco Happy's Pune team — for a pet parent who cares about waste.
+  items, hand-packed by Eco Happy's Pune team, for a pet parent who cares about waste.
 answer: Furbaby Premium Gift Box is a plastic-free product hand-made by Eco Happy's
   women-led team in Pune.
 specs:
@@ -47,10 +47,10 @@ specs:
 howToUse: []
 faq:
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy Furbaby Premium Gift Box in bulk for a gifting order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - sunshine-hamper-2026
 retired: false

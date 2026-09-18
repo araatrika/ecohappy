@@ -18,43 +18,43 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/seed-colour-pencils-set-of-2-boxes/seed-colour-pencils-set-of-2-boxes-1.jpg
-  alt: Seed Color Pencils - Set of 2 Boxes — Seed Pencils & Pens, made in Pune by
+  alt: Seed Color Pencils - Set of 2 Boxes, Seed Pencils & Pens, made in Pune by
     Eco Happy
   width: 1350
   height: 1800
   original: originals/assets/products/seed-colour-pencils-set-of-2-boxes/seed-colour-pencils-set-of-2-boxes-1.jpg
 - src: /assets/products/seed-pencils-set-of-4-boxes/seed-pencils-set-of-4-boxes-2.jpg
-  alt: Seed Color Pencils - Set of 2 Boxes — shown from another angle
+  alt: Seed Color Pencils - Set of 2 Boxes, shown from another angle
   width: 832
   height: 1280
   original: originals/assets/products/seed-pencils-set-of-4-boxes/seed-pencils-set-of-4-boxes-2.jpg
 - src: /assets/products/seed-colour-pencils-set-of-2-boxes/seed-colour-pencils-set-of-2-boxes-3.jpg
-  alt: Seed Color Pencils - Set of 2 Boxes — shown from another angle
+  alt: Seed Color Pencils - Set of 2 Boxes, shown from another angle
   width: 1350
   height: 1800
   original: originals/assets/products/seed-colour-pencils-set-of-2-boxes/seed-colour-pencils-set-of-2-boxes-3.jpg
 - src: /assets/products/seed-colour-pencils-set-of-2-boxes/seed-colour-pencils-set-of-2-boxes-4.jpg
-  alt: Seed Color Pencils - Set of 2 Boxes — shown from another angle
+  alt: Seed Color Pencils - Set of 2 Boxes, shown from another angle
   width: 1350
   height: 1800
   original: originals/assets/products/seed-colour-pencils-set-of-2-boxes/seed-colour-pencils-set-of-2-boxes-4.jpg
 - src: /assets/products/seed-colour-pencils-set-of-2-boxes/seed-colour-pencils-set-of-2-boxes-5.jpg
-  alt: Seed Color Pencils - Set of 2 Boxes — shown from another angle
+  alt: Seed Color Pencils - Set of 2 Boxes, shown from another angle
   width: 1800
   height: 1350
   original: originals/assets/products/seed-colour-pencils-set-of-2-boxes/seed-colour-pencils-set-of-2-boxes-5.jpg
 - src: /assets/products/seed-colour-pencils-set-of-2-boxes/seed-colour-pencils-set-of-2-boxes-6.jpg
-  alt: Seed Color Pencils - Set of 2 Boxes — shown from another angle
+  alt: Seed Color Pencils - Set of 2 Boxes, shown from another angle
   width: 1800
   height: 1350
   original: originals/assets/products/seed-colour-pencils-set-of-2-boxes/seed-colour-pencils-set-of-2-boxes-6.jpg
 - src: /assets/products/seed-colour-pencils-set-of-2-boxes/seed-colour-pencils-set-of-2-boxes-7.jpg
-  alt: Seed Color Pencils - Set of 2 Boxes — shown from another angle
+  alt: Seed Color Pencils - Set of 2 Boxes, shown from another angle
   width: 1350
   height: 1800
   original: originals/assets/products/seed-colour-pencils-set-of-2-boxes/seed-colour-pencils-set-of-2-boxes-7.jpg
 - src: /assets/products/seed-colour-pencils-set-of-2-boxes/seed-colour-pencils-set-of-2-boxes-8.jpg
-  alt: Seed Color Pencils - Set of 2 Boxes — close-up detail
+  alt: Seed Color Pencils - Set of 2 Boxes, close-up detail
   width: 1350
   height: 1800
   original: originals/assets/products/seed-colour-pencils-set-of-2-boxes/seed-colour-pencils-set-of-2-boxes-8.jpg
@@ -63,10 +63,10 @@ wixCollections:
 brand: Eco Happy
 seoTitle: Seed Color Pencils - Set of 2 Boxes | Eco Happy
 seoDescription: Seed Color Pencils - Set of 2 Boxes is a plantable, plastic-free product
-  from Eco Happy's Pune workshop. Use it as intended, then plant it in soil — with
+  from Eco Happy's Pune workshop. Use it as intended, then plant it in soil, with
   w
 answer: Seed Color Pencils - Set of 2 Boxes is a plantable, plastic-free product from
-  Eco Happy's Pune workshop. Use it as intended, then plant it in soil — with water
+  Eco Happy's Pune workshop. Use it as intended, then plant it in soil, with water
   and a little sun, it can sprout depending on the season.
 specs:
   material: 100% Recycled Newspaper
@@ -79,16 +79,16 @@ howToUse:
 - Sprouting time varies by seed variety and season.
 faq:
 - q: Does this actually grow?
-  a: Yes — plant the seed-bearing part in soil, keep it watered and give it some sunlight.
+  a: Yes, plant the seed-bearing part in soil, keep it watered and give it some sunlight.
     Germination depends on the seed variety and the season.
 - q: What happens if it doesn't sprout?
-  a: Not every seed germinates — this depends on soil, water and season. If nothing
+  a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy Seed Color Pencils - Set of 2 Boxes in bulk for a gifting order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - colour-pencils-set-of-2-boxes
 - customised-seed-pencils-100-bulk
@@ -112,7 +112,7 @@ migration:
 - Make a conscious choice with Seed Color Pencils from Eco Happy.
   	Key Features:
     - Material: 100% Recycled Newspaper.
-  - Use & Grow: Don't throw it away—plant it!
+  - Use & Grow: Don't throw it away, plant it!
   - Zero Waste: Plastic-free packaging.
   - Made in India, supports local craftsmanship, women empowerment and sustainability.
 
@@ -120,4 +120,4 @@ Seed Color Pencils - Set of 2 Boxes is part of Eco Happy's Seed Pencils & Pens r
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Color Pencils - Set of 2 boxes, Customized Seed Pencils -Set of 100 (Bulk Buy) and Customized Seed Pencils - 50 units. See the FAQ below for sizing, care and bulk-order questions.
 
-Yes — plant the seed-bearing part in soil, keep it watered and give it some sunlight. Germination depends on the seed variety and the season. Not every seed germinates — this depends on soil, water and season. If nothing sprouts after a few weeks, it's worth trying again with fresh soil.
+Yes, plant the seed-bearing part in soil, keep it watered and give it some sunlight. Germination depends on the seed variety and the season. Not every seed germinates. It depends on the soil, water and season. If nothing sprouts after a few weeks, it's worth trying again with fresh soil.

@@ -1,7 +1,7 @@
 ---
-title: Zero Waste Birthday Gifts — Ideas from Eco Happy
+title: Zero Waste Birthday Gifts, Ideas from Eco Happy
 slug: zero-waste-birthday-gifts
-description: Zero-waste birthday gift ideas — plantable seed-paper cards, upcycled
+description: Zero-waste birthday gift ideas, plantable seed-paper cards, upcycled
   fabric diaries and reusable steel items that skip single-use packaging.
 author: Jagruti Khabiya Jain
 datePublished: '2023-04-06'
@@ -16,6 +16,7 @@ tags:
 - handmade
 - sustainability
 - zerowaste
+category: "Seasonal & Festive Gifting"
 timeToRead: 1 min read
 draft: false
 migration:
@@ -31,13 +32,20 @@ migration:
 faq:
 - q: What's a good zero-waste birthday gift idea?
   a: Plantable seed-paper cards, upcycled fabric diaries, or reusable steel items
-    are all good picks — they avoid single-use packaging and last beyond the party.
+    are all good picks, they avoid single-use packaging and last beyond the party.
 - q: Does Eco Happy do birthday return-gift orders?
-  a: Yes — see our Return Gifts page for bulk, budget-friendly options for kids' or
+  a: Yes, see our Return Gifts page for bulk, budget-friendly options for kids' or
     adult birthday parties.
+- q: "What happens to Eco Happy's own fabric offcuts?"
+  a: "They're turned into ribbons for birthday favours instead of going to waste, one example of reusing material rather than buying new."
+- q: "Are zero-waste birthday gifts suitable for kids' parties?"
+  a: "Yes, plantable seed-paper favours and small reusable items work well as return gifts that avoid single-use party-bag plastic."
+- q: "Can these be ordered in bulk for a party?"
+  a: "Yes, see our Seasonal & Informal Gifting page for bulk, budget-friendly options for kids' or adult birthday parties."
+
 ---
 
-At Araatrika (Eco Happy), fabric offcuts from our own production floor get turned into ribbons for birthday favours instead of going to waste — one small example of how we reuse material rather than buying new.
+At Araatrika (Eco Happy), fabric offcuts from our own production floor get turned into ribbons for birthday favours instead of going to waste, one small example of how we reuse material rather than buying new.
 
 ...
 

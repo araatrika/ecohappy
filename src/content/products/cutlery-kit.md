@@ -18,17 +18,17 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/cutlery-kit/cutlery-kit-1.jpg
-  alt: Cutlery Kit — Home & Travel, made in Pune by Eco Happy
+  alt: Cutlery Kit, Home & Travel, made in Pune by Eco Happy
   width: 1350
   height: 1800
   original: originals/assets/products/cutlery-kit/cutlery-kit-1.jpg
 - src: /assets/products/cutlery-kit/cutlery-kit-2.jpg
-  alt: Cutlery Kit — shown from another angle
+  alt: Cutlery Kit, shown from another angle
   width: 1350
   height: 1800
   original: originals/assets/products/cutlery-kit/cutlery-kit-2.jpg
 - src: /assets/products/cutlery-kit/cutlery-kit-3.jpg
-  alt: Cutlery Kit — close-up detail
+  alt: Cutlery Kit, close-up detail
   width: 1350
   height: 1800
   original: originals/assets/products/cutlery-kit/cutlery-kit-3.jpg
@@ -37,7 +37,7 @@ wixCollections:
 brand: Eco Happy
 seoTitle: Cutlery Kit | Home & Travel | Eco Happy
 seoDescription: A reusable steel spoon-and-fork travel cutlery kit in a cloth pouch,
-  hand-assembled in Pune — carry your own set instead of single-use plastic cutlery.
+  hand-assembled in Pune, carry your own set instead of single-use plastic cutlery.
 answer: Cutlery Kit is a plastic-free product hand-made by Eco Happy's women-led team
   in Pune. High-Grade Steel Spoon & Fork.
 specs:
@@ -46,10 +46,10 @@ specs:
 howToUse: []
 faq:
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy Cutlery Kit in bulk for a gifting order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - bamboo-toothbrush-set-of-2
 - plantable-coasters-30-units
@@ -85,4 +85,4 @@ Cutlery Kit is part of Eco Happy's Home & Travel range. Made in Pune, India by A
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Bamboo Toothbrush - Set of 2, Plantable Coasters-  30 units and Reusable Tea Infuser. See the FAQ below for sizing, care and bulk-order questions.
 
-Yes — the product and its packaging are designed to be plastic-free, in keeping with how we make everything at Eco Happy. Yes — message us on WhatsApp for bulk pricing and lead times.
+Yes, the product and its packaging are designed to be plastic-free, in keeping with how we make everything at Eco Happy. Yes, message us on WhatsApp for bulk pricing and lead times.

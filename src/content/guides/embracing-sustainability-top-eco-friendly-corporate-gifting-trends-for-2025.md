@@ -10,6 +10,7 @@ cover: ''
 coverAlt: Top Eco-Friendly Corporate Gifting Trends for 2025
 coverIsStock: false
 tags: []
+category: "Corporate Gifting"
 timeToRead: 3 min read
 draft: false
 migration:
@@ -30,6 +31,13 @@ faq:
 - q: Does Eco Happy do bulk corporate orders?
   a: Yes, see our Corporate Gifting page or WhatsApp us with your headcount and budget
     for a quote.
+- q: "What's replacing branded merch in corporate gifting?"
+  a: "Plantable stationery, reusable kits and upcycled-fabric items that a recipient keeps or uses, rather than single-use branded pens or mugs."
+- q: "What kind of gifts don't work well for corporate gifting?"
+  a: "Elaborate hamper boxes stuffed with items nobody asked for. A smaller gift someone actually uses beats a bigger one they don't."
+- q: "How far in advance should I order for Diwali corporate gifting?"
+  a: "Start the conversation before the last week of October. Bulk batches are rolled and packed after you order, so lead time runs a few days longer than in-stock items."
+
 ---
 
 I run a small stationery workshop in Pune, and every October the same question shows up in my inbox: what should we give our team for Diwali that isn't another branded mug nobody uses? Here's what I've actually seen work, from the corporate orders we've filled ourselves.
@@ -54,4 +62,4 @@ Anything that photographs well but sits in a drawer. I've watched companies orde
 
 We don't run a storefront checkout for bulk orders. Message us on WhatsApp with your headcount and budget, and we'll tell you what's realistic and by when. Customisation (a name, a logo, a message) is available on several products, seed pencils and diaries most often. Lead time runs a few days longer than our regular stock, since these are made after you order, not pulled off a shelf.
 
-If you're planning Diwali gifting, start the conversation now rather than in the last week of October. Batches take time to roll and pack.
+If you're planning Diwali gifting, start the conversation now rather than in the last week of October. Batches take time to roll and pack. Curious what switching actually saves in plastic and CO2e for your headcount? Try the [impact calculator](/impact-calculator/).

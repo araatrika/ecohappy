@@ -1,7 +1,7 @@
 ---
 title: 5 Personalised Christmas Gifting Ideas
 slug: 5-personalized-gifting-ideas-for-this-christmas
-description: Five personalised, low-waste Christmas gift ideas from Eco Happy — plantable
+description: Five personalised, low-waste Christmas gift ideas from Eco Happy, plantable
   stationery and small keepsakes that show you thought about it.
 author: Jagruti Khabiya Jain
 datePublished: '2025-12-10'
@@ -10,6 +10,7 @@ cover: /assets/blog/5-personalized-gifting-ideas-for-this-christmas/cover.jpg
 coverAlt: 5 PERSONALIZED GIFTING IDEAS FOR THIS CHRISTMAS -
 coverIsStock: false
 tags: []
+category: "Seasonal & Festive Gifting"
 timeToRead: 2 min read
 draft: false
 migration:
@@ -24,14 +25,21 @@ migration:
   - author byline + Person schema
 faq:
 - q: Are plantable pencils actually good Christmas gifts?
-  a: Yes — they're small, low-cost, and double as a gift and a seed packet, which
+  a: Yes, they're small, low-cost, and double as a gift and a seed packet, which
     works well for office Secret Santa or bulk client gifting.
 - q: Can Eco Happy personalise gifts for Christmas orders?
   a: Yes, we do name/logo personalisation on select products for bulk and corporate
-    Christmas orders — message us on WhatsApp with your quantity and deadline.
+    Christmas orders, message us on WhatsApp with your quantity and deadline.
+- q: "What are good low-waste Christmas gift ideas for pets?"
+  a: "An upcycled premium gift box, or a customisable Indie Dog desk calendar, with a portion of proceeds supporting dog rescue and adoption."
+- q: "What's a sustainable Christmas gift for colleagues?"
+  a: "A tote bag filled with small useful items, such as a desk calendar, seed pens and a daily planner, personalised with each person's name."
+- q: "Does Eco Happy support any causes with Christmas purchases?"
+  a: "A portion of every Indie Dog Calendar purchase supports Adopt Don't Shop, Bangalore, which works on rescues and adoptions."
+
 ---
 
-![5 PERSONALIZED GIFTING IDEAS FOR THIS CHRISTMAS - — cover photo](/assets/blog/5-personalized-gifting-ideas-for-this-christmas/image-1.jpg)
+![5 PERSONALIZED GIFTING IDEAS FOR THIS CHRISTMAS -, cover photo](/assets/blog/5-personalized-gifting-ideas-for-this-christmas/image-1.jpg)
 
 Christmas teaches us that love is giving. A gift no matter the size shows someone they matter and expresses gratitude in a way words alone cannot. That’s why giving is at the heart of this season.
 
@@ -57,7 +65,7 @@ Inspire sustainability in children by gifting eco-friendly items such as our[see
 
 **3) Gifts for the Environment** **-**
 
-Choose zero-waste alternatives that reduce your ecological footprint—reusable[tea infusers](/shop/reusable-tea-infuser/)**,** coconut [scrub pads](/shop/scrub-pads-set-of-4/), and our reusable [cutlery](/shop/travel-kit/) or [travel kits](/shop/travel-kit/) help eliminate single-use plastics.
+Choose zero-waste alternatives that reduce your ecological footprint, reusable[tea infusers](/shop/reusable-tea-infuser/)**,** coconut [scrub pads](/shop/scrub-pads-set-of-4/), and our reusable [cutlery](/shop/travel-kit/) or [travel kits](/shop/travel-kit/) help eliminate single-use plastics.
 
 Planting trees through seed balls is another meaningful contribution.
 

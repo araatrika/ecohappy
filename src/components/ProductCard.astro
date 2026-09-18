@@ -20,7 +20,7 @@ const onSale = typeof salePrice === 'number' && salePrice < price;
 <a class="product-card card" href={`/shop/${product.data.slug}/`}>
   <div class="media">
     {img ? (
-      <img src={img.src} alt={img.alt || `${name} — Eco Happy`} loading="lazy" width="400" height="500" />
+      <img src={img.src} alt={img.alt || `${name}, Eco Happy`} loading="lazy" width="400" height="500" />
     ) : (
       <div class="media placeholder" aria-hidden="true"></div>
     )}
@@ -56,7 +56,7 @@ const onSale = typeof salePrice === 'number' && salePrice < price;
     .product-card:hover .media img { transform: none; }
   }
   .media.placeholder { display: flex; }
-  .ribbon, .sale { position: absolute; top: 0.5rem; left: 0.5rem; }
+  .ribbon.sale { position: absolute; top: 0.5rem; left: 0.5rem; }
   .sale { left: auto; right: 0.5rem; }
   .body { padding: 1rem 1.1rem 1.2rem; }
   .body h3 { font-size: 1rem; margin-bottom: 0.3em; color: var(--ink); font-family: var(--font-body); font-weight: 700; }

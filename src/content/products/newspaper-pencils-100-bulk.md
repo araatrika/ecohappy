@@ -18,18 +18,18 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/newspaper-pencils-100-bulk/newspaper-pencils-100-bulk-1.jpg
-  alt: Pencils - Set of 100 (Bulk Buy) — Seed Pencils & Pens, made in Pune by Eco
+  alt: Pencils - Set of 100 (Bulk Buy), Seed Pencils & Pens, made in Pune by Eco
     Happy
   width: 1350
   height: 1800
   original: originals/assets/products/newspaper-pencils-100-bulk/newspaper-pencils-100-bulk-1.jpg
 - src: /assets/products/newspaper-pencils-100-bulk/newspaper-pencils-100-bulk-2.jpg
-  alt: Pencils - Set of 100 (Bulk Buy) — shown from another angle
+  alt: Pencils - Set of 100 (Bulk Buy), shown from another angle
   width: 1350
   height: 1800
   original: originals/assets/products/newspaper-pencils-100-bulk/newspaper-pencils-100-bulk-2.jpg
 - src: /assets/products/newspaper-pencils-100-bulk/newspaper-pencils-100-bulk-3.jpg
-  alt: Pencils - Set of 100 (Bulk Buy) — close-up detail
+  alt: Pencils - Set of 100 (Bulk Buy), close-up detail
   width: 1350
   height: 1800
   original: originals/assets/products/newspaper-pencils-100-bulk/newspaper-pencils-100-bulk-3.jpg
@@ -48,10 +48,10 @@ specs:
 howToUse: []
 faq:
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy Pencils - Set of 100 (Bulk Buy) in bulk for a gifting order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - colour-pencils-set-of-2-boxes
 - customised-seed-pencils-100-bulk
@@ -82,7 +82,7 @@ Key Features:
 
 Why Buy in Bulk?
 
-Perfect for personal use. Save on packaging and help help save the environment in return!! A newspaper pencil replaces one made from virgin wood — a straightforward bulk swap for office or school stationery.
+Perfect for personal use. Save on packaging and help help save the environment in return!! A newspaper pencil replaces one made from virgin wood, a straightforward bulk swap for office or school stationery.
 
 Pencils - Set of 100 (Bulk Buy) is part of Eco Happy's Seed Pencils & Pens range. It's made from 100% Recycled Newspaper. Made in Pune, India by Araatrika women-led production team.
 

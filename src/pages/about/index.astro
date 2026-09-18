@@ -1,0 +1,178 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import site from '../../data/site.json';
+
+const title = 'About Eco Happy | Sustainable Stationery, Made in Pune';
+const description = "How Eco Happy makes plastic-free, plantable stationery by hand in Pune: who makes it, what it's made of, and how the founder started it in 2017.";
+const yearsActive = new Date().getFullYear() - Number(site.foundingDate);
+
+const whatWeDo = [
+  {
+    icon: 'M4 20c4-9 12-9 16-16 0 9-3 15-16 16z',
+    title: 'Plastic-free, start to finish',
+    body: "Seed pencils, seed paper, plantable rakhis and kites, upcycled diaries and bags. Every product and its packaging skips plastic entirely.",
+  },
+  {
+    icon: 'M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z',
+    title: 'Rolled and made by hand',
+    body: 'A team of eight women hand-rolls old newspaper into seed pencils and assembles every product in our Parvati Paytha workshop.',
+  },
+  {
+    icon: 'M12 2C8 6 6 9 6 12a6 6 0 0012 0c0-3-2-6-6-10z',
+    title: 'Designed to be planted',
+    body: "The part you're done with goes back into soil, not a bin. Seed pencils, seed paper and seed rakhis all carry real, viable seeds.",
+  },
+  {
+    icon: 'M9 12l2 2 4-4m5 2a9 9 0 11-18 0 9 9 0 0118 0z',
+    title: 'Claims we can stand behind',
+    body: "If we say plastic-free or plantable, that's true of the exact product you receive, not a line borrowed for marketing.",
+  },
+];
+
+const facts = [
+  { num: String(site.foundingDate), label: 'founded, from a small exhibition stall' },
+  { num: '8', label: 'women hand-rolling and assembling every order' },
+  { num: String(yearsActive), label: 'years running the Parvati Paytha workshop' },
+];
+---
+<BaseLayout title={title} description={description}>
+  <section class="container hero reveal">
+    <p class="eyebrow">Since {site.foundingDate} &middot; Pune, India</p>
+    <h1>How Eco Happy started</h1>
+    <p class="lede">
+      Araatrika started in {site.foundingDate} with a small exhibition stall of handcrafted recycled
+      products, made by our founder, Ar. Jagruti Khabiya Jain. It has grown into a team of eight
+      women (and counting) working out of a workshop in Parvati Paytha, Pune, hand-rolling
+      newspaper into seed pencils and making seed paper, upcycled-fabric and plantable festive
+      products.
+    </p>
+  </section>
+
+  <section class="container facts-row reveal">
+    {facts.map((f) => (
+      <div class="stat-block about-stat">
+        <span class="stat-num">{f.num}{f.label.includes('women') ? '' : '+'}</span>
+        <span class="stat-label">{f.label}</span>
+      </div>
+    ))}
+  </section>
+
+  <section class="section-cream what-we-do reveal">
+    <div class="container">
+      <h2>What we actually do</h2>
+      <div class="do-grid">
+        {whatWeDo.map((item) => (
+          <div class="do-card">
+            <span class="do-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d={item.icon}/></svg>
+            </span>
+            <h3>{item.title}</h3>
+            <p>{item.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="container founder reveal">
+    <div class="founder-photo">
+      <img src="/assets/pages/our-story/img20220416112146-jpg.jpg" alt="Ar. Jagruti Khabiya Jain, founder of Eco Happy, in Pune" loading="lazy" />
+    </div>
+    <div class="founder-copy">
+      <p class="eyebrow">Meet the founder</p>
+      <h2>Ar. Jagruti Khabiya Jain</h2>
+      <p>
+        An architect (Savitribai Phule Pune University) who worked in Auroville and Delhi before
+        founding Araatrika in Pune. She leads the team that designs, makes and ships everything on
+        this site.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-blush measure-impact reveal">
+    <div class="container">
+      <p class="eyebrow">Honesty over impact math</p>
+      <h2>We won't publish an impact number we can't measure yet</h2>
+      <p class="lede">
+        A lot of sustainable brands print numbers like "100+ trees saved." We took ours down. We
+        don't have a verified, audited count of trees, plastic or waste diverted per order yet, so
+        showing one would be a guess dressed up as a fact. What we can show you is how we actually
+        work, and a calculator built on published, sourced emission factors, clearly labelled as an
+        estimate, not our own measured data.
+      </p>
+      <a class="btn btn-outline" href="/impact-calculator/">See the impact calculator</a>
+    </div>
+  </section>
+
+  <section class="container recognition reveal">
+    <h2>Recognition</h2>
+    <ul class="chip-row">
+      <li>Runner-up, Maharashtra Start-Up Week</li>
+      <li>Citizen Matters (2024)</li>
+      <li>Sororedit (2022)</li>
+      <li>LBB Pune (2021)</li>
+      <li>The EarthView (2021)</li>
+    </ul>
+  </section>
+
+  <section class="container follow reveal">
+    <div class="follow-card">
+      <img src="/assets/social/ig-ganpati-seedballs.jpg" alt="Eco Happy Instagram post: seed balls made as Ganpati visarjan prasad" loading="lazy" />
+      <div class="follow-copy">
+        <p class="eyebrow">From our Instagram</p>
+        <h3>Real workshop days, real seasonal projects</h3>
+        <p>We post what we're actually making and where you'll find us next, exhibitions, workshops and everyday orders included.</p>
+        <a class="btn btn-primary" href="https://www.instagram.com/araatrika/" target="_blank" rel="noopener">Follow @araatrika</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { max-width: 68ch; padding-block: 2rem 0.5rem; }
+  .eyebrow {
+    font-family: var(--font-label); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--red-deep); margin: 0 0 0.4em;
+  }
+  .lede { font-size: 1.05rem; color: var(--gray-500); }
+
+  .facts-row { display: flex; flex-wrap: wrap; gap: 1rem; padding-block: 0.5rem 2rem; }
+  .about-stat { flex: 1 1 220px; }
+
+  .what-we-do { padding-block: 2.5rem; }
+  .do-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-top: 1.5rem; }
+  .do-card { background: var(--white); border-radius: var(--radius); padding: 1.4rem; box-shadow: var(--shadow-card); }
+  .do-icon {
+    display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px;
+    border-radius: 50%; background: var(--cream); color: var(--forest); margin-bottom: 0.75rem;
+  }
+  .do-card h3 { font-size: 1.02rem; margin-bottom: 0.35em; }
+  .do-card p { font-size: 0.88rem; color: var(--gray-500); margin: 0; }
+  @media (max-width: 900px) { .do-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .do-grid { grid-template-columns: 1fr; } }
+
+  .founder { display: grid; grid-template-columns: 240px 1fr; gap: 2rem; align-items: center; padding-block: 3rem; }
+  .founder-photo img { width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow-card); }
+  .founder-copy p { color: var(--gray-500); }
+  @media (max-width: 700px) { .founder { grid-template-columns: 1fr; } .founder-photo { max-width: 220px; margin: 0 auto; } }
+
+  .measure-impact { padding-block: 2.75rem; }
+  .measure-impact .lede { max-width: 68ch; }
+  .measure-impact .btn { margin-top: 0.5rem; }
+
+  .recognition { padding-block: 2.5rem; }
+  .chip-row { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1rem 0 0; padding: 0; }
+  .chip-row li {
+    font-family: var(--font-label); font-size: 0.82rem; letter-spacing: 0.03em; text-transform: uppercase;
+    background: var(--cream); color: var(--ink); border-radius: 999px; padding: 0.5em 1em;
+  }
+
+  .follow { padding-block: 1rem 3rem; }
+  .follow-card {
+    display: grid; grid-template-columns: 220px 1fr; gap: 1.5rem; align-items: center;
+    background: var(--cream); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow-card);
+  }
+  .follow-card img { width: 100%; border-radius: var(--radius); display: block; aspect-ratio: 4/5; object-fit: cover; }
+  .follow-copy p { color: var(--gray-500); }
+  @media (max-width: 700px) { .follow-card { grid-template-columns: 1fr; } .follow-card img { max-width: 220px; margin: 0 auto; } }
+</style>

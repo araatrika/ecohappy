@@ -18,8 +18,8 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: site.hosts.canonical + '/' },
-    { '@type': 'ListItem', position: 2, name: 'Learn', item: new URL('/learn/', site.hosts.canonical).toString() },
-    { '@type': 'ListItem', position: 3, name: g.title, item: new URL(`/learn/${g.slug}/`, site.hosts.canonical).toString() },
+    { '@type': 'ListItem', position: 2, name: 'Blogs', item: new URL('/blogs/', site.hosts.canonical).toString() },
+    { '@type': 'ListItem', position: 3, name: g.title, item: new URL(`/blogs/${g.slug}/`, site.hosts.canonical).toString() },
   ],
 };
 const faqSchema = g.faq && g.faq.length
@@ -54,7 +54,7 @@ const articleSchema = {
 ---
 <BaseLayout title={`${g.title} | Eco Happy`} description={g.description} image={g.cover || fallbackCover}>
   <article class="container article">
-    <p class="crumb"><a href="/learn/">Learn</a> / {g.title}</p>
+    <p class="crumb"><a href="/blogs/">Blogs</a> / {g.title}</p>
     <h1>{g.title}</h1>
     <p class="byline">By {g.author} &middot; updated {g.dateModified} &middot; {g.timeToRead}</p>
     <div class="cover-wrap">

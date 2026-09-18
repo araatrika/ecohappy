@@ -18,13 +18,13 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/beginners-mandala-book-with-colour-pencils/beginners-mandala-book-with-colour-pencils-1.jpg
-  alt: Beginner's Mandala Book + One Box of Colour Pencils — Kits & Seeds, made in
+  alt: Beginner's Mandala Book + One Box of Colour Pencils, Kits & Seeds, made in
     Pune by Eco Happy
   width: 1080
   height: 1080
   original: originals/assets/products/beginners-mandala-book-with-colour-pencils/beginners-mandala-book-with-colour-pencils-1.jpg
 - src: /assets/products/beginners-mandala-book-with-colour-pencils/beginners-mandala-book-with-colour-pencils-2.jpg
-  alt: Beginner's Mandala Book + One Box of Colour Pencils — shown from another angle
+  alt: Beginner's Mandala Book + One Box of Colour Pencils, shown from another angle
   width: 756
   height: 756
   original: originals/assets/products/beginners-mandala-book-with-colour-pencils/beginners-mandala-book-with-colour-pencils-2.jpg
@@ -42,11 +42,11 @@ specs:
 howToUse: []
 faq:
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy Beginner's Mandala Book + One Box of Colour Pencils in bulk for a gifting
     order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - advanced-mandala-book-with-colour-pencils
 - diy-animal-keychain-kit
@@ -67,7 +67,7 @@ migration:
   - 'only 2 image(s): add hero/detail/lifestyle'
   - 'no SKU in Wix: assign one'
   - write alt text (none in Wix)
-  - provisional SKU auto-assigned — confirm against the real SKU convention once Sprint
+  - provisional SKU auto-assigned, confirm against the real SKU convention once Sprint
     0 decides one
 ---
 
@@ -76,7 +76,7 @@ migration:
 This thoughtfully curated set combines art therapy with environmental consciousness, making it a favorite for birthdays, wellness gifts, or personal self-care.
 
 - 20 Unique Designs: High-quality paper featuring beautiful mandalas perfect for beginners.
-- Complete Set: Includes a box of our signature Eco Happy Color Pencils—made entirely from 100% recycled newspaper.
+- Complete Set: Includes a box of our signature Eco Happy Color Pencils, made entirely from 100% recycled newspaper.
 - Plastic-Free & Conscious: From the pages to the pencils, every element is designed to be eco-friendly and sustainable.
 - Empowering Impact: Handcrafted in India, supporting local women and artisans.
 

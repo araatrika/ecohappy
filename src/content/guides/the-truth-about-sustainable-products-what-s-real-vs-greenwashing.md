@@ -7,9 +7,10 @@ author: Jagruti Khabiya Jain
 datePublished: '2025-12-22'
 dateModified: '2026-09-17'
 cover: /assets/blog/the-truth-about-sustainable-products-what-s-real-vs-greenwashing/cover.jpg
-coverAlt: The Truth About “Sustainable” Products — What’s Real vs. Greenwashing
+coverAlt: The Truth About “Sustainable” Products, What’s Real vs. Greenwashing
 coverIsStock: false
 tags: []
+category: "Sustainability & Greenwashing Guides"
 timeToRead: 2 min read
 draft: false
 migration:
@@ -25,6 +26,13 @@ faq:
 - q: Does Eco Happy make unverifiable sustainability claims?
   a: No, we describe exactly what a product is made from and how to use or plant
     it, and avoid vague or unverifiable claims.
+- q: "What do India's CCPA and ASCI guidelines require of green claims?"
+  a: "Both the CCPA's 2024 greenwashing guidelines and ASCI's 2024 code require environmental claims to be specific, substantiated and not misleading by omission."
+- q: "What does greenwashing usually look like?"
+  a: "Vague adjectives standing in for evidence, earthy colours and plant imagery doing the persuading instead of data, and selective disclosure of what's going well while staying quiet about what isn't."
+- q: "What should I do if a claim on Eco Happy's own site looks unclear?"
+  a: "Tell us. The article says the team would rather fix an unclear or unverifiable claim than defend it."
+
 ---
 
 ![The Truth About “Sustainable” Products: What’s Real vs. Greenwashing: cover photo](/assets/blog/the-truth-about-sustainable-products-what-s-real-vs-greenwashing/image-1.jpg)

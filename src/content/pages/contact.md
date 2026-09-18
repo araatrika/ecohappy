@@ -1,5 +1,5 @@
 ---
-title: Contact Eco Happy — Plantable Stationery, Pune
+title: "Contact Eco Happy | Plantable Stationery, Pune"
 slug: contact
 newUrl: /contact/
 description: Get in touch with Eco Happy. Contact us for custom orders, bulk inquiries

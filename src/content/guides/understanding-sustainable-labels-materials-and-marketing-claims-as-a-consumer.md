@@ -10,6 +10,7 @@ cover: /assets/blog/understanding-sustainable-labels-materials-and-marketing-cla
 coverAlt: Understanding sustainable labels, materials and marketing claims as a consumer.
 coverIsStock: false
 tags: []
+category: "Sustainability & Greenwashing Guides"
 timeToRead: 1 min read
 draft: false
 migration:
@@ -22,6 +23,15 @@ faq:
 - q: What should I check before trusting an 'eco' label on packaging?
   a: Check whether the label names a real certifying body or standard, or is just
     marketing language with no third-party backing.
+- q: "What does a credible sustainability certification usually address?"
+  a: "Something specific and measurable, such as carbon emissions, ethical sourcing, recyclability or restricted chemical use."
+- q: "Is a 'sustainable' material automatically a sustainable product?"
+  a: "No. How it's processed, transported and disposed of afterward still shapes the real footprint, regardless of the base material."
+- q: "What questions should I ask before trusting an eco label?"
+  a: "Does the brand name a certifying body, or just imply one? Does it explain what the material is and how to use or dispose of it, rather than stopping at the word 'eco'?"
+- q: "What standard does Eco Happy try to hold its own listings to?"
+  a: "Naming the material, explaining what happens to it after use, and avoiding words that don't mean anything without more context."
+
 ---
 
 ![Understanding sustainable labels, materials and marketing claims as a consumer: cover photo](/assets/blog/understanding-sustainable-labels-materials-and-marketing-claims-as-a-consumer/image-1.jpg)

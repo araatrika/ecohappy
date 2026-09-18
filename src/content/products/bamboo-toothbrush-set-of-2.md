@@ -19,22 +19,22 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/bamboo-toothbrush-set-of-2/bamboo-toothbrush-set-of-2-1.jpg
-  alt: Bamboo Toothbrush - Set of 2 — Home & Travel, made in Pune by Eco Happy
+  alt: Bamboo Toothbrush - Set of 2, Home & Travel, made in Pune by Eco Happy
   width: 1350
   height: 1800
   original: originals/assets/products/bamboo-toothbrush-set-of-2/bamboo-toothbrush-set-of-2-1.jpg
 - src: /assets/products/bamboo-toothbrush-set-of-2/bamboo-toothbrush-set-of-2-2.jpg
-  alt: Bamboo Toothbrush - Set of 2 — shown from another angle
+  alt: Bamboo Toothbrush - Set of 2, shown from another angle
   width: 1350
   height: 1800
   original: originals/assets/products/bamboo-toothbrush-set-of-2/bamboo-toothbrush-set-of-2-2.jpg
 - src: /assets/products/bamboo-toothbrush-set-of-2/bamboo-toothbrush-set-of-2-3.jpg
-  alt: Bamboo Toothbrush - Set of 2 — shown from another angle
+  alt: Bamboo Toothbrush - Set of 2, shown from another angle
   width: 1350
   height: 1800
   original: originals/assets/products/bamboo-toothbrush-set-of-2/bamboo-toothbrush-set-of-2-3.jpg
 - src: /assets/products/bamboo-toothbrush-set-of-2/bamboo-toothbrush-set-of-2-4.jpg
-  alt: Bamboo Toothbrush - Set of 2 — close-up detail
+  alt: Bamboo Toothbrush - Set of 2, close-up detail
   width: 1350
   height: 1800
   original: originals/assets/products/bamboo-toothbrush-set-of-2/bamboo-toothbrush-set-of-2-4.jpg
@@ -44,7 +44,7 @@ wixCollections:
 brand: Eco Happy
 seoTitle: Bamboo Toothbrush - Set of 2 | Home & Travel | Eco Happy
 seoDescription: A set of 2 bamboo-handled toothbrushes with charcoal-infused bristles,
-  hand-finished in Pune — a plastic-free swap for your daily routine.
+  hand-finished in Pune, a plastic-free swap for your daily routine.
 answer: Bamboo Toothbrush - Set of 2 is a plastic-free product hand-made by Eco Happy's
   women-led team in Pune.
 specs:
@@ -53,10 +53,10 @@ specs:
 howToUse: []
 faq:
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy Bamboo Toothbrush - Set of 2 in bulk for a gifting order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - cutlery-kit
 - plantable-coasters-30-units

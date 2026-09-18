@@ -2,14 +2,14 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 <BaseLayout
-  title="Impact Calculator — Estimate Plastic & CO2e Avoided | Eco Happy"
-  description="Three quick calculators estimating the plastic and CO2e avoided by switching from conventional pens, pencils, notebooks and corporate gifts to Eco Happy's plantable and upcycled versions, using published third-party emission factors."
+  title="Impact Calculator | Plastic & CO2e Avoided | Eco Happy"
+  description="Four quick calculators estimating the plastic and CO2e avoided by switching pens, pencils, notebooks and corporate or event gift hampers to Eco Happy's plantable and upcycled versions, using published emission factors."
 >
   <section class="container hero">
     <p class="eyebrow">Honesty, not greenwashing</p>
     <h1>Estimate your impact</h1>
     <p class="lede">
-      Three quick calculators for switching everyday stationery and corporate gifting to plastic-free,
+      Four quick calculators for switching everyday stationery and corporate or event gifting to plastic-free,
       plantable alternatives. Every number below comes from a published third-party source, applied to a
       typical product weight &mdash; these are estimates for illustration, not a measurement of your exact order.
       See <a href="#methodology">methodology &amp; sources</a> below.
@@ -29,6 +29,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <div class="stat"><span class="stat-num" id="tool1-co2">0</span><span class="stat-label">kg CO2e avoided</span></div>
       </div>
       <p class="tool-note">Assumes each conventional pen/pencil is ~10g of plastic, replaced with a newspaper or seed pencil that adds none.</p>
+      <p class="tool-link"><a href="/blogs/what-are-sustainable-gifts-why-they-matter-more-than-ever/">Related: what makes a gift genuinely sustainable &rarr;</a></p>
     </div>
 
     <div class="tool card">
@@ -43,7 +44,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <div class="stat"><span class="stat-num" id="tool2-co2">0</span><span class="stat-label">kg CO2e avoided</span></div>
         <div class="stat"><span class="stat-num" id="tool2-seeds">0</span><span class="stat-label">seeds handed out</span></div>
       </div>
-      <p class="tool-note">Same plastic/CO2e assumption as above. "Seeds handed out" simply counts one embedded seed per unit &mdash; whether it gets planted is up to the recipient.</p>
+      <p class="tool-note">Same plastic/CO2e assumption as above. "Seeds handed out" simply counts one embedded seed per unit, whether it gets planted is up to the recipient.</p>
+      <p class="tool-link"><a href="/blogs/sustainable-stationery-for-luxury-resorts-across-the-globe/">Related: sustainable stationery for hospitality &amp; resorts &rarr;</a></p>
     </div>
 
     <div class="tool card">
@@ -57,6 +59,22 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <div class="stat"><span class="stat-num" id="tool3-co2">0</span><span class="stat-label">kg CO2e avoided</span></div>
       </div>
       <p class="tool-note">Assumes ~100g of paper per A5 notebook, comparing virgin-paper production against recycled/upcycled paper production.</p>
+      <p class="tool-link"><a href="/blogs/how-small-businesses-can-reduce-their-carbon-footprint/">Related: cutting a small business's carbon footprint &rarr;</a></p>
+    </div>
+
+    <div class="tool card">
+      <h2>4. Corporate &amp; event gift hampers</h2>
+      <p class="tool-copy">Planning a hamper (pen/pencil + notebook + packaging) for a corporate event or client list?</p>
+      <label class="field">
+        <span>Hampers / recipients</span>
+        <input type="number" id="tool4-qty" min="0" value="150" step="10" />
+      </label>
+      <div class="result" id="tool4-result" aria-live="polite">
+        <div class="stat"><span class="stat-num" id="tool4-plastic">0</span><span class="stat-label">kg plastic avoided</span></div>
+        <div class="stat"><span class="stat-num" id="tool4-co2">0</span><span class="stat-label">kg CO2e avoided</span></div>
+      </div>
+      <p class="tool-note">Assumes one pen/pencil (~10g plastic) plus one A5 notebook (~100g paper) per hamper, using the same factors as tools 1 &amp; 3 combined.</p>
+      <p class="tool-link"><a href="/blogs/embracing-sustainability-top-eco-friendly-corporate-gifting-trends-for-2025/">Related: corporate gifting trends for 2025 &rarr;</a> &middot; <a href="/gifting/corporate/">See corporate gifting</a></p>
     </div>
   </section>
 
@@ -142,9 +160,27 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     update();
   }
 
+  function bindTool4() {
+    const qtyEl = document.getElementById('tool4-qty');
+    const plasticEl = document.getElementById('tool4-plastic');
+    const co2El = document.getElementById('tool4-co2');
+    function update() {
+      const qty = Math.max(0, Number(qtyEl.value) || 0);
+      const plasticKg = (qty * PEN_PLASTIC_G) / 1000;
+      const plasticCo2 = plasticKg * PLASTIC_CO2_PER_KG;
+      const paperKg = (qty * NOTEBOOK_PAPER_G) / 1000;
+      const paperCo2 = paperKg * (PAPER_VIRGIN_CO2_PER_KG - PAPER_RECYCLED_CO2_PER_KG);
+      plasticEl.textContent = fmt(plasticKg);
+      co2El.textContent = fmt(plasticCo2 + paperCo2);
+    }
+    qtyEl.addEventListener('input', update);
+    update();
+  }
+
   bindTool1();
   bindTool2();
   bindTool3();
+  bindTool4();
 </script>
 
 <style>
@@ -153,7 +189,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .lede { font-size: 1.05rem; color: var(--gray-500); }
   .lede a { color: var(--red-deep); }
 
-  .tools { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; padding-block: 1rem 2.5rem; }
+  .tools { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; padding-block: 1rem 2.5rem; }
   .tool { padding: 1.5rem; border: 1px solid var(--gray-200); }
   .tool h2 { font-size: 1.15rem; margin-bottom: 0.4em; }
   .tool-copy { font-size: 0.9rem; color: var(--gray-500); margin-bottom: 1rem; }
@@ -168,7 +204,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .stat { flex: 1 1 auto; min-width: 90px; }
   .stat-num { display: block; font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; color: var(--red-deep); }
   .stat-label { display: block; font-size: 0.72rem; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.04em; }
-  .tool-note { font-size: 0.78rem; color: var(--gray-500); margin: 0; }
+  .tool-note { font-size: 0.78rem; color: var(--gray-500); margin: 0 0 0.5rem; }
+  .tool-link { font-size: 0.78rem; margin: 0; }
+  .tool-link a { color: var(--forest); }
 
   .cta-strip { text-align: center; padding-block: 1rem 3rem; }
   .cta-strip p { font-weight: 700; margin-bottom: 0.75rem; }
@@ -181,7 +219,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .methodology li strong { color: var(--ink); }
   .methodology .fine { font-size: 0.85rem; font-style: italic; }
 
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
     .tools { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 600px) {

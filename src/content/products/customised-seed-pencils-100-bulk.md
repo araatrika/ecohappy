@@ -20,23 +20,23 @@ customTextFields:
 variants: []
 images:
 - src: /assets/products/customised-seed-pencils-100-bulk/customised-seed-pencils-100-bulk-1.jpg
-  alt: Customized Seed Pencils -Set of 100 (Bulk Buy) — Seed Pencils & Pens, made
+  alt: Customized Seed Pencils -Set of 100 (Bulk Buy), Seed Pencils & Pens, made
     in Pune by Eco Happy
   width: 1350
   height: 1800
   original: originals/assets/products/customised-seed-pencils-100-bulk/customised-seed-pencils-100-bulk-1.jpg
 - src: /assets/products/seed-pencils-set-of-4-boxes/seed-pencils-set-of-4-boxes-2.jpg
-  alt: Customized Seed Pencils -Set of 100 (Bulk Buy) — shown from another angle
+  alt: Customized Seed Pencils -Set of 100 (Bulk Buy), shown from another angle
   width: 832
   height: 1280
   original: originals/assets/products/seed-pencils-set-of-4-boxes/seed-pencils-set-of-4-boxes-2.jpg
 - src: /assets/products/customised-seed-pencils-100-bulk/customised-seed-pencils-100-bulk-3.jpg
-  alt: Customized Seed Pencils -Set of 100 (Bulk Buy) — shown from another angle
+  alt: Customized Seed Pencils -Set of 100 (Bulk Buy), shown from another angle
   width: 1800
   height: 1350
   original: originals/assets/products/customised-seed-pencils-100-bulk/customised-seed-pencils-100-bulk-3.jpg
 - src: /assets/products/customised-seed-pencils-100-bulk/customised-seed-pencils-100-bulk-4.jpg
-  alt: Customized Seed Pencils -Set of 100 (Bulk Buy) — close-up detail
+  alt: Customized Seed Pencils -Set of 100 (Bulk Buy), close-up detail
   width: 1350
   height: 1800
   original: originals/assets/products/customised-seed-pencils-100-bulk/customised-seed-pencils-100-bulk-4.jpg
@@ -47,8 +47,7 @@ seoTitle: Customized Seed Pencils -Set of 100 (Bulk Buy) | Eco Happy
 seoDescription: Customized Seed Pencils -Set of 100 (Bulk Buy) is a plantable, plastic-free
   product from Eco Happy's Pune workshop. Use it as intended, then plant it in so
 answer: Customized Seed Pencils -Set of 100 (Bulk Buy) is a plantable, plastic-free
-  product from Eco Happy's Pune workshop. Use it as intended, then plant it in soil
-  — with water and a little sun, it can sprout depending on the season.
+  product from Eco Happy's Pune workshop. Use it as intended, then plant it in soil, with water and a little sun, it can sprout depending on the season.
 specs:
   material: 100% Recycled Newspaper
   madeIn: Pune, India
@@ -60,19 +59,19 @@ howToUse:
 - Sprouting time varies by seed variety and season.
 faq:
 - q: Does this actually grow?
-  a: Yes — plant the seed-bearing part in soil, keep it watered and give it some sunlight.
+  a: Yes, plant the seed-bearing part in soil, keep it watered and give it some sunlight.
     Germination depends on the seed variety and the season.
 - q: What happens if it doesn't sprout?
-  a: Not every seed germinates — this depends on soil, water and season. If nothing
+  a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy Customized Seed Pencils -Set of 100 (Bulk Buy) in bulk for a gifting
     order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 - q: Can this be customised?
-  a: Yes — this product can be customised; message us on WhatsApp with what you have
+  a: Yes, this product can be customised; message us on WhatsApp with what you have
     in mind.
 related:
 - colour-pencils-set-of-2-boxes
@@ -99,14 +98,14 @@ Made from 100% recycled newspaper, hand-rolled in Pune.
 Key Features:
 
 - Material: 100% Recycled Newspaper.
-- Use & Grow: Don't throw it away—plant it!
+- Use & Grow: Don't throw it away, plant it!
 - Zero Waste: Plastic-free packaging.
 - Made in India, supports local craftsmanship, women empowerment and sustainability.
 
 Why Buy in Bulk?
 
-Perfect for personal use. Save on packaging and help help save the environment in return!! A newspaper pencil replaces one made from virgin wood — see [do seed pencils actually grow?](/learn/) for how the seed tip works.
+Perfect for personal use. Save on packaging and help help save the environment in return!! A newspaper pencil replaces one made from virgin wood, see [do seed pencils actually grow?](/blogs/) for how the seed tip works.
 
 Customized Seed Pencils -Set of 100 (Bulk Buy) is part of Eco Happy's Seed Pencils & Pens range. It's made from 100% Recycled Newspaper. Made in Pune, India by Araatrika women-led production team.
 
-This is a made-to-order item with a lead time of about 3 days, since it's produced after you order rather than kept pre-stocked. It can be customised (name, logo, or message) for gifting and bulk orders — message us on WhatsApp to discuss options. If you're gifting or bulk-ordering, it's often paired with Color Pencils - Set of 2 boxes, Customized Seed Pencils - 50 units and Pencil Box - Set of 2 boxes. See the FAQ below for sizing, care and bulk-order questions.
+This is a made-to-order item with a lead time of about 3 days, since it's produced after you order rather than kept pre-stocked. It can be customised (name, logo, or message) for gifting and bulk orders, message us on WhatsApp to discuss options. If you're gifting or bulk-ordering, it's often paired with Color Pencils - Set of 2 boxes, Customized Seed Pencils - 50 units and Pencil Box - Set of 2 boxes. See the FAQ below for sizing, care and bulk-order questions.

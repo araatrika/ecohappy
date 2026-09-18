@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const guides = (await getCollection('guides')).filter((g) => !g.data.draft);
+guides.sort((a, b) => new Date(b.data.datePublished).getTime() - new Date(a.data.datePublished).getTime());
+
+const categoryOrder = ['Corporate Gifting', 'Seasonal & Festive Gifting', 'Sustainability & Greenwashing Guides'];
+const grouped = categoryOrder
+  .map((cat) => ({ cat, items: guides.filter((g) => g.data.category === cat) }))
+  .filter((group) => group.items.length > 0);
+---
+<BaseLayout title="Blogs | Eco Happy" description="Eco Happy's blog, organised by category: corporate gifting, seasonal & festive gifting, and sustainability & greenwashing guides.">
+  <section class="container hero reveal">
+    <h1>Blogs</h1>
+    <p>Straight answers on plantable stationery, sustainable gifting and how to tell a real green claim from marketing, written by the people who make the products.</p>
+  </section>
+  {grouped.map((group) => (
+    <section class="container cat-section reveal">
+      <h2>{group.cat}</h2>
+      <div class="grid">
+        {group.items.map((g) => (
+          <a class="guide-card card" href={`/blogs/${g.data.slug}/`}>
+            <div class="media">
+              {g.data.cover
+                ? <img src={g.data.cover} alt={g.data.coverAlt || g.data.title} loading="lazy" width="400" height="240" />
+                : <span class="media-placeholder" aria-hidden="true"></span>}
+            </div>
+            <div class="body">
+              <h3>{g.data.title}</h3>
+              <p>{g.data.description}</p>
+              <p class="meta">{g.data.timeToRead}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
+</BaseLayout>
+
+<style>
+  .hero { padding-block: 2rem 1rem; max-width: 68ch; }
+  .cat-section { padding-block: 1.25rem; }
+  .cat-section h2 { font-size: 1.35rem; border-bottom: 2px solid var(--cream); padding-bottom: 0.5rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem; padding-block: 1.25rem; }
+  .guide-card { display: block; text-decoration: none; color: var(--ink); background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-card); overflow: hidden; transition: transform 0.15s ease, box-shadow 0.15s ease; }
+  .guide-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(13,13,13,0.12); }
+  .guide-card .media { aspect-ratio: 5/3; background: var(--cream); overflow: hidden; }
+  .guide-card img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+  .guide-card .media-placeholder { display: block; width: 100%; height: 100%; }
+  .guide-card:hover img { transform: scale(1.1); }
+  @media (prefers-reduced-motion: reduce) { .guide-card:hover img { transform: none; } .guide-card:hover { transform: none; } }
+  .guide-card .body { padding: 1rem; }
+  .guide-card h3 { font-size: 1.05rem; margin-bottom: 0.4em; }
+  .guide-card p { font-size: 0.9rem; color: var(--ink); margin-bottom: 0.4em; }
+  .guide-card .meta { color: var(--red-deep); font-size: 0.8rem; }
+</style>

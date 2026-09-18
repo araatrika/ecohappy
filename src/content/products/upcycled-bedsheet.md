@@ -17,22 +17,22 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/upcycled-bedsheet/upcycled-bedsheet-1.jpg
-  alt: Upcycled Bedsheet — Upcycled Fabric, made in Pune by Eco Happy
+  alt: Upcycled Bedsheet, Upcycled Fabric, made in Pune by Eco Happy
   width: 1272
   height: 1800
   original: originals/assets/products/upcycled-bedsheet/upcycled-bedsheet-1.jpg
 - src: /assets/products/upcycled-bedsheet/upcycled-bedsheet-2.jpg
-  alt: Upcycled Bedsheet — shown from another angle
+  alt: Upcycled Bedsheet, shown from another angle
   width: 1080
   height: 1080
   original: originals/assets/products/upcycled-bedsheet/upcycled-bedsheet-2.jpg
 - src: /assets/products/upcycled-bedsheet/upcycled-bedsheet-3.jpg
-  alt: Upcycled Bedsheet — shown from another angle
+  alt: Upcycled Bedsheet, shown from another angle
   width: 1272
   height: 1800
   original: originals/assets/products/upcycled-bedsheet/upcycled-bedsheet-3.jpg
 - src: /assets/products/upcycled-bedsheet/upcycled-bedsheet-4.jpg
-  alt: Upcycled Bedsheet — close-up detail
+  alt: Upcycled Bedsheet, close-up detail
   width: 1080
   height: 1080
   original: originals/assets/products/upcycled-bedsheet/upcycled-bedsheet-4.jpg
@@ -52,10 +52,10 @@ specs:
 howToUse: []
 faq:
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy Upcycled Bedsheet in bulk for a gifting order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - foldable-cloth-bag
 - multicolour-laptop-sleeve
@@ -75,7 +75,7 @@ migration:
   - related products
   - 'no SKU in Wix: assign one'
   - write alt text (none in Wix)
-  - provisional SKU auto-assigned — confirm against the real SKU convention once Sprint
+  - provisional SKU auto-assigned, confirm against the real SKU convention once Sprint
     0 decides one
 ---
 
@@ -91,4 +91,4 @@ Upcycled Bedsheet is part of Eco Happy's Upcycled Fabric range. It measures 54*7
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Foldable Cloth Bag, Multicolor Laptop Sleeve and Upcycled Cloth Bags - Set of 10. See the FAQ below for sizing, care and bulk-order questions.
 
-Yes — the product and its packaging are designed to be plastic-free, in keeping with how we make everything at Eco Happy. Yes — message us on WhatsApp for bulk pricing and lead times.
+Yes, the product and its packaging are designed to be plastic-free, in keeping with how we make everything at Eco Happy. Yes, message us on WhatsApp for bulk pricing and lead times.

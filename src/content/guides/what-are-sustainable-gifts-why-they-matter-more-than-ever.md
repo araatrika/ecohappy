@@ -10,6 +10,7 @@ cover: ''
 coverAlt: What Are Sustainable Gifts? Why They Matter More Than Ever
 coverIsStock: false
 tags: []
+category: "Sustainability & Greenwashing Guides"
 timeToRead: 3 min read
 draft: false
 migration:
@@ -27,6 +28,13 @@ faq:
 - q: Where can I browse Eco Happy's sustainable gift range?
   a: Start at our Shop page, most items are plantable, upcycled, or reusable, and
     filtered by category.
+- q: "What are examples of Eco Happy's most-gifted sustainable items?"
+  a: "The seed pencils set of 4 boxes is one of the most-gifted individual items, alongside seed rakhis in varieties like sunflower, marigold and tulsi for festivals."
+- q: "Why does sustainable gifting matter more for businesses specifically?"
+  a: "Corporate gifting is a visible way a company's stated values either hold up or don't, especially now that recipients notice and sometimes post about what they received."
+- q: "What packaging does Eco Happy ship in?"
+  a: "Kraft paper and minimal plastic, to avoid undoing the lower-impact material choices with heavy gift wrap."
+
 ---
 
 A sustainable gift is one that doesn't end up in a landfill within a month of being opened. That's the short version. The longer version: it's made from materials that either break down naturally or get reused for years, it's produced without exploiting the people who made it, and it doesn't arrive wrapped in three layers of plastic you'll throw away before the recipient even sees what's inside.

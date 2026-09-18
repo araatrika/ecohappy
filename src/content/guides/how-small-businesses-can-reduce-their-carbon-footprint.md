@@ -10,6 +10,7 @@ cover: /assets/blog/how-small-businesses-can-reduce-their-carbon-footprint/cover
 coverAlt: How Small Businesses can reduce their Carbon Footprint?
 coverIsStock: false
 tags: []
+category: "Corporate Gifting"
 timeToRead: 1 min read
 draft: false
 migration:
@@ -25,6 +26,13 @@ faq:
 - q: Does Eco Happy help businesses with this switch?
   a: Yes, we supply plantable stationery and eco-friendly gifting in bulk for businesses
     making this switch, reach out for a sample kit.
+- q: "Where does most of a small business's carbon footprint sit?"
+  a: "In three places: sourcing, packaging and shipping. Those are also the three easiest to change without touching the core business."
+- q: "What did Eco Happy change in its own packaging?"
+  a: "Mixed plastic was swapped for kraft paper and minimal filler, which adds up fast at real order volumes since packaging is a footprint source a business controls entirely on its own."
+- q: "Does reducing footprint require a big budget or a sustainability team?"
+  a: "No. It requires picking the consumables you already buy every month, like stationery and packaging, and choosing the version that doesn't need to be thrown away."
+
 ---
 
 ![How Small Businesses can reduce their Carbon Footprint: cover photo](/assets/blog/how-small-businesses-can-reduce-their-carbon-footprint/image-1.jpg)
@@ -47,4 +55,4 @@ Source ethically, and know where your materials actually come from. Buy locally 
 
 None of this requires a sustainability department or a large budget. It requires picking the consumables you already buy every month and choosing the version that doesn't need to be thrown away.
 
-If you're running a business and want to start with stationery and gifting, [reach out for a sample kit](/gifting/corporate/); that's usually the simplest place to begin.
+If you're running a business and want to start with stationery and gifting, [reach out for a sample kit](/gifting/corporate/); that's usually the simplest place to begin. To put a number on it first, run your own quantities through the [impact calculator](/impact-calculator/).

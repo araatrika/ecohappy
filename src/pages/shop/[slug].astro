@@ -95,11 +95,11 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
       <div class="gallery">
         {p.images.length > 0 ? (
           <>
-            <img class="hero-img" src={p.images[0].src} alt={p.images[0].alt || `${p.name} — Eco Happy`} width={p.images[0].width} height={p.images[0].height} />
+            <img class="hero-img" src={p.images[0].src} alt={p.images[0].alt || `${p.name}, Eco Happy`} width={p.images[0].width} height={p.images[0].height} />
             {p.images.length > 1 && (
               <div class="thumbs">
                 {p.images.slice(1).map((img) => (
-                  <img src={img.src} alt={img.alt || `${p.name} — detail`} loading="lazy" width="150" height="150" />
+                  <img src={img.src} alt={img.alt || `${p.name}, detail`} loading="lazy" width="150" height="150" />
                 ))}
               </div>
             )}
@@ -140,7 +140,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
             </>
           )}
         </div>
-        {p.bulk && <p class="made-to-order-note">Made to order — usually ready in about {p.leadTimeDays} days after we confirm your order on WhatsApp.</p>}
+        {p.bulk && <p class="made-to-order-note">Made to order, usually ready in about {p.leadTimeDays} days after we confirm your order on WhatsApp.</p>}
         {site.gstin && <p class="gst-note">GST invoice available on request</p>}
         <p id="buy-status" class="buy-status" role="status" aria-live="polite"></p>
 
@@ -238,12 +238,12 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
             });
             const result = await verifyRes.json();
             if (result.verified) {
-              status.textContent = `Payment confirmed — thank you! We'll be in touch about delivery for your ${name}.`;
+              status.textContent = `Payment confirmed, thank you! We'll be in touch about delivery for your ${name}.`;
             } else {
               status.textContent = 'We could not verify that payment. Please contact us on WhatsApp with your payment ID before retrying.';
             }
           } catch {
-            status.textContent = 'Payment may have gone through, but we could not confirm it here — please contact us on WhatsApp with your payment ID.';
+            status.textContent = 'Payment may have gone through, but we could not confirm it here, please contact us on WhatsApp with your payment ID.';
           } finally {
             btn.disabled = false;
           }
@@ -256,7 +256,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
         },
       });
       rzp.on('payment.failed', () => {
-        status.textContent = 'Payment failed — no charge was made. You can try again.';
+        status.textContent = 'Payment failed, no charge was made. You can try again.';
         btn.disabled = false;
       });
       rzp.open();
@@ -286,7 +286,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
   .made-to-order-note { font-size: 0.85rem; color: var(--gray-500); margin: -0.75rem 0 1rem; }
   .gst-note { font-size: 0.85rem; color: var(--gray-500); margin: -0.75rem 0 1rem; }
   .specs { border-collapse: collapse; width: 100%; margin-top: 1rem; }
-  .specs th, .specs td { text-align: left; padding: 0.4em 0.6em 0.4em 0; border-bottom: 1px solid var(--cream); font-size: 0.9rem; }
+  .specs th.specs td { text-align: left; padding: 0.4em 0.6em 0.4em 0; border-bottom: 1px solid var(--cream); font-size: 0.9rem; }
   .specs th { color: var(--ink); font-weight: 700; width: 40%; }
   .description { max-width: 68ch; margin-bottom: 2.5rem; }
   .faqs { max-width: 68ch; margin-bottom: 2.5rem; }

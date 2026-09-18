@@ -19,13 +19,13 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/mandala-books-set-with-colour-pencils/mandala-books-set-with-colour-pencils-1.jpg
-  alt: One Beginner & one Advanced Mandala Book — Kits & Seeds, made in Pune by Eco
+  alt: One Beginner & one Advanced Mandala Book, Kits & Seeds, made in Pune by Eco
     Happy
   width: 756
   height: 756
   original: originals/assets/products/mandala-books-set-with-colour-pencils/mandala-books-set-with-colour-pencils-1.jpg
 - src: /assets/products/mandala-books-set-with-colour-pencils/mandala-books-set-with-colour-pencils-2.jpg
-  alt: One Beginner & one Advanced Mandala Book — shown from another angle
+  alt: One Beginner & one Advanced Mandala Book, shown from another angle
   width: 1280
   height: 1280
   original: originals/assets/products/mandala-books-set-with-colour-pencils/mandala-books-set-with-colour-pencils-2.jpg
@@ -42,10 +42,10 @@ specs:
 howToUse: []
 faq:
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy One Beginner & one Advanced Mandala Book in bulk for a gifting order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - advanced-mandala-book-with-colour-pencils
 - beginners-mandala-book-with-colour-pencils
@@ -66,7 +66,7 @@ migration:
   - 'only 2 image(s): add hero/detail/lifestyle'
   - 'no SKU in Wix: assign one'
   - write alt text (none in Wix)
-  - provisional SKU auto-assigned — confirm against the real SKU convention once Sprint
+  - provisional SKU auto-assigned, confirm against the real SKU convention once Sprint
     0 decides one
 ---
 
@@ -78,7 +78,7 @@ Relax & Reconnect: 40 intricate designs (20 per book) to help you de-stress.
 
 Empowering Communities: Every purchase supports local Indian craftsmanship and women’s empowerment.
 
-A recycled-paper colouring book instead of a virgin-paper one — same activity, lower material footprint.
+A recycled-paper colouring book instead of a virgin-paper one, same activity, lower material footprint.
 
 One Beginner & one Advanced Mandala Book is part of Eco Happy's Kits & Seeds range. Made in Pune, India by Araatrika women-led production team.
 

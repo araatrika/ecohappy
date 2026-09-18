@@ -18,6 +18,7 @@ tags:
 - sustainable
 - travel
 - zerowaste
+category: "Corporate Gifting"
 timeToRead: 1 min read
 draft: false
 migration:
@@ -31,6 +32,15 @@ faq:
 - q: Does Eco Happy supply hospitality and resort clients?
   a: Yes, we've supplied sustainable stationery and welcome-kit items to hotels and
     resorts for guest amenities and events; message us for hospitality-scale pricing.
+- q: "Which hospitality brands has Eco Happy supplied?"
+  a: "Six Senses Hotels Resorts Spas, across properties including Six Senses Zighy Bay, Six Senses Con Dao and Six Senses Krabey Island."
+- q: "Why do luxury resorts choose plantable or recycled-paper stationery?"
+  a: "It has to look and feel premium in a guest's hands while avoiding the plastic pens and disposable amenities that undercut a resort's own sustainability claims."
+- q: "How do I get hospitality-scale pricing?"
+  a: "Get in touch through the contact page for hospitality-scale pricing and samples. For a rough sense of plastic and CO2e avoided at guest-amenity scale, see the [impact calculator](/impact-calculator/)."
+- q: "Is this stationery customised with a hotel's own branding?"
+  a: "Yes, guest amenity stationery can carry a property's own branding, in keeping with the same customisation Eco Happy offers on its other bulk orders."
+
 ---
 
 We've supplied sustainable stationery to Six Senses Hotels Resorts Spas for guest amenities across several of their properties, including Six Senses Zighy Bay, Six Senses Con Dao, and Six Senses Krabey Island.

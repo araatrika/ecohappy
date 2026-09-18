@@ -42,17 +42,17 @@ const values = [
   },
   {
     title: 'Real, not stock',
-    body: 'Every photo on this site is our own product — nothing AI-generated.',
+    body: 'Every photo on this site is our own product, nothing AI-generated.',
     icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13" r="3.2"/></svg>',
   },
 ];
 ---
 <BaseLayout
   title="Eco Friendly Products In India | Eco Happy"
-  description="Plantable seed pencils, upcycled diaries and sustainable gifts — hand-made in Pune by a women-led team since 2017, from waste newspaper and upcycled fabric."
+  description="Plantable seed pencils, upcycled diaries and sustainable gifts, hand-made in Pune by a women-led team since 2017, from waste newspaper and upcycled fabric."
 >
   <p class="announce">
-    <a href="/gifting/corporate/">Planning Diwali gifting? Bulk seed pencils with your logo — ask us on WhatsApp →</a>
+    <a href="/gifting/corporate/">Planning Diwali gifting? Bulk seed pencils with your logo, ask us on WhatsApp →</a>
   </p>
 
   <section class="hero section-cream">
@@ -62,7 +62,7 @@ const values = [
         <h1>Stationery that grows into a plant, not landfill</h1>
         <p class="lede">
           Hand-rolled from waste newspaper by a women-led team in Pune.
-          Write with it, plant it, watch it grow — no plastic, ever.
+          Write with it, plant it, watch it grow, no plastic, ever.
         </p>
         <div class="cta-row">
           <a class="btn btn-primary" href="/shop/">Shop now</a>
@@ -142,8 +142,8 @@ const values = [
       <h2>Made by hand, in the open</h2>
       <p>
         Every pencil is rolled by hand from old newspaper by our team of eight women in Parvati Paytha, Pune.
-        We're building an honest, dated record of what we actually make and use — no invented numbers, ever.
-        Read <a href="/about/">how Eco Happy works</a> and <a href="/learn/">what actually happens when you plant a seed pencil</a>.
+        We're building an honest, dated record of what we actually make and use, no invented numbers, ever.
+        Read <a href="/about/">how Eco Happy works</a> and <a href="/blogs/">what actually happens when you plant a seed pencil</a>.
       </p>
       <div class="trust-stats">
         {trustStats.map((t) => (
@@ -158,25 +158,20 @@ const values = [
 
   <section class="container gifting-strip reveal">
     <h2>Gifting, done right</h2>
-    <div class="grid four">
+    <div class="grid three">
       <a class="card gift-card gift-card-highlight" href="/customisation/">
         <h3>Everything, customised</h3>
-        <p>Logo, colours, names and packaging — on every product we sell, bulk or export.</p>
+        <p>Logo, colours, names and packaging on every product we sell, bulk or export.</p>
         <span class="card-link">See what we customise →</span>
       </a>
       <a class="card gift-card" href="/gifting/corporate/">
         <h3>Corporate gifting</h3>
-        <p>MOQ, branding and lead times for Diwali, onboarding and client gifts.</p>
+        <p>MOQ, branding, lead times and bulk pricing for Diwali, onboarding and client gifts.</p>
         <span class="card-link">Explore →</span>
       </a>
-      <a class="card gift-card" href="/gifting/return-gifts/">
-        <h3>Return gifts</h3>
-        <p>Birthday and celebration gifts kids and parents actually keep.</p>
-        <span class="card-link">Explore →</span>
-      </a>
-      <a class="card gift-card" href="/gifting/bulk-and-custom/">
-        <h3>Bulk & custom</h3>
-        <p>Logo printing and custom text on seed pencils, diaries and more.</p>
+      <a class="card gift-card" href="/gifting/seasonal/">
+        <h3>Seasonal & informal gifting</h3>
+        <p>Birthday return gifts and festive favours kids and parents actually keep.</p>
         <span class="card-link">Explore →</span>
       </a>
     </div>
@@ -211,7 +206,7 @@ const values = [
     padding: 1.1rem 1rem 1.25rem; border-radius: var(--radius); border: 1px solid transparent;
     transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, background 0.15s ease;
   }
-  .value:hover, .value:focus-within {
+  .value:hover.value:focus-within {
     transform: translateY(-3px); border-color: var(--gray-200); background: var(--white);
     box-shadow: 0 8px 20px rgba(13,13,13,0.08);
   }

@@ -19,22 +19,22 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/seed-rakhi-evil-eye-band/seed-rakhi-evil-eye-band-1.jpg
-  alt: Seed Rakhi-Evil Eye Band — Festive & Seasonal, made in Pune by Eco Happy
+  alt: Seed Rakhi-Evil Eye Band, Festive & Seasonal, made in Pune by Eco Happy
   width: 1200
   height: 1600
   original: originals/assets/products/seed-rakhi-evil-eye-band/seed-rakhi-evil-eye-band-1.jpg
 - src: /assets/products/seed-rakhi-evil-eye-band/seed-rakhi-evil-eye-band-2.jpg
-  alt: Seed Rakhi-Evil Eye Band — shown from another angle
+  alt: Seed Rakhi-Evil Eye Band, shown from another angle
   width: 1156
   height: 1136
   original: originals/assets/products/seed-rakhi-evil-eye-band/seed-rakhi-evil-eye-band-2.jpg
 - src: /assets/products/seed-rakhi-evil-eye-band/seed-rakhi-evil-eye-band-3.jpg
-  alt: Seed Rakhi-Evil Eye Band — shown from another angle
+  alt: Seed Rakhi-Evil Eye Band, shown from another angle
   width: 800
   height: 600
   original: originals/assets/products/seed-rakhi-evil-eye-band/seed-rakhi-evil-eye-band-3.jpg
 - src: /assets/products/seed-rakhi-evil-eye-band/seed-rakhi-evil-eye-band-4.jpg
-  alt: Seed Rakhi-Evil Eye Band — close-up detail
+  alt: Seed Rakhi-Evil Eye Band, close-up detail
   width: 1000
   height: 636
   original: originals/assets/products/seed-rakhi-evil-eye-band/seed-rakhi-evil-eye-band-4.jpg
@@ -42,10 +42,10 @@ wixCollections: []
 brand: Eco Happy
 seoTitle: Seed Rakhi-Evil Eye Band | Festive & Seasonal | Eco Happy
 seoDescription: 'Seed Rakhi-Evil Eye Band is a plantable, plastic-free product from
-  Eco Happy''s Pune workshop. Use it as intended, then plant it in soil — with water
+  Eco Happy''s Pune workshop. Use it as intended, then plant it in soil, with water
   and a '
 answer: Seed Rakhi-Evil Eye Band is a plantable, plastic-free product from Eco Happy's
-  Pune workshop. Use it as intended, then plant it in soil — with water and a little
+  Pune workshop. Use it as intended, then plant it in soil, with water and a little
   sun, it can sprout depending on the season.
 specs:
   seeds:
@@ -60,16 +60,16 @@ howToUse:
 - Sprouting time varies by seed variety and season.
 faq:
 - q: Does this actually grow?
-  a: Yes — plant the seed-bearing part in soil, keep it watered and give it some sunlight.
+  a: Yes, plant the seed-bearing part in soil, keep it watered and give it some sunlight.
     Germination depends on the seed variety and the season.
 - q: What happens if it doesn't sprout?
-  a: Not every seed germinates — this depends on soil, water and season. If nothing
+  a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy Seed Rakhi-Evil Eye Band in bulk for a gifting order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - paddy-toran
 - plantable-kites-set-of-10
@@ -89,7 +89,7 @@ migration:
   - related products
   - 'no SKU in Wix: assign one'
   - write alt text (none in Wix)
-  - provisional SKU auto-assigned — confirm against the real SKU convention once Sprint
+  - provisional SKU auto-assigned, confirm against the real SKU convention once Sprint
     0 decides one
 ---
 
@@ -107,4 +107,4 @@ Seed Rakhi-Evil Eye Band is part of Eco Happy's Festive & Seasonal range. It car
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Paddy Toran, Eco happy kites- set of 10 and Plantable Flags - Pack of 30. See the FAQ below for sizing, care and bulk-order questions.
 
-Yes — plant the seed-bearing part in soil, keep it watered and give it some sunlight. Germination depends on the seed variety and the season. Not every seed germinates — this depends on soil, water and season. If nothing sprouts after a few weeks, it's worth trying again with fresh soil.
+Yes, plant the seed-bearing part in soil, keep it watered and give it some sunlight. Germination depends on the seed variety and the season. Not every seed germinates. It depends on the soil, water and season. If nothing sprouts after a few weeks, it's worth trying again with fresh soil.

@@ -18,6 +18,7 @@ tags:
 - momboss
 - seedpen
 - sustainable
+category: "Seasonal & Festive Gifting"
 timeToRead: 1 min read
 draft: false
 migration:
@@ -35,11 +36,18 @@ faq:
   a: Seed paper embedded with flower or herb seeds, so after they've been flown they
     can be planted instead of thrown away.
 - q: Are plantable kites available at Eco Happy?
-  a: Availability is seasonal around Makar Sankranti — check our Festive & Seasonal
+  a: Availability is seasonal around Makar Sankranti, check our Festive & Seasonal
     shop category or ask us on WhatsApp.
+- q: "How are Eco Happy's plantable kites sold?"
+  a: "In sets of 10, hand-assembled at our Pune workshop."
+- q: "When should I order plantable kites?"
+  a: "In the run-up to Makar Sankranti (mid-January), since they're one of our genuinely seasonal, limited-window products."
+- q: "What happens to the kite after Sankranti?"
+  a: "Once the string is cut or the season ends, the kite itself can be torn up and planted instead of thrown away."
+
 ---
 
-Eco Happy's plantable kites are made from seed paper embedded with flower and herb seeds — you fly them like any ordinary kite during the Sankranti season, and once the string is cut or the season ends, the kite itself can be torn up and planted instead of thrown away. They're sold in sets of 10, hand-assembled at our Pune workshop, and are one of our few genuinely seasonal products: available in the run-up to Makar Sankranti (mid-January) each year.
+Eco Happy's plantable kites are made from seed paper embedded with flower and herb seeds, you fly them like any ordinary kite during the Sankranti season, and once the string is cut or the season ends, the kite itself can be torn up and planted instead of thrown away. They're sold in sets of 10, hand-assembled at our Pune workshop, and are one of our few genuinely seasonal products: available in the run-up to Makar Sankranti (mid-January) each year.
 
 It's an honour to have been covered by the Indian Express for this offering, without paying for the placement.
 

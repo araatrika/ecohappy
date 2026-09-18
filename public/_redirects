@@ -1,4 +1,4 @@
-# Netlify _redirects for ecohappy.in — generated 2026-09-15 from the Wix sitemaps
+# Netlify _redirects for ecohappy.in, generated 2026-09-15 from the Wix sitemaps
 # Host canonicalisation: both hosts stay live; www 301s to the apex (one canonical).
 https://www.ecohappy.in/*  https://ecohappy.in/:splat  301!
 # Legacy domain (only once happypencils.in DNS points at Netlify; see plan §8.3 option B)
@@ -74,10 +74,12 @@ https://happypencils.in/*  https://ecohappy.in/:splat  301!
 /contact  /contact/  301
 /faq  /faq/  301
 /shop  /shop/  301
-/shop-1  /gifting/return-gifts/  301
+/shop-1  /gifting/seasonal/  301
 /shop-2  /gifting/corporate/  301
 /shop-3  /shop/employee-welcome-kits/  301
-/bulkbuy  /gifting/bulk-and-custom/  301
+/bulkbuy  /gifting/corporate/  301
+/gifting/bulk-and-custom/  /gifting/corporate/  301
+/gifting/return-gifts/  /gifting/seasonal/  301
 /sale  /shop/?sale=1  301
 # Wix product-page and category pages with query strings
 /shop?*  /shop/  301
@@ -97,3 +99,7 @@ https://happypencils.in/*  https://ecohappy.in/:splat  301!
 /shop/upcycled-fabric/  /shop/everyday-desk-essentials/  301
 /shop/kits-and-seeds/  /shop/employee-welcome-kits/  301
 /shop/gift-hampers/  /shop/client-gift-hampers/  301
+
+# Learn renamed to Blogs, 17 Sep 2026 night pass
+/learn/  /blogs/  301
+/learn/*  /blogs/:splat  301

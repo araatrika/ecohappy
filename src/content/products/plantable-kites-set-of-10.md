@@ -17,12 +17,12 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/plantable-kites-set-of-10/plantable-kites-set-of-10-1.jpg
-  alt: Eco happy kites- set of 10 — Festive & Seasonal, made in Pune by Eco Happy
+  alt: Eco happy kites- set of 10, Festive & Seasonal, made in Pune by Eco Happy
   width: 1059
   height: 1080
   original: originals/assets/products/plantable-kites-set-of-10/plantable-kites-set-of-10-1.jpg
 - src: /assets/products/plantable-kites-set-of-10/plantable-kites-set-of-10-2.jpg
-  alt: Eco happy kites- set of 10 — shown from another angle
+  alt: Eco happy kites- set of 10, shown from another angle
   width: 1179
   height: 1198
   original: originals/assets/products/plantable-kites-set-of-10/plantable-kites-set-of-10-2.jpg
@@ -30,9 +30,9 @@ wixCollections: []
 brand: Eco Happy
 seoTitle: Eco happy kites- set of 10 | Festive & Seasonal | Eco Happy
 seoDescription: A set of 10 kites made from seed paper embedded with flower seeds,
-  hand-assembled in Pune — fly them, then plant the paper instead of throwing it out.
+  hand-assembled in Pune, fly them, then plant the paper instead of throwing it out.
 answer: Eco happy kites- set of 10 is a plantable, plastic-free product from Eco Happy's
-  Pune workshop. Use it as intended, then plant it in soil — with water and a little
+  Pune workshop. Use it as intended, then plant it in soil, with water and a little
   sun, it can sprout depending on the season.
 specs:
   seeds:
@@ -46,16 +46,16 @@ howToUse:
 - Sprouting time varies by seed variety and season.
 faq:
 - q: Does this actually grow?
-  a: Yes — plant the seed-bearing part in soil, keep it watered and give it some sunlight.
+  a: Yes, plant the seed-bearing part in soil, keep it watered and give it some sunlight.
     Germination depends on the seed variety and the season.
 - q: What happens if it doesn't sprout?
-  a: Not every seed germinates — this depends on soil, water and season. If nothing
+  a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy Eco happy kites- set of 10 in bulk for a gifting order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - paddy-toran
 - plantable-tricolour-flags-pack-of-30
@@ -76,7 +76,7 @@ migration:
   - 'only 2 image(s): add hero/detail/lifestyle'
   - 'no SKU in Wix: assign one'
   - write alt text (none in Wix)
-  - provisional SKU auto-assigned — confirm against the real SKU convention once Sprint
+  - provisional SKU auto-assigned, confirm against the real SKU convention once Sprint
     0 decides one
 ---
 

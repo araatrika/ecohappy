@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import site from '../../data/site.json';
+
+const title = 'Events & Exhibitions | Eco Happy';
+const description = 'Where to find Eco Happy in person: exhibitions, workshops and pop-ups around Pune, and how to know about the next one.';
+
+const waysToFind = [
+  {
+    title: 'Exhibitions',
+    body: 'Eco Happy started in 2017 as a small exhibition stall of handcrafted recycled products, and we still show up at exhibitions around Pune with the same table setup: seed pencils, seed paper and seasonal plantable products you can see and touch before buying.',
+  },
+  {
+    title: 'Workshops',
+    body: 'We occasionally run hands-on sessions on making seed paper and seed pencils, mostly for schools, corporate teams and community groups. These are arranged directly, not ticketed on a public calendar yet.',
+  },
+  {
+    title: 'Seasonal pop-ups',
+    body: 'Around festivals (Ganpati, Sankranti, Rakhi, Diwali), we sell seasonal plantable products, like seed balls as Ganpati visarjan prasad, or plantable kites and rakhis, at local pop-ups and stalls in Pune.',
+  },
+];
+---
+<BaseLayout title={title} description={description}>
+  <section class="container hero reveal">
+    <p class="eyebrow">In person, in Pune</p>
+    <h1>Find us at an exhibition, workshop or pop-up</h1>
+    <p class="lede">
+      We don't run a public ticketed events calendar yet, so this page tells you honestly how
+      Eco Happy shows up in person, and the fastest way to know about the next one.
+    </p>
+  </section>
+
+  <section class="container ways-grid reveal">
+    {waysToFind.map((w) => (
+      <div class="way-card">
+        <h2>{w.title}</h2>
+        <p>{w.body}</p>
+      </div>
+    ))}
+  </section>
+
+  <section class="section-cream follow-cta reveal">
+    <div class="container follow-inner">
+      <img src="/assets/social/ig-ganpati-seedballs.jpg" alt="Eco Happy seed balls made as Ganpati visarjan prasad, sold at a Pune pop-up" loading="lazy" />
+      <div>
+        <p class="eyebrow">The most current source</p>
+        <h2>Follow @araatrika on Instagram</h2>
+        <p>
+          Our Instagram highlights ("Exhibitions" and "Workshops") are where we post real photos from
+          each stall and session as they happen, which makes it the most current source for where
+          we'll be next, more current than we can promise this page will stay.
+        </p>
+        <a class="btn btn-primary" href="https://www.instagram.com/araatrika/" target="_blank" rel="noopener">Follow on Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container container-cta reveal">
+    <h2>Want us at your event or campus instead?</h2>
+    <p>If you're organising a corporate offsite, school workshop or festival stall and want Eco Happy there, message us directly with the date, city and expected footfall.</p>
+    <a class="btn btn-outline" href={`${site.whatsapp.direct}?text=${encodeURIComponent("Hi, I'd like to ask about having Eco Happy at an event.")}`} target="_blank" rel="noopener">Ask on WhatsApp</a>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { max-width: 66ch; padding-block: 2rem 0.5rem; }
+  .eyebrow {
+    font-family: var(--font-label); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--red-deep); margin: 0 0 0.4em;
+  }
+  .lede { font-size: 1.05rem; color: var(--gray-500); }
+
+  .ways-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; padding-block: 1.5rem 2.5rem; }
+  .way-card { background: var(--cream); border-radius: var(--radius); padding: 1.4rem; }
+  .way-card h2 { font-size: 1.1rem; margin-bottom: 0.4em; }
+  .way-card p { font-size: 0.9rem; color: var(--gray-500); margin: 0; }
+  @media (max-width: 780px) { .ways-grid { grid-template-columns: 1fr; } }
+
+  .follow-cta { padding-block: 2.5rem; }
+  .follow-inner { display: grid; grid-template-columns: 220px 1fr; gap: 1.5rem; align-items: center; }
+  .follow-inner img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-card); display: block; aspect-ratio: 4/5; object-fit: cover; }
+  .follow-inner p { color: var(--gray-500); }
+  @media (max-width: 700px) { .follow-inner { grid-template-columns: 1fr; } .follow-inner img { max-width: 220px; margin: 0 auto; } }
+
+  .container-cta { padding-block: 2.5rem 3rem; text-align: center; }
+  .container-cta p { max-width: 56ch; margin: 0 auto 1.25rem; color: var(--gray-500); }
+</style>

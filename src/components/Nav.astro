@@ -1,26 +1,27 @@
 ---
 import site from '../data/site.json';
 const nav = [
+  { label: 'Home', href: '/' },
   { label: 'Customisation', href: '/customisation/', highlight: true },
   { label: 'Shop', href: '/shop/' },
   {
     label: 'Gifting', href: '/gifting/corporate/',
     children: [
       { label: 'Corporate Gifting', href: '/gifting/corporate/' },
-      { label: 'Return Gifts', href: '/gifting/return-gifts/' },
-      { label: 'Bulk & Custom', href: '/gifting/bulk-and-custom/' },
+      { label: 'Seasonal & Informal Gifting', href: '/gifting/seasonal/' },
     ],
   },
-  { label: 'Learn', href: '/learn/' },
-  { label: 'Calculator', href: '/impact-calculator/' },
+  { label: 'Blogs', href: '/blogs/' },
+  { label: 'Events', href: '/events/' },
+  { label: 'Impact Calculator', href: '/impact-calculator/' },
   { label: 'About', href: '/about/' },
   { label: 'Contact', href: '/contact/' },
 ];
 ---
 <header class="site-header">
   <div class="container bar">
-    <a class="brand" href="/">
-      <img src="/assets/brand/logo-eco-happy.png" alt={`${site.brand} — ${site.tagline}`} height="40" />
+    <a class="brand" href="/" aria-label="Eco Happy -- home">
+      <img src="/assets/brand/logo-eco-happy.png" alt={`${site.brand} -- ${site.tagline}`} height="56" />
     </a>
     <nav aria-label="Main navigation">
       <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
@@ -48,15 +49,26 @@ const nav = [
 <style>
   .site-header { background: var(--white); position: sticky; top: 0; z-index: 50; border-bottom: 1px solid var(--cream); }
   .bar { display: flex; align-items: center; justify-content: space-between; padding-block: 0.75rem; gap: 1rem; }
-  .brand img { display: block; height: 40px; width: auto; max-width: none; }
+  .brand img { display: block; height: 56px; width: auto; max-width: none; transition: transform 0.15s ease; }
+  .brand:hover img { transform: scale(1.03); }
+  @media (max-width: 780px) {
+    .brand img { height: 44px; }
+  }
   .primary-nav { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
   .primary-nav > li { position: relative; }
   .primary-nav > li > a {
     text-decoration: none; color: var(--ink); font-family: var(--font-label); font-weight: 600;
     text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.95rem;
-    padding: 0.5em 0.2em; display: inline-block;
+    padding: 0.5em 0.2em; display: inline-block; position: relative;
   }
-  .primary-nav > li > a:hover { color: var(--forest); }
+  .primary-nav > li > a::after {
+    content: ''; position: absolute; left: 0.2em; right: 0.2em; bottom: 0.1em; height: 2px;
+    background: var(--forest); transform: scaleX(0); transform-origin: left; transition: transform 0.18s ease;
+  }
+  .primary-nav > li > a:hover, .primary-nav > li > a:focus-visible { color: var(--forest); }
+  .primary-nav > li > a:hover::after, .primary-nav > li > a:focus-visible::after { transform: scaleX(1); }
+  .primary-nav > li.nav-highlight > a::after { display: none; }
+  .primary-nav > li.has-children > a::after { right: 1.1em; }
   .nav-highlight > a {
     background: var(--gold); color: var(--ink); padding: 0.5em 0.9em; border-radius: 999px;
     transition: background 0.15s ease, transform 0.15s ease;

@@ -17,27 +17,27 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/upcycled-patchwork-fabric/upcycled-patchwork-fabric-1.jpg
-  alt: Upcycled Patchwork Fabric — Upcycled Fabric, made in Pune by Eco Happy
+  alt: Upcycled Patchwork Fabric, Upcycled Fabric, made in Pune by Eco Happy
   width: 1080
   height: 1080
   original: originals/assets/products/upcycled-patchwork-fabric/upcycled-patchwork-fabric-1.jpg
 - src: /assets/products/upcycled-patchwork-fabric/upcycled-patchwork-fabric-2.jpg
-  alt: Upcycled Patchwork Fabric — shown from another angle
+  alt: Upcycled Patchwork Fabric, shown from another angle
   width: 1080
   height: 1080
   original: originals/assets/products/upcycled-patchwork-fabric/upcycled-patchwork-fabric-2.jpg
 - src: /assets/products/upcycled-patchwork-fabric/upcycled-patchwork-fabric-3.jpg
-  alt: Upcycled Patchwork Fabric — shown from another angle
+  alt: Upcycled Patchwork Fabric, shown from another angle
   width: 1080
   height: 1080
   original: originals/assets/products/upcycled-patchwork-fabric/upcycled-patchwork-fabric-3.jpg
 - src: /assets/products/upcycled-patchwork-fabric/upcycled-patchwork-fabric-4.jpg
-  alt: Upcycled Patchwork Fabric — shown from another angle
+  alt: Upcycled Patchwork Fabric, shown from another angle
   width: 1080
   height: 1080
   original: originals/assets/products/upcycled-patchwork-fabric/upcycled-patchwork-fabric-4.jpg
 - src: /assets/products/upcycled-patchwork-fabric/upcycled-patchwork-fabric-5.jpg
-  alt: Upcycled Patchwork Fabric — close-up detail
+  alt: Upcycled Patchwork Fabric, close-up detail
   width: 1080
   height: 1080
   original: originals/assets/products/upcycled-patchwork-fabric/upcycled-patchwork-fabric-5.jpg
@@ -46,7 +46,7 @@ wixCollections:
 brand: Eco Happy
 seoTitle: Upcycled Patchwork Fabric | Upcycled Fabric | Eco Happy
 seoDescription: Offcut patchwork fabric panels upcycled from Eco Happy's Pune production
-  floor — for sewing, patching, or craft projects instead of throwing scraps away.
+  floor, for sewing, patching, or craft projects instead of throwing scraps away.
 answer: Upcycled Patchwork Fabric is a plastic-free product hand-made by Eco Happy's
   women-led team in Pune.
 specs:
@@ -56,10 +56,10 @@ specs:
 howToUse: []
 faq:
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy Upcycled Patchwork Fabric in bulk for a gifting order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - foldable-cloth-bag
 - multicolour-laptop-sleeve
@@ -79,7 +79,7 @@ migration:
   - related products
   - 'no SKU in Wix: assign one'
   - write alt text (none in Wix)
-  - provisional SKU auto-assigned — confirm against the real SKU convention once Sprint
+  - provisional SKU auto-assigned, confirm against the real SKU convention once Sprint
     0 decides one
 ---
 

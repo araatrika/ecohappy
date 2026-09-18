@@ -31,7 +31,7 @@ const guides = defineCollection({
     title: z.string(), slug: z.string(), description: z.string().default(""), author: z.string().default("Jagruti Khabiya Jain"),
     datePublished: z.string(), dateModified: z.string(), cover: z.string().default(""), coverAlt: z.string().default(""),
     coverIsStock: z.boolean().default(false), tags: z.array(z.string()).default([]), timeToRead: z.string().default(""),
-    faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]), category: z.string().default("Sustainability & Greenwashing Guides"),
     draft: z.boolean().default(false), migration: z.any().optional(),
   }),
 });

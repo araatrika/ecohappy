@@ -15,7 +15,7 @@ draft: true
 migration:
   oldUrl: https://www.happypencils.in/post/7-best-ways-to-stay-motivated-as-a-small-business-owner
   action: redirect
-  note: Not on the beat; 301 to /learn/.
+  note: Not on the beat; 301 to /blogs/.
   wordCount: 658
   todo:
   - answer block in first 150 words
@@ -25,7 +25,7 @@ migration:
 faq:
 - q: Is this post relevant to Eco Happy's own story?
   a: It reflects lessons from running Araatrika/Eco Happy as a small, women-led business
-    in Pune since 2017 — it's not generic filler.
+    in Pune since 2017, it's not generic filler.
 ---
 
 A small business owner faces many challenges from the day of inception to everyday functioning of the organization. This problem solving on a regular basis, keeps the founder on his/her toes, 7 days a week. Staying motivated through hardships is the key to attaining success. The 7 best ways to do the same are:

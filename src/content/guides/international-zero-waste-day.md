@@ -1,5 +1,5 @@
 ---
-title: International Zero Waste Day — Eco Happy's Guide
+title: International Zero Waste Day, Eco Happy's Guide
 slug: international-zero-waste-day
 description: What Zero Waste Day actually means, and how Eco Happy's plantable and
   upcycled products are designed to leave less behind.
@@ -17,6 +17,7 @@ tags:
 - upcyle
 - wastemanagement
 - zerowaste
+category: "Seasonal & Festive Gifting"
 timeToRead: 1 min read
 draft: false
 migration:
@@ -31,11 +32,18 @@ migration:
   - author byline + Person schema
 faq:
 - q: What does 'zero waste' actually mean?
-  a: It means designing out waste and reuse loss as much as possible — not literally
+  a: It means designing out waste and reuse loss as much as possible, not literally
     producing zero waste, which is close to impossible for most businesses.
 - q: How does Eco Happy mark Zero Waste Day?
   a: We highlight our plantable and upcycled product lines, which are designed to
     leave no waste behind after use.
+- q: "When is International Zero Waste Day?"
+  a: "March 30th, jointly facilitated by UNEP and UN-Habitat."
+- q: "What's one simple zero-waste practice to start with?"
+  a: "Segregating waste at source into dry and wet, so dry waste can actually be recycled by organisations that accept it."
+- q: "Does zero waste mean producing no waste at all?"
+  a: "No. It means designing out waste and reuse loss as much as realistically possible, not literally zero, which is close to impossible for most businesses."
+
 ---
 
 March 30th, was the first official "International Day of Zero Waste", jointly facilitated by UNEP and UN-Habitat.

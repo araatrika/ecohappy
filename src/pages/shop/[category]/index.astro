@@ -17,7 +17,7 @@ const products = (await getCollection('products')).filter(
 );
 products.sort((a, b) => a.data.name.localeCompare(b.data.name));
 ---
-<BaseLayout title={`${cat.name} — Eco Happy Plantable Gifts`} description={`Shop ${cat.name.toLowerCase()} from Eco Happy — plantable, upcycled and reusable products, hand-made in Pune by a women-led team since 2017.`}>
+<BaseLayout title={`${cat.name}, Eco Happy Plantable Gifts`} description={`Shop ${cat.name.toLowerCase()} from Eco Happy, plantable, upcycled and reusable products, hand-made in Pune by a women-led team since 2017.`}>
   <section class="container hero">
     <p class="crumb"><a href="/shop/">Shop</a> / {cat.name}</p>
     <h1>{cat.name}</h1>
@@ -27,7 +27,7 @@ products.sort((a, b) => a.data.name.localeCompare(b.data.name));
     {products.length > 0 ? (
       products.map((product) => <ProductCard product={product} />)
     ) : (
-      <p>New products in this category are on the way — meanwhile, see <a href="/shop/all-products/">everything we make</a>.</p>
+      <p>New products in this category are on the way, meanwhile, see <a href="/shop/all-products/">everything we make</a>.</p>
     )}
   </section>
 </BaseLayout>

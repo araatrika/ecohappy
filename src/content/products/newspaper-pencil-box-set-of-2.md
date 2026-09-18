@@ -18,17 +18,17 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/newspaper-pencil-box-set-of-2/newspaper-pencil-box-set-of-2-1.jpg
-  alt: Pencil Box - Set of 2 boxes — Seed Pencils & Pens, made in Pune by Eco Happy
+  alt: Pencil Box - Set of 2 boxes, Seed Pencils & Pens, made in Pune by Eco Happy
   width: 1350
   height: 1800
   original: originals/assets/products/newspaper-pencil-box-set-of-2/newspaper-pencil-box-set-of-2-1.jpg
 - src: /assets/products/newspaper-pencil-box-set-of-2/newspaper-pencil-box-set-of-2-2.jpg
-  alt: Pencil Box - Set of 2 boxes — shown from another angle
+  alt: Pencil Box - Set of 2 boxes, shown from another angle
   width: 1350
   height: 1800
   original: originals/assets/products/newspaper-pencil-box-set-of-2/newspaper-pencil-box-set-of-2-2.jpg
 - src: /assets/products/newspaper-pencil-box-set-of-2/newspaper-pencil-box-set-of-2-3.jpg
-  alt: Pencil Box - Set of 2 boxes — close-up detail
+  alt: Pencil Box - Set of 2 boxes, close-up detail
   width: 1350
   height: 1800
   original: originals/assets/products/newspaper-pencil-box-set-of-2/newspaper-pencil-box-set-of-2-3.jpg
@@ -47,10 +47,10 @@ specs:
 howToUse: []
 faq:
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy Pencil Box - Set of 2 boxes in bulk for a gifting order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - colour-pencils-set-of-2-boxes
 - customised-seed-pencils-100-bulk
@@ -71,7 +71,7 @@ migration:
   - write alt text (none in Wix)
 ---
 
-This pencil box holds two boxes of Eco Happy's newspaper pencils — 10 pencils and 1 eraser per box, made from 100% recycled newspaper rolled by hand at our Pune workshop. Packaging is plastic-free.
+This pencil box holds two boxes of Eco Happy's newspaper pencils, 10 pencils and 1 eraser per box, made from 100% recycled newspaper rolled by hand at our Pune workshop. Packaging is plastic-free.
 
 **What it's made of**
 

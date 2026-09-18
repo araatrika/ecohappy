@@ -2,12 +2,12 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import site from '../../data/site.json';
 
-const whatsappMsg = encodeURIComponent("Hi, I'd like to talk about customising a bulk order — logo, colours and packaging.");
+const whatsappMsg = encodeURIComponent("Hi, I'd like to talk about customising a bulk order, logo, colours and packaging.");
 
 const customisable = [
   {
     title: 'Logo & branding',
-    body: 'Your logo goes on the pencil, the pen band, the diary cover or the outer box — screen-printed or embossed, your call.',
+    body: 'Your logo goes on the pencil, the pen band, the diary cover or the outer box, screen-printed or embossed, your call.',
     icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6l-9-4Z"/><path d="m8.5 12 2.5 2.5L16 9"/></svg>',
   },
   {
@@ -22,7 +22,7 @@ const customisable = [
   },
   {
     title: 'Bulk & export specs',
-    body: 'MOQs, carton sizes, multilingual packaging and shipping documentation for orders that leave India — same customisation, longer lead time.',
+    body: 'MOQs, carton sizes, multilingual packaging and shipping documentation for orders that leave India, same customisation, longer lead time.',
     icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8l9 5 9-5Z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg>',
   },
 ];
@@ -31,7 +31,7 @@ const steps = [
   {
     n: '1',
     title: 'Tell us the brief',
-    body: 'Occasion, quantity, budget and any branding you have — over WhatsApp or email is fine, no forms to fill.',
+    body: 'Occasion, quantity, budget and any branding you have, over WhatsApp or email is fine, no forms to fill.',
   },
   {
     n: '2',
@@ -41,7 +41,7 @@ const steps = [
   {
     n: '3',
     title: 'We produce and ship',
-    body: 'Once you approve the sample, we roll, print and pack the full order — domestic or export — and keep you posted until it ships.',
+    body: 'Once you approve the sample, we roll, print and pack the full order, domestic or export, and keep you posted until it ships.',
   },
 ];
 
@@ -53,14 +53,14 @@ const steps = [
 // own aggregate-rating label) and is shown as the headline stat instead.
 const testimonials = [
   {
-    quote: 'They even gave us the option of Branding the diary with our logo, which looks beautiful!! The diaries are covered with beautiful piece of cloth (upcycled) with bookmark which makes us feel proud as we are contributing a little towards conserving mother earth!! This is our second order with them — earlier we ordered paper pencils with seeds and the brand name on it.',
+    quote: 'They even gave us the option of Branding the diary with our logo, which looks beautiful!! The diaries are covered with beautiful piece of cloth (upcycled) with bookmark which makes us feel proud as we are contributing a little towards conserving mother earth!! This is our second order with them, earlier we ordered paper pencils with seeds and the brand name on it.',
     name: 'Beamish Preschool',
-    context: 'Institutional order — branded teacher diaries',
+    context: 'Institutional order, branded teacher diaries',
   },
   {
     quote: 'We had ordered customized Seed pens from Happy Pencils (Araatrika) for our college Library Conference. It is really a very good initiative and innovative concept which works towards promoting eco-friendly and sustainable environment. We are happy with the product. Thank you for accepting and delivering our order within a short period of time.',
     name: 'DMCRC Library and Information Centre',
-    context: 'Bulk order — conference giveaways',
+    context: 'Bulk order, conference giveaways',
   },
   {
     quote: 'I ordered Happy Calendars as a return gift for my son’s naming ceremony. It was beautifully customized, I had my son’s name written. The idea of having eco friendly and nature friendly gifts was loved by everyone in the family and by the ones to whom I gifted... I am your forever customer!',
@@ -86,14 +86,13 @@ const testimonials = [
 ---
 <BaseLayout
   title="Customised Eco-Friendly Gifts & Stationery | Eco Happy"
-  description="Every product we make can be customised — logo, colours, names and packaging, on bulk and export orders. See what we customise and what customers say."
+  description="Every product we make can be customised, logo, colours, names and packaging, on bulk and export orders. See what we customise and what customers say."
 >
   <section class="container hero reveal">
     <span class="eyebrow">The Eco Happy difference</span>
     <h1>Made your way, every single time</h1>
     <p class="lede">
-      Most eco-friendly gifting brands customise one or two flagship products. We customise everything we sell —
-      seed pencils, diaries, hampers, bags, right down to the export carton. We haven’t come across another
+      Most eco-friendly gifting brands customise one or two flagship products. We customise everything we sell, seed pencils, diaries, hampers, bags, right down to the export carton. We haven’t come across another
       Indian stationery or gifting workshop, domestic or export, that customises this much of its catalogue as
       standard.
     </p>
@@ -138,7 +137,7 @@ const testimonials = [
 
     <a class="stat-block review-stat reveal" href="https://share.google/Uzs5cpE7FHkdCzA9u" target="_blank" rel="noopener">
       <span class="stat-num">4.8<span class="stat-star" aria-hidden="true">★</span></span>
-      <span class="stat-label">from 157 Google reviews for Happy Pencils (Eco Happy), as of September 2026 — see them all →</span>
+      <span class="stat-label">from 157 Google reviews for Happy Pencils (Eco Happy), as of September 2026, see them all →</span>
     </a>
 
     <div class="marquee testimonials-marquee reveal">
@@ -171,10 +170,10 @@ const testimonials = [
   <section class="section-dark cta-banner">
     <div class="container cta-inner">
       <h2>Want this customised for your team?</h2>
-      <p>Tell us the occasion, the headcount and your branding — we’ll quote a sample within a day.</p>
+      <p>Tell us the occasion, the headcount and your branding, we’ll quote a sample within a day.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href={`${site.whatsapp.direct}?text=${whatsappMsg}`} target="_blank" rel="noopener">Ask on WhatsApp</a>
-        <a class="btn btn-outline cta-outline-dark" href="/gifting/bulk-and-custom/">See bulk & custom</a>
+        <a class="btn btn-outline cta-outline-dark" href="/gifting/corporate/">See corporate gifting</a>
       </div>
     </div>
   </section>

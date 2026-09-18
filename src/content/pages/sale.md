@@ -1,5 +1,5 @@
 ---
-title: Sale — Eco Happy Sustainable Stationery & Gifts
+title: "Sale on Sustainable Stationery & Gifts | Eco Happy"
 slug: sale
 newUrl: /shop/?sale=1
 description: Current sale items from Eco Happy's plantable stationery and sustainable

@@ -18,27 +18,27 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/desk-calendar-2026/desk-calendar-2026-1.jpg
-  alt: Desk Calendar 2026 — Calendars, made in Pune by Eco Happy
+  alt: Desk Calendar 2026, Calendars, made in Pune by Eco Happy
   width: 1080
   height: 1350
   original: originals/assets/products/desk-calendar-2026/desk-calendar-2026-1.jpg
 - src: /assets/products/desk-calendar-2026/desk-calendar-2026-2.jpg
-  alt: Desk Calendar 2026 — shown from another angle
+  alt: Desk Calendar 2026, shown from another angle
   width: 1080
   height: 1350
   original: originals/assets/products/desk-calendar-2026/desk-calendar-2026-2.jpg
 - src: /assets/products/desk-calendar-2026/desk-calendar-2026-3.jpg
-  alt: Desk Calendar 2026 — shown from another angle
+  alt: Desk Calendar 2026, shown from another angle
   width: 1080
   height: 1350
   original: originals/assets/products/desk-calendar-2026/desk-calendar-2026-3.jpg
 - src: /assets/products/desk-calendar-2026/desk-calendar-2026-4.jpg
-  alt: Desk Calendar 2026 — shown from another angle
+  alt: Desk Calendar 2026, shown from another angle
   width: 1080
   height: 1350
   original: originals/assets/products/desk-calendar-2026/desk-calendar-2026-4.jpg
 - src: /assets/products/desk-calendar-2026/desk-calendar-2026-5.jpg
-  alt: Desk Calendar 2026 — close-up detail
+  alt: Desk Calendar 2026, close-up detail
   width: 1080
   height: 1350
   original: originals/assets/products/desk-calendar-2026/desk-calendar-2026-5.jpg
@@ -51,7 +51,7 @@ seoTitle: Desk Calendar 2026 | Calendars | Eco Happy
 seoDescription: A 2026 desk calendar printed on tree-free agri-waste paper, hand-assembled
   in Pune. A plastic-free, tear-off desk accessory for the year ahead.
 answer: Desk Calendar 2026 is a plantable, plastic-free product from Eco Happy's Pune
-  workshop. Use it as intended, then plant it in soil — with water and a little sun,
+  workshop. Use it as intended, then plant it in soil, with water and a little sun,
   it can sprout depending on the season.
 specs:
   madeIn: Pune, India
@@ -63,16 +63,16 @@ howToUse:
 - Sprouting time varies by seed variety and season.
 faq:
 - q: Does this actually grow?
-  a: Yes — plant the seed-bearing part in soil, keep it watered and give it some sunlight.
+  a: Yes, plant the seed-bearing part in soil, keep it watered and give it some sunlight.
     Germination depends on the seed variety and the season.
 - q: What happens if it doesn't sprout?
-  a: Not every seed germinates — this depends on soil, water and season. If nothing
+  a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy Desk Calendar 2026 in bulk for a gifting order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - desk-calendar-2024
 - pawfect-pet-desk-calendar-2026
@@ -91,7 +91,7 @@ migration:
   - related products
   - 'no SKU in Wix: assign one'
   - write alt text (none in Wix)
-  - provisional SKU auto-assigned — confirm against the real SKU convention once Sprint
+  - provisional SKU auto-assigned, confirm against the real SKU convention once Sprint
     0 decides one
 ---
 
@@ -108,4 +108,4 @@ Desk Calendar 2026 is part of Eco Happy's Calendars range. Made in Pune, India b
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Desk Calendar 2024 and Pawfect Pet Desk Calendar 2026. See the FAQ below for sizing, care and bulk-order questions.
 
-Yes — plant the seed-bearing part in soil, keep it watered and give it some sunlight. Germination depends on the seed variety and the season. Not every seed germinates — this depends on soil, water and season. If nothing sprouts after a few weeks, it's worth trying again with fresh soil.
+Yes, plant the seed-bearing part in soil, keep it watered and give it some sunlight. Germination depends on the seed variety and the season. Not every seed germinates. It depends on the soil, water and season. If nothing sprouts after a few weeks, it's worth trying again with fresh soil.

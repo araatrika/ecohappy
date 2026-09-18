@@ -15,7 +15,7 @@ draft: true
 migration:
   oldUrl: https://www.happypencils.in/post/positive-environmental-news-of-2025
   action: redirect
-  note: Not on the beat; 301 to /learn/.
+  note: Not on the beat; 301 to /blogs/.
   wordCount: 430
   todo:
   - answer block in first 150 words
@@ -24,7 +24,7 @@ migration:
   - author byline + Person schema
 faq:
 - q: Where do the claims in this roundup come from?
-  a: Each item links to its original news source — we don't restate a claim here without
+  a: Each item links to its original news source, we don't restate a claim here without
     a source you can check yourself.
 ---
 

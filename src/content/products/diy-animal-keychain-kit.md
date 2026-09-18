@@ -18,22 +18,22 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/diy-animal-keychain-kit/diy-animal-keychain-kit-1.jpg
-  alt: DIY animal keychain kit — Kits & Seeds, made in Pune by Eco Happy
+  alt: DIY animal keychain kit, Kits & Seeds, made in Pune by Eco Happy
   width: 1080
   height: 1350
   original: originals/assets/products/diy-animal-keychain-kit/diy-animal-keychain-kit-1.jpg
 - src: /assets/products/diy-animal-keychain-kit/diy-animal-keychain-kit-2.jpg
-  alt: DIY animal keychain kit — shown from another angle
+  alt: DIY animal keychain kit, shown from another angle
   width: 1080
   height: 1350
   original: originals/assets/products/diy-animal-keychain-kit/diy-animal-keychain-kit-2.jpg
 - src: /assets/products/diy-animal-keychain-kit/diy-animal-keychain-kit-3.jpg
-  alt: DIY animal keychain kit — shown from another angle
+  alt: DIY animal keychain kit, shown from another angle
   width: 1080
   height: 1350
   original: originals/assets/products/diy-animal-keychain-kit/diy-animal-keychain-kit-3.jpg
 - src: /assets/products/diy-animal-keychain-kit/diy-animal-keychain-kit-4.jpg
-  alt: DIY animal keychain kit — close-up detail
+  alt: DIY animal keychain kit, close-up detail
   width: 1080
   height: 1350
   original: originals/assets/products/diy-animal-keychain-kit/diy-animal-keychain-kit-4.jpg
@@ -41,7 +41,7 @@ wixCollections: []
 brand: Eco Happy
 seoTitle: DIY animal keychain kit | Kits & Seeds | Eco Happy
 seoDescription: A do-it-yourself keychain kit using upcycled fabric scraps, hand-packed
-  in Pune by Eco Happy's team — a craft activity that turns offcuts into a keepsake.
+  in Pune by Eco Happy's team, a craft activity that turns offcuts into a keepsake.
 answer: DIY animal keychain kit is a plastic-free product hand-made by Eco Happy's
   women-led team in Pune.
 specs:
@@ -50,10 +50,10 @@ specs:
 howToUse: []
 faq:
 - q: Is it really plastic-free?
-  a: Yes — the product and its packaging are designed to be plastic-free, in keeping
+  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
     with how we make everything at Eco Happy.
 - q: Can I buy DIY animal keychain kit in bulk for a gifting order?
-  a: Yes — message us on WhatsApp for bulk pricing and lead times.
+  a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - advanced-mandala-book-with-colour-pencils
 - beginners-mandala-book-with-colour-pencils
@@ -73,7 +73,7 @@ migration:
   - related products
   - 'no SKU in Wix: assign one'
   - write alt text (none in Wix)
-  - provisional SKU auto-assigned — confirm against the real SKU convention once Sprint
+  - provisional SKU auto-assigned, confirm against the real SKU convention once Sprint
     0 decides one
 ---
 
@@ -93,6 +93,6 @@ DIY animal keychain kit is part of Eco Happy's Kits & Seeds range. Made in Pune,
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Advanced Mandala Book + One box of Colour Pencils, Beginner's Mandala Book + One Box of Colour Pencils and Grow Me Kit. See the FAQ below for sizing, care and bulk-order questions.
 
-Yes — the product and its packaging are designed to be plastic-free, in keeping with how we make everything at Eco Happy. Yes — message us on WhatsApp for bulk pricing and lead times.
+Yes, the product and its packaging are designed to be plastic-free, in keeping with how we make everything at Eco Happy. Yes, message us on WhatsApp for bulk pricing and lead times.
 
-It's part of our Kits & Seeds category alongside Advanced Mandala Book + One box of Colour Pencils, Beginner's Mandala Book + One Box of Colour Pencils and Grow Me Kit — good options if you're building a gift bundle.
+It's part of our Kits & Seeds category alongside Advanced Mandala Book + One box of Colour Pencils, Beginner's Mandala Book + One Box of Colour Pencils and Grow Me Kit, good options if you're building a gift bundle.
