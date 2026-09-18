@@ -142,6 +142,19 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
         </div>
         {p.bulk && <p class="made-to-order-note">Made to order, usually ready in about {p.leadTimeDays} days after we confirm your order on WhatsApp.</p>}
         {site.gstin && <p class="gst-note">GST invoice available on request</p>}
+
+        <form id="buyer-details" class="buyer-details" hidden aria-label="Delivery and invoice details">
+          <p class="buyer-details-intro">A few details for delivery and your invoice:</p>
+          <div class="buyer-grid">
+            <label>Full name<input type="text" name="buyerName" autocomplete="name" required /></label>
+            <label>Email<input type="email" name="buyerEmail" autocomplete="email" required /></label>
+            <label>Phone<input type="tel" name="buyerPhone" autocomplete="tel" required /></label>
+            <label class="span-2">Delivery address<input type="text" name="buyerAddress" autocomplete="street-address" required /></label>
+            <label>City<input type="text" name="buyerCity" autocomplete="address-level2" required /></label>
+            <label>Pincode<input type="text" name="buyerPincode" autocomplete="postal-code" inputmode="numeric" required /></label>
+          </div>
+          <button class="btn btn-primary" type="submit" id="buy-continue">Continue to payment</button>
+        </form>
         <p id="buy-status" class="buy-status" role="status" aria-live="polite"></p>
 
         {specsEntries.length > 0 && (
@@ -187,6 +200,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
 <script>
   const btn = document.getElementById('buy-now');
   const status = document.getElementById('buy-status');
+  const detailsForm = document.getElementById('buyer-details');
 
   function loadRazorpayScript() {
     return new Promise((resolve, reject) => {
@@ -199,17 +213,74 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
     });
   }
 
-  btn?.addEventListener('click', async () => {
+  // Step 1: "Buy now" reveals the delivery/invoice details form instead of opening
+  // Razorpay straight away -- we need a name, email, phone and address for the
+  // shipping label and the branded invoice, none of which Razorpay's own modal collects.
+  btn?.addEventListener('click', () => {
+    btn.hidden = true;
+    detailsForm.hidden = false;
+    detailsForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    detailsForm.querySelector('input[name="buyerName"]')?.focus();
+  });
+
+  // Netlify Forms AJAX submit: lands a durable order record in the Netlify Forms
+  // dashboard (+ email notification) alongside the enquiry forms, without a new
+  // database or account. See netlify/functions/verify-payment.js for why this
+  // happens client-side rather than from the function.
+  function submitOrderRecord(fields) {
+    const body = new URLSearchParams({ 'form-name': 'orders', ...fields }).toString();
+    return fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body,
+    }).catch(() => {
+      // Best-effort: a failed order-record submission must never block the
+      // customer's confirmation message, the payment already succeeded.
+    });
+  }
+
+  function openInvoice(payload) {
+    fetch('/.netlify/functions/generate-invoice', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    })
+      .then((res) => (res.ok ? res.text() : null))
+      .then((html) => {
+        if (!html) return;
+        const win = window.open('', '_blank');
+        if (win) {
+          win.document.write(html);
+          win.document.close();
+        }
+      })
+      .catch(() => {
+        // Best-effort: the invoice is a convenience document, not the payment record.
+      });
+  }
+
+  detailsForm?.addEventListener('submit', async (e) => {
+    e.preventDefault();
     const slug = btn.dataset.slug;
     const name = btn.dataset.name;
-    btn.disabled = true;
+    const fd = new FormData(detailsForm);
+    const buyer = {
+      name: String(fd.get('buyerName') || ''),
+      email: String(fd.get('buyerEmail') || ''),
+      phone: String(fd.get('buyerPhone') || ''),
+      address: String(fd.get('buyerAddress') || ''),
+      city: String(fd.get('buyerCity') || ''),
+      pincode: String(fd.get('buyerPincode') || ''),
+    };
+    const continueBtn = document.getElementById('buy-continue');
+    continueBtn.disabled = true;
     status.textContent = 'Preparing checkout…';
     try {
       const [orderRes] = await Promise.all([
         fetch('/.netlify/functions/create-order', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ slug, quantity: 1 }),
+          body: JSON.stringify({ slug, quantity: 1, buyer }),
         }),
         loadRazorpayScript(),
       ]);
@@ -227,7 +298,8 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
         name: 'Eco Happy',
         description: order.productName,
         image: '/assets/brand/logo-eco-happy.png',
-        theme: { color: '#005018' },
+        theme: { color: '#2F4739' },
+        prefill: { name: buyer.name, email: buyer.email, contact: buyer.phone },
         handler: async (response) => {
           status.textContent = 'Verifying payment…';
           try {
@@ -238,32 +310,52 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
             });
             const result = await verifyRes.json();
             if (result.verified) {
-              status.textContent = `Payment confirmed, thank you! We'll be in touch about delivery for your ${name}.`;
+              status.textContent = `Payment confirmed, thank you! We'll be in touch about delivery for your ${name}. Your invoice is opening in a new tab, you can save it as a PDF from there.`;
+              await submitOrderRecord({
+                name: buyer.name,
+                email: buyer.email,
+                phone: buyer.phone,
+                address: buyer.address,
+                city: buyer.city,
+                pincode: buyer.pincode,
+                product: name,
+                quantity: '1',
+                amount: String((order.amount || 0) / 100),
+                payment_id: response.razorpay_payment_id,
+                order_id: response.razorpay_order_id,
+              });
+              openInvoice({
+                slug,
+                quantity: 1,
+                buyer,
+                paymentId: response.razorpay_payment_id,
+                orderId: response.razorpay_order_id,
+              });
             } else {
               status.textContent = 'We could not verify that payment. Please contact us on WhatsApp with your payment ID before retrying.';
             }
           } catch {
             status.textContent = 'Payment may have gone through, but we could not confirm it here, please contact us on WhatsApp with your payment ID.';
           } finally {
-            btn.disabled = false;
+            continueBtn.disabled = false;
           }
         },
         modal: {
           ondismiss: () => {
             status.textContent = '';
-            btn.disabled = false;
+            continueBtn.disabled = false;
           },
         },
       });
       rzp.on('payment.failed', () => {
         status.textContent = 'Payment failed, no charge was made. You can try again.';
-        btn.disabled = false;
+        continueBtn.disabled = false;
       });
       rzp.open();
       status.textContent = '';
     } catch (err) {
       status.textContent = err.message || 'Something went wrong starting checkout.';
-      btn.disabled = false;
+      continueBtn.disabled = false;
     }
   });
 </script>
@@ -283,6 +375,24 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
   .now { color: var(--red-deep); }
   .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.25rem; }
   .buy-status { min-height: 1.2em; font-size: 0.9rem; color: var(--red-deep); font-weight: 600; }
+  .buyer-details {
+    margin-top: 1rem; padding: 1.1rem 1.25rem; background: var(--cream);
+    border-radius: var(--radius); max-width: 460px;
+  }
+  .buyer-details-intro { margin: 0 0 0.85rem; font-size: 0.85rem; font-weight: 600; color: var(--ink); }
+  .buyer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem 1rem; margin-bottom: 1rem; }
+  .buyer-grid label {
+    display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--ink);
+  }
+  .buyer-grid .span-2 { grid-column: 1 / -1; }
+  .buyer-grid input {
+    font: inherit; font-weight: 400; padding: 0.55em 0.7em; border: 1px solid var(--gray-300, var(--gray-200));
+    border-radius: 6px; background: var(--white); color: var(--ink);
+  }
+  .buyer-grid input:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+  @media (max-width: 480px) {
+    .buyer-grid { grid-template-columns: 1fr; }
+  }
   .made-to-order-note { font-size: 0.85rem; color: var(--gray-500); margin: -0.75rem 0 1rem; }
   .gst-note { font-size: 0.85rem; color: var(--gray-500); margin: -0.75rem 0 1rem; }
   .specs { border-collapse: collapse; width: 100%; margin-top: 1rem; }

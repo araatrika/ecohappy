@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import InstagramMini from '../../components/InstagramMini.astro';
+import EnquiryForm from '../../components/EnquiryForm.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import site from '../../data/site.json';
 
@@ -45,6 +46,12 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about ${title.toLowe
       {featured.map((product) => <ProductCard product={product} />)}
     </section>
   )}
+  <EnquiryForm
+    formName={`enquiry-gifting-${Astro.params.slug}`}
+    heading="Ask about bulk pricing or a custom quote"
+    intro="Tell us the occasion, headcount and any branding you need -- we'll quote a sample within a day."
+    contextLabel={title}
+  />
   <InstagramMini />
 </BaseLayout>
 

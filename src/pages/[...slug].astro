@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import EnquiryForm from '../components/EnquiryForm.astro';
 
 // Generic renderer for simple content pages (about, contact, faq, gifting-*, shipping, terms).
 // Home, Shop and Learn have their own custom-built pages and are excluded here.
@@ -26,6 +27,14 @@ const p = entry.data;
       <Content />
     </div>
   </article>
+  {p.slug === 'contact' && (
+    <EnquiryForm
+      formName="enquiry-contact"
+      heading="Send us an enquiry"
+      intro="For custom orders, bulk pricing or anything else, tell us a bit about what you need and we'll get back to you."
+      contextLabel="Contact page"
+    />
+  )}
 </BaseLayout>
 
 <style>

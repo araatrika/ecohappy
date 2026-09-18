@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import InstagramMini from '../../components/InstagramMini.astro';
+import EnquiryForm from '../../components/EnquiryForm.astro';
 import site from '../../data/site.json';
 
 const whatsappMsg = encodeURIComponent("Hi, I'd like to talk about customising a bulk order, logo, colours and packaging.");
@@ -178,6 +179,12 @@ const testimonials = [
       </div>
     </div>
   </section>
+  <EnquiryForm
+    formName="enquiry-customisation"
+    heading="Ask about customising your order"
+    intro="Tell us what you're ordering, your branding and quantity, and we'll quote a sample within a day."
+    contextLabel="Customisation page"
+  />
   <InstagramMini />
 </BaseLayout>
 

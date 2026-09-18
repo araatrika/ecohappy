@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Thank you | Eco Happy" description="Your enquiry has been received." noindex={true}>
+  <section class="container thanks">
+    <h1>Thanks, we've got your message</h1>
+    <p class="lede">We usually reply within a day. If it's urgent, message us on WhatsApp instead.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="/">Back to home</a>
+      <a class="btn btn-outline" href="/shop/">Browse products</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .thanks { max-width: 60ch; padding-block: 4rem 5rem; text-align: center; }
+  .thanks .lede { color: var(--gray-500); margin-bottom: 1.5rem; }
+  .cta-row { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+</style>

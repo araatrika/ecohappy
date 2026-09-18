@@ -26,8 +26,16 @@ export default async (req) => {
     return new Response(JSON.stringify({ error: 'Invalid request body' }), { status: 400 });
   }
 
-  const { slug, quantity } = body || {};
+  const { slug, quantity, buyer } = body || {};
   const qty = Math.max(1, Math.min(50, Number(quantity) || 1));
+  // Buyer details are for the Razorpay order record and the branded invoice only -- they are
+  // not trusted for pricing (looked up server-side below) and are truncated defensively since
+  // Razorpay's `notes` field has a size limit.
+  const safeBuyer = {
+    name: String(buyer?.name || '').slice(0, 120),
+    email: String(buyer?.email || '').slice(0, 120),
+    phone: String(buyer?.phone || '').slice(0, 32),
+  };
   const product = Array.isArray(products) ? products.find((p) => p.slug === slug) : null;
 
   if (!product || product.retired) {
@@ -46,7 +54,14 @@ export default async (req) => {
       amount: amountPaise,
       currency: 'INR',
       receipt: `${slug}-${Date.now()}`,
-      notes: { slug, quantity: String(qty), sku: product.sku || '' },
+      notes: {
+        slug,
+        quantity: String(qty),
+        sku: product.sku || '',
+        buyerName: safeBuyer.name,
+        buyerEmail: safeBuyer.email,
+        buyerPhone: safeBuyer.phone,
+      },
     });
     return new Response(
       JSON.stringify({

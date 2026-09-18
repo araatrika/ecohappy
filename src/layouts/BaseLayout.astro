@@ -101,6 +101,19 @@ const orgSchema = {
       <slot />
     </main>
     <Footer />
+
+    <!-- Hidden static form so Netlify's build-time bot registers the "orders" shape.
+         Real submissions come from JS (fetch) right after a payment is verified, not from
+         a human filling this in -- it exists only so the shape gets detected at build time. -->
+    <form name="orders" data-netlify="true" netlify-honeypot="bot-field" hidden aria-hidden="true">
+      <input type="hidden" name="form-name" value="orders" />
+      <input name="bot-field" />
+      <input name="name" /><input name="email" /><input name="phone" />
+      <input name="address" /><input name="city" /><input name="pincode" />
+      <input name="product" /><input name="quantity" /><input name="amount" />
+      <input name="payment_id" /><input name="order_id" />
+    </form>
+
     <script>
       // Scroll-reveal for .reveal elements. Skips entirely for prefers-reduced-motion
       // (handled in CSS too, this just avoids the observer overhead).

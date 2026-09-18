@@ -1,0 +1,51 @@
+---
+// A real, working enquiry form -- Netlify Forms detects it at build time (data-netlify="true")
+// and it needs no database, server code or new account to work once the site is on Netlify.
+// Submissions appear in Netlify's Forms dashboard and get emailed (once notifications are
+// turned on in the Netlify UI -- a one-time owner step, see growth/design-log.md).
+//
+// `formName` must be unique per page so Netlify's dashboard can be filtered by source, and
+// must match the name used server-side, hidden inputs are what Netlify's build-time bot reads
+// to learn the form's shape.
+interface Props {
+  formName: string;
+  heading?: string;
+  intro?: string;
+  contextLabel?: string; // shown as a hidden field so the owner knows which page this came from
+}
+const { formName, heading = "Send us an enquiry", intro, contextLabel } = Astro.props;
+---
+
+<section class="container enquiry-form reveal" aria-labelledby={`${formName}-heading`}>
+  <h2 id={`${formName}-heading`}>{heading}</h2>
+  {intro && <p class="lede">{intro}</p>}
+  <form name={formName} method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you/">
+    <input type="hidden" name="form-name" value={formName} />
+    {contextLabel && <input type="hidden" name="page" value={contextLabel} />}
+    <p class="honeypot" aria-hidden="true"><label>Leave this blank<input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+    <div class="form-grid">
+      <label>Full name<input type="text" name="name" autocomplete="name" required /></label>
+      <label>Email<input type="email" name="email" autocomplete="email" required /></label>
+      <label>Phone<input type="tel" name="phone" autocomplete="tel" /></label>
+      <label class="span-2">What can we help with?<textarea name="message" rows="4" required></textarea></label>
+    </div>
+    <button class="btn btn-primary" type="submit">Send enquiry</button>
+  </form>
+</section>
+
+<style>
+  .enquiry-form { padding-block: 2rem 3rem; max-width: 62ch; }
+  .enquiry-form .lede { color: var(--gray-500); margin-bottom: 1.25rem; }
+  .honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem; margin-bottom: 1.25rem; }
+  .form-grid label { display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.85rem; font-weight: 600; color: var(--ink); }
+  .form-grid .span-2 { grid-column: 1 / -1; }
+  .form-grid input, .form-grid textarea {
+    font: inherit; font-weight: 400; padding: 0.6em 0.75em; border: 1px solid var(--gray-300, var(--gray-200));
+    border-radius: var(--radius); background: var(--white); color: var(--ink);
+  }
+  .form-grid input:focus-visible, .form-grid textarea:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+  @media (max-width: 600px) {
+    .form-grid { grid-template-columns: 1fr; }
+  }
+</style>
