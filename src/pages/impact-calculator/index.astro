@@ -1,5 +1,21 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import site from '../../data/site.json';
+import {
+  DEFAULTS,
+  MAX_QTY,
+  fmtCount,
+  fmtMass,
+  hamperCo2Kg,
+  notebookCo2Kg,
+  penCo2Kg,
+  penPlasticKg,
+} from '../../data/impact-factors';
+
+// Rendered at build time so the page is correct before -- and without -- JavaScript.
+const d = DEFAULTS;
+const maxLabel = fmtCount(MAX_QTY);
+const baseHint = `Whole units, 0 to ${maxLabel}.`;
 ---
 <BaseLayout
   title="Impact Calculator | Plastic & CO2e Avoided | Eco Happy"
@@ -16,18 +32,31 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </p>
   </section>
 
+  <noscript>
+    <p class="container noscript-note">
+      The figures below are calculated for the default quantities shown. Turn on JavaScript to change
+      the quantities and see the numbers update.
+    </p>
+  </noscript>
+
   <section class="container tools">
     <div class="tool card">
       <h2>1. Pens &amp; pencils swap</h2>
       <p class="tool-copy">How many pens or pencils does your team get through in a year?</p>
       <label class="field">
         <span>Pens/pencils per year</span>
-        <input type="number" id="tool1-qty" min="0" value="500" step="10" />
+        <input
+          type="number" id="tool1-qty" name="tool1-qty"
+          min="0" max={MAX_QTY} step="10" value={d.tool1}
+          inputmode="numeric" autocomplete="off" aria-describedby="tool1-hint"
+        />
       </label>
-      <div class="result" id="tool1-result" aria-live="polite">
-        <div class="stat"><span class="stat-num" id="tool1-plastic">0</span><span class="stat-label">kg plastic avoided</span></div>
-        <div class="stat"><span class="stat-num" id="tool1-co2">0</span><span class="stat-label">kg CO2e avoided</span></div>
+      <p class="field-hint" id="tool1-hint">{baseHint}</p>
+      <div class="result" id="tool1-result">
+        <div class="stat"><span class="stat-num" id="tool1-plastic">{fmtMass(penPlasticKg(d.tool1))}</span><span class="stat-label">kg plastic avoided</span></div>
+        <div class="stat"><span class="stat-num" id="tool1-co2">{fmtMass(penCo2Kg(d.tool1))}</span><span class="stat-label">kg CO2e avoided</span></div>
       </div>
+      <p class="visually-hidden" id="tool1-live" aria-live="polite" aria-atomic="true"></p>
       <p class="tool-note">Assumes each conventional pen/pencil is ~10g of plastic, replaced with a newspaper or seed pencil that adds none.</p>
       <p class="tool-link"><a href="/blogs/what-are-sustainable-gifts-why-they-matter-more-than-ever/">Related: what makes a gift genuinely sustainable &rarr;</a></p>
     </div>
@@ -37,13 +66,19 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <p class="tool-copy">How many seed pens or pencils are you ordering for a corporate gift run?</p>
       <label class="field">
         <span>Units in the order</span>
-        <input type="number" id="tool2-qty" min="0" value="200" step="10" />
+        <input
+          type="number" id="tool2-qty" name="tool2-qty"
+          min="0" max={MAX_QTY} step="10" value={d.tool2}
+          inputmode="numeric" autocomplete="off" aria-describedby="tool2-hint"
+        />
       </label>
-      <div class="result" id="tool2-result" aria-live="polite">
-        <div class="stat"><span class="stat-num" id="tool2-plastic">0</span><span class="stat-label">kg plastic avoided</span></div>
-        <div class="stat"><span class="stat-num" id="tool2-co2">0</span><span class="stat-label">kg CO2e avoided</span></div>
-        <div class="stat"><span class="stat-num" id="tool2-seeds">0</span><span class="stat-label">seeds handed out</span></div>
+      <p class="field-hint" id="tool2-hint">{baseHint}</p>
+      <div class="result" id="tool2-result">
+        <div class="stat"><span class="stat-num" id="tool2-plastic">{fmtMass(penPlasticKg(d.tool2))}</span><span class="stat-label">kg plastic avoided</span></div>
+        <div class="stat"><span class="stat-num" id="tool2-co2">{fmtMass(penCo2Kg(d.tool2))}</span><span class="stat-label">kg CO2e avoided</span></div>
+        <div class="stat"><span class="stat-num" id="tool2-seeds">{fmtCount(d.tool2)}</span><span class="stat-label">seeds handed out</span></div>
       </div>
+      <p class="visually-hidden" id="tool2-live" aria-live="polite" aria-atomic="true"></p>
       <p class="tool-note">Same plastic/CO2e assumption as above. "Seeds handed out" simply counts one embedded seed per unit, whether it gets planted is up to the recipient.</p>
       <p class="tool-link"><a href="/blogs/sustainable-stationery-for-luxury-resorts-across-the-globe/">Related: sustainable stationery for hospitality &amp; resorts &rarr;</a></p>
     </div>
@@ -53,11 +88,17 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <p class="tool-copy">How many notebooks or diaries does your team use in a year?</p>
       <label class="field">
         <span>Notebooks/diaries per year</span>
-        <input type="number" id="tool3-qty" min="0" value="100" step="5" />
+        <input
+          type="number" id="tool3-qty" name="tool3-qty"
+          min="0" max={MAX_QTY} step="5" value={d.tool3}
+          inputmode="numeric" autocomplete="off" aria-describedby="tool3-hint"
+        />
       </label>
-      <div class="result" id="tool3-result" aria-live="polite">
-        <div class="stat"><span class="stat-num" id="tool3-co2">0</span><span class="stat-label">kg CO2e avoided</span></div>
+      <p class="field-hint" id="tool3-hint">{baseHint}</p>
+      <div class="result" id="tool3-result">
+        <div class="stat"><span class="stat-num" id="tool3-co2">{fmtMass(notebookCo2Kg(d.tool3))}</span><span class="stat-label">kg CO2e avoided</span></div>
       </div>
+      <p class="visually-hidden" id="tool3-live" aria-live="polite" aria-atomic="true"></p>
       <p class="tool-note">Assumes ~100g of paper per A5 notebook, comparing virgin-paper production against recycled/upcycled paper production.</p>
       <p class="tool-link"><a href="/blogs/how-small-businesses-can-reduce-their-carbon-footprint/">Related: cutting a small business's carbon footprint &rarr;</a></p>
     </div>
@@ -67,12 +108,18 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <p class="tool-copy">Planning a hamper (pen/pencil + notebook + packaging) for a corporate event or client list?</p>
       <label class="field">
         <span>Hampers / recipients</span>
-        <input type="number" id="tool4-qty" min="0" value="150" step="10" />
+        <input
+          type="number" id="tool4-qty" name="tool4-qty"
+          min="0" max={MAX_QTY} step="10" value={d.tool4}
+          inputmode="numeric" autocomplete="off" aria-describedby="tool4-hint"
+        />
       </label>
-      <div class="result" id="tool4-result" aria-live="polite">
-        <div class="stat"><span class="stat-num" id="tool4-plastic">0</span><span class="stat-label">kg plastic avoided</span></div>
-        <div class="stat"><span class="stat-num" id="tool4-co2">0</span><span class="stat-label">kg CO2e avoided</span></div>
+      <p class="field-hint" id="tool4-hint">{baseHint}</p>
+      <div class="result" id="tool4-result">
+        <div class="stat"><span class="stat-num" id="tool4-plastic">{fmtMass(penPlasticKg(d.tool4))}</span><span class="stat-label">kg plastic avoided</span></div>
+        <div class="stat"><span class="stat-num" id="tool4-co2">{fmtMass(hamperCo2Kg(d.tool4))}</span><span class="stat-label">kg CO2e avoided</span></div>
       </div>
+      <p class="visually-hidden" id="tool4-live" aria-live="polite" aria-atomic="true"></p>
       <p class="tool-note">Assumes one pen/pencil (~10g plastic) plus one A5 notebook (~100g paper) per hamper, using the same factors as tools 1 &amp; 3 combined.</p>
       <p class="tool-link"><a href="/blogs/embracing-sustainability-top-eco-friendly-corporate-gifting-trends-for-2025/">Related: corporate gifting trends for 2025 &rarr;</a> &middot; <a href="/gifting/corporate/">See corporate gifting</a></p>
     </div>
@@ -81,7 +128,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <section class="container cta-strip">
     <p>Want these numbers for a real order?</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="https://wa.me/919422062333" target="_blank" rel="noopener">Ask on WhatsApp</a>
+      <a class="btn btn-primary" href={site.whatsapp.direct} target="_blank" rel="noopener">Ask on WhatsApp</a>
       <a class="btn btn-outline" href="/gifting/corporate/">See corporate gifting</a>
     </div>
   </section>
@@ -105,104 +152,144 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <script>
-  const PLASTIC_CO2_PER_KG = 2.5;
-  const PEN_PLASTIC_G = 10;
-  const PAPER_VIRGIN_CO2_PER_KG = 1.0;
-  const PAPER_RECYCLED_CO2_PER_KG = 0.55;
-  const NOTEBOOK_PAPER_G = 100;
+  import {
+    MAX_QTY,
+    clampQty,
+    fmtCount,
+    fmtMass,
+    hamperCo2Kg,
+    notebookCo2Kg,
+    penCo2Kg,
+    penPlasticKg,
+  } from '../../data/impact-factors';
 
-  function fmt(n) {
-    return n.toLocaleString('en-IN', { maximumFractionDigits: 1 });
-  }
+  type Setter = (slot: string, value: string) => void;
 
-  function bindTool1() {
-    const qtyEl = document.getElementById('tool1-qty');
-    const plasticEl = document.getElementById('tool1-plastic');
-    const co2El = document.getElementById('tool1-co2');
-    function update() {
-      const qty = Math.max(0, Number(qtyEl.value) || 0);
-      const plasticKg = (qty * PEN_PLASTIC_G) / 1000;
-      const co2Kg = plasticKg * PLASTIC_CO2_PER_KG;
-      plasticEl.textContent = fmt(plasticKg);
-      co2El.textContent = fmt(co2Kg);
+  /**
+   * Bind one calculator. Each is bound independently and defensively: before this,
+   * the four bind functions ran as bare sequential calls, so a single missing node
+   * threw and silently killed every calculator after it.
+   */
+  function bindTool(id: string, compute: (qty: number, set: Setter) => string) {
+    try {
+      const qtyEl = document.getElementById(`${id}-qty`);
+      if (!(qtyEl instanceof HTMLInputElement)) return;
+      const hintEl = document.getElementById(`${id}-hint`);
+      const liveEl = document.getElementById(`${id}-live`);
+      const baseHint = hintEl?.textContent ?? '';
+      let announce: ReturnType<typeof setTimeout> | undefined;
+
+      const set: Setter = (slot, value) => {
+        const node = document.getElementById(`${id}-${slot}`);
+        if (node) node.textContent = value;
+      };
+
+      const update = () => {
+        const raw = qtyEl.value.trim();
+        const typed = Number(raw);
+        const qty = clampQty(raw);
+
+        // Explain what we did with the input rather than silently rewriting it.
+        let message = '';
+        if (raw !== '' && !Number.isFinite(typed)) message = "That isn't a number we can use, so we're showing 0.";
+        else if (typed < 0) message = 'Quantities cannot be negative, so we’re showing 0.';
+        else if (typed > MAX_QTY) message = `Capped at ${fmtCount(MAX_QTY)} units.`;
+        else if (raw !== '' && !Number.isInteger(typed)) message = 'Rounded down to whole units.';
+
+        if (hintEl) {
+          hintEl.textContent = message || baseHint;
+          hintEl.classList.toggle('is-warning', Boolean(message));
+        }
+
+        const summary = compute(qty, set);
+
+        // Announce once the user pauses. Announcing on every keystroke made typing
+        // "1500" read four separate result sets to a screen reader.
+        if (liveEl) {
+          clearTimeout(announce);
+          announce = setTimeout(() => {
+            liveEl.textContent = summary;
+          }, 700);
+        }
+      };
+
+      qtyEl.addEventListener('input', update);
+      update();
+    } catch {
+      // A failure in one calculator must never take the other three, or the page, down.
     }
-    qtyEl.addEventListener('input', update);
-    update();
   }
 
-  function bindTool2() {
-    const qtyEl = document.getElementById('tool2-qty');
-    const plasticEl = document.getElementById('tool2-plastic');
-    const co2El = document.getElementById('tool2-co2');
-    const seedsEl = document.getElementById('tool2-seeds');
-    function update() {
-      const qty = Math.max(0, Number(qtyEl.value) || 0);
-      const plasticKg = (qty * PEN_PLASTIC_G) / 1000;
-      const co2Kg = plasticKg * PLASTIC_CO2_PER_KG;
-      plasticEl.textContent = fmt(plasticKg);
-      co2El.textContent = fmt(co2Kg);
-      seedsEl.textContent = fmt(qty);
-    }
-    qtyEl.addEventListener('input', update);
-    update();
-  }
+  bindTool('tool1', (q, set) => {
+    const plastic = fmtMass(penPlasticKg(q));
+    const co2 = fmtMass(penCo2Kg(q));
+    set('plastic', plastic);
+    set('co2', co2);
+    return `${fmtCount(q)} pens or pencils: ${plastic} kg plastic and ${co2} kg CO2e avoided.`;
+  });
 
-  function bindTool3() {
-    const qtyEl = document.getElementById('tool3-qty');
-    const co2El = document.getElementById('tool3-co2');
-    function update() {
-      const qty = Math.max(0, Number(qtyEl.value) || 0);
-      const paperKg = (qty * NOTEBOOK_PAPER_G) / 1000;
-      const co2Kg = paperKg * (PAPER_VIRGIN_CO2_PER_KG - PAPER_RECYCLED_CO2_PER_KG);
-      co2El.textContent = fmt(co2Kg);
-    }
-    qtyEl.addEventListener('input', update);
-    update();
-  }
+  bindTool('tool2', (q, set) => {
+    const plastic = fmtMass(penPlasticKg(q));
+    const co2 = fmtMass(penCo2Kg(q));
+    set('plastic', plastic);
+    set('co2', co2);
+    set('seeds', fmtCount(q));
+    return `${fmtCount(q)} units: ${plastic} kg plastic and ${co2} kg CO2e avoided, ${fmtCount(q)} seeds handed out.`;
+  });
 
-  function bindTool4() {
-    const qtyEl = document.getElementById('tool4-qty');
-    const plasticEl = document.getElementById('tool4-plastic');
-    const co2El = document.getElementById('tool4-co2');
-    function update() {
-      const qty = Math.max(0, Number(qtyEl.value) || 0);
-      const plasticKg = (qty * PEN_PLASTIC_G) / 1000;
-      const plasticCo2 = plasticKg * PLASTIC_CO2_PER_KG;
-      const paperKg = (qty * NOTEBOOK_PAPER_G) / 1000;
-      const paperCo2 = paperKg * (PAPER_VIRGIN_CO2_PER_KG - PAPER_RECYCLED_CO2_PER_KG);
-      plasticEl.textContent = fmt(plasticKg);
-      co2El.textContent = fmt(plasticCo2 + paperCo2);
-    }
-    qtyEl.addEventListener('input', update);
-    update();
-  }
+  bindTool('tool3', (q, set) => {
+    const co2 = fmtMass(notebookCo2Kg(q));
+    set('co2', co2);
+    return `${fmtCount(q)} notebooks or diaries: ${co2} kg CO2e avoided.`;
+  });
 
-  bindTool1();
-  bindTool2();
-  bindTool3();
-  bindTool4();
+  bindTool('tool4', (q, set) => {
+    const plastic = fmtMass(penPlasticKg(q));
+    const co2 = fmtMass(hamperCo2Kg(q));
+    set('plastic', plastic);
+    set('co2', co2);
+    return `${fmtCount(q)} hampers: ${plastic} kg plastic and ${co2} kg CO2e avoided.`;
+  });
 </script>
 
 <style>
-  .hero { max-width: 68ch; padding-block: 2rem 1rem; }
+  /* max-width belongs on the paragraph, not on the element that also carries
+     .container -- on .container it overrides the 1200px and re-centres the h1
+     away from the grid below it. */
+  .hero { padding-block: 2rem 1rem; }
+  .hero .lede { max-width: 68ch; }
   .eyebrow { font-family: var(--font-body); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red-deep); }
   .lede { font-size: 1.05rem; color: var(--gray-500); }
   .lede a { color: var(--red-deep); }
+
+  .noscript-note {
+    background: var(--cream); border-radius: var(--radius); padding: 0.9rem 1.1rem;
+    font-size: 0.9rem; color: var(--ink); margin-bottom: 1rem;
+  }
 
   .tools { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; padding-block: 1rem 2.5rem; }
   .tool { padding: 1.5rem; border: 1px solid var(--gray-200); }
   .tool h2 { font-size: 1.15rem; margin-bottom: 0.4em; }
   .tool-copy { font-size: 0.9rem; color: var(--gray-500); margin-bottom: 1rem; }
-  .field { display: block; margin-bottom: 1.25rem; }
+  .field { display: block; margin-bottom: 0.45rem; }
   .field span { display: block; font-size: 0.8rem; font-weight: 700; margin-bottom: 0.4em; }
   .field input {
     width: 100%; padding: 0.6em 0.75em; border: 1px solid var(--gray-300); border-radius: var(--radius);
-    font-size: 1rem; font-family: var(--font-body);
+    font-size: 1rem; font-family: var(--font-body); font-variant-numeric: tabular-nums;
+    background: var(--white); color: var(--ink);
   }
   .field input:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
+  .field-hint { font-size: 0.72rem; color: var(--gray-500); margin: 0 0 1.1rem; min-height: 1.6em; }
+  .field-hint.is-warning { color: var(--red-deep); font-weight: 600; }
   .result { display: flex; flex-wrap: wrap; gap: 1rem; background: var(--cream); border-radius: var(--radius); padding: 1rem; margin-bottom: 0.75rem; }
   .stat { flex: 1 1 auto; min-width: 90px; }
-  .stat-num { display: block; font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; color: var(--red-deep); }
+  /* Fraunces ships at 300/400/500 only -- 700 was synthesised, which reads mushy at
+     this size. tabular-nums stops the figures shifting as you type; overflow-wrap
+     keeps a pathological quantity inside the card instead of blowing the grid out. */
+  .stat-num {
+    display: block; font-family: var(--font-heading); font-size: 1.6rem; font-weight: 500;
+    color: var(--red-deep); font-variant-numeric: tabular-nums; overflow-wrap: anywhere;
+  }
   .stat-label { display: block; font-size: 0.72rem; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.04em; }
   .tool-note { font-size: 0.78rem; color: var(--gray-500); margin: 0 0 0.5rem; }
   .tool-link { font-size: 0.78rem; margin: 0; }

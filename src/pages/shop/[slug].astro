@@ -75,6 +75,12 @@ const faqSchema = p.faq.length
     }
   : null;
 
+const inr = (n) =>
+  '₹' + n.toLocaleString('en-IN', {
+    minimumFractionDigits: Number.isInteger(n) ? 0 : 2,
+    maximumFractionDigits: 2,
+  });
+
 const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing for "${p.name}" (${p.sku || p.slug}).`);
 ---
 <BaseLayout
@@ -87,19 +93,28 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
   {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 
   <section class="container product">
-    <p class="crumb">
+    <nav class="crumb" aria-label="Breadcrumb">
       <a href="/shop/">Shop</a>{cat && <> / <a href={cat.url}>{cat.name}</a></>} / {p.name}
-    </p>
+    </nav>
 
     <div class="layout">
       <div class="gallery">
         {p.images.length > 0 ? (
           <>
-            <img class="hero-img" src={p.images[0].src} alt={p.images[0].alt || `${p.name}, Eco Happy`} width={p.images[0].width} height={p.images[0].height} />
+            <img class="hero-img" id="hero-img" src={p.images[0].src} alt={p.images[0].alt || `${p.name}, Eco Happy`} width={p.images[0].width} height={p.images[0].height} />
             {p.images.length > 1 && (
-              <div class="thumbs">
-                {p.images.slice(1).map((img) => (
-                  <img src={img.src} alt={img.alt || `${p.name}, detail`} loading="lazy" width="150" height="150" />
+              <div class="thumbs" role="group" aria-label={`${p.name} images`}>
+                {p.images.map((img, i) => (
+                  <button
+                    type="button"
+                    class="thumb"
+                    aria-pressed={i === 0 ? 'true' : 'false'}
+                    aria-label={`Show image ${i + 1} of ${p.images.length}`}
+                    data-src={img.src}
+                    data-alt={img.alt || `${p.name}, Eco Happy`}
+                  >
+                    <img src={img.src} alt="" loading="lazy" width="140" height="140" decoding="async" />
+                  </button>
                 ))}
               </div>
             )}
@@ -116,11 +131,11 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
         <p class="price">
           {onSale ? (
             <>
-              <span class="was">Was ₹{p.price}</span>
-              <span class="now">Now ₹{p.salePrice}</span>
+              <span class="was">Was {inr(p.price)}</span>
+              <span class="now">Now {inr(p.salePrice)}</span>
             </>
           ) : (
-            <span class="now">₹{p.price}</span>
+            <span class="now">{inr(p.price)}</span>
           )}
         </p>
 
@@ -153,7 +168,10 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
             <label>City<input type="text" name="buyerCity" autocomplete="address-level2" required /></label>
             <label>Pincode<input type="text" name="buyerPincode" autocomplete="postal-code" inputmode="numeric" required /></label>
           </div>
-          <button class="btn btn-primary" type="submit" id="buy-continue">Continue to payment</button>
+          <div class="buy-actions">
+            <button class="btn btn-primary" type="submit" id="buy-continue">Continue to payment</button>
+            <button class="buy-cancel" type="button" id="buy-cancel">Cancel</button>
+          </div>
         </form>
         <p id="buy-status" class="buy-status" role="status" aria-live="polite"></p>
 
@@ -189,7 +207,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
     {related.length > 0 && (
       <section class="related">
         <h2>You may also like</h2>
-        <div class="grid">
+        <div class="product-grid">
           {related.map((r) => <ProductCard product={r} />)}
         </div>
       </section>
@@ -201,6 +219,19 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
   const btn = document.getElementById('buy-now');
   const status = document.getElementById('buy-status');
   const detailsForm = document.getElementById('buyer-details');
+
+  // Gallery: thumbnails swap the main image.
+  const heroImg = document.getElementById('hero-img');
+  const thumbs = Array.from(document.querySelectorAll('.thumb'));
+  if (heroImg instanceof HTMLImageElement) {
+    thumbs.forEach((t) => {
+      t.addEventListener('click', () => {
+        heroImg.src = t.dataset.src || heroImg.src;
+        heroImg.alt = t.dataset.alt || heroImg.alt;
+        thumbs.forEach((o) => o.setAttribute('aria-pressed', String(o === t)));
+      });
+    });
+  }
 
   function loadRazorpayScript() {
     return new Promise((resolve, reject) => {
@@ -221,6 +252,15 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
     detailsForm.hidden = false;
     detailsForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
     detailsForm.querySelector('input[name="buyerName"]')?.focus();
+  });
+
+  // Leaving the details step must be possible: "Buy now" hides itself, so without
+  // this the only way back to the product was a page reload.
+  document.getElementById('buy-cancel')?.addEventListener('click', () => {
+    detailsForm.hidden = true;
+    btn.hidden = false;
+    status.textContent = '';
+    btn.focus();
   });
 
   // Netlify Forms AJAX submit: lands a durable order record in the Netlify Forms
@@ -367,14 +407,31 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
   .layout { display: grid; grid-template-columns: 1.1fr 1fr; gap: 2.5rem; margin-block: 1rem 2rem; }
   .hero-img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius); background: var(--cream); }
   .hero-img.placeholder { display: block; }
-  .thumbs { display: flex; gap: 0.6rem; margin-top: 0.75rem; }
-  .thumbs img { width: 70px; height: 70px; object-fit: cover; border-radius: 6px; }
-  .answer { font-size: 1.05rem; color: var(--red-deep); }
+  /* Thumbnails were plain <img> with no handler: they read as interactive and
+     were not. Now real buttons that swap the main image, 72px tap target. */
+  .thumbs { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.75rem; }
+  .thumb {
+    padding: 0; line-height: 0; cursor: pointer; overflow: hidden;
+    background: var(--white); border: 1px solid var(--gray-200); border-radius: 6px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .thumb img { width: 70px; height: 70px; object-fit: cover; display: block; }
+  .thumb:hover { border-color: var(--forest); }
+  .thumb[aria-pressed='true'] { border-color: var(--forest); box-shadow: inset 0 0 0 1px var(--forest); }
+  /* --red-deep now means price/sale only. The summary line was competing with
+     the price for the same signal; ProductCard already used --gray-500 here. */
+  .answer { font-size: 1.05rem; color: var(--gray-500); }
   .price { font-size: 1.4rem; font-weight: 600; margin: 1rem 0; }
-  .was { text-decoration: line-through; color: #6b6b5c; font-weight: 400; margin-right: 0.6em; font-size: 0.85em; }
+  .was { text-decoration: line-through; color: var(--gray-500); font-weight: 400; margin-right: 0.6em; font-size: 0.85em; }
   .now { color: var(--red-deep); }
   .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.25rem; }
   .buy-status { min-height: 1.2em; font-size: 0.9rem; color: var(--red-deep); font-weight: 600; }
+  .buy-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem 1rem; }
+  .buy-cancel {
+    font: inherit; font-size: 0.85rem; color: var(--gray-500); background: none;
+    border: 0; padding: 0.5em 0.25em; min-height: 44px; cursor: pointer; text-decoration: underline;
+  }
+  .buy-cancel:hover { color: var(--ink); }
   .buyer-details {
     margin-top: 1rem; padding: 1.1rem 1.25rem; background: var(--cream);
     border-radius: var(--radius); max-width: 460px;
@@ -396,13 +453,16 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
   .made-to-order-note { font-size: 0.85rem; color: var(--gray-500); margin: -0.75rem 0 1rem; }
   .gst-note { font-size: 0.85rem; color: var(--gray-500); margin: -0.75rem 0 1rem; }
   .specs { border-collapse: collapse; width: 100%; margin-top: 1rem; }
-  .specs th.specs td { text-align: left; padding: 0.4em 0.6em 0.4em 0; border-bottom: 1px solid var(--cream); font-size: 0.9rem; }
+  /* Was `.specs th.specs td` -- a descendant chain that matched nothing, so the
+     spec table shipped completely unstyled: centred bold headers, no padding,
+     no row rules. The missing character was a comma. */
+  .specs th, .specs td { text-align: left; padding: 0.4em 0.6em 0.4em 0; border-bottom: 1px solid var(--cream); font-size: 0.9rem; }
   .specs th { color: var(--ink); font-weight: 700; width: 40%; }
   .description { max-width: 68ch; margin-bottom: 2.5rem; }
   .faqs { max-width: 68ch; margin-bottom: 2.5rem; }
   .faqs details { border-bottom: 1px solid var(--cream); padding: 0.75em 0; }
   .faqs summary { cursor: pointer; font-weight: 700; color: var(--ink); }
-  .related .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.25rem; } .related .grid > :global(.product-card) { flex: 1 1 180px; max-width: 220px; }
+  .related { margin-bottom: 1rem; }
   @media (max-width: 780px) {
     .layout { grid-template-columns: 1fr; }
   }

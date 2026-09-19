@@ -16,14 +16,18 @@ const { product } = Astro.props;
 const { name, price, salePrice, images, ribbon, answer } = product.data;
 const img = images?.[0];
 const onSale = typeof salePrice === 'number' && salePrice < price;
+// 11 products carry percentage-derived sale prices (399.2, 104.3 ...) and
+// create-order.js charges those exact paise. Show the true amount, correctly
+// formatted -- integers plain, fractions to 2dp -- never a stray "₹399.2".
+const inr = (n: number) =>
+  '₹' + n.toLocaleString('en-IN', {
+    minimumFractionDigits: Number.isInteger(n) ? 0 : 2,
+    maximumFractionDigits: 2,
+  });
 ---
 <a class="product-card card" href={`/shop/${product.data.slug}/`}>
   <div class="media">
-    {img ? (
-      <img src={img.src} alt={img.alt || `${name}, Eco Happy`} loading="lazy" width="400" height="500" />
-    ) : (
-      <div class="media placeholder" aria-hidden="true"></div>
-    )}
+    {img && <img src={img.src} alt={img.alt || `${name}, Eco Happy`} loading="lazy" width="400" height="500" decoding="async" />}
     {ribbon && <span class="badge ribbon">{ribbon}</span>}
     {onSale && <span class="badge sale">Sale</span>}
   </div>
@@ -33,11 +37,11 @@ const onSale = typeof salePrice === 'number' && salePrice < price;
     <p class="price">
       {onSale ? (
         <>
-          <span class="was"><span class="visually-hidden">Was</span> ₹{price}</span>
-          <span class="now"><span class="visually-hidden">now</span> ₹{salePrice}</span>
+          <span class="was"><span class="visually-hidden">Was</span> {inr(price)}</span>
+          <span class="now"><span class="visually-hidden">now</span> {inr(salePrice!)}</span>
         </>
       ) : (
-        <span class="now">₹{price}</span>
+        <span class="now">{inr(price)}</span>
       )}
     </p>
   </div>
@@ -48,16 +52,20 @@ const onSale = typeof salePrice === 'number' && salePrice < price;
     display: block; text-decoration: none; color: var(--ink); overflow: hidden;
     border: 1px solid var(--gray-200); transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
-  .product-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(13,13,13,0.12); }
+  .product-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-card-hover); }
   .media { position: relative; aspect-ratio: 4 / 5; background: var(--gray-100); overflow: hidden; }
   .media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease; }
   .product-card:hover .media img { transform: scale(1.12); }
   @media (prefers-reduced-motion: reduce) {
     .product-card:hover .media img { transform: none; }
   }
-  .media.placeholder { display: flex; }
-  .ribbon.sale { position: absolute; top: 0.5rem; left: 0.5rem; }
-  .sale { left: auto; right: 0.5rem; }
+  /* Was `.ribbon.sale` -- a compound selector needing both classes on one element.
+     The markup puts .ribbon and .sale on two separate spans, so nothing matched:
+     neither badge was ever positioned, both fell into flow below the image and
+     were clipped by .media's overflow:hidden. Badges had been invisible. */
+  .media .badge { position: absolute; top: 0.5rem; z-index: 1; }
+  .media .ribbon { left: 0.5rem; }
+  .media .sale { right: 0.5rem; }
   .body { padding: 1rem 1.1rem 1.2rem; }
   .body h3 { font-size: 1rem; margin-bottom: 0.3em; color: var(--ink); font-family: var(--font-body); font-weight: 700; }
   .answer { font-size: 0.85rem; color: var(--gray-500); margin-bottom: 0.6em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }

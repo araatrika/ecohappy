@@ -22,11 +22,7 @@ const categoryTiles = site.categories.map((cat) => {
     {categoryTiles.map((cat) => (
       <a class="cat-card card" href={cat.url}>
         <div class="cat-media">
-          {cat.cover ? (
-            <img src={cat.cover.src} alt={cat.cover.alt || cat.name} loading="lazy" width="400" height="300" />
-          ) : (
-            <div class="cat-media placeholder" aria-hidden="true"></div>
-          )}
+          {cat.cover && <img src={cat.cover.src} alt={cat.cover.alt || cat.name} loading="lazy" width="400" height="300" decoding="async" />}
         </div>
         <div class="cat-body">
           <h2>{cat.name}</h2>
@@ -43,13 +39,17 @@ const categoryTiles = site.categories.map((cat) => {
 </BaseLayout>
 
 <style>
-  .hero { padding-block: 2rem 1rem; max-width: 68ch; }
+  /* max-width lives on the paragraph, not on the element that also carries
+     .container -- otherwise it overrides .container's 1200px and the h1 re-centres
+     ~250px right of every card below it. */
+  .hero { padding-block: 2rem 1rem; }
+  .hero p { max-width: 68ch; }
   .cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; padding-block: 1rem 1rem; }
   .cat-card {
     display: block; text-decoration: none; color: var(--ink); overflow: hidden;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
-  .cat-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(13,13,13,0.12); }
+  .cat-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-card-hover); }
   .cat-media { aspect-ratio: 4 / 3; background: var(--gray-100); overflow: hidden; }
   .cat-media img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease; }
   .cat-card:hover .cat-media img { transform: scale(1.08); }
