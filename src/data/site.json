@@ -95,7 +95,7 @@
     "Society of Women Engineers (SWE)",
     "Trouv",
     "Amulya Boondh",
-    "Sant\u00e9 Spa Cuisine",
+    "Santé Spa Cuisine",
     "LuLu Mall",
     "Reliance Industries Limited",
     "Savitribai Phule Pune University",
@@ -108,10 +108,17 @@
     "Schindler",
     "TEDx",
     "Hyatt",
-    "Six Senses"
+    "Six Senses",
+    "Times of India",
+    "Marriott",
+    "Westin",
+    "TCS",
+    "Infosys",
+    "Google",
+    "Meta"
   ],
   "shipping": {
-    "dispatchDays": "2\u20133 working days",
+    "dispatchDays": "2–3 working days",
     "freeShipping": "Free shipping pan-India (stated on Wix listings and LinkedIn); confirm threshold",
     "policySource": "/shipping-and-returns/"
   },
@@ -161,7 +168,7 @@
   "geo_approx": {
     "latitude": 18.4774257,
     "longitude": 73.8508126,
-    "source": "OpenStreetMap Nominatim pincode-centroid for 411009 (Pune), 16 Sep 2026 \u2014 NOT the exact building; owner should replace with the precise pin from Google Business Profile before launch."
+    "source": "OpenStreetMap Nominatim pincode-centroid for 411009 (Pune), 16 Sep 2026 — NOT the exact building; owner should replace with the precise pin from Google Business Profile before launch."
   },
   "mapsSearchUrl": "https://www.google.com/maps/search/?api=1&query=Gurudatta+Niwas+95%2F791+Gajanan+Maharaj+Chowk+Laxmi+Nagar+Parvati+Peth+Pune+411009"
 }
