@@ -31,7 +31,10 @@ const nav = [
       <ul id="primary-nav" class="primary-nav">
         {nav.map((item) => (
           <li class:list={{ 'has-children': item.children, 'nav-highlight': item.highlight }}>
-            <a href={item.href}>{item.label}</a>
+            <a href={item.href}>
+              {item.label}
+              {item.highlight && <span class="nav-spark" aria-hidden="true">&#10022;</span>}
+            </a>
             {item.children && (
               <ul class="submenu">
                 {item.children.map((c) => (
@@ -67,15 +70,19 @@ const nav = [
   }
   .primary-nav > li > a:hover, .primary-nav > li > a:focus-visible { color: var(--forest); }
   .primary-nav > li > a:hover::after, .primary-nav > li > a:focus-visible::after { transform: scaleX(1); }
-  .primary-nav > li.nav-highlight > a::after { display: none; }
   .primary-nav > li.has-children > a::after { right: 1.1em; }
-  .nav-highlight > a {
-    background: var(--gold); color: var(--ink); padding: 0.5em 0.9em; border-radius: 999px;
-    transition: background 0.15s ease, transform 0.15s ease;
+  /* Customisation is a featured link, not the current page -- a filled pill reads as an
+     active/selected tab (which it never actually is), so this uses colour + a small mark
+     instead of a background fill. */
+  .nav-highlight > a { color: var(--gold-dark); }
+  .nav-highlight > a::after { background: var(--gold-dark); }
+  .nav-highlight > a:hover, .nav-highlight > a:focus-visible { color: var(--ink); }
+  .nav-spark {
+    display: inline-block; margin-left: 0.3em; color: var(--gold-dark); font-size: 0.75em;
+    transform: translateY(-0.5em);
   }
-  .nav-highlight > a:hover { background: var(--gold-dark); color: var(--ink); transform: translateY(-1px); }
   @media (max-width: 780px) {
-    .nav-highlight > a { display: inline-block; margin-bottom: 0.4rem; }
+    .nav-highlight > a { display: inline-block; }
   }
   .submenu {
     display: none; position: absolute; left: 0; top: 100%; background: var(--white);
