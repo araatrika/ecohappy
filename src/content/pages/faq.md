@@ -32,7 +32,7 @@ Sold products are not eligible for refund or exchange. If an item arrives defect
 
 ## Can I customise products for a bulk or corporate order?
 
-Yes, several products, including our seed pencils and diaries, can carry a printed or stamped logo for bulk orders. WhatsApp us at [+91 94220 62333](https://wa.me/919422062333) with your quantity and deadline for a quote.
+Yes, several products, including our seed pencils and diaries, can carry a printed or stamped logo for bulk orders. WhatsApp us at [our business number](https://wa.me/919422062333) with your quantity and deadline for a quote.
 
 ## Is there a minimum order for bulk or corporate gifting?
 
@@ -48,4 +48,4 @@ Checkout is handled through Razorpay, supporting cards, UPI and net banking.
 
 ## How do I reach a real person?
 
-WhatsApp is the fastest way: [+91 94220 62333](https://wa.me/919422062333), or email [hi@ecohappy.in](mailto:hi@ecohappy.in).
+WhatsApp is the fastest way: [message us](https://wa.me/919422062333), or email [hi@ecohappy.in](mailto:hi@ecohappy.in).
