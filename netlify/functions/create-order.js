@@ -4,6 +4,18 @@
 // content data so a tampered client request can't change what gets charged.
 import Razorpay from 'razorpay';
 import products from './data/products.json' with { type: 'json' };
+import site from './data/site.json' with { type: 'json' };
+
+// Shipping is calculated on order value (this is a single-product, quantity-aware buy-now
+// flow -- no multi-item cart), using the tiers in site.json's shipping config so the storefront
+// display, this charge, and the printed invoice can never drift out of sync with each other.
+function shippingFor(amount) {
+  const shipping = site.shipping;
+  if (!shipping) return 0;
+  if (typeof shipping.freeAbove === 'number' && amount > shipping.freeAbove) return 0;
+  const tier = (shipping.tiers || []).find((t) => amount <= t.maxAmount);
+  return tier ? tier.cost : 0;
+}
 
 export default async (req) => {
   if (req.method !== 'POST') {
@@ -45,7 +57,9 @@ export default async (req) => {
   const unitPrice = typeof product.salePrice === 'number' && product.salePrice < product.price
     ? product.salePrice
     : product.price;
-  const amountPaise = Math.round(unitPrice * qty * 100);
+  const subtotal = unitPrice * qty;
+  const shippingCost = shippingFor(subtotal);
+  const amountPaise = Math.round((subtotal + shippingCost) * 100);
 
   const razorpay = new Razorpay({ key_id: keyId, key_secret: keySecret });
 
@@ -58,6 +72,8 @@ export default async (req) => {
         slug,
         quantity: String(qty),
         sku: product.sku || '',
+        subtotal: String(subtotal),
+        shippingCost: String(shippingCost),
         buyerName: safeBuyer.name,
         buyerEmail: safeBuyer.email,
         buyerPhone: safeBuyer.phone,
@@ -70,6 +86,8 @@ export default async (req) => {
         currency: order.currency,
         keyId,
         productName: product.name,
+        subtotal,
+        shippingCost,
       }),
       { status: 200, headers: { 'Content-Type': 'application/json' } }
     );

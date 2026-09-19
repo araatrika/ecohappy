@@ -7,7 +7,7 @@
     "salePrice": null,
     "currency": "INR",
     "availability": "InStock",
-    "retired": false
+    "retired": true
   },
   {
     "slug": "bamboo-toothbrush-set-of-2",
@@ -27,7 +27,7 @@
     "salePrice": null,
     "currency": "INR",
     "availability": "InStock",
-    "retired": false
+    "retired": true
   },
   {
     "slug": "checkerboard-planner-2026",
@@ -35,16 +35,6 @@
     "sku": "EH-CP-881",
     "price": 499,
     "salePrice": 374.25,
-    "currency": "INR",
-    "availability": "InStock",
-    "retired": false
-  },
-  {
-    "slug": "colour-pencils-set-of-2-boxes",
-    "name": "Color Pencils - Set of 2 boxes",
-    "sku": "HCP001",
-    "price": 250,
-    "salePrice": null,
     "currency": "INR",
     "availability": "InStock",
     "retired": false
@@ -140,6 +130,16 @@
     "retired": false
   },
   {
+    "slug": "mandala-book",
+    "name": "The Happy Mandala Book",
+    "sku": "EH-MDL-199",
+    "price": 199,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "InStock",
+    "retired": false
+  },
+  {
     "slug": "mandala-books-set-with-colour-pencils",
     "name": "One Beginner & one Advanced Mandala Book",
     "sku": "EH-OBO-553",
@@ -147,7 +147,7 @@
     "salePrice": 419.4,
     "currency": "INR",
     "availability": "InStock",
-    "retired": false
+    "retired": true
   },
   {
     "slug": "multicolour-laptop-sleeve",
@@ -275,16 +275,6 @@
     "sku": "HSB001",
     "price": 249,
     "salePrice": 186.75,
-    "currency": "INR",
-    "availability": "InStock",
-    "retired": false
-  },
-  {
-    "slug": "seed-colour-pencils-set-of-2-boxes",
-    "name": "Seed Color Pencils - Set of 2 Boxes",
-    "sku": "HCP002",
-    "price": 300,
-    "salePrice": null,
     "currency": "INR",
     "availability": "InStock",
     "retired": false

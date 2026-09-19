@@ -7,7 +7,7 @@ const products = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/products" }),
   schema: z.object({
     name: z.string(), slug: z.string(), sku: z.string().default(""),
-    category: z.enum(["corporate-bulk-and-branding","festive-corporate-gifting","employee-welcome-kits","client-gift-hampers","everyday-desk-essentials"]),
+    category: z.enum(["corporate-bulk-and-branding","festive-corporate-gifting","employee-welcome-kits","client-gift-hampers","everyday-desk-essentials","for-artists"]),
     categoryName: z.string(),
     price: z.number(), salePrice: z.number().optional(), currency: z.literal("INR").default("INR"),
     availability: z.enum(["InStock","OutOfStock","MadeToOrder","PreOrder"]).default("InStock"),

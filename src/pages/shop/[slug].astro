@@ -15,10 +15,23 @@ const p = entry.data;
 const onSale = typeof p.salePrice === 'number' && p.salePrice < p.price;
 const cat = site.categories.find((c) => c.slug === p.category);
 
+// Single-item buy-now flow (no multi-product cart), so shipping for this page is just this
+// product's own price against the site-wide tiers in site.json -- kept in sync with the same
+// calculation in netlify/functions/create-order.js and generate-invoice.js.
+const effectivePrice = onSale ? p.salePrice : p.price;
+function shippingFor(amount) {
+  const shipping = site.shipping;
+  if (!shipping) return 0;
+  if (typeof shipping.freeAbove === 'number' && amount > shipping.freeAbove) return 0;
+  const tier = (shipping.tiers || []).find((t) => amount <= t.maxAmount);
+  return tier ? tier.cost : 0;
+}
+const shippingCost = shippingFor(effectivePrice);
+
 const allProducts = await getCollection('products');
 const related = p.related
   .map((slug) => allProducts.find((r) => r.data.slug === slug))
-  .filter(Boolean)
+  .filter((r) => r && !r.data.retired)
   .slice(0, 3);
 
 // Spec keys are stored camelCase in frontmatter; the table needs human labels.
@@ -138,9 +151,16 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
             <span class="now">{inr(p.price)}</span>
           )}
         </p>
+        {!p.bulk && (
+          <p class="shipping-note">
+            {shippingCost > 0 ? `+ ${inr(shippingCost)} shipping` : 'Free shipping'} &middot; delivery in {site.shipping?.deliveryEstimate || '5-7 business days across India'}
+          </p>
+        )}
 
         <div class="cta-row">
-          {p.bulk ? (
+          {p.retired || p.availability === 'OutOfStock' ? (
+            <p class="discontinued-note">This product is no longer available.</p>
+          ) : p.bulk ? (
             <a class="btn btn-primary" href={`${site.whatsapp.direct}?text=${whatsappMsg}`} target="_blank" rel="noopener">
               Reach out on WhatsApp
             </a>
@@ -155,7 +175,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
             </>
           )}
         </div>
-        {p.bulk && <p class="made-to-order-note">Made to order, usually ready in about {p.leadTimeDays} days after we confirm your order on WhatsApp.</p>}
+        {p.bulk && !p.retired && p.availability !== 'OutOfStock' && <p class="made-to-order-note">Made to order, usually ready in about {p.leadTimeDays} days after we confirm your order on WhatsApp.</p>}
         {site.gstin && <p class="gst-note">GST invoice available on request</p>}
 
         <form id="buyer-details" class="buyer-details" hidden aria-label="Delivery and invoice details">
@@ -422,6 +442,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
      the price for the same signal; ProductCard already used --gray-500 here. */
   .answer { font-size: 1.05rem; color: var(--gray-500); }
   .price { font-size: 1.4rem; font-weight: 600; margin: 1rem 0; }
+  .shipping-note { font-size: 0.85rem; color: var(--gray-500); margin: -0.5rem 0 1rem; }
   .was { text-decoration: line-through; color: var(--gray-500); font-weight: 400; margin-right: 0.6em; font-size: 0.85em; }
   .now { color: var(--red-deep); }
   .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.25rem; }
@@ -451,6 +472,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
     .buyer-grid { grid-template-columns: 1fr; }
   }
   .made-to-order-note { font-size: 0.85rem; color: var(--gray-500); margin: -0.75rem 0 1rem; }
+  .discontinued-note { font-size: 0.95rem; color: var(--gray-500); font-style: italic; margin: 0; }
   .gst-note { font-size: 0.85rem; color: var(--gray-500); margin: -0.75rem 0 1rem; }
   .specs { border-collapse: collapse; width: 100%; margin-top: 1rem; }
   /* Was `.specs th.specs td` -- a descendant chain that matched nothing, so the

@@ -69,7 +69,6 @@ faq:
   a: Yes, this product can be customised; message us on WhatsApp with what you have
     in mind.
 related:
-- colour-pencils-set-of-2-boxes
 - customised-seed-pencils-100-bulk
 - customised-seed-pencils-50
 retired: false
@@ -101,4 +100,4 @@ Why Buy in Bulk?Perfect for personal use. Save on packaging and help help save t
 
 Seed Pens - Set of 100 (Bulk Buy) is part of Eco Happy's Seed Pencils & Pens range. It's made from 100% Recycled Newspaper, turning yesterday's news into today's ideas. Made in Pune, India by Araatrika women-led production team.
 
-This is a made-to-order item with a lead time of about 3 days, since it's produced after you order rather than kept pre-stocked. It can be customised (name, logo, or message) for gifting and bulk orders, message us on WhatsApp to discuss options. If you're gifting or bulk-ordering, it's often paired with Color Pencils - Set of 2 boxes, Customized Seed Pencils -Set of 100 (Bulk Buy) and Customized Seed Pencils - 50 units. See the FAQ below for sizing, care and bulk-order questions.
+This is a made-to-order item with a lead time of about 3 days, since it's produced after you order rather than kept pre-stocked. It can be customised (name, logo, or message) for gifting and bulk orders, message us on WhatsApp to discuss options. If you're gifting or bulk-ordering, it's often paired with Customized Seed Pencils -Set of 100 (Bulk Buy) and Customized Seed Pencils - 50 units. See the FAQ below for sizing, care and bulk-order questions.

@@ -73,7 +73,7 @@ Planting trees through seed balls is another meaningful contribution.
 
 **4) Gifts for Yourself** **-**
 
-Self-love is an essential form of giving. Treat yourself to something that brings joy or explore calming practices like [mandala art](/shop/mandala-books-set-with-colour-pencils/), which is known to support mental well-being and encourage relaxation.
+Self-love is an essential form of giving. Treat yourself to something that brings joy or explore calming practices like [mandala art](/shop/mandala-book/), which is known to support mental well-being and encourage relaxation.
 
 **5) Gifts for Colleagues** **-**
 

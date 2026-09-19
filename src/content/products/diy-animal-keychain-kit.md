@@ -55,8 +55,7 @@ faq:
 - q: Can I buy DIY animal keychain kit in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
-- advanced-mandala-book-with-colour-pencils
-- beginners-mandala-book-with-colour-pencils
+- mandala-book
 - grow-me-kit
 retired: false
 datePublished: '2026-09-15'
@@ -91,8 +90,8 @@ One paint brush
 
 DIY animal keychain kit is part of Eco Happy's Kits & Seeds range. Made in Pune, India by Araatrika women-led production team.
 
-It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Advanced Mandala Book + One box of Colour Pencils, Beginner's Mandala Book + One Box of Colour Pencils and Grow Me Kit. See the FAQ below for sizing, care and bulk-order questions.
+It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with The Happy Mandala Book and Grow Me Kit. See the FAQ below for sizing, care and bulk-order questions.
 
 Yes, the product and its packaging are designed to be plastic-free, in keeping with how we make everything at Eco Happy. Yes, message us on WhatsApp for bulk pricing and lead times.
 
-It's part of our Kits & Seeds category alongside Advanced Mandala Book + One box of Colour Pencils, Beginner's Mandala Book + One Box of Colour Pencils and Grow Me Kit, good options if you're building a gift bundle.
+It's part of our Kits & Seeds category alongside The Happy Mandala Book and Grow Me Kit, good options if you're building a gift bundle.

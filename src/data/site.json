@@ -118,9 +118,18 @@
     "Meta"
   ],
   "shipping": {
-    "dispatchDays": "2–3 working days",
-    "freeShipping": "Free shipping pan-India (stated on Wix listings and LinkedIn); confirm threshold",
-    "policySource": "/shipping-and-returns/"
+    "deliveryEstimate": "5-7 business days across India",
+    "tiers": [
+      {
+        "maxAmount": 1000,
+        "cost": 100
+      },
+      {
+        "maxAmount": 1500,
+        "cost": 150
+      }
+    ],
+    "freeAbove": 1500
   },
   "wixVerificationTokens_oldDomain": {
     "google-site-verification": "5i2p61vPLL240X-JfGoZGGg5cJOcf0RoVyDMWlg2gDg",
@@ -148,7 +157,7 @@
       "slug": "employee-welcome-kits",
       "name": "Employee Welcome Kits",
       "url": "/shop/employee-welcome-kits/",
-      "description": "Travel and desk kits, toothbrushes and mandala books for onboarding, wellness and appreciation."
+      "description": "Travel and desk kits and toothbrushes for onboarding, wellness and appreciation."
     },
     {
       "slug": "client-gift-hampers",
@@ -161,6 +170,12 @@
       "name": "Everyday Desk Essentials",
       "url": "/shop/everyday-desk-essentials/",
       "description": "Diaries, notebooks and cloth bags people actually use at their desk, every day."
+    },
+    {
+      "slug": "for-artists",
+      "name": "For Artists",
+      "url": "/shop/for-artists/",
+      "description": "Colouring books and creative kits on recycled paper, for anyone who likes to draw, doodle or de-stress with art."
     }
   ],
   "email": "hi@ecohappy.in",

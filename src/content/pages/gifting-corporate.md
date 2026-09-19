@@ -75,20 +75,6 @@ migration:
   [Seed Pen - Set of 10
 
   Price₹249.00](/shop/seed-pens-set-of-10/)
-- [![Color Pencils - Set of 2 boxes, Eco Happy](/assets/products/colour-pencils-set-of-2-boxes/colour-pencils-set-of-2-boxes-1.jpg)
-
-  ![Color Pencils - Set of 2 boxes, Eco Happy](/assets/products/colour-pencils-set-of-2-boxes/colour-pencils-set-of-2-boxes-2.jpg)](/shop/colour-pencils-set-of-2-boxes/)
-
-  [Color Pencils - Set of 2 boxes
-
-  Price₹250.00](/shop/colour-pencils-set-of-2-boxes/)
-- [![Seed Color Pencils - Set of 2 Boxes, Eco Happy](/assets/products/seed-colour-pencils-set-of-2-boxes/seed-colour-pencils-set-of-2-boxes-1.jpg)
-
-  ![Seed Pencils - Set of 4 boxes, Eco Happy](/assets/products/seed-pencils-set-of-4-boxes/seed-pencils-set-of-4-boxes-2.jpg)](/shop/seed-colour-pencils-set-of-2-boxes/)
-
-  [Seed Color Pencils - Set of 2 Boxes
-
-  Price₹300.00](/shop/seed-colour-pencils-set-of-2-boxes/)
 - [![Pencil Box - Set of 2 boxes, Eco Happy](/assets/products/newspaper-pencil-box-set-of-2/newspaper-pencil-box-set-of-2-1.jpg)
 
   ![Pencil Box - Set of 2 boxes, Eco Happy](/assets/products/newspaper-pencil-box-set-of-2/newspaper-pencil-box-set-of-2-2.jpg)](/shop/newspaper-pencil-box-set-of-2/)

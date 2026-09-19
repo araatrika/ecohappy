@@ -20,6 +20,16 @@ function invoiceNumber(paymentId, date) {
   return `EH-${stamp}-${suffix}`;
 }
 
+// Kept identical to the calculation in create-order.js so the invoice always shows what was
+// actually charged, never a re-derived guess.
+function shippingFor(amount) {
+  const shipping = site.shipping;
+  if (!shipping) return 0;
+  if (typeof shipping.freeAbove === 'number' && amount > shipping.freeAbove) return 0;
+  const tier = (shipping.tiers || []).find((t) => amount <= t.maxAmount);
+  return tier ? tier.cost : 0;
+}
+
 export default async (req) => {
   if (req.method !== 'POST') {
     return new Response('Method not allowed', { status: 405 });
@@ -43,7 +53,9 @@ export default async (req) => {
   const unitPrice = typeof product.salePrice === 'number' && product.salePrice < product.price
     ? product.salePrice
     : product.price;
-  const total = unitPrice * qty;
+  const subtotal = unitPrice * qty;
+  const shippingCost = shippingFor(subtotal);
+  const total = subtotal + shippingCost;
   const date = new Date();
   const invNum = invoiceNumber(paymentId, date);
   const gstin = site.gstin || '';
@@ -127,13 +139,15 @@ export default async (req) => {
         <td>${escapeHtml(product.name)}${product.sku ? `<br><span style="color:var(--gray-500);font-size:0.8em">SKU: ${escapeHtml(product.sku)}</span>` : ''}</td>
         <td class="num">${qty}</td>
         <td class="num">&#8377;${unitPrice.toFixed(2)}</td>
-        <td class="num">&#8377;${total.toFixed(2)}</td>
+        <td class="num">&#8377;${subtotal.toFixed(2)}</td>
       </tr>
     </tbody>
   </table>
 
   <div class="totals">
     <table>
+      <tr><td>Subtotal</td><td class="num">&#8377;${subtotal.toFixed(2)}</td></tr>
+      <tr><td>Shipping${shippingCost === 0 ? ' (free)' : ''}</td><td class="num">&#8377;${shippingCost.toFixed(2)}</td></tr>
       <tr class="grand"><td>Total paid</td><td class="num">&#8377;${total.toFixed(2)}</td></tr>
     </table>
   </div>

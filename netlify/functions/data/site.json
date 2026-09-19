@@ -10,5 +10,19 @@
     "displayName_onWix": "Happy Pencils"
   },
   "email": "hi@ecohappy.in",
-  "telephone": "+91 94220 62333"
+  "telephone": "+91 94220 62333",
+  "shipping": {
+    "deliveryEstimate": "5-7 business days across India",
+    "tiers": [
+      {
+        "maxAmount": 1000,
+        "cost": 100
+      },
+      {
+        "maxAmount": 1500,
+        "cost": 150
+      }
+    ],
+    "freeAbove": 1500
+  }
 }

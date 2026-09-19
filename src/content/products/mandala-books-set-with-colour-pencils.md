@@ -50,7 +50,7 @@ related:
 - advanced-mandala-book-with-colour-pencils
 - beginners-mandala-book-with-colour-pencils
 - diy-animal-keychain-kit
-retired: false
+retired: true
 datePublished: '2026-09-15'
 dateModified: '2026-09-16'
 migration:

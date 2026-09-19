@@ -43,6 +43,7 @@ const siteForFunctions = {
   address: fullSite.address,
   email: fullSite.email,
   telephone: fullSite.telephone,
+  shipping: fullSite.shipping,
 };
 writeFileSync(siteOutFile, JSON.stringify(siteForFunctions, null, 2));
 console.log(`Wrote site fields to ${path.relative(process.cwd(), siteOutFile)}`);

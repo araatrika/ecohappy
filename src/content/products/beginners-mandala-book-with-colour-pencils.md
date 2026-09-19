@@ -51,7 +51,7 @@ related:
 - advanced-mandala-book-with-colour-pencils
 - diy-animal-keychain-kit
 - grow-me-kit
-retired: false
+retired: true
 datePublished: '2026-09-15'
 dateModified: '2026-09-16'
 migration:

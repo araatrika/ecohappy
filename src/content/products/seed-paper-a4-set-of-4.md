@@ -171,8 +171,7 @@ faq:
   a: Yes, this product can be customised; message us on WhatsApp with what you have
     in mind.
 related:
-- advanced-mandala-book-with-colour-pencils
-- beginners-mandala-book-with-colour-pencils
+- mandala-book
 - diy-animal-keychain-kit
 retired: false
 datePublished: '2026-09-15'
@@ -203,4 +202,4 @@ A paper embedded with seeds and made by using pulp/fibre from the waste generate
 
 Seed Paper A4 Size  - Set Of 4 is part of Eco Happy's Kits & Seeds range. It carries a seed component (Marigold, Tulsi), so the plantable part can be grown after use. Made in Pune, India by Araatrika women-led production team.
 
-It ships from stock, with dispatch usually within 3 working days. It can be customised (name, logo, or message) for gifting and bulk orders, message us on WhatsApp to discuss options. If you're gifting or bulk-ordering, it's often paired with Advanced Mandala Book + One box of Colour Pencils, Beginner's Mandala Book + One Box of Colour Pencils and DIY animal keychain kit. See the FAQ below for sizing, care and bulk-order questions.
+It ships from stock, with dispatch usually within 3 working days. It can be customised (name, logo, or message) for gifting and bulk orders, message us on WhatsApp to discuss options. If you're gifting or bulk-ordering, it's often paired with The Happy Mandala Book and DIY animal keychain kit. See the FAQ below for sizing, care and bulk-order questions.

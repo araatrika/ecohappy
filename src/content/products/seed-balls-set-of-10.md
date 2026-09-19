@@ -68,8 +68,7 @@ faq:
 - q: Can I buy Seed Balls - Set of 10 balls in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
-- advanced-mandala-book-with-colour-pencils
-- beginners-mandala-book-with-colour-pencils
+- mandala-book
 - diy-animal-keychain-kit
 retired: false
 datePublished: '2026-09-15'
@@ -96,6 +95,6 @@ Greening your surroundings is now just a toss away with the Eco Happy Seed Ball 
 
 Seed Balls - Set of 10 balls is part of Eco Happy's Kits & Seeds range. Made in Pune, India by Araatrika women-led production team.
 
-It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Advanced Mandala Book + One box of Colour Pencils, Beginner's Mandala Book + One Box of Colour Pencils and DIY animal keychain kit. See the FAQ below for sizing, care and bulk-order questions.
+It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with The Happy Mandala Book and DIY animal keychain kit. See the FAQ below for sizing, care and bulk-order questions.
 
 Yes, plant the seed-bearing part in soil, keep it watered and give it some sunlight. Germination depends on the seed variety and the season. Not every seed germinates. It depends on the soil, water and season. If nothing sprouts after a few weeks, it's worth trying again with fresh soil.
