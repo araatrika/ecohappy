@@ -79,7 +79,6 @@ What’s Inside the Kit:
 - Steel Straw + Dedicated Cleaner
 - Compact Travel Pouch
 
-Delivery within 7-10 days
 
 Cutlery Kit is part of Eco Happy's Home & Travel range. Made in Pune, India by Araatrika women-led production team.
 

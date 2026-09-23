@@ -93,4 +93,3 @@ Can be customised with logos etc.
 
 Bulk orders and discounts possible
 
-Free shipping pan India

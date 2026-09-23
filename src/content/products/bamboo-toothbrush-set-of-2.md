@@ -84,11 +84,6 @@ Key Features-
 *CHARCOAL INFUSED BRISTLES
 *PLASTIC FREE PACKAGING
 *SOFT BRISTLES
-*FREE SHIPPING PAN INDIA
-
-Bamboo Toothbrush - Set of 2 is part of Eco Happy's Home & Travel range. Made in Pune, India by Araatrika women-led production team.
-
-It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Cutlery Kit, Plantable Coasters-  30 units and Reusable Tea Infuser. See the FAQ below for sizing, care and bulk-order questions.
 
 Bamboo Toothbrush - Set of 2 is part of Eco Happy's Home & Travel range. Made in Pune, India by Araatrika women-led production team.
 

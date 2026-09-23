@@ -29,9 +29,8 @@ images:
 wixCollections: []
 brand: Eco Happy
 seoTitle: The Happy Mandala Book | Eco Happy
-seoDescription: The Happy Mandala Book is a recycled-paper colouring book from Eco
-  Happy, 20 mandala designs per edition, sold on its own now that our newspaper
-  colour pencils have been discontinued.
+seoDescription: The Happy Mandala Book, a recycled-paper colouring book with 20
+  mandala designs, hand-packed in Pune by Eco Happy. Rs 199, pencils not included.
 answer: The Happy Mandala Book is a 20-design mandala colouring book printed on
   recycled paper, hand-packed in Pune. Sold on its own at ₹199 -- we no longer sell
   colour pencils, so bring your own.

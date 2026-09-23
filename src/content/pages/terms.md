@@ -2,7 +2,7 @@
 title: "TERMS & CONDITIONS | Eco Happy"
 slug: terms
 newUrl: /terms/
-description: "Thanks for visiting Eco Happy's TERMS & CONDITIONS"
+description: "The terms that apply when you browse ecohappy.in or buy from Eco Happy: orders and payment, delivery, intellectual property, liability and changes."
 h1:
   - "TERMS & CONDITIONS"
 forms: []
@@ -14,13 +14,13 @@ migration:
 
 
 
-Welcome to Happy Pencils. By accessing or using our website [www.happypencils.in](/)
+Welcome to Eco Happy, a brand of Araatrika. By accessing or using our website [ecohappy.in](/)
 , you agree to comply with and be bound by the following Terms & Conditions. Please read them carefully before using our services.
 
 
 
 1. General
-Happy Pencils is an eco-friendly stationery brand offering plantable seed pencils and related sustainable products. These terms apply to all visitors, users, and customers of the website.
+Eco Happy is a Pune-based maker of plantable seed pencils, upcycled stationery and related products. These terms apply to all visitors, users, and customers of the website.
 
 
 
@@ -30,12 +30,12 @@ All products are made with sustainability in mind and are intended for personal,
 
 
 3. Orders & Payments
-All prices listed are in INR and inclusive/exclusive of taxes as mentioned on the product page. Orders are confirmed only after successful payment. Happy Pencils reserves the right to cancel or refuse any order due to pricing errors, stock issues, or suspected fraudulent activity.
+All prices listed are in INR and inclusive/exclusive of taxes as mentioned on the product page. Orders are confirmed only after successful payment. Eco Happy reserves the right to cancel or refuse any order due to pricing errors, stock issues, or suspected fraudulent activity.
 
 
 
 4. Shipping & Delivery
-Delivery timelines are estimates and may vary due to location, courier delays, or unforeseen circumstances. Happy Pencils is not responsible for delays caused by logistics partners, natural events, or incorrect address details provided by the customer.
+Delivery timelines are estimates and may vary due to location, courier delays, or unforeseen circumstances. Eco Happy is not responsible for delays caused by logistics partners, natural events, or incorrect address details provided by the customer.
 
 
 
@@ -45,17 +45,17 @@ Returns or replacements are accepted only for damaged, defective, or incorrect p
 
 
 6. Intellectual Property
-All content on this website including logos, designs, illustrations, images, text, and branding belongs to Happy Pencils. Unauthorized use, reproduction, or distribution of any content is strictly prohibited.
+All content on this website including logos, designs, illustrations, images, text, and branding belongs to Eco Happy. Unauthorized use, reproduction, or distribution of any content is strictly prohibited.
 
 
 
 7. Sustainability Disclaimer
-Happy Pencils promotes eco-conscious living; however, environmental impact may vary based on individual usage, disposal methods, and growing conditions.
+Eco Happy makes plantable and upcycled products; however, their environmental impact may vary based on individual usage, disposal methods, and growing conditions.
 
 
 
 8. Limitation of Liability
-Happy Pencils shall not be liable for any indirect, incidental, or consequential damages arising from the use of our products or website.
+Eco Happy shall not be liable for any indirect, incidental, or consequential damages arising from the use of our products or website.
 
 
 
@@ -70,7 +70,7 @@ Your personal information is handled as per our Privacy Policy. We do not sell o
 
 
 11. Changes to Terms
-Happy Pencils reserves the right to update or modify these Terms & Conditions at any time without prior notice. Continued use of the website constitutes acceptance of the updated terms.
+Eco Happy reserves the right to update or modify these Terms & Conditions at any time without prior notice. Continued use of the website constitutes acceptance of the updated terms.
 
 
 

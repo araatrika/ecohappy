@@ -64,6 +64,24 @@ const productSchema = {
     priceCurrency: p.currency,
     availability: `https://schema.org/${p.availability}`,
     url: new URL(`/shop/${p.slug}/`, site.hosts.canonical).toString(),
+    // Merchant-listing fields, generated from site.json + the Shipping & Returns policy so the
+    // schema can never disagree with what the page and checkout charge.
+    shippingDetails: {
+      '@type': 'OfferShippingDetails',
+      shippingRate: { '@type': 'MonetaryAmount', value: shippingCost, currency: p.currency },
+      shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'IN' },
+      deliveryTime: {
+        '@type': 'ShippingDeliveryTime',
+        handlingTime: { '@type': 'QuantitativeValue', minValue: 2, maxValue: 3, unitCode: 'DAY' },
+        transitTime: { '@type': 'QuantitativeValue', minValue: 5, maxValue: 7, unitCode: 'DAY' },
+      },
+    },
+    hasMerchantReturnPolicy: {
+      '@type': 'MerchantReturnPolicy',
+      applicableCountry: 'IN',
+      returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
+      url: new URL('/shipping-and-returns/', site.hosts.canonical).toString(),
+    },
   },
 };
 const breadcrumbSchema = {
@@ -100,6 +118,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
   title={p.seoTitle || `${p.name} | Eco Happy`}
   description={p.seoDescription || p.answer || site.tagline}
   image={p.images?.[0]?.src}
+  noindex={p.retired}
 >
   <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />

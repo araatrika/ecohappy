@@ -2,7 +2,7 @@
 title: "SHIPPING & RETURNS | Eco Happy"
 slug: shipping-and-returns
 newUrl: /shipping-and-returns/
-description: "Thanks for visiting Eco Happy's SHIPPING & RETURNS"
+description: "Eco Happy shipping and returns: dispatch in 2 to 3 working days, delivery in 5 to 7 days across India, shipping from ₹100, free above ₹1,500."
 h1:
   - "SHIPPING & RETURNS"
 forms: []
@@ -12,7 +12,7 @@ migration:
   note: ""
 ---
 
-Shipping & Delivery policy
+## Shipping & delivery
 
 - We aim to dispatch orders within 2 to 3 working days of confirmation, though this can vary depending on product availability.
 - Delivery within India: 5-7 business days from dispatch, depending on your location and courier serviceability.
@@ -22,7 +22,7 @@ Shipping & Delivery policy
 
 
 
-  Return & Exchange Policy
+## Returns & exchanges
 
 Eco Happy is a small, handmade business: every product is made to order, in small batches, by our Pune-based team -- which includes several women from underprivileged backgrounds whom we've trained in this craft -- using plantable seed paper, upcycled newspaper and other materials chosen for their environmental impact. Because each order is made specifically once it's placed, rather than picked off a shelf, we're not able to offer refunds or exchanges on it.
 
@@ -34,14 +34,16 @@ We take a lot of care to get every order right the first time. If you'd like a s
 
 
 
-  Missing Items
+## Missing items
 
-- Although We Take Every Precaution to Process Your Order, If You Find That Any Item Is Missing From The Package. Please Drop An Email Along With The Photograph Of The Package To [hi@ecohappy.in](mailto:hi@ecohappy.in) within 12 hours of delivery.
+- We take every precaution when packing your order. If you find that any item is missing from the package, please send a photo of the package to [hi@ecohappy.in](mailto:hi@ecohappy.in) or [on WhatsApp](https://wa.me/919422062333) within 12 hours of delivery.
 
 
 
-  Sale items
+## Sale items
 
 - Unfortunately, sale items are considered as final sales and cannot be refunded or canceled.
 
 Note: It is always advisable to make a video while opening the package
+
+*Last updated: 23 September 2026*

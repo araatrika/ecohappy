@@ -7,7 +7,7 @@ import site from '../../../data/site.json';
 const allProducts = (await getCollection('products')).filter((p) => !p.data.retired);
 allProducts.sort((a, b) => a.data.name.localeCompare(b.data.name));
 ---
-<BaseLayout title="All Products | Eco Happy" description="Every plantable and eco-friendly product Eco Happy makes, in one list, or browse by category from the main shop page.">
+<BaseLayout title="All Plantable & Upcycled Products | Eco Happy" description="Every plantable and upcycled product Eco Happy makes by hand in Pune, in one list: seed pencils, diaries, rakhis, gift hampers and home and travel kits.">
   <section class="container hero">
     <nav class="crumb" aria-label="Breadcrumb"><a href="/shop/">Shop</a> / All products</nav>
     <h1>All products</h1>

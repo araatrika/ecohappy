@@ -19,8 +19,28 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const p = entry.data;
+
+// FAQ page: build FAQPage schema from the same markdown the visitor reads (each "## " heading
+// is a question, the text under it the answer), so schema and visible text can't drift apart.
+const stripMd = (t) => t.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[*_`]/g, '').replace(/\s+/g, ' ').trim();
+const faqSchema = p.slug === 'faq'
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: (entry.body || '')
+        .split(/^## /m)
+        .slice(1)
+        .map((block) => {
+          const [q, ...rest] = block.split('\n');
+          const a = stripMd(rest.join('\n').replace(/\*Last updated:[^*]*\*/, ''));
+          return { '@type': 'Question', name: q.trim(), acceptedAnswer: { '@type': 'Answer', text: a } };
+        })
+        .filter((x) => x.name && x.acceptedAnswer.text),
+    }
+  : null;
 ---
 <BaseLayout title={p.title} description={p.description}>
+  {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   <article class="container page">
     <h1 set:html={p.title.replace(/\s*\|\s*Eco Happy\s*$/i, '').replace(/\bEco Happy\b(?!\u00ae)/, 'Eco Happy<span class="tm">&reg;</span>')} />
     <div class="prose">
