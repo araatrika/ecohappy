@@ -421,7 +421,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
         },
         modal: {
           ondismiss: () => {
-            status.textContent = '';
+            status.textContent = 'Payment cancelled, nothing was charged. You can try again whenever you are ready.';
             continueBtn.disabled = false;
           },
         },

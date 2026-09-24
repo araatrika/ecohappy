@@ -60,6 +60,11 @@ export default async (req) => {
   const subtotal = unitPrice * qty;
   const shippingCost = shippingFor(subtotal);
   const amountPaise = Math.round((subtotal + shippingCost) * 100);
+  // Razorpay rejects orders under 100 paise (Rs 1); catch a bad price in the catalogue here
+  // with a clear message instead of an opaque API error.
+  if (!Number.isFinite(amountPaise) || amountPaise < 100) {
+    return new Response(JSON.stringify({ error: 'Order amount must be at least Rs 1' }), { status: 400 });
+  }
 
   const razorpay = new Razorpay({ key_id: keyId, key_secret: keySecret });
 
@@ -93,6 +98,10 @@ export default async (req) => {
     );
   } catch (err) {
     console.error('Razorpay order creation failed', err);
-    return new Response(JSON.stringify({ error: 'Could not create order' }), { status: 502 });
+    // 401 from Razorpay means the key ID / secret pair is wrong (or test and live keys are mixed).
+    if (err?.statusCode === 401) {
+      return new Response(JSON.stringify({ error: 'Payment gateway authentication failed' }), { status: 401 });
+    }
+    return new Response(JSON.stringify({ error: 'Could not create order' }), { status: 500 });
   }
 };

@@ -30,7 +30,10 @@ export default async (req) => {
     .update(`${razorpay_order_id}|${razorpay_payment_id}`)
     .digest('hex');
 
-  const valid = expected === razorpay_signature;
+  // Constant-time comparison so the check doesn't leak how many characters matched.
+  const a = Buffer.from(expected, 'utf8');
+  const b = Buffer.from(String(razorpay_signature), 'utf8');
+  const valid = a.length === b.length && crypto.timingSafeEqual(a, b);
 
   if (!valid) {
     console.error('Razorpay signature mismatch', { razorpay_order_id, razorpay_payment_id });
