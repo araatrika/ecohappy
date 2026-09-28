@@ -16,8 +16,11 @@ const products = (await getCollection('products')).filter(
   (p) => !p.data.retired && p.data.category === cat.slug
 );
 products.sort((a, b) => a.data.name.localeCompare(b.data.name));
+// Title tag: keep the long form unless it exceeds 60 chars (audit rule).
+const longTitle = `${cat.name}, Eco Happy Plantable Gifts`;
+const pageTitle = longTitle.length > 60 ? `${cat.name} | Eco Happy` : longTitle;
 ---
-<BaseLayout title={`${cat.name}, Eco Happy Plantable Gifts`} description={`Shop ${cat.name.toLowerCase()} from Eco Happy, plantable, upcycled and reusable products, hand-made in Pune by a women-led team since 2017.`}>
+<BaseLayout title={pageTitle} description={`Shop ${cat.name.toLowerCase()} from Eco Happy, plantable, upcycled and reusable products, hand-made in Pune by a women-led team since 2017.`}>
   <section class="container hero">
     <nav class="crumb" aria-label="Breadcrumb"><a href="/shop/">Shop</a> / {cat.name}</nav>
     <h1>{cat.name}</h1>

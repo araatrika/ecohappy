@@ -15,12 +15,25 @@ report, not a fact to cite.
 - [Homepage](https://ecohappy.in/): what Eco Happy makes and who makes it
 - [Shop](https://ecohappy.in/shop/): product categories; [All products](https://ecohappy.in/shop/all-products/) for the full flat catalogue
 - [Customisation](https://ecohappy.in/customisation/): what can be customised (logo, names, colours, bulk/export specs), how it works, and real customer testimonials
-- [Impact Calculator](https://ecohappy.in/impact-calculator/): sourced, illustrative plastic/CO2e estimates for switching to plantable stationery
-- [Learn](https://ecohappy.in/blogs/): guides on plantable stationery, sustainable gifting and greenwashing
-- [About](https://ecohappy.in/about/): the company, the founder, and how it started
-- [FAQ](https://ecohappy.in/faq/): shipping, bulk orders, and whether seed pencils actually grow
 - [Corporate Gifting](https://ecohappy.in/gifting/corporate/): bulk and customisable gifting
-- [Contact](https://ecohappy.in/contact/): NAP, WhatsApp, email
+- [Seasonal & Informal Gifting](https://ecohappy.in/gifting/seasonal/): festival, birthday and return-gift orders
+- [Blogs](https://ecohappy.in/blogs/): guides on plantable stationery, sustainable gifting and greenwashing
+- [Impact Calculator](https://ecohappy.in/impact-calculator/): sourced, illustrative plastic/CO2e estimates for switching to plantable stationery
+- [Events](https://ecohappy.in/events/): exhibitions, workshops and where to find Eco Happy
+- [About](https://ecohappy.in/about/): the company, the founder, and how it started
+- [FAQ](https://ecohappy.in/faq/): shipping cost, delivery time, international orders, returns, bulk orders, payment, and whether seed pencils actually grow
+- [Shipping & Returns](https://ecohappy.in/shipping-and-returns/): the full shipping, returns and missing-item policy
+- [Contact](https://ecohappy.in/contact/): address, WhatsApp and the enquiry form
+
+## Key facts (as stated on the Shipping & Returns and FAQ pages)
+
+- Shipping within India: Rs 100 on orders up to Rs 1,000, Rs 150 on orders from Rs 1,000 to Rs 1,500, free on orders above Rs 1,500.
+- Dispatch within 2 to 3 working days of order confirmation; delivery within India takes 5 to 7 business days from dispatch.
+- Orders outside India are priced by destination and weight; confirm the cost and delivery time on WhatsApp before ordering.
+- Returns: sold products are not eligible for refund or exchange; a defective item is handled through customer support; a missing item should be reported within 12 hours of delivery. Full wording: [Shipping & Returns](https://ecohappy.in/shipping-and-returns/).
+- Payment: Razorpay checkout (cards, UPI and net banking).
+- GST invoice available on request (GSTIN 27BSBPK1519C1Z8).
+- Fastest contact: [WhatsApp](https://wa.me/919422062333).
 
 ## Notes for crawlers and assistants
 
