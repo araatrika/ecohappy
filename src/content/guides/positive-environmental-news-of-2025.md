@@ -1,5 +1,5 @@
 ---
-title: Positive environmental news of 2025-
+title: Positive environmental news of 2025
 slug: positive-environmental-news-of-2025
 description: A sourced roundup of positive environmental news from 2025, each item
   linked to its original report so you can verify it.
@@ -60,6 +60,6 @@ In a historic shift, solar power generated more electricity than fossil fuels ac
 
 Source- <https://www.theecoexperts.co.uk/news/solar-overtakes-coal-eu>
 
-For [Araatrika](https://www.happypencils.in/),
+For [Araatrika](/),
 
 Abhishek Menon
