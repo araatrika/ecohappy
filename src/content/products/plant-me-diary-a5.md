@@ -66,9 +66,6 @@ faq:
 - q: What happens if it doesn't sprout?
   a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Plant Me Diary - A5 Notebook in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -77,7 +74,7 @@ related:
 - sunshine-planner-2026
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/eco-happy-plant-me-a5-notebook
   wixId: 7878db0a-2d77-0e3e-baef-959ee8cb3e1e
@@ -96,9 +93,8 @@ Made from 100% recycled paper with seeds embedded in the cover, plant the cover 
 Key Features:
 
 - Material: 100% Recycled Paper with Seeds embedded in the cover.
-- Zero Waste: Plastic-free packaging.
 - Use & Grow: Don't throw it away, plant it!
-- Made in India, supports local craftsmanship, women empowerment and sustainability.
+- Made in Pune by Araatrika's women-led production team.
 
 Why Buy?
 

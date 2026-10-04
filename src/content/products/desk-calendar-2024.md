@@ -59,9 +59,6 @@ faq:
 - q: What happens if it doesn't sprout?
   a: Not every seed germinates. It depends on the soil, water and season. If nothing sprouts after a few
     weeks, it's worth trying again with fresh soil.
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping with how we make
-    everything at Eco Happy.
 - q: Can I buy Desk Calendar 2024 in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -69,7 +66,7 @@ related:
 - pawfect-pet-desk-calendar-2026
 retired: true
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/eco-happy-2024-calendar
   wixId: 5e40352a-e19f-177b-5060-f71be05cb60c

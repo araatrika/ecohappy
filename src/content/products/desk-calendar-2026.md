@@ -68,9 +68,6 @@ faq:
 - q: What happens if it doesn't sprout?
   a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Desk Calendar 2026 in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -78,7 +75,7 @@ related:
 - pawfect-pet-desk-calendar-2026
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/eco-happy-desk-calendar-2026
   wixId: add98254-aa34-49e3-7d41-a92d8d50046f
@@ -100,7 +97,6 @@ Grow Through the Year with Eco Happy 2026 🌿💚
 A 2026 desk calendar printed on tree-free agri-waste paper, made for a desk that could use less throwaway paper.
 
 - Use, Plant, Grow: Each month's page can be planted to grow into beautiful blooms.
-- Zero Waste: Fully biodegradable and plastic-free packaging.
 - Handcrafted: Made from 100% recycled newspaper and cotton pulp.
 - Reusable stand: comes with a stand you keep and reuse each year the calendar is replaced.
 

@@ -41,7 +41,7 @@ answer: Sunshine Hamper 2026 is a plantable, plastic-free product from Eco Happy
   Pune workshop. Use it as intended, then plant it in soil, with water and a little
   sun, it can sprout depending on the season.
 specs:
-  material: 100% Sustainable Seed Paper
+  material: Seed paper
   madeIn: Pune, India
   madeBy: Araatrika women-led production team
 howToUse:
@@ -56,16 +56,13 @@ faq:
 - q: What happens if it doesn't sprout?
   a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Sunshine Hamper 2026 in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - furbaby-premium-gift-box
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/eco-happy-sunshine-hamper-2026
   wixId: 69b95af8-17be-6ecb-61fc-6f8fd4066052
@@ -82,20 +79,19 @@ migration:
     0 decides one
 ---
 
-A gift hamper made from 100% sustainable seed paper and upcycled-fabric items, hand-packed in Pune.
+A gift hamper made from seed paper and upcycled-fabric items, hand-packed in Pune.
 
 Key Features:
 
-- Material: 100% Sustainable Seed Paper
-- Zero Waste: Plastic-free packaging.
+- Material: Seed paper
 - Use & Grow: Don't throw it away, plant it!
-- Made in India, supports local craftsmanship, women empowerment and sustainability.
+- Made in Pune by Araatrika's women-led production team.
 
 Why Buy?
 
 Perfect for personal use. A hamper built from plantable and reusable pieces instead of single-use gifting fillers.
 
-Sunshine Hamper 2026 is part of Eco Happy's Gift Hampers & Boxes range. It's made from 100% Sustainable Seed Paper. Made in Pune, India by Araatrika women-led production team.
+Sunshine Hamper 2026 is part of Eco Happy's Gift Hampers & Boxes range. It's made from seed paper. Made in Pune, India by Araatrika women-led production team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Furbaby Premium Gift Box. See the FAQ below for sizing, care and bulk-order questions.
 

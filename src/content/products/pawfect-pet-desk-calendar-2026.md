@@ -9,7 +9,7 @@ currency: INR
 availability: InStock
 trackInventory: false
 leadTimeDays: 3
-ribbon: ADOPTDONTSHOP
+ribbon: ''
 bulk: false
 customisable: true
 options: []
@@ -57,9 +57,6 @@ faq:
 - q: What happens if it doesn't sprout?
   a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Pawfect Pet Desk Calendar 2026 in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 - q: Can this be customised?
@@ -70,7 +67,7 @@ related:
 - desk-calendar-2026
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/indie-dog-calendar-2026
   wixId: 0e1bb82c-6401-54e5-98c0-9d7a772a657b
@@ -93,13 +90,11 @@ Attention all dog lovers! Celebrate your best friend with a custom printed calen
 
 * 🌳 Stylish Stand: Comes with a gorgeous reclaimed wooden stand.
 
-* 💖 Social Impact: 20% of all sales go directly to help the wonderful cause, #HashAdoptDontShop.
-
 Size A6
 
 Digital print
 
-Pre-order yours now for just ₹550 and let your Indie shine while supporting rescue efforts!
+Order yours and let your Indie shine!
 
 Once you've placed your order we, will reach out to you for pictures.
 

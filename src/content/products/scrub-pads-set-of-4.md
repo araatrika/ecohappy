@@ -37,18 +37,13 @@ wixCollections:
 - HAPPY PLASTIC FREE ALTERNATIVES
 brand: Eco Happy
 seoTitle: Scrub Pads - Set of 4 | Home & Travel | Eco Happy
-seoDescription: Scrub Pads - Set of 4 is a plastic-free product hand-made by Eco Happy's
-  women-led team in Pune. Made from natural coconut fibers and organic latex.
-answer: Scrub Pads - Set of 4 is a plastic-free product hand-made by Eco Happy's women-led
-  team in Pune. Made from natural coconut fibers and organic latex.
+seoDescription: "Scrub Pads - Set of 4: four scrub pads made from coconut fibre and latex, hand-made by Eco Happy's women-led team in Pune, for glassware to heavy pots."
+answer: "Scrub Pads - Set of 4 is a set of four scrub pads made from coconut fibre and latex, hand-made by Eco Happy's women-led team in Pune, for cleaning everything from glassware to heavy-duty pots and pans."
 specs:
   madeIn: Pune, India
   madeBy: Araatrika women-led production team
 howToUse: []
 faq:
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Scrub Pads - Set of 4 in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -57,7 +52,7 @@ related:
 - plantable-coasters-30-units
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/happy-scrub-pads-set-of-4
   wixId: ed9f271d-940f-ad90-c649-a168b88b5040
@@ -71,13 +66,12 @@ migration:
   - write alt text (none in Wix)
 ---
 
-**Tough on Stains, Kind to the Earth **
+**Tough on Stains**
 
-A set of 4 scrub pads made from natural coconut fibre and organic latex, a plastic-free alternative for cleaning, from glassware to heavy-duty pots and pans.
+A set of 4 scrub pads made from coconut fibre and latex, for cleaning everything from glassware to heavy-duty pots and pans.
 
-- 100% Biodegradable: Made from natural coconut fibers and organic latex.
-- Non-Toxic & Hygienic: Naturally antimicrobial and breathable, so they don't hold onto bad odors like synthetic sponges.
-- Zero Microplastics: Keep your drainage and the oceans free from hidden plastic waste.
+- Made from: coconut fibre and latex.
+- Breathable, so they don't hold onto odours the way synthetic sponges do.
 - Ethically Handcrafted: Supports local craftsmanship and women’s empowerment in India.
 
 Scrub Pads - Set of 4 is part of Eco Happy's Home & Travel range. Made in Pune, India by Araatrika women-led production team.

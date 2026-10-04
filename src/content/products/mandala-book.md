@@ -50,9 +50,6 @@ faq:
     edition, shown in the photos here. If you'd like a specific one, message us on
     WhatsApp with your order and we'll match it; otherwise we'll send whichever
     edition we have freshly in stock.
-- q: Is it really plastic-free?
-  a: Yes, the book and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy The Happy Mandala Book in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -61,7 +58,7 @@ related:
 - seed-balls-set-of-10
 retired: false
 datePublished: '2026-09-19'
-dateModified: '2026-09-19'
+dateModified: '2026-10-04'
 ---
 
 Twenty mandala designs per book, printed on recycled paper and hand-packed in Pune. We used to sell this with a box of our newspaper colour pencils included, but we've discontinued those pencils, so the book now stands on its own at a lower price -- use whatever pencils, crayons or fine-liners you already have at home.

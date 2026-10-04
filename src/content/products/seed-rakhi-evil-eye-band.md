@@ -65,9 +65,6 @@ faq:
 - q: What happens if it doesn't sprout?
   a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Seed Rakhi-Evil Eye Band in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -76,7 +73,7 @@ related:
 - plantable-tricolour-flags-pack-of-30
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/evil-eye-seed-rakhi
   wixId: 5cdbb823-b2d1-a687-c142-cbe6b6915188
@@ -96,13 +93,10 @@ migration:
 - **Innovative "nazar na lage" band for Brother **
 - **Seeds embedded- Tulsi and Spinach**
 
-These Rakhis are made using 100% cotton thread along with local indigenous- desi seeds
+These rakhis are made from 100% cotton thread with local desi (indigenous) seeds.
 
-- 100% plastic free
 - Support local farmers
 - Support Women
-- 100% biodegradable and environment friendly.
-
 Seed Rakhi-Evil Eye Band is part of Eco Happy's Festive & Seasonal range. It carries a seed component (Spinach, Tulsi), so the plantable part can be grown after use. Made in Pune, India by Araatrika women-led production team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Paddy Toran, Eco happy kites- set of 10 and Plantable Flags - Pack of 30. See the FAQ below for sizing, care and bulk-order questions.

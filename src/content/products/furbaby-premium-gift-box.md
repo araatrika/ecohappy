@@ -46,16 +46,13 @@ specs:
   madeBy: Araatrika women-led production team
 howToUse: []
 faq:
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Furbaby Premium Gift Box in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
 - sunshine-hamper-2026
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/happy-furbaby-premium-gift-box
   wixId: 1e6d0a60-5f24-7f1f-14f2-68984986a1ae
@@ -73,8 +70,6 @@ Upgrade your pet's lifestyle with a gift that gives back. Every item in the Happ
 
 - Upcycled Comfort: Includes handcrafted items made from reclaimed textiles, reducing waste one play-session at a time.
 - Handmade with Love: Supports local Indian craftsmanship and women’s empowerment.
-- Zero-Waste Ethos: Fully plastic-free packaging that ensures your gift doesn't harm the planet.
-
 A Heartfelt Surprise: upcycled-fabric and plantable-paper items for a pet lover, packed in one box.
 
 - 1. Upcycled fabric bow tie

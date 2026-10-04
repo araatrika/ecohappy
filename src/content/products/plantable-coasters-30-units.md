@@ -57,9 +57,6 @@ faq:
 - q: What happens if it doesn't sprout?
   a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Plantable Coasters-  30 units in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -68,7 +65,7 @@ related:
 - reusable-tea-infuser
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/eco-happy-coasters-set-of-10
   wixId: d69d19d1-3b39-25cb-bee5-e9b87ff143fc
@@ -85,7 +82,7 @@ migration:
     0 decides one
 ---
 
-Make every sip a statement for the environment. Our plantable coasters are embedded with live seeds, turning your desk accessory into a contribution to reforestation.
+Our plantable coasters are made from recycled paper and cotton fibre with seeds pressed in, so when a coaster wears out you can plant it in a pot instead of throwing it away.
 
 - Eco-Material: Made from recycled paper and soft cotton fibers.
 - Biodegradable: made from recycled paper and cotton fibre, plant the coaster once it's worn out.

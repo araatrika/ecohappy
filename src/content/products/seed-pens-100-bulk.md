@@ -38,12 +38,8 @@ wixCollections:
 - HAPPY BUY IN BULK
 brand: Eco Happy
 seoTitle: Seed Pens - Set of 100 (Bulk Buy) | Eco Happy
-seoDescription: Seed Pens - Set of 100 (Bulk Buy) is a plantable, plastic-free product
-  from Eco Happy's Pune workshop. Use it as intended, then plant it in soil, with
-  wat
-answer: Seed Pens - Set of 100 (Bulk Buy) is a plantable, plastic-free product from
-  Eco Happy's Pune workshop. Use it as intended, then plant it in soil, with water
-  and a little sun, it can sprout depending on the season.
+seoDescription: "Seed Pens - Set of 100 (Bulk Buy) is a plantable product from Eco Happy's Pune workshop. Use it as intended, then plant it in soil, with wat"
+answer: "Seed Pens - Set of 100 (Bulk Buy) is a plantable product from Eco Happy's Pune workshop. Use it as intended, then plant it in soil, with water and a little sun, it can sprout depending on the season."
 specs:
   material: 100% Recycled Newspaper, turning yesterday's news into today's ideas
   madeIn: Pune, India
@@ -60,9 +56,6 @@ faq:
 - q: What happens if it doesn't sprout?
   a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Seed Pens - Set of 100 (Bulk Buy) in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 - q: Can this be customised?
@@ -73,7 +66,7 @@ related:
 - customised-seed-pencils-50
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/happy-seed-pens-100-units-bulk-buy
   wixId: 513b575c-368f-ec33-83f5-1bd3c049900c
@@ -93,10 +86,7 @@ Key Features:
 
 - Material: 100% Recycled Newspaper, turning yesterday's news into today's ideas.
 - Use & Grow: Once the ink is done, don't throw the pen away, plant it! The seeds embedded at the back will sprout into herbs, flowers, or vegetables.
-- Zero Waste: Fully plastic-free body helping you reduce your daily carbon footprint.
-- Made in India: Every pen supports local craftsmanship, women empowerment, and the mission of sustainability.
-
-Why Buy in Bulk?Perfect for personal use. Save on packaging and help help save the environment in return!! Switch to sustainable stationery today and reduce your carbon footprint
+- Made in Pune by Araatrika's women-led production team.
 
 Seed Pens - Set of 100 (Bulk Buy) is part of Eco Happy's Seed Pencils & Pens range. It's made from 100% Recycled Newspaper, turning yesterday's news into today's ideas. Made in Pune, India by Araatrika women-led production team.
 

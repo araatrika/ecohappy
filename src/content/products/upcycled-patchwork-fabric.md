@@ -55,9 +55,6 @@ specs:
   madeBy: Araatrika women-led production team
 howToUse: []
 faq:
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Upcycled Patchwork Fabric in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -66,7 +63,7 @@ related:
 - upcycled-bedsheet
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/eco-happy-upcycled-patchwork-fabric
   wixId: bf24458d-d471-9a69-3c4c-faef115dfbd0
@@ -89,7 +86,7 @@ Front- upcycled patches of size  6" each
 
 Back -White cotton lining on back side
 
-A sustainable and stylish solution for conscious individuals who value both the environment and aesthetic appeal. This fabric is crafted using pre-consumed materials that would otherwise end up in landfills, making it a guilt-free choice for eco-conscious consumers.
+A stylish solution for conscious individuals who value both the environment and aesthetic appeal. This fabric is crafted using pre-consumed materials that would otherwise end up in landfills.
 
 Each piece of our upcycled patchwork fabric is meticulously handcrafted, ensuring a unique and one-of-a-kind pattern that adds a touch of individuality to any project. Our skilled artisans carefully select and repurpose high-quality fabrics, giving them new life and preventing unnecessary waste.
 
@@ -99,7 +96,7 @@ For home decorators seeking an eco-conscious touch, our upcycled patchwork fabri
 
 Each panel is cut from offcut fabric left over from Eco Happy's own production floor in Pune, so no two panels are identical and nothing new is woven just for this product.
 
-Embrace the uniqueness, embrace the eco-consciousness, and embrace the beauty of our upcycled patchwork fabric. Join us on this journey towards a greener, more vibrant world.
+Embrace the uniqueness, embrace the eco-consciousness, and embrace the beauty of our upcycled patchwork fabric.
 
 Washing instructions - dryclean suggested
 

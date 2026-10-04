@@ -41,9 +41,6 @@ specs:
   madeBy: Araatrika women-led production team
 howToUse: []
 faq:
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Beginner's Mandala Book + One Box of Colour Pencils in bulk for a gifting
     order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
@@ -53,7 +50,7 @@ related:
 - grow-me-kit
 retired: true
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/eco-happy-mandala-book
   wixId: d426a947-806f-8fbb-48ee-1032ec21d858
@@ -77,7 +74,6 @@ This thoughtfully curated set combines art therapy with environmental consciousn
 
 - 20 Unique Designs: High-quality paper featuring beautiful mandalas perfect for beginners.
 - Complete Set: Includes a box of our signature Eco Happy Color Pencils, made entirely from 100% recycled newspaper.
-- Plastic-Free & Conscious: From the pages to the pencils, every element is designed to be eco-friendly and sustainable.
 - Empowering Impact: Handcrafted in India, supporting local women and artisans.
 
 Beginner's Mandala Book + One Box of Colour Pencils is part of Eco Happy's Kits & Seeds range. Made in Pune, India by Araatrika women-led production team.

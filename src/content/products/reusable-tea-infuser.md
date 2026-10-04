@@ -46,9 +46,6 @@ specs:
   madeBy: Araatrika women-led production team
 howToUse: []
 faq:
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Reusable Tea Infuser in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -57,7 +54,7 @@ related:
 - plantable-coasters-30-units
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/happy-tea-infuser
   wixId: 903ffc8b-98cc-59ae-7822-1c43f73e6238
@@ -71,7 +68,7 @@ migration:
   - write alt text (none in Wix)
 ---
 
-A reusable steel tea infuser, no disposable tea bags needed. Our tea infuser is the ultimate tool for a plastic-free kitchen, helping you eliminate thousands of single-use tea bags every year.
+A reusable steel tea infuser, no disposable tea bags needed. Our tea infuser is the ultimate tool for a plastic-free kitchen.
 
 - Premium Quality: Made from high-grade, food-safe stainless steel that won't rust or leach.
 - Fine Mesh Design: Ensures a smooth, sediment-free tea while allowing full flavor extraction.

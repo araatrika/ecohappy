@@ -24,7 +24,7 @@ migration:
 
 ## Returns & exchanges
 
-Eco Happy is a small, handmade business: every product is made to order, in small batches, by our Pune-based team -- which includes several women from underprivileged backgrounds whom we've trained in this craft -- using plantable seed paper, upcycled newspaper and other materials chosen for their environmental impact. Because each order is made specifically once it's placed, rather than picked off a shelf, we're not able to offer refunds or exchanges on it.
+Eco Happy is a small, handmade business: every product is made in small batches by our Pune-based team (which includes several women from underprivileged backgrounds whom we've trained in this craft), using plantable seed paper, upcycled newspaper and other materials chosen for their environmental impact. Some products ship from stock and others, such as bulk and customised orders, are made to order. Because everything is handmade in small batches, we're not able to offer returns, refunds or exchanges.
 
 - We do not offer a refund or exchange on the sold products.
 - Our Products are not eligible for a refund.
@@ -46,4 +46,4 @@ We take a lot of care to get every order right the first time. If you'd like a s
 
 Note: It is always advisable to make a video while opening the package
 
-*Last updated: 23 September 2026*
+*Last updated: 4 October 2026*

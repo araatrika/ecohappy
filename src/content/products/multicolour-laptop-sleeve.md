@@ -41,16 +41,12 @@ brand: Eco Happy
 seoTitle: Multicolor Laptop Sleeve | Upcycled Fabric | Eco Happy
 seoDescription: A padded laptop sleeve stitched from upcycled patchwork fabric offcuts,
   hand-sewn in Pune by Eco Happy's team, one-of-a-kind, since no two are cut alike.
-answer: Multicolor Laptop Sleeve is a plastic-free product hand-made by Eco Happy's
-  women-led team in Pune.
+answer: "Multicolor Laptop Sleeve is a padded laptop sleeve stitched from upcycled patchwork fabric offcuts, hand-made by Eco Happy's women-led team in Pune."
 specs:
   madeIn: Pune, India
   madeBy: Araatrika women-led production team
 howToUse: []
 faq:
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Multicolor Laptop Sleeve in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 - q: Can this be customised?
@@ -62,7 +58,7 @@ related:
 - upcycled-cloth-bags-set-of-10
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/happy-laptop-sleeve-multicolour
   wixId: cd588d4f-0862-dc55-5a19-0ab30e2638b8
@@ -82,13 +78,11 @@ migration:
 
 A padded laptop sleeve stitched from upcycled patchwork fabric offcuts at our Pune workshop, no two are cut alike.  These stunning sleeves are crafted from waste fabric cutouts by talented lady tailors from underprivileged communities in Pune.
 
-By choosing this eco-friendly accessory, you're not only protecting our planet but also supporting these incredible women. Every purchase empowers their journey towards a brighter future. 🌞
+By choosing this accessory, you're supporting these incredible women. Every purchase empowers their journey towards a brighter future. 🌞
 
-Available in two convenient sizes: 15" x 11" and 13" x 11", these sleeves are perfect for your laptops, all while making a positive impact on the world.
+Available in two convenient sizes: 15" x 11" and 13" x 11", these sleeves are perfect for your laptops.
 
 Let's #MakeADifference together! Get your laptop sleeve now and be part of this incredible cause.
-
-#SustainableFashion #WomenEmpowerment #SaveTheEarth
 
 Multicolor Laptop Sleeve is part of Eco Happy's Upcycled Fabric range. Made in Pune, India by Araatrika women-led production team.
 

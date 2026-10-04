@@ -162,9 +162,6 @@ faq:
 - q: What happens if it doesn't sprout?
   a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Seed Paper A4 Size  - Set Of 4 in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 - q: Can this be customised?
@@ -175,7 +172,7 @@ related:
 - diy-animal-keychain-kit
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/eco-happpy-seed-paper
   wixId: 724745fd-8caa-6b49-b3e7-1cfcb3127622
@@ -194,11 +191,11 @@ migration:
 
 SET OF 4 - A4 SIZE SEED PAPER
 
-TULSI SEED EMBEDED PAPER
+TULSI SEED EMBEDDED PAPER
 
 Imagine throwing a paper after using it, which grows into various vegetables and herbs? Eco happy Seed Plantable paper, does exactly that! Give your wedding cards, visiting cards, greeting cards, invitations, room tags, bag tags, coasters, badges a life, after their use. Grow them into beautiful Tulsi/Marigold plants in the memory of the event / person.
 
-A paper embedded with seeds and made by using pulp/fibre from the waste generated in the making of handmade paper. This Plantable paper can be made available in custom sizes with custom design and printing options. A great solution to regular paper. Saves trees and grow your own, post consumption of Seed paper.
+A paper embedded with seeds and made by using pulp/fibre from the waste generated in the making of handmade paper. This Plantable paper can be made available in custom sizes with custom design and printing options. Once you've used it, plant it and grow Tulsi or Marigold.
 
 Seed Paper A4 Size  - Set Of 4 is part of Eco Happy's Kits & Seeds range. It carries a seed component (Marigold, Tulsi), so the plantable part can be grown after use. Made in Pune, India by Araatrika women-led production team.
 

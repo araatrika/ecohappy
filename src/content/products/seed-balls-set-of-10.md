@@ -62,9 +62,6 @@ faq:
 - q: What happens if it doesn't sprout?
   a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Seed Balls - Set of 10 balls in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -72,7 +69,7 @@ related:
 - diy-animal-keychain-kit
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/happy-seed-balls-set-of-10
   wixId: bf969f42-7320-1ad8-708a-665d57cf955c
@@ -89,7 +86,6 @@ migration:
 Greening your surroundings is now just a toss away with the Eco Happy Seed Ball Set.
 
 - Set of 10: An easy way to start your own mini-garden or green up a vacant patch of land.
-- Eco-Friendly: 100% natural materials, no plastic, no chemicals.
 - Socially Conscious: Proudly Made in India, supporting women's empowerment.
 - Nature’s Gift: Perfect for birthdays, weddings, or personal environmental resolutions.
 

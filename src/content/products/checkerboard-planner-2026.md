@@ -65,9 +65,6 @@ faq:
 - q: What happens if it doesn't sprout?
   a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Checkerboard Planner 2026 in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -76,7 +73,7 @@ related:
 - sunshine-planner-2026
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/eco-happy-planner-2024
   wixId: a08a4c2b-aeeb-ee7a-c207-1956eb4a5f74
@@ -95,12 +92,12 @@ migration:
 
 **A 150-page planner printed on recycled paper, plan your year without a fresh-paper notebook.**
 
-Our 2026 Planner is crafted entirely from 100% up-cycled agri-waste, ensuring that no trees were harmed in its making. It’s the ultimate tool for the organized eco-warrior.
+Our 2026 Planner's pages are made from up-cycled agri-waste. It’s the ultimate tool for the organized eco-warrior.
 
 - Holistic Planning: Includes monthly calendars and daily to-do lists to keep you on track.
 - Mindful Moments: Scattered throughout are intricate Mandala designs to help you pause and calm your mind.
 - Tulsi Seed Cover: When the year ends, plant the cover and watch your Tulsi plant grow.
-- Sustainable Craftsmanship: A5 size, 150 pages of premium, tree-free paper.
+- A5 size, 150 pages of premium, tree-free paper.
 
 Checkerboard Planner 2026 is part of Eco Happy's Notebooks, Diaries & Planners range. It carries a seed component (Tulsi), so the plantable part can be grown after use. It runs to 150 pages. Made in Pune, India by Araatrika women-led production team.
 

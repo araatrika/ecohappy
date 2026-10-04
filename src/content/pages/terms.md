@@ -40,7 +40,7 @@ Delivery timelines are estimates and may vary due to location, courier delays, o
 
 
 5. Returns & Refunds
-Returns or replacements are accepted only for damaged, defective, or incorrect products, subject to verification. Requests must be raised within 48 hours of delivery with clear images/videos. Refunds, if approved, will be processed to the original payment method within a reasonable timeframe.
+Sold products are not eligible for return, refund or exchange, as set out on our [Shipping & Returns](/shipping-and-returns/) page. If a product arrives defective, contact customer support and send the item to the address we provide. If an item is missing from your package, send us a photo of the package within 12 hours of delivery.
 
 
 

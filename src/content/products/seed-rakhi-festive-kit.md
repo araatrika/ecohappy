@@ -55,9 +55,6 @@ faq:
 - q: What happens if it doesn't sprout?
   a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Eco Seed Rakhi festive kit in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 - q: Can this be customised?
@@ -69,7 +66,7 @@ related:
 - plantable-tricolour-flags-pack-of-30
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/eco-seed-rakhi-festive-kit
   wixId: d16799d9-4f5b-7344-3708-e3fa24577401

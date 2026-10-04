@@ -65,9 +65,6 @@ faq:
 - q: What happens if it doesn't sprout?
   a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Sunshine Planner 2026 in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -76,7 +73,7 @@ related:
 - recycled-paper-notebook-set-of-2
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/eco-happy-sunshine-planner-2026
   wixId: baf0eed4-adca-6d34-88e5-a2ed6ba60b29
@@ -95,7 +92,7 @@ migration:
 
 Why choose between organization and the environment? Our Sunshine Planner allows you to do both. Crafted with zero-tree technology, this planner uses upcycled materials to give you a premium writing experience without the environmental cost.
 
-- Upcycled Innovation: 150 pages made from 100% agri-waste, absolutely no trees were cut.
+- Paper: 150 pages made from 100% agri-waste.
 - Plantable Cover: The "Sunshine" edition cover is embedded with Tulsi seeds. Just plant it when the year is over!
 - Stay Mindful: Includes monthly overviews, daily to-do lists, and dedicated Mandala designs to help you destress during a busy day.
 - Compact & Durable: A5 size, perfect for on-the-go planning and travel.

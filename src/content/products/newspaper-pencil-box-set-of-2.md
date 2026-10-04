@@ -46,9 +46,6 @@ specs:
   madeBy: Araatrika women-led production team
 howToUse: []
 faq:
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Pencil Box - Set of 2 boxes in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -56,7 +53,7 @@ related:
 - customised-seed-pencils-50
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/eco-happy-pencils
   wixId: 9ca7d219-60ae-c8b6-15ae-8eb54be7ba44
@@ -70,13 +67,12 @@ migration:
   - write alt text (none in Wix)
 ---
 
-This pencil box holds two boxes of Eco Happy's newspaper pencils, 10 pencils and 1 eraser per box, made from 100% recycled newspaper rolled by hand at our Pune workshop. Packaging is plastic-free.
+This pencil box holds two boxes of Eco Happy's newspaper pencils, 10 pencils and 1 eraser per box, made from 100% recycled newspaper rolled by hand at our Pune workshop.
 
 **What it's made of**
 
 - Material: 100% recycled newspaper.
 - Each box contains 10 pencils + 1 eraser.
-- Packaging: plastic-free.
 - Made in Pune by Eco Happy's women-led team.
 
 **Who it's for**

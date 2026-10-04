@@ -45,9 +45,6 @@ specs:
   madeBy: Araatrika women-led production team
 howToUse: []
 faq:
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Cutlery Kit in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -56,7 +53,7 @@ related:
 - reusable-tea-infuser
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/eco-happy-cutlery-kit
   wixId: b5db7abc-7c30-c1e9-e1c6-d773b664b4a0
@@ -83,5 +80,3 @@ What’s Inside the Kit:
 Cutlery Kit is part of Eco Happy's Home & Travel range. Made in Pune, India by Araatrika women-led production team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Bamboo Toothbrush - Set of 2, Plantable Coasters-  30 units and Reusable Tea Infuser. See the FAQ below for sizing, care and bulk-order questions.
-
-Yes, the product and its packaging are designed to be plastic-free, in keeping with how we make everything at Eco Happy. Yes, message us on WhatsApp for bulk pricing and lead times.

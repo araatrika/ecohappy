@@ -41,9 +41,6 @@ specs:
   madeBy: Araatrika women-led production team
 howToUse: []
 faq:
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy One Beginner & one Advanced Mandala Book in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -52,7 +49,7 @@ related:
 - diy-animal-keychain-kit
 retired: true
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/both-books-one-box-of-colour-pencils
   wixId: e64e0c36-1698-f12c-5ef7-69c57e8fafa1
@@ -74,7 +71,7 @@ Printed on recycled paper, hand-packed in Pune with the colour pencils included.
 
 Relax & Reconnect: 40 intricate designs (20 per book) to help you de-stress.
 
-100% Sustainable: Pencils made from recycled newspaper with plastic-free packaging.
+Pencils made from recycled newspaper.
 
 Empowering Communities: Every purchase supports local Indian craftsmanship and women’s empowerment.
 

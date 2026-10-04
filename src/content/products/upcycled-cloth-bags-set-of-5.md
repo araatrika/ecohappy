@@ -25,20 +25,13 @@ wixCollections:
 - HAPPY BAGS
 brand: Eco Happy
 seoTitle: Upcycled Cloth Bags - Set of 5 | Upcycled Fabric | Eco Happy
-seoDescription: Upcycled Cloth Bags - Set of 5 is a plastic-free product hand-made
-  by Eco Happy's women-led team in Pune. Handcrafted from reclaimed textiles, preventing
-  t
-answer: Upcycled Cloth Bags - Set of 5 is a plastic-free product hand-made by Eco
-  Happy's women-led team in Pune. Handcrafted from reclaimed textiles, preventing
-  tons of fabric from reaching landfills.
+seoDescription: "Upcycled Cloth Bags - Set of 5: reusable bags cut and stitched in Pune from reclaimed fabric offcuts by Eco Happy's women-led team. No two look the same."
+answer: "Upcycled Cloth Bags - Set of 5 is a plastic-free product hand-made by Eco Happy's women-led team in Pune. Cut and stitched in Pune from reclaimed fabric offcuts, so no two bags in a set look the same."
 specs:
   madeIn: Pune, India
   madeBy: Araatrika women-led production team
 howToUse: []
 faq:
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Upcycled Cloth Bags - Set of 5 in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -47,7 +40,7 @@ related:
 - upcycled-bedsheet
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/happy-upcycled-bags-set-of-5
   wixId: 5ed6c977-7581-5c37-787e-54df627738b7
@@ -67,7 +60,7 @@ migration:
 
 Made from upcycled fabric offcuts at our Pune workshop, a reusable swap for daily errands. This set of 5 upcycled bags is designed to eliminate the need for plastic polybags while keeping your shopping organized and colorful.
 
-- Upcycled Innovation: Handcrafted from reclaimed textiles, preventing tons of fabric from reaching landfills.
+- Upcycled: cut and stitched in Pune from reclaimed fabric offcuts, so no two bags in a set look the same.
 - Durability Meets Design: Strong enough for your heavy groceries, yet lightweight enough to fold into your pocket.
 - Handmade with Love: Proudly Made in India, supporting local women’s empowerment and artisan livelihoods.
 - Unique & Assorted: Because they are upcycled, no two bags are the same, each set is a colorful surprise!

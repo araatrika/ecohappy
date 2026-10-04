@@ -58,9 +58,6 @@ faq:
 - q: What happens if it doesn't sprout?
   a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Spinach and Bittergourd Rakhi in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
@@ -69,7 +66,7 @@ related:
 - plantable-tricolour-flags-pack-of-30
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/eco-happy-spinach-and-karela-rakhi
   wixId: c4cfe312-2e83-152e-0405-985dab013790
@@ -86,15 +83,11 @@ migration:
     0 decides one
 ---
 
-These Rakhis are made using 100% cotton thread along with local indigenous- desi seeds
-
-100% plastic free
+These rakhis are made from 100% cotton thread with local desi (indigenous) seeds.
 
 Support local farmers
 
 Support Women
-
-100% biodegradable and environment friendly.
 
 Karela & Spinach Seeds
 

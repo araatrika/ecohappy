@@ -5,7 +5,7 @@ description: Five personalised, low-waste Christmas gift ideas from Eco Happy, p
   stationery and small keepsakes that show you thought about it.
 author: Jagruti Khabiya Jain
 datePublished: '2025-12-10'
-dateModified: '2025-12-13'
+dateModified: '2026-10-04'
 cover: /assets/blog/5-personalized-gifting-ideas-for-this-christmas/cover.jpg
 coverAlt: 5 PERSONALIZED GIFTING IDEAS FOR THIS CHRISTMAS -
 coverIsStock: false
@@ -31,11 +31,9 @@ faq:
   a: Yes, we do name/logo personalisation on select products for bulk and corporate
     Christmas orders, message us on WhatsApp with your quantity and deadline.
 - q: "What are good low-waste Christmas gift ideas for pets?"
-  a: "An upcycled premium gift box, or a customisable Indie Dog desk calendar, with a portion of proceeds supporting dog rescue and adoption."
+  a: "An upcycled premium gift box, or a customisable Indie Dog desk calendar."
 - q: "What's a sustainable Christmas gift for colleagues?"
   a: "A tote bag filled with small useful items, such as a desk calendar, seed pens and a daily planner, personalised with each person's name."
-- q: "Does Eco Happy support any causes with Christmas purchases?"
-  a: "A portion of every Indie Dog Calendar purchase supports Adopt Don't Shop, Bangalore, which works on rescues and adoptions."
 
 ---
 
@@ -55,7 +53,7 @@ Christmas reminds us to open our hearts, to care, to share, and to add value to 
 
 **1) Gifts for Furbabies** **-**
 
-Pamper your pets with our [Upcycled Premium Gift Box](/shop/furbaby-premium-gift-box/). You can also contribute to the welfare of Indie dogs by purchasing our [Indie Dog Calendar 2026](/shop/pawfect-pet-desk-calendar-2026/), customizable with your pet’s photos. A portion of every purchase supports[Hash Adopt Don’t Shop,](https://www.adoptdontshop.in/) Bangalore, helping with rescues and adoptions.
+Pamper your pets with our [Upcycled Premium Gift Box](/shop/furbaby-premium-gift-box/). You can also gift our [Indie Dog Calendar 2026](/shop/pawfect-pet-desk-calendar-2026/), customizable with your pet’s photos.
 
 Additionally, you can extend kindness to community animals by providing them with basic food and water.
 

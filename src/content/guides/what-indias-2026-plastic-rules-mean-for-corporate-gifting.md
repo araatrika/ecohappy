@@ -5,7 +5,7 @@ description: India's 2026 plastic rules replace self-certified compliance with r
   audits. Here's what that means for this Diwali's corporate gifting orders.
 author: Jagruti Khabiya Jain
 datePublished: '2026-09-21'
-dateModified: '2026-09-21'
+dateModified: '2026-10-04'
 cover: ''
 coverAlt: ''
 coverIsStock: false
@@ -27,8 +27,6 @@ faq:
   a: "The CPCB disclosed in 2023 that plastic recyclers had generated roughly 700,000 fake compliance certificates, about 38 times what those recyclers could actually process, according to a 2024 report from the Centre for Science and Environment. The 2026 amendment's independent audit requirement is a direct response to that."
 - q: What should I actually ask a corporate gifting vendor before ordering?
   a: "Ask what the packaging is made of, not just whether it's called eco-friendly. If it's plastic, ask whether the vendor can show their EPR registration rather than just mention it."
-- q: Is Eco Happy's own packaging affected by the new plastic rules?
-  a: "No. Our seed pencils, seed paper products and hampers are packaged in paper and cloth rather than plastic, so there's no plastic packaging for these new targets to apply to."
 
 ---
 
@@ -46,7 +44,7 @@ There's a reason for the shift. In 2023, the CPCB disclosed that plastic recycle
 
 ## What this means if the gift was never plastic to begin with
 
-A hamper boxed in a laminated shell with a plastic viewing window and a layer of shrink film sits inside this tightening compliance chain, whatever the sticker on the outside claims. A seed pencil rolled from recycled newspaper and packed in a kraft sleeve was never part of that conversation, because there's no plastic packaging to report on in the first place. Same for a hamper packed in cloth and seed paper. That's true of what we make in our own workshop in Pune: the packaging on our seed pencils and hampers is paper and cloth, not plastic, by design rather than by claim.
+A hamper boxed in a laminated shell with a plastic viewing window and a layer of shrink film sits inside this tightening compliance chain, whatever the sticker on the outside claims. A seed pencil rolled from recycled newspaper and packed in a kraft sleeve was never part of that conversation, because there's no plastic packaging to report on in the first place. Same for a hamper packed in cloth and seed paper. In our own Pune workshop, we pack seed pencils and hampers in paper and cloth, and use plastic only when it can't be avoided.
 
 This sits next to a rule that's been in force a while longer: the Central Consumer Protection Authority's guidelines against greenwashing, issued in October 2024, which require any claim like "eco-friendly" or "sustainable" to be backed by evidence rather than printed on a box. Between the two rules, a vendor calling a hamper eco-friendly now has two separate reasons to be able to back that up on paper, not just on the packaging.
 

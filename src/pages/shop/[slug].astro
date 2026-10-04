@@ -72,7 +72,7 @@ const productSchema = {
       shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'IN' },
       deliveryTime: {
         '@type': 'ShippingDeliveryTime',
-        handlingTime: { '@type': 'QuantitativeValue', minValue: 2, maxValue: 3, unitCode: 'DAY' },
+        handlingTime: { '@type': 'QuantitativeValue', minValue: 2, maxValue: Math.max(3, p.leadTimeDays), unitCode: 'DAY' },
         transitTime: { '@type': 'QuantitativeValue', minValue: 5, maxValue: 7, unitCode: 'DAY' },
       },
     },

@@ -67,9 +67,6 @@ faq:
 - q: What happens if it doesn't sprout?
   a: Not every seed germinates. It depends on the soil, water and season. If nothing
     sprouts after a few weeks, it's worth trying again with fresh soil.
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
 - q: Can I buy Customized Seed Pencils - 50 units in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 - q: Can this be customised?
@@ -80,7 +77,7 @@ related:
 - newspaper-pencil-box-set-of-2
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/customized-seed-pencils-set-of-50
   wixId: baa92008-446b-b7fd-802f-834806934b8d
@@ -103,12 +100,11 @@ Key Features:
 
 - Material: 100% Recycled Newspaper.
 - Use & Grow: Don't throw it away, plant it!
-- Zero Waste: Plastic-free packaging.
-- Made in India, supports local craftsmanship, women empowerment and sustainability.
+- Made in Pune by Araatrika's women-led production team.
 
 Why Buy in Bulk?
 
-Perfect for personal use. Save on packaging and help help save the environment in return!! A newspaper pencil replaces one made from virgin wood, plant the seed tip once it's too short to write with.
+A newspaper pencil replaces one made from virgin wood, plant the seed tip once it's too short to write with.
 
 Please note that the customisation will be done using paper stickers.
 

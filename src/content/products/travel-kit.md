@@ -48,39 +48,32 @@ wixCollections:
 - HAPPY PLASTIC FREE ALTERNATIVES
 brand: Eco Happy
 seoTitle: Travel Kit | Home & Travel | Eco Happy
-seoDescription: Travel Kit is a plantable, plastic-free product from Eco Happy's Pune
-  workshop. Use it as intended, then plant it in soil, with water and a little sun,
-  it
-answer: Travel Kit is a plantable, plastic-free product from Eco Happy's Pune workshop.
-  Use it as intended, then plant it in soil, with water and a little sun, it can
-  sprout depending on the season.
+seoDescription: "Travel Kit: a steel spoon, fork, straw and cleaner, a bamboo toothbrush and plantable pencils in one reusable set. Only the pencils can be planted."
+answer: "Travel Kit is a reusable set of steel cutlery (spoon, fork, straw and cleaner), a bamboo toothbrush and plantable pencils, for commuters, hikers and travellers who'd rather carry their own than use disposables. Only the pencils can be planted, once they're too short to write with."
 specs:
   madeIn: Pune, India
   madeBy: Araatrika women-led production team
 howToUse:
-- Use it as intended until you're ready to plant it.
-- Plant the seed-bearing part about 1–2 cm deep in soil.
-- Water it regularly and keep it somewhere it gets some sunlight.
-- Sprouting time varies by seed variety and season.
+- "Write with the plantable pencils until they're too short to hold."
+- "Plant the seed end about 1 to 2 cm deep in soil."
+- "Water it regularly and keep it somewhere it gets some sunlight."
+- "Sprouting time varies by seed variety and season."
 faq:
-- q: Does this actually grow?
-  a: Yes, plant the seed-bearing part in soil, keep it watered and give it some sunlight.
-    Germination depends on the seed variety and the season.
-- q: What happens if it doesn't sprout?
-  a: Not every seed germinates. It depends on the soil, water and season. If nothing
-    sprouts after a few weeks, it's worth trying again with fresh soil.
-- q: Is it really plastic-free?
-  a: Yes, the product and its packaging are designed to be plastic-free, in keeping
-    with how we make everything at Eco Happy.
-- q: Can I buy Travel Kit in bulk for a gifting order?
-  a: Yes, message us on WhatsApp for bulk pricing and lead times.
+- q: "What's in the Travel Kit?"
+  a: "A steel cutlery set (spoon, fork, straw and cleaner), a bamboo toothbrush and plantable pencils."
+- q: "Can any part of the Travel Kit be planted?"
+  a: "Only the plantable pencils. Once a pencil is too short to write with, plant its seed end in soil, keep it watered and give it some sunlight. Germination depends on the seed variety and the season."
+- q: "What happens if a pencil doesn't sprout?"
+  a: "Not every seed germinates. It depends on the soil, water and season. If nothing sprouts after a few weeks, it's worth trying again with fresh soil."
+- q: "Can I buy Travel Kit in bulk for a gifting order?"
+  a: "Yes, message us on WhatsApp for bulk pricing and lead times."
 related:
 - bamboo-toothbrush-set-of-2
 - cutlery-kit
 - plantable-coasters-30-units
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-09-16'
+dateModified: '2026-10-04'
 migration:
   oldUrl: https://www.happypencils.in/product-page/eco-happy-travel-kit
   wixId: d4222925-1b56-5475-a6a2-f3635555ee6e
@@ -96,15 +89,13 @@ migration:
 
 Ditch the disposables and upgrade to the Eco Happy Travel Kit.
 
-Perfect for commuters, hikers, and global travelers who refuse to compromise on the planet.
+Perfect for commuters, hikers, and global travelers.
 
 - What’s Inside: Premium Steel Cutlery Set (Spoon, Fork, Straw + Cleaner), Bamboo Toothbrush, and Plantable Pencils.
-- Plastic-Free: Replaces hundreds of single-use items.
+- Reusable: carry your own cutlery and toothbrush instead of disposable ones.
 - Hygienic: Use your own personal kit instead of questionable restaurant/hotel cutlery.
 - Social Impact: Proudly Made in India, supporting local artisans and women empowerment.
 
 Travel Kit is part of Eco Happy's Home & Travel range. Made in Pune, India by Araatrika women-led production team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Bamboo Toothbrush - Set of 2, Cutlery Kit and Plantable Coasters-  30 units. See the FAQ below for sizing, care and bulk-order questions.
-
-Yes, plant the seed-bearing part in soil, keep it watered and give it some sunlight. Germination depends on the seed variety and the season. Not every seed germinates. It depends on the soil, water and season. If nothing sprouts after a few weeks, it's worth trying again with fresh soil.
