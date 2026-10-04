@@ -60,7 +60,7 @@ Eco Happy shall not be liable for any indirect, incidental, or consequential dam
 
 
 9. User Conduct
-Users gree not to misuse the website, submit false information, attempt unauthorized access, or engage in activities that harm the brand or other users.
+Users agree not to misuse the website, submit false information, attempt unauthorized access, or engage in activities that harm the brand or other users.
 
 
 
@@ -80,4 +80,4 @@ These terms are governed by the laws of India. Any disputes shall be subject to 
 
 
 13. Contact
-For any questions, concerns, or support, please contact us via the details provided on [www.happypencils.in](/) .
+For any questions, concerns, or support, please contact us through our [Contact page](/contact/).
