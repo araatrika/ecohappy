@@ -25,10 +25,12 @@ report, not a fact to cite.
 - [Shipping & Returns](https://ecohappy.in/shipping-and-returns/): the full shipping, returns and missing-item policy
 - [Contact](https://ecohappy.in/contact/): address, WhatsApp and the enquiry form
 
-## Key facts (as stated on the Shipping & Returns and FAQ pages)
+## Key facts (as stated on the Shipping & Returns, FAQ and About pages)
 
 - Shipping within India: Rs 100 on orders up to Rs 1,000, Rs 150 on orders from Rs 1,000 to Rs 1,500, free on orders above Rs 1,500.
-- Dispatch within 2 to 3 working days of order confirmation; delivery within India takes 5 to 7 business days from dispatch.
+- Dispatch within 2 to 3 working days of order confirmation, though this can vary by product availability; delivery within India takes 5 to 7 business days from dispatch.
+- Stock: some products ship from stock and others, such as bulk and customised orders, are made to order.
+- Packaging: orders are packed in paper; plastic is used only when it can't be avoided.
 - Orders outside India are priced by destination and weight; confirm the cost and delivery time on WhatsApp before ordering.
 - Returns: sold products are not eligible for refund or exchange; a defective item is handled through customer support; a missing item should be reported within 12 hours of delivery. Full wording: [Shipping & Returns](https://ecohappy.in/shipping-and-returns/).
 - Payment: Razorpay checkout (cards, UPI and net banking).
