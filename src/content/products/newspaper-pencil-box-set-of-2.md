@@ -53,7 +53,7 @@ related:
 - customised-seed-pencils-50
 retired: false
 datePublished: '2026-09-15'
-dateModified: '2026-10-04'
+dateModified: '2026-10-07'
 migration:
   oldUrl: https://www.happypencils.in/product-page/eco-happy-pencils
   wixId: 9ca7d219-60ae-c8b6-15ae-8eb54be7ba44
@@ -80,10 +80,6 @@ This pencil box holds two boxes of Eco Happy's newspaper pencils, 10 pencils and
 Good for personal use, school stationery kits, or as a small, low-cost add-on to a bulk gifting order.
 
 For our return and refund policy, see [Shipping & Returns](/shipping-and-returns/).
-
-**Shipping**
-
-All listed prices include pan-India shipping.
 
 Pencil Box - Set of 2 boxes is part of Eco Happy's Seed Pencils & Pens range. It's made from 100% Recycled Newspaper. Made in Pune, India by Araatrika women-led production team.
 
