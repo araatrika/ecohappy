@@ -208,6 +208,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
             <label class="span-2">Delivery address<input type="text" name="buyerAddress" autocomplete="street-address" required /></label>
             <label>City<input type="text" name="buyerCity" autocomplete="address-level2" required /></label>
             <label>Pincode<input type="text" name="buyerPincode" autocomplete="postal-code" inputmode="numeric" required /></label>
+            <label class="span-2">GSTIN <span class="field-hint">optional, only if you need a GST invoice</span><input type="text" name="buyerGstin" autocomplete="off" maxlength="15" spellcheck="false" placeholder="27ABCDE1234F1Z5" /></label>
           </div>
           <div class="buy-actions">
             <button class="btn btn-primary" type="submit" id="buy-continue">Continue to payment</button>
@@ -359,6 +360,9 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
       address: String(fd.get('buyerAddress') || ''),
       city: String(fd.get('buyerCity') || ''),
       pincode: String(fd.get('buyerPincode') || ''),
+      // Optional. Only when a buyer supplies their own GSTIN does the invoice become a GST
+      // invoice -- see netlify/functions/generate-invoice.js.
+      gstin: String(fd.get('buyerGstin') || '').trim().toUpperCase(),
     };
     continueBtn.disabled = true;
     status.textContent = 'Preparing checkout…';
@@ -503,6 +507,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
     display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.82rem; font-weight: 600; color: var(--ink);
   }
   .buyer-grid .span-2 { grid-column: 1 / -1; }
+  .buyer-grid .field-hint { font-weight: 400; color: var(--gray-500); font-size: 0.85em; }
   .buyer-grid input {
     font: inherit; font-weight: 400; padding: 0.55em 0.7em; border: 1px solid var(--gray-300, var(--gray-200));
     border-radius: 6px; background: var(--white); color: var(--ink);

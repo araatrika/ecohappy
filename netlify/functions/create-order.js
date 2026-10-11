@@ -47,6 +47,9 @@ export default async (req) => {
     name: String(buyer?.name || '').slice(0, 120),
     email: String(buyer?.email || '').slice(0, 120),
     phone: String(buyer?.phone || '').slice(0, 32),
+    // Present only when the buyer asked for a GST invoice; kept on the order so the GSTIN is
+    // recoverable from the Razorpay record, not just the invoice page.
+    gstin: String(buyer?.gstin || '').trim().toUpperCase().slice(0, 15),
   };
   const product = Array.isArray(products) ? products.find((p) => p.slug === slug) : null;
 
@@ -82,6 +85,7 @@ export default async (req) => {
         buyerName: safeBuyer.name,
         buyerEmail: safeBuyer.email,
         buyerPhone: safeBuyer.phone,
+        buyerGstin: safeBuyer.gstin,
       },
     });
     return new Response(

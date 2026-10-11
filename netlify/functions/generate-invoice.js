@@ -20,6 +20,16 @@ function invoiceNumber(paymentId, date) {
   return `EH-${stamp}-${suffix}`;
 }
 
+// A GST invoice is issued only when the buyer asks for one by giving their own GSTIN, so the
+// default document carries no GST details at all. The format is checked before we treat it as
+// a GST invoice: 2-digit state code, 10-character PAN, entity digit, 'Z', then a checksum char.
+const GSTIN_PATTERN = /^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z][0-9A-Z]Z[0-9A-Z]$/;
+
+function buyerGstin(buyer) {
+  const value = String(buyer?.gstin || '').trim().toUpperCase();
+  return GSTIN_PATTERN.test(value) ? value : '';
+}
+
 // Kept identical to the calculation in create-order.js so the invoice always shows what was
 // actually charged, never a re-derived guess.
 function shippingFor(amount) {
@@ -58,7 +68,11 @@ export default async (req) => {
   const total = subtotal + shippingCost;
   const date = new Date();
   const invNum = invoiceNumber(paymentId, date);
-  const gstin = site.gstin || '';
+  // Buyer asked for a GST invoice (and gave a well-formed GSTIN), so this document shows both
+  // GSTINs and is titled as a tax invoice. Otherwise it is a plain receipt with no GST on it.
+  const customerGstin = buyerGstin(buyer);
+  const isGstInvoice = Boolean(customerGstin && site.gstin);
+  const docTitle = isGstInvoice ? 'Tax Invoice' : 'Receipt';
 
   const buyerName = escapeHtml(buyer?.name);
   const buyerEmail = escapeHtml(buyer?.email);
@@ -69,7 +83,7 @@ export default async (req) => {
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Invoice ${escapeHtml(invNum)} -- Eco Happy</title>
+<title>${docTitle} ${escapeHtml(invNum)} -- Eco Happy</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <style>
   :root {
@@ -112,9 +126,9 @@ export default async (req) => {
       <small>${escapeHtml(site.email)} &middot; ${escapeHtml(site.telephone)}</small>
     </div>
     <div class="meta">
-      <strong>Invoice ${escapeHtml(invNum)}</strong><br />
-      ${date.toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' })}<br />
-      ${gstin ? `GSTIN: ${escapeHtml(gstin)}` : 'GSTIN: not yet registered'}
+      <strong>${docTitle} ${escapeHtml(invNum)}</strong><br />
+      ${date.toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' })}
+      ${isGstInvoice ? `<br />GSTIN: ${escapeHtml(site.gstin)}` : ''}
     </div>
   </div>
 
@@ -124,6 +138,7 @@ export default async (req) => {
       ${buyerName || '&mdash;'}<br />
       ${buyerAddress || ''}<br />
       ${buyerEmail}${buyerEmail && buyerPhone ? ' &middot; ' : ''}${buyerPhone}
+      ${isGstInvoice ? `<br />GSTIN: ${escapeHtml(customerGstin)}` : ''}
     </div>
     <div>
       <h3>Payment reference</h3>
@@ -153,9 +168,9 @@ export default async (req) => {
   </div>
 
   <p class="note">
-    ${gstin
-      ? 'This is a GST invoice issued under the GSTIN shown above.'
-      : "This is a receipt, not a GST tax invoice -- Eco Happy's GST registration is in progress. A formal GST invoice will be issued once available, on request."}
+    ${isGstInvoice
+      ? 'This is a GST invoice, issued against the buyer GSTIN shown above under the GSTIN of Eco Happy.'
+      : 'This is a receipt, not a GST tax invoice. If you need a GST invoice, reply to this order with your GSTIN and we will issue one.'}
     Prices are inclusive of all taxes where applicable. For questions about this order, reply to
     ${escapeHtml(site.email)} or message us on WhatsApp with this invoice number.
   </p>
