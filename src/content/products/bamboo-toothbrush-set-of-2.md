@@ -43,11 +43,10 @@ wixCollections:
 - HAPPY PLASTIC FREE ALTERNATIVES
 brand: Eco Happy
 seoTitle: Bamboo Toothbrush - Set of 2 | Home & Travel | Eco Happy
-seoDescription: "A set of 2 toothbrushes with bamboo handles and soft, charcoal-infused bristles, hand-finished in Pune by Eco Happy for everyday brushing."
-answer: "Bamboo Toothbrush - Set of 2 is a pair of toothbrushes with bamboo handles and soft, charcoal-infused bristles, hand-made by Eco Happy's women-led team in Pune."
+seoDescription: "A set of 2 toothbrushes with bamboo handles and soft, charcoal-infused bristles, sold by Eco Happy for everyday brushing."
+answer: "Bamboo Toothbrush - Set of 2 is a pair of toothbrushes with bamboo handles and soft, charcoal-infused bristles, sold by Eco Happy."
 specs:
-  madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  soldBy: Araatrika (Eco Happy), Pune, India
 howToUse: []
 faq:
 - q: Can I buy Bamboo Toothbrush - Set of 2 in bulk for a gifting order?
@@ -73,7 +72,7 @@ migration:
 ---
 
 Key Features-
-*BIODEGRADABLE BAMBOO HANDLE
+*BAMBOO HANDLE
 *CHARCOAL INFUSED BRISTLES
 *SOFT BRISTLES
 

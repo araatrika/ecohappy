@@ -6,7 +6,7 @@
     "Happy Pencils",
     "Eco Happy by Araatrika"
   ],
-  "tagline": "Plantable stationery and eco-friendly gifts, made in Pune by a women-led team since 2017",
+  "tagline": "Plantable stationery and gifts made from seed paper, recycled paper and upcycled fabric, made in Pune by a women-led team since 2017",
   "foundingDate": "2017",
   "founder": {
     "name": "Jagruti Khabiya Jain",
@@ -119,6 +119,8 @@
   ],
   "shipping": {
     "deliveryEstimate": "5-7 business days across India",
+    "dispatchDays": "2-3 working days",
+    "policySource": "/shipping-and-returns/",
     "tiers": [
       {
         "maxAmount": 1000,
@@ -145,7 +147,7 @@
       "slug": "corporate-bulk-and-branding",
       "name": "Bulk Gifting & Branding",
       "url": "/shop/corporate-bulk-and-branding/",
-      "description": "Logo printing and bulk pricing on seed pens, pencils and paper -- made to order for large corporate runs."
+      "description": "Logo printing and bulk pricing on seed pens, pencils and paper, made to order for large corporate runs."
     },
     {
       "slug": "festive-corporate-gifting",

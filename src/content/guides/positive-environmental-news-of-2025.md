@@ -59,7 +59,3 @@ Source- <https://www.bbc.co.uk/news/articles/c4g200expyxo>
 In a historic shift, solar power generated more electricity than fossil fuels across the EU this May. The milestone reflects a growing move towards renewables, with solar supplying 18% of the EU’s electricity. Coal, by contrast, fell to a record low of just 10%, signalling lasting change.
 
 Source- <https://www.theecoexperts.co.uk/news/solar-overtakes-coal-eu>
-
-For [Araatrika](/),
-
-Abhishek Menon

@@ -13,6 +13,8 @@
   "telephone": "+91 94220 62333",
   "shipping": {
     "deliveryEstimate": "5-7 business days across India",
+    "dispatchDays": "2-3 working days",
+    "policySource": "/shipping-and-returns/",
     "tiers": [
       {
         "maxAmount": 1000,

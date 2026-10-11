@@ -1,0 +1,107 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import site from '../../../data/site.json';
+---
+<BaseLayout title="Payment confirmation | Eco Happy" description="Your payment confirmation and invoice from Eco Happy." noindex>
+  <section class="container result" data-screen="success">
+    <p class="kicker">Your order</p>
+    <h1 id="result-title">Payment confirmation</h1>
+    <p class="lede" id="result-lede">Checking your payment…</p>
+
+    <dl class="result-details" id="result-details" hidden>
+      <div><dt>Product</dt><dd id="detail-product"></dd></div>
+      <div><dt>Amount paid</dt><dd id="detail-amount"></dd></div>
+      <div><dt>Order reference</dt><dd id="detail-order"></dd></div>
+      <div><dt>Payment ID</dt><dd id="detail-payment"></dd></div>
+    </dl>
+
+    <div class="result-actions" id="invoice-block" hidden>
+      <button class="btn btn-primary" type="button" id="invoice-btn">View invoice</button>
+      <p class="result-note" id="invoice-status" role="status" aria-live="polite"></p>
+    </div>
+
+    <div class="result-note" id="next-steps" hidden>
+      <p>Orders dispatch in {site.shipping.dispatchDays} and usually arrive {site.shipping.deliveryEstimate}.</p>
+      <p>Questions about your order? <a href="/contact/">Contact us</a> and quote the order reference above.</p>
+    </div>
+
+    <div class="result-note" id="no-record" hidden>
+      <p>If you've just paid and don't have your invoice, <a href="/contact/">contact us</a> and we'll look up your payment.</p>
+    </div>
+
+    <div class="result-actions">
+      <a class="btn btn-outline" href="/shop/">Keep shopping</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  import { readResult } from '../../../scripts/payment-result';
+
+  const $ = (id) => document.getElementById(id);
+  const inr = (n) =>
+    '₹' + n.toLocaleString('en-IN', { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 });
+
+  const result = readResult();
+
+  if (result && result.outcome === 'success') {
+    $('result-title').textContent = 'Payment successful';
+    $('result-lede').textContent = 'Thank you for your order. Keep the reference below for your records.';
+    $('detail-product').textContent = result.productName || '';
+    $('detail-amount').textContent = typeof result.amountRupees === 'number' ? inr(result.amountRupees) : '';
+    $('detail-order').textContent = result.orderId || '';
+    $('detail-payment').textContent = result.paymentId || '';
+    $('result-details').hidden = false;
+    $('next-steps').hidden = false;
+    $('invoice-block').hidden = !result.invoice;
+  } else {
+    $('result-lede').textContent = "We couldn't find a recent successful payment in this browser.";
+    $('no-record').hidden = false;
+  }
+
+  // The invoice is built on click, so the new tab opens from a user action and browsers
+  // don't block it as a pop-up.
+  $('invoice-btn')?.addEventListener('click', async () => {
+    if (!result || !result.invoice) return;
+    const button = $('invoice-btn');
+    const status = $('invoice-status');
+    const win = window.open('', '_blank');
+    button.disabled = true;
+    status.textContent = 'Preparing your invoice…';
+    try {
+      if (!win) throw new Error('Your browser blocked the invoice tab. Allow pop-ups for this site, then try again.');
+      const res = await fetch('/.netlify/functions/generate-invoice', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(result.invoice),
+      });
+      const html = res.ok ? await res.text() : '';
+      if (!html) throw new Error('We could not prepare the invoice just now. Please try again.');
+      win.document.write(html);
+      win.document.close();
+      status.textContent = 'Your invoice opened in a new tab. You can save it as a PDF from there.';
+    } catch (err) {
+      if (win) win.close();
+      status.textContent = err instanceof Error ? err.message : 'Something went wrong. Please try again.';
+    } finally {
+      button.disabled = false;
+    }
+  });
+</script>
+
+<style>
+  .result { max-width: 640px; padding-block: 2.5rem 3.5rem; }
+  .kicker { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 0.5rem; }
+  .lede { color: var(--gray-500); font-size: 1.05rem; margin: 0.25rem 0 1.5rem; }
+  .result-details { margin: 0 0 1.5rem; border-top: 1px solid var(--cream); }
+  .result-details > div { display: grid; grid-template-columns: 9.5rem 1fr; gap: 0.5rem 1rem; padding: 0.7rem 0; border-bottom: 1px solid var(--cream); }
+  .result-details dt { font-size: 0.85rem; color: var(--gray-500); }
+  .result-details dd { margin: 0; font-weight: 600; overflow-wrap: anywhere; }
+  .result-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1rem; margin: 1.5rem 0; }
+  .result-note { font-size: 0.95rem; margin: 1rem 0; }
+  .result-note p { margin: 0 0 0.6rem; }
+  [hidden] { display: none !important; }
+  @media (max-width: 480px) {
+    .result-details > div { grid-template-columns: 1fr; gap: 0.15rem; }
+  }
+</style>

@@ -1,8 +1,7 @@
 ---
 title: Plantable Kites, Soaring High
 slug: plantable-kites-soaring-high
-description: Celebrate festivals sustainably with our plantable kites. Learn how our
-  eco-friendly kites soar high and then grow into beautiful plants.
+description: Celebrate festivals sustainably with our plantable kites. Learn how these kites soar high and then grow into beautiful plants.
 author: Jagruti Khabiya Jain
 datePublished: '2025-03-06'
 dateModified: '2025-03-06'

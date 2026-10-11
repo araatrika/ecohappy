@@ -30,7 +30,7 @@ timeToRead: 4 min read
 draft: false
 ---
 
-Diwali is a little over four weeks away, and gift and hamper shopping is already picking up. Most people pick by how a hamper looks in photos, and most procurement teams pick by price per unit. Neither group usually asks what happens to the box after it's opened. This year there's a sharper reason to ask anyway.
+Diwali falls on Sunday, 8 November, and gift and hamper shopping is already picking up. Most people pick by how a hamper looks in photos, and most procurement teams pick by price per unit. Neither group usually asks what happens to the box after it's opened. This year there's a sharper reason to ask anyway.
 
 ## What one gift wrapper adds up to
 

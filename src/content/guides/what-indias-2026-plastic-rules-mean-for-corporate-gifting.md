@@ -36,7 +36,7 @@ Diwali corporate gifting usually starts the same way: a WhatsApp message to 4 or
 
 The amendment raises how much recycled material plastic packaging has to contain, on an escalating schedule. Rigid plastic packaging needs 30% recycled content this year, climbing to 60% by 2028-29. Flexible plastic packaging moves from 10% to 20% over the same stretch, multi-layered packaging from 5% to 10%. Reuse targets for large plastic water containers climb toward 85% by 2028-29. None of this is written with gift boxes in mind specifically. It targets the producers, importers and brand owners who put plastic packaging into the market, and this year it also reaches the companies that sell them the raw resin and pellets in the first place.
 
-The bigger change is about who checks the paperwork. Compliance used to run mostly on self-declaration through a Central Pollution Control Board portal. Under this amendment, verification shifts to independent "Registered Environment Auditors," a role created under the Environment Audit Rules, 2025. The CPCB had six months from the March notification to publish detailed guidelines for how that auditing actually works. That window closes this month.
+The bigger change is about who checks the paperwork. Compliance used to run mostly on self-declaration through a Central Pollution Control Board portal. Under this amendment, verification moves to third parties: designated agencies or independent "Registered Environment Auditors," a role created under the Environment Audit Rules, 2025. The CPCB was given six months from the March notification, until 30 September 2026, to publish detailed guidelines for how that verification works.
 
 ## Why self-reporting didn't survive
 

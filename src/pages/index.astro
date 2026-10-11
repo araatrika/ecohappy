@@ -40,7 +40,7 @@ const yearsActive = new Date().getFullYear() - Number(site.foundingDate);
 const trustStats = [
   // Was `length + '+'` -- rendered "47+" for exactly 47, three lines above a
   // sentence reading "no invented numbers, ever".
-  { num: String(allProducts.length), label: 'products made in-house' },
+  { num: String(allProducts.length), label: 'products, most made in-house' },
   { num: '8', label: 'women in the production team' },
   { num: String(yearsActive), label: 'years rolling pencils by hand' },
 ];
@@ -151,7 +151,7 @@ const values = [
       <div class="impact-copy">
         <span class="eyebrow">New</span>
         <h2>How much does switching actually save?</h2>
-        <p>Three quick calculators for pens, pencils, notebooks and corporate bulk orders &mdash; built on published emission factors, not invented numbers.</p>
+        <p>Four quick calculators for pens, pencils, notebooks and corporate bulk orders, built on published emission factors, not invented numbers.</p>
         <a class="btn btn-primary" href="/impact-calculator/">Try the impact calculator</a>
       </div>
       <div class="impact-stats" aria-hidden="true">

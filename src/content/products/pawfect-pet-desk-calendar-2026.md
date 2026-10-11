@@ -6,7 +6,7 @@ category: festive-corporate-gifting
 categoryName: Festive & Seasonal Corporate Gifting
 price: 550
 currency: INR
-availability: InStock
+availability: MadeToOrder
 trackInventory: false
 leadTimeDays: 3
 ribbon: ''
@@ -102,4 +102,4 @@ We would also appreciate if you send them to us at hi@ecohappy.in
 
 Pawfect Pet Desk Calendar 2026 is part of Eco Happy's Calendars range. Made in Pune, India by Araatrika women-led production team.
 
-It ships from stock, with dispatch usually within 3 working days. It can be customised (name, logo, or message) for gifting and bulk orders, message us on WhatsApp to discuss options. If you're gifting or bulk-ordering, it's often paired with Desk Calendar 2024 and Desk Calendar 2026. See the FAQ below for sizing, care and bulk-order questions.
+It's made to order, with dispatch usually within 3 working days. It can be customised (name, logo, or message) for gifting and bulk orders, message us on WhatsApp to discuss options. If you're gifting or bulk-ordering, it's often paired with Desk Calendar 2024 and Desk Calendar 2026. See the FAQ below for sizing, care and bulk-order questions.

@@ -27,7 +27,7 @@ Usually one to three weeks after planting, depending on the seed variety and the
 
 ## What are Eco Happy's pencils made from?
 
-The pencil body is made from 100% recycled newspaper, hand-rolled at our Pune workshop, with a seed capsule at one end instead of graphite lead.
+The pencil body is made from 100% recycled newspaper, hand-rolled at our Pune workshop, with a seed capsule at one end in place of an eraser.
 
 ## How much does shipping cost?
 
@@ -65,4 +65,4 @@ Checkout is handled through Razorpay, supporting cards, UPI and net banking.
 
 WhatsApp is the fastest way: [message us](https://wa.me/919422062333), or email [hi@ecohappy.in](mailto:hi@ecohappy.in).
 
-*Last updated: 23 September 2026*
+*Last updated: 11 October 2026*

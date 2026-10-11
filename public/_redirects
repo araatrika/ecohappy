@@ -103,3 +103,8 @@ https://happypencils.in/*  https://ecohappy.in/:splat  301!
 # Learn renamed to Blogs, 17 Sep 2026 night pass
 /learn/  /blogs/  301
 /learn/*  /blogs/:splat  301
+# Draft posts that went live by mistake (audit 11 Oct): 301 to the Blogs index.
+/blogs/7-best-ways-to-stay-motivated-as-a-small-business-owner/  /blogs/  301
+/blogs/positive-environmental-news-of-2025/  /blogs/  301
+# Plain-HTTP www goes straight to the apex in one hop.
+http://www.ecohappy.in/*  https://ecohappy.in/:splat  301!

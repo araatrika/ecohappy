@@ -16,7 +16,7 @@ interface Props {
 const { formName, heading = "Send us an enquiry", intro, contextLabel } = Astro.props;
 ---
 
-<section class="container enquiry-form reveal" aria-labelledby={`${formName}-heading`}>
+<section class="container enquiry-form" aria-labelledby={`${formName}-heading`}>
   <h2 id={`${formName}-heading`}>{heading}</h2>
   {intro && <p class="lede">{intro}</p>}
   <form name={formName} method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you/">

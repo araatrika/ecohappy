@@ -44,6 +44,7 @@ const SPEC_LABELS = {
   packaging: 'Packaging',
   madeIn: 'Made in',
   madeBy: 'Made by',
+  soldBy: 'Sold by',
 };
 // Unknown keys (a new one added through /admin) de-camelCase rather than print raw.
 const specLabel = (k) =>
@@ -62,7 +63,7 @@ const productSchema = {
     '@type': 'Offer',
     price: onSale ? p.salePrice : p.price,
     priceCurrency: p.currency,
-    availability: `https://schema.org/${p.availability}`,
+    availability: `https://schema.org/${p.retired ? 'Discontinued' : p.availability}`,
     url: new URL(`/shop/${p.slug}/`, site.hosts.canonical).toString(),
     // Merchant-listing fields, generated from site.json + the Shipping & Returns policy so the
     // schema can never disagree with what the page and checkout charge.
@@ -195,6 +196,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
           )}
         </div>
         {p.bulk && !p.retired && p.availability !== 'OutOfStock' && <p class="made-to-order-note">Made to order, usually ready in about {p.leadTimeDays} days after we confirm your order on WhatsApp.</p>}
+        {!p.bulk && !p.retired && p.availability === 'MadeToOrder' && <p class="made-to-order-note">Made to order, with dispatch usually within {p.leadTimeDays} working days.</p>}
         {site.gstin && <p class="gst-note">GST invoice available on request</p>}
 
         <form id="buyer-details" class="buyer-details" hidden aria-label="Delivery and invoice details">
@@ -255,9 +257,12 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
 </BaseLayout>
 
 <script>
+  import { saveResult } from '../../scripts/payment-result';
+
   const btn = document.getElementById('buy-now');
   const status = document.getElementById('buy-status');
   const detailsForm = document.getElementById('buyer-details');
+  const continueBtn = document.getElementById('buy-continue');
 
   // Gallery: thumbnails swap the main image.
   const heroImg = document.getElementById('hero-img');
@@ -284,7 +289,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
   }
 
   // Step 1: "Buy now" reveals the delivery/invoice details form instead of opening
-  // Razorpay straight away -- we need a name, email, phone and address for the
+  // Razorpay straight away. We need a name, email, phone and address for the
   // shipping label and the branded invoice, none of which Razorpay's own modal collects.
   btn?.addEventListener('click', () => {
     btn.hidden = true;
@@ -302,6 +307,14 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
     btn.focus();
   });
 
+  // Browser Back from a result screen can restore this page with the button still disabled.
+  window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+      continueBtn.disabled = false;
+      status.textContent = '';
+    }
+  });
+
   // Netlify Forms AJAX submit: lands a durable order record in the Netlify Forms
   // dashboard (+ email notification) alongside the enquiry forms, without a new
   // database or account. See netlify/functions/verify-payment.js for why this
@@ -314,28 +327,24 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
       body,
     }).catch(() => {
       // Best-effort: a failed order-record submission must never block the
-      // customer's confirmation message, the payment already succeeded.
+      // customer's confirmation screen, the payment already succeeded.
     });
   }
 
-  function openInvoice(payload) {
-    fetch('/.netlify/functions/generate-invoice', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-    })
-      .then((res) => (res.ok ? res.text() : null))
-      .then((html) => {
-        if (!html) return;
-        const win = window.open('', '_blank');
-        if (win) {
-          win.document.write(html);
-          win.document.close();
-        }
-      })
-      .catch(() => {
-        // Best-effort: the invoice is a convenience document, not the payment record.
+  // Asks the server to check Razorpay's signature. Anything other than a clear yes is
+  // treated as unverified, which sends the buyer to the "couldn't confirm" screen.
+  async function verifyPayment(response) {
+    try {
+      const res = await fetch('/.netlify/functions/verify-payment', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(response),
       });
+      const result = await res.json().catch(() => ({}));
+      return res.ok && result.verified === true;
+    } catch {
+      return false;
+    }
   }
 
   detailsForm?.addEventListener('submit', async (e) => {
@@ -351,7 +360,6 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
       city: String(fd.get('buyerCity') || ''),
       pincode: String(fd.get('buyerPincode') || ''),
     };
-    const continueBtn = document.getElementById('buy-continue');
     continueBtn.disabled = true;
     status.textContent = 'Preparing checkout…';
     try {
@@ -369,6 +377,9 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
       }
       const order = await orderRes.json();
 
+      // Each attempt ends in exactly one outcome. Once one is recorded, nothing overwrites it.
+      let settled = false;
+
       const rzp = new window.Razorpay({
         key: order.keyId,
         order_id: order.orderId,
@@ -380,55 +391,65 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
         theme: { color: '#2F4739' },
         prefill: { name: buyer.name, email: buyer.email, contact: buyer.phone },
         handler: async (response) => {
-          status.textContent = 'Verifying payment…';
-          try {
-            const verifyRes = await fetch('/.netlify/functions/verify-payment', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(response),
-            });
-            const result = await verifyRes.json();
-            if (result.verified) {
-              status.textContent = `Payment confirmed, thank you! We'll be in touch about delivery for your ${name}. Your invoice is opening in a new tab, you can save it as a PDF from there.`;
-              await submitOrderRecord({
-                name: buyer.name,
-                email: buyer.email,
-                phone: buyer.phone,
-                address: buyer.address,
-                city: buyer.city,
-                pincode: buyer.pincode,
-                product: name,
-                quantity: '1',
-                amount: String((order.amount || 0) / 100),
-                payment_id: response.razorpay_payment_id,
-                order_id: response.razorpay_order_id,
-              });
-              openInvoice({
-                slug,
-                quantity: 1,
-                buyer,
-                paymentId: response.razorpay_payment_id,
-                orderId: response.razorpay_order_id,
-              });
-            } else {
-              status.textContent = 'We could not verify that payment. Please contact us on WhatsApp with your payment ID before retrying.';
-            }
-          } catch {
-            status.textContent = 'Payment may have gone through, but we could not confirm it here, please contact us on WhatsApp with your payment ID.';
-          } finally {
-            continueBtn.disabled = false;
+          settled = true;
+          status.textContent = 'Confirming your payment…';
+          const base = {
+            productName: name,
+            productSlug: slug,
+            orderId: response.razorpay_order_id,
+            paymentId: response.razorpay_payment_id,
+          };
+          if (!(await verifyPayment(response))) {
+            saveResult({ ...base, outcome: 'unverified' });
+            window.location.assign('/payment/failed/');
+            return;
           }
+          saveResult({
+            ...base,
+            outcome: 'success',
+            amountRupees: (order.amount || 0) / 100,
+            // Kept in this tab only, so the invoice button on the success screen can build the invoice.
+            invoice: { slug, quantity: 1, buyer, paymentId: response.razorpay_payment_id, orderId: response.razorpay_order_id },
+          });
+          // The order record is best-effort. Waiting for it is capped so a slow form submission can't hold up the confirmation.
+          await Promise.race([
+            submitOrderRecord({
+              name: buyer.name,
+              email: buyer.email,
+              phone: buyer.phone,
+              address: buyer.address,
+              city: buyer.city,
+              pincode: buyer.pincode,
+              product: name,
+              quantity: '1',
+              amount: String((order.amount || 0) / 100),
+              payment_id: response.razorpay_payment_id,
+              order_id: response.razorpay_order_id,
+            }),
+            new Promise((resolve) => setTimeout(resolve, 6000)),
+          ]);
+          window.location.assign('/payment/success/');
         },
         modal: {
           ondismiss: () => {
-            status.textContent = 'Payment cancelled, nothing was charged. You can try again whenever you are ready.';
-            continueBtn.disabled = false;
+            if (settled) return;
+            saveResult({ outcome: 'cancelled', productName: name, productSlug: slug, orderId: order.orderId });
+            window.location.assign('/payment/failed/');
           },
         },
       });
-      rzp.on('payment.failed', () => {
-        status.textContent = 'Payment failed, no charge was made. You can try again.';
-        continueBtn.disabled = false;
+      rzp.on('payment.failed', (event) => {
+        settled = true;
+        const error = (event && event.error) || {};
+        saveResult({
+          outcome: 'failed',
+          productName: name,
+          productSlug: slug,
+          orderId: order.orderId,
+          paymentId: error.metadata && error.metadata.payment_id ? error.metadata.payment_id : undefined,
+          reason: typeof error.description === 'string' ? error.description.slice(0, 200) : undefined,
+        });
+        window.location.assign('/payment/failed/');
       });
       rzp.open();
       status.textContent = '';

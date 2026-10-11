@@ -32,7 +32,7 @@ seoTitle: The Happy Mandala Book | Eco Happy
 seoDescription: The Happy Mandala Book, a recycled-paper colouring book with 20
   mandala designs, hand-packed in Pune by Eco Happy. Rs 199, pencils not included.
 answer: The Happy Mandala Book is a 20-design mandala colouring book printed on
-  recycled paper, hand-packed in Pune. Sold on its own at ₹199 -- we no longer sell
+  recycled paper, hand-packed in Pune. Sold on its own at ₹199. We no longer sell
   colour pencils, so bring your own.
 specs:
   material: Recycled paper
@@ -43,9 +43,9 @@ howToUse: []
 faq:
 - q: Does this come with colour pencils?
   a: No. We've discontinued our newspaper colour pencils, so this book is sold on
-    its own now -- any pencils, crayons or fine-liners you already have will work
+    its own now. Any pencils, crayons or fine-liners you already have will work
     fine.
-- q: Which edition will I get -- Beginner's or Advanced?
+- q: "Which edition will I get: Beginner's or Advanced?"
   a: We currently print both a Beginner's (red cover) and an Advanced (yellow cover)
     edition, shown in the photos here. If you'd like a specific one, message us on
     WhatsApp with your order and we'll match it; otherwise we'll send whichever
@@ -61,7 +61,7 @@ datePublished: '2026-09-19'
 dateModified: '2026-10-04'
 ---
 
-Twenty mandala designs per book, printed on recycled paper and hand-packed in Pune. We used to sell this with a box of our newspaper colour pencils included, but we've discontinued those pencils, so the book now stands on its own at a lower price -- use whatever pencils, crayons or fine-liners you already have at home.
+Twenty mandala designs per book, printed on recycled paper and hand-packed in Pune. We used to sell this with a box of our newspaper colour pencils included, but we've discontinued those pencils, so the book now stands on its own at a lower price. Use whatever pencils, crayons or fine-liners you already have at home.
 
 We print two editions: a Beginner's edition (simpler, bolder line work, red cover) and an Advanced edition (finer detail, more intricate patterns, yellow cover), both shown in the photos. If you want a specific one, tell us on WhatsApp when you order.
 

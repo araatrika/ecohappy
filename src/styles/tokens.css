@@ -39,15 +39,13 @@
 html { scroll-behavior: smooth; }
 html, body { max-width: 100%; overflow-x: hidden; }
 img, svg, video { max-width: 100%; height: auto; }
+/* Content photos sit at their own size, capped at 480px. No hover zoom: a 1.35x enlargement
+   covered the text beside the photo (contact page address) and stuck after a tap on touch screens.
+   Images are never scaled up, so small logos keep their natural size. */
 .prose img {
-  display: block; max-width: 480px; width: 100%; margin: 1.5rem auto; border-radius: var(--radius);
-  box-shadow: var(--shadow-card); overflow: hidden; cursor: zoom-in;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: block; max-width: min(480px, 100%); height: auto; margin: 1.5rem auto; border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
 }
-.prose img:hover, .prose img:focus-visible {
-  transform: scale(1.35); position: relative; z-index: 5; box-shadow: 0 16px 40px rgba(13,13,13,0.25);
-}
-@media (prefers-reduced-motion: reduce) { .prose img { transition: none; } .prose img:hover { transform: none; } }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }

@@ -24,7 +24,7 @@ faq:
   a: Switching everyday consumables (notebooks, pens, packaging) to plantable or upcycled
     alternatives is usually the easiest first step, no process change required.
 - q: Does Eco Happy help businesses with this switch?
-  a: Yes, we supply plantable stationery and eco-friendly gifting in bulk for businesses
+  a: Yes, we supply plantable stationery and gifts in bulk for businesses
     making this switch, reach out for a sample kit.
 - q: "Where does most of a small business's carbon footprint sit?"
   a: "In three places: sourcing, packaging and shipping. Those are also the three easiest to change without touching the core business."

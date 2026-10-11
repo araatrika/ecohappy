@@ -27,6 +27,15 @@ const {
   noindex = false,
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, site.hosts.canonical);
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${site.hosts.canonical}/#website`,
+  url: site.hosts.canonical,
+  name: site.brand,
+  inLanguage: 'en-IN',
+  publisher: { '@id': `${site.hosts.canonical}/#organization` },
+};
 
 const orgSchema = {
   '@context': 'https://schema.org',
@@ -93,6 +102,7 @@ const orgSchema = {
     <meta name="twitter:image:alt" content={imageAlt} />
 
     <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>

@@ -36,14 +36,11 @@ wixCollections:
 - HAPPY PLASTIC FREE ALTERNATIVES
 brand: Eco Happy
 seoTitle: Reusable Tea Infuser | Home & Travel | Eco Happy
-seoDescription: 'Reusable Tea Infuser is a plastic-free product hand-made by Eco Happy''s
-  women-led team in Pune. Made from high-grade, food-safe stainless steel that won''t '
-answer: Reusable Tea Infuser is a plastic-free product hand-made by Eco Happy's women-led
-  team in Pune. Made from high-grade, food-safe stainless steel that won't rust or
+seoDescription: 'Reusable Tea Infuser is a plastic-free product from Eco Happy. Made from high-grade, food-safe stainless steel that won''t '
+answer: Reusable Tea Infuser is a plastic-free product from Eco Happy. Made from high-grade, food-safe stainless steel that won't rust or
   leach.
 specs:
-  madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  soldBy: Araatrika (Eco Happy), Pune, India
 howToUse: []
 faq:
 - q: Can I buy Reusable Tea Infuser in bulk for a gifting order?
@@ -73,8 +70,8 @@ A reusable steel tea infuser, no disposable tea bags needed. Our tea infuser is 
 - Premium Quality: Made from high-grade, food-safe stainless steel that won't rust or leach.
 - Fine Mesh Design: Ensures a smooth, sediment-free tea while allowing full flavor extraction.
 - Easy to Clean: Simply rinse or pop it in the dishwasher, built to last for years of daily use.
-- Made by Araatrika (Eco Happy), a women-led team in Pune making reusable steel alternatives to disposables.
+- Eco Happy, a women-led team in Pune, sells reusable steel alternatives to disposables.
 
-Reusable Tea Infuser is part of Eco Happy's Home & Travel range. Made in Pune, India by Araatrika women-led production team.
+Reusable Tea Infuser is part of Eco Happy's Home & Travel range. Sold by Araatrika (Eco Happy) in Pune, India.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Bamboo Toothbrush - Set of 2, Cutlery Kit and Plantable Coasters-  30 units. See the FAQ below for sizing, care and bulk-order questions.

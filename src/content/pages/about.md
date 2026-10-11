@@ -40,4 +40,3 @@ Sororedit (2022), LBB Pune (2021) and The EarthView (2021).
 
 ![IMG20220416112146.jpg](/assets/pages/our-story/img20220416112146-jpg.jpg)
 
-![Eco Happy, photo from our Pune workshop](/assets/pages/our-story/image-2.png)

@@ -196,7 +196,7 @@
     "price": 550,
     "salePrice": null,
     "currency": "INR",
-    "availability": "InStock",
+    "availability": "MadeToOrder",
     "retired": false
   },
   {

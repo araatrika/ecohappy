@@ -1,12 +1,11 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import EnquiryForm from '../components/EnquiryForm.astro';
 
 // Generic renderer for simple content pages (about, contact, faq, gifting-*, shipping, terms).
 // Home, Shop and Learn have their own custom-built pages and are excluded here.
 export async function getStaticPaths() {
-  const excludedSlugs = ['home', 'shop', 'learn', 'sale', 'payment-request', 'shop-home-and-travel', 'gifting-corporate', 'gifting-return-gifts', 'about', 'events'];
+  const excludedSlugs = ['home', 'shop', 'learn', 'sale', 'payment-request', 'shop-home-and-travel', 'gifting-corporate', 'gifting-return-gifts', 'about', 'events', 'contact'];
   const pages = await getCollection('pages');
   return pages
     .filter((p) => !excludedSlugs.includes(p.data.slug) && p.data.newUrl)
@@ -57,14 +56,6 @@ const faqSchema = p.slug === 'faq'
       <Content />
     </div>
   </article>
-  {p.slug === 'contact' && (
-    <EnquiryForm
-      formName="enquiry-contact"
-      heading="Send us an enquiry"
-      intro="For custom orders, bulk pricing or anything else, tell us a bit about what you need and we'll get back to you."
-      contextLabel="Contact page"
-    />
-  )}
 </BaseLayout>
 
 <style>

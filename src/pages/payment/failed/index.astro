@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Payment not completed | Eco Happy" description="Your payment was not completed. Here's what to do next." noindex>
+  <section class="container result" data-screen="failed">
+    <p class="kicker">Your order</p>
+    <h1 id="result-title">Payment not completed</h1>
+    <p class="lede" id="result-lede">We couldn't find the details of this payment in this browser.</p>
+
+    <dl class="result-details" id="result-details" hidden>
+      <div><dt>Product</dt><dd id="detail-product"></dd></div>
+      <div><dt>Order reference</dt><dd id="detail-order"></dd></div>
+      <div><dt>Payment ID</dt><dd id="detail-payment"></dd></div>
+    </dl>
+
+    <p class="result-note" id="reason" hidden></p>
+    <p class="result-note" id="guidance">If you tried to pay and weren't charged, you can try again from the shop. If money was taken, contact us and we'll check it.</p>
+
+    <div class="result-actions">
+      <a class="btn btn-primary" id="retry" href="/shop/">Try again</a>
+      <a class="btn btn-outline" id="contact" href="/contact/">Contact us</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  import { readResult } from '../../../scripts/payment-result';
+
+  const $ = (id) => document.getElementById(id);
+
+  const COPY = {
+    failed: {
+      title: "Payment didn't go through",
+      lede: "Your payment wasn't completed, so your order hasn't been placed.",
+      guidance: "If an amount was deducted for this attempt, contact us with the reference below and we'll check it with Razorpay.",
+    },
+    cancelled: {
+      title: 'Payment not completed',
+      lede: "You closed the payment window before the payment was completed, so your order hasn't been placed.",
+      guidance: "If you were charged, contact us with the reference below and we'll check it.",
+    },
+    unverified: {
+      title: "We couldn't confirm your payment",
+      lede: 'We received a payment response from Razorpay, but we could not confirm it on our side.',
+      guidance: "Please don't pay again. Contact us with the reference below and we'll check it.",
+    },
+  };
+
+  const result = readResult();
+  const copy = result && COPY[result.outcome];
+
+  if (copy) {
+    $('result-title').textContent = copy.title;
+    $('result-lede').textContent = copy.lede;
+    $('guidance').textContent = copy.guidance;
+
+    if (result.reason) {
+      $('reason').textContent = `Reason given: ${result.reason}`;
+      $('reason').hidden = false;
+    }
+
+    const rows = [
+      ['detail-product', result.productName],
+      ['detail-order', result.orderId],
+      ['detail-payment', result.paymentId],
+    ];
+    for (const [id, value] of rows) {
+      $(id).parentElement.hidden = !value;
+      if (value) $(id).textContent = value;
+    }
+    $('result-details').hidden = !rows.some(([, value]) => value);
+
+    if (result.outcome === 'unverified') {
+      // A retry could charge the buyer twice, so only the contact route is offered.
+      $('retry').hidden = true;
+      $('contact').className = 'btn btn-primary';
+    } else if (result.productSlug) {
+      $('retry').href = `/shop/${result.productSlug}/`;
+    }
+  }
+</script>
+
+<style>
+  .result { max-width: 640px; padding-block: 2.5rem 3.5rem; }
+  .kicker { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-500); margin-bottom: 0.5rem; }
+  .lede { color: var(--gray-500); font-size: 1.05rem; margin: 0.25rem 0 1.5rem; }
+  .result-details { margin: 0 0 1.5rem; border-top: 1px solid var(--cream); }
+  .result-details > div { display: grid; grid-template-columns: 9.5rem 1fr; gap: 0.5rem 1rem; padding: 0.7rem 0; border-bottom: 1px solid var(--cream); }
+  .result-details dt { font-size: 0.85rem; color: var(--gray-500); }
+  .result-details dd { margin: 0; font-weight: 600; overflow-wrap: anywhere; }
+  .result-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1rem; margin: 1.5rem 0; }
+  .result-note { font-size: 0.95rem; margin: 1rem 0; }
+  [hidden] { display: none !important; }
+  @media (max-width: 480px) {
+    .result-details > div { grid-template-columns: 1fr; gap: 0.15rem; }
+  }
+</style>

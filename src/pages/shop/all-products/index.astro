@@ -11,7 +11,7 @@ allProducts.sort((a, b) => a.data.name.localeCompare(b.data.name));
   <section class="container hero">
     <nav class="crumb" aria-label="Breadcrumb"><a href="/shop/">Shop</a> / All products</nav>
     <h1>All products</h1>
-    <p>{allProducts.length} eco-friendly products, made by hand in our Pune workshop.</p>
+    <p>{allProducts.length} products, most made by hand in our Pune workshop.</p>
     <nav class="cat-filter" aria-label="Shop by category">
       {site.categories.map((c) => (
         <a class="btn btn-outline" href={c.url}>{c.name}</a>

@@ -63,7 +63,7 @@ Inspire sustainability in children by gifting eco-friendly items such as our[see
 
 **3) Gifts for the Environment** **-**
 
-Choose zero-waste alternatives that reduce your ecological footprint, reusable[tea infusers](/shop/reusable-tea-infuser/)**,** coconut [scrub pads](/shop/scrub-pads-set-of-4/), and our reusable [cutlery](/shop/travel-kit/) or [travel kits](/shop/travel-kit/) help eliminate single-use plastics.
+Choose plastic-free alternatives, such as reusable [tea infusers](/shop/reusable-tea-infuser/)**,** coconut [scrub pads](/shop/scrub-pads-set-of-4/), and our reusable [cutlery](/shop/travel-kit/) or [travel kits](/shop/travel-kit/) help eliminate single-use plastics.
 
 Planting trees through seed balls is another meaningful contribution.
 
@@ -80,7 +80,3 @@ For colleagues that help us get through tough days at work or to express gratitu
 This Christmas, a few low-waste, personalised touches go further than another disposable gift box. And for whatever causes that you believe in for which you wish to do more but aren't able to,you can always just donate your time or help with in kind donations to your local organizations that are already working for the cause.
 
 Lets make this planet a better place one step at a time until then a very Merry Christmas from our team to you and your loved ones!
-
-For [**Araatrika**](/)**,**
-
-Abhishek Menon

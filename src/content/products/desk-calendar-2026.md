@@ -97,7 +97,7 @@ Grow Through the Year with Eco Happy 2026 🌿💚
 A 2026 desk calendar printed on tree-free agri-waste paper, made for a desk that could use less throwaway paper.
 
 - Use, Plant, Grow: Each month's page can be planted to grow into beautiful blooms.
-- Handcrafted: Made from 100% recycled newspaper and cotton pulp.
+- Handcrafted: Assembled by hand in our Pune workshop.
 - Reusable stand: comes with a stand you keep and reuse each year the calendar is replaced.
 
 Desk Calendar 2026 is part of Eco Happy's Calendars range. Made in Pune, India by Araatrika women-led production team.
