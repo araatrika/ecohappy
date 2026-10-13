@@ -19,7 +19,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/paddy-toran/paddy-toran-1.jpg
-  alt: Paddy Toran, Festive & Seasonal, made in Pune by Eco Happy
+  alt: Paddy Toran, Festive & Seasonal, packed in Pune by Eco Happy
   width: 1080
   height: 1080
   original: originals/assets/products/paddy-toran/paddy-toran-1.jpg
@@ -37,7 +37,7 @@ answer: "Paddy Toran is a 3.5-foot door hanging woven from young, dried paddy (r
 specs:
   size: 3.5 Feet Length, perfectly sized for standard main doors and pooja rooms.
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse: []
 faq:
 - q: "What is the Paddy Toran made of?"
@@ -81,6 +81,6 @@ Elevate your entrance with a product that supports local communities. Our Paddy 
 - Size: 3.5 Feet Length, perfectly sized for standard main doors and pooja rooms.
 - Ships within 7 days
 
-Paddy Toran is part of Eco Happy's Festive & Seasonal range. It measures 3.5 Feet Length, perfectly sized for standard main doors and pooja rooms. Made in Pune, India by Araatrika women-led production team.
+Paddy Toran is part of Eco Happy's Festive & Seasonal range. It measures 3.5 Feet Length, perfectly sized for standard main doors and pooja rooms. Packed in Pune, India by Araatrika women-led team.
 
 It ships within 7 days. If you're gifting or bulk-ordering, it's often paired with Eco happy kites- set of 10, Plantable Flags - Pack of 30 and Seed Rakhi-Evil Eye Band. See the FAQ below for sizing, care and bulk-order questions.

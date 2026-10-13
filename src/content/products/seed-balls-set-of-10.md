@@ -19,7 +19,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/seed-balls-set-of-10/seed-balls-set-of-10-1.jpg
-  alt: Seed Balls - Set of 10 balls, Kits & Seeds, made in Pune by Eco Happy
+  alt: Seed Balls - Set of 10 balls, Kits & Seeds, packed in Pune by Eco Happy
   width: 1080
   height: 1080
   original: originals/assets/products/seed-balls-set-of-10/seed-balls-set-of-10-1.webp
@@ -49,7 +49,7 @@ answer: Seed Balls - Set of 10 balls is a plantable, plastic-free product from E
   a little sun, it can sprout depending on the season.
 specs:
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse:
 - Use it as intended until you're ready to plant it.
 - Plant the seed-bearing part about 1–2 cm deep in soil.
@@ -89,7 +89,7 @@ Greening your surroundings is now just a toss away with the Eco Happy Seed Ball 
 - Socially Conscious: Proudly Made in India, supporting women's empowerment.
 - Nature’s Gift: Perfect for birthdays, weddings, or personal environmental resolutions.
 
-Seed Balls - Set of 10 balls is part of Eco Happy's Kits & Seeds range. Made in Pune, India by Araatrika women-led production team.
+Seed Balls - Set of 10 balls is part of Eco Happy's Kits & Seeds range. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with The Happy Mandala Book and DIY animal keychain kit. See the FAQ below for sizing, care and bulk-order questions.
 

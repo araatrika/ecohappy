@@ -27,7 +27,7 @@ customTextFields:
 variants: []
 images:
 - src: /assets/products/seed-rakhi-festive-kit/seed-rakhi-festive-kit-1.jpg
-  alt: Eco Seed Rakhi festive kit, Festive & Seasonal, made in Pune by Eco Happy
+  alt: Eco Seed Rakhi festive kit, Festive & Seasonal, packed in Pune by Eco Happy
   width: 1080
   height: 1350
   original: originals/assets/products/seed-rakhi-festive-kit/seed-rakhi-festive-kit-1.jpg
@@ -42,7 +42,7 @@ answer: Eco Seed Rakhi festive kit is a plantable, plastic-free product from Eco
   sun, it can sprout depending on the season.
 specs:
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse:
 - Use it as intended until you're ready to plant it.
 - Plant the seed-bearing part about 1–2 cm deep in soil.
@@ -86,7 +86,7 @@ migration:
 ---
 
 
-Eco Seed Rakhi festive kit is part of Eco Happy's Festive & Seasonal range. Made in Pune, India by Araatrika women-led production team.
+Eco Seed Rakhi festive kit is part of Eco Happy's Festive & Seasonal range. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. It can be customised (name, logo, or message) for gifting and bulk orders, message us on WhatsApp to discuss options. If you're gifting or bulk-ordering, it's often paired with Paddy Toran, Eco happy kites- set of 10 and Plantable Flags - Pack of 30. See the FAQ below for sizing, care and bulk-order questions.
 

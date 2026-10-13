@@ -120,7 +120,7 @@ variants:
   - 10
 images:
 - src: /assets/products/seed-paper-a4-set-of-4/seed-paper-a4-set-of-4-1.jpg
-  alt: Seed Paper A4 Size  - Set Of 4, Kits & Seeds, made in Pune by Eco Happy
+  alt: Seed Paper A4 Size  - Set Of 4, Kits & Seeds, packed in Pune by Eco Happy
   width: 1350
   height: 1800
   original: originals/assets/products/seed-paper-a4-set-of-4/seed-paper-a4-set-of-4-1.jpg
@@ -149,7 +149,7 @@ specs:
   - Marigold
   - Tulsi
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse:
 - Use it as intended until you're ready to plant it.
 - Plant the seed-bearing part about 1–2 cm deep in soil.
@@ -197,6 +197,6 @@ Imagine throwing a paper after using it, which grows into various vegetables and
 
 A paper embedded with seeds and made by using pulp/fibre from the waste generated in the making of handmade paper. This Plantable paper can be made available in custom sizes with custom design and printing options. Once you've used it, plant it and grow Tulsi or Marigold.
 
-Seed Paper A4 Size  - Set Of 4 is part of Eco Happy's Kits & Seeds range. It carries a seed component (Marigold, Tulsi), so the plantable part can be grown after use. Made in Pune, India by Araatrika women-led production team.
+Seed Paper A4 Size  - Set Of 4 is part of Eco Happy's Kits & Seeds range. It carries a seed component (Marigold, Tulsi), so the plantable part can be grown after use. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. It can be customised (name, logo, or message) for gifting and bulk orders, message us on WhatsApp to discuss options. If you're gifting or bulk-ordering, it's often paired with The Happy Mandala Book and DIY animal keychain kit. See the FAQ below for sizing, care and bulk-order questions.

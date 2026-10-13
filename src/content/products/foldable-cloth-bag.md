@@ -18,7 +18,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/foldable-cloth-bag/foldable-cloth-bag-1.jpg
-  alt: Foldable Cloth Bag, Upcycled Fabric, made in Pune by Eco Happy
+  alt: Foldable Cloth Bag, Upcycled Fabric, packed in Pune by Eco Happy
   width: 1080
   height: 1080
   original: originals/assets/products/foldable-cloth-bag/foldable-cloth-bag-1.jpg
@@ -36,13 +36,13 @@ wixCollections:
 - HAPPY BAGS
 brand: Eco Happy
 seoTitle: Foldable Cloth Bag | Upcycled Fabric | Eco Happy
-seoDescription: Foldable Cloth Bag is a plastic-free product hand-made by Eco Happy's
-  women-led team in Pune. Fits in the palm of your hand when not in use.
-answer: Foldable Cloth Bag is a plastic-free product hand-made by Eco Happy's women-led
-  team in Pune. Fits in the palm of your hand when not in use.
+seoDescription: Foldable Cloth Bag is a plastic-free product packed in Pune by Eco Happy's
+  women-led team. Fits in the palm of your hand when not in use.
+answer: Foldable Cloth Bag is a plastic-free product packed in Pune by Eco Happy's women-led
+  team. Fits in the palm of your hand when not in use.
 specs:
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse: []
 faq:
 - q: Can I buy Foldable Cloth Bag in bulk for a gifting order?
@@ -81,6 +81,6 @@ Ditch the plastic and switch to the most convenient cloth bag you’ll ever own.
 
 Keep it in your car or your pocket, it folds small enough to carry every day.
 
-Foldable Cloth Bag is part of Eco Happy's Upcycled Fabric range. Made in Pune, India by Araatrika women-led production team.
+Foldable Cloth Bag is part of Eco Happy's Upcycled Fabric range. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Multicolor Laptop Sleeve, Upcycled Bedsheet and Upcycled Cloth Bags - Set of 10. See the FAQ below for sizing, care and bulk-order questions.

@@ -18,7 +18,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/newspaper-pencil-box-set-of-2/newspaper-pencil-box-set-of-2-1.jpg
-  alt: Pencil Box - Set of 2 boxes, Seed Pencils & Pens, made in Pune by Eco Happy
+  alt: Pencil Box - Set of 2 boxes, Seed Pencils & Pens, packed in Pune by Eco Happy
   width: 1350
   height: 1800
   original: originals/assets/products/newspaper-pencil-box-set-of-2/newspaper-pencil-box-set-of-2-1.jpg
@@ -36,14 +36,13 @@ wixCollections:
 - HAPPY STATIONERY
 brand: Eco Happy
 seoTitle: Pencil Box - Set of 2 boxes | Eco Happy
-seoDescription: Pencil Box - Set of 2 boxes is a plastic-free product hand-made by
-  Eco Happy's women-led team in Pune. 100% Recycled Newspaper.
-answer: Pencil Box - Set of 2 boxes is a plastic-free product hand-made by Eco Happy's
-  women-led team in Pune. 100% Recycled Newspaper.
+seoDescription: Pencil Box - Set of 2 boxes is a plastic-free product packed in Pune by Eco Happy's women-led team. 100% Recycled Newspaper.
+answer: Pencil Box - Set of 2 boxes is a plastic-free product packed in Pune by Eco Happy's
+  women-led team. 100% Recycled Newspaper.
 specs:
   material: 100% Recycled Newspaper
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse: []
 faq:
 - q: Can I buy Pencil Box - Set of 2 boxes in bulk for a gifting order?
@@ -81,6 +80,6 @@ Good for personal use, school stationery kits, or as a small, low-cost add-on to
 
 For our return and refund policy, see [Shipping & Returns](/shipping-and-returns/).
 
-Pencil Box - Set of 2 boxes is part of Eco Happy's Seed Pencils & Pens range. It's made from 100% Recycled Newspaper. Made in Pune, India by Araatrika women-led production team.
+Pencil Box - Set of 2 boxes is part of Eco Happy's Seed Pencils & Pens range. It's made from 100% Recycled Newspaper. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Customized Seed Pencils -Set of 100 (Bulk Buy) and Customized Seed Pencils - 50 units. See the FAQ below for sizing, care and bulk-order questions.

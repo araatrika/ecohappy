@@ -53,7 +53,7 @@ answer: Plant Me Diary - A5 Notebook is a plantable, plastic-free product from E
 specs:
   material: 100% Recycled Paper with Seeds embedded in the cover
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse:
 - Use it as intended until you're ready to plant it.
 - Plant the seed-bearing part about 1–2 cm deep in soil.
@@ -94,12 +94,12 @@ Key Features:
 
 - Material: 100% Recycled Paper with Seeds embedded in the cover.
 - Use & Grow: Don't throw it away, plant it!
-- Made in Pune by Araatrika's women-led production team.
+- Packed in Pune by Araatrika's women-led team.
 
 Why Buy?
 
 Perfect for personal use. A recycled-paper diary with a plantable cover, write in it, then plant it.
 
-Plant Me Diary - A5 Notebook is part of Eco Happy's Notebooks, Diaries & Planners range. It's made from 100% Recycled Paper with Seeds embedded in the cover. Made in Pune, India by Araatrika women-led production team.
+Plant Me Diary - A5 Notebook is part of Eco Happy's Notebooks, Diaries & Planners range. It's made from 100% Recycled Paper with Seeds embedded in the cover. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Checkerboard Planner 2026, Recycled Paper Notebook- Set of 2 and Sunshine Planner 2026. See the FAQ below for sizing, care and bulk-order questions.

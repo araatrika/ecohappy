@@ -18,7 +18,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/newspaper-pencils-100-bulk/newspaper-pencils-100-bulk-1.jpg
-  alt: Pencils - Set of 100 (Bulk Buy), Seed Pencils & Pens, made in Pune by Eco
+  alt: Pencils - Set of 100 (Bulk Buy), Seed Pencils & Pens, packed in Pune by Eco
     Happy
   width: 1350
   height: 1800
@@ -37,14 +37,12 @@ wixCollections:
 - HAPPY BUY IN BULK
 brand: Eco Happy
 seoTitle: Pencils - Set of 100 (Bulk Buy) | Eco Happy
-seoDescription: Pencils - Set of 100 (Bulk Buy) is a plastic-free product hand-made
-  by Eco Happy's women-led team in Pune. 100% Recycled Newspaper.
-answer: Pencils - Set of 100 (Bulk Buy) is a plastic-free product hand-made by Eco
-  Happy's women-led team in Pune. 100% Recycled Newspaper.
+seoDescription: Pencils - Set of 100 (Bulk Buy) is a plastic-free product packed in Pune by Eco Happy's women-led team. 100% Recycled Newspaper.
+answer: Pencils - Set of 100 (Bulk Buy) is a plastic-free product packed in Pune by Eco Happy's women-led team. 100% Recycled Newspaper.
 specs:
   material: 100% Recycled Newspaper
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse: []
 faq:
 - q: Can I buy Pencils - Set of 100 (Bulk Buy) in bulk for a gifting order?
@@ -73,12 +71,12 @@ Made from 100% recycled newspaper, hand-rolled in Pune.
 Key Features:
 
 - Material: 100% Recycled Newspaper.
-- Made in Pune by Araatrika's women-led production team.
+- Packed in Pune by Araatrika's women-led team.
 
 Why Buy in Bulk?
 
 A newspaper pencil replaces one made from virgin wood, a straightforward bulk swap for office or school stationery.
 
-Pencils - Set of 100 (Bulk Buy) is part of Eco Happy's Seed Pencils & Pens range. It's made from 100% Recycled Newspaper. Made in Pune, India by Araatrika women-led production team.
+Pencils - Set of 100 (Bulk Buy) is part of Eco Happy's Seed Pencils & Pens range. It's made from 100% Recycled Newspaper. Packed in Pune, India by Araatrika women-led team.
 
 This is a made-to-order item with a lead time of about 3 days, since it's produced after you order rather than kept pre-stocked. If you're gifting or bulk-ordering, it's often paired with Customized Seed Pencils -Set of 100 (Bulk Buy) and Customized Seed Pencils - 50 units. See the FAQ below for sizing, care and bulk-order questions.

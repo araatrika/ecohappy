@@ -17,7 +17,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/seed-rakhi-pumpkin/seed-rakhi-pumpkin-1.jpg
-  alt: Pumpkin Seed Rakhi, Festive & Seasonal, made in Pune by Eco Happy
+  alt: Pumpkin Seed Rakhi, Festive & Seasonal, packed in Pune by Eco Happy
   width: 707
   height: 1000
   original: originals/assets/products/seed-rakhi-pumpkin/seed-rakhi-pumpkin-1.jpg
@@ -43,7 +43,7 @@ specs:
   seeds:
   - Pumpkin
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse:
 - Use it as intended until you're ready to plant it.
 - Plant the seed-bearing part about 1–2 cm deep in soil.
@@ -89,7 +89,7 @@ Support Women
 
 Pumpkin Seed
 
-Pumpkin Seed Rakhi is part of Eco Happy's Festive & Seasonal range. It carries a seed component (Pumpkin), so the plantable part can be grown after use. Made in Pune, India by Araatrika women-led production team.
+Pumpkin Seed Rakhi is part of Eco Happy's Festive & Seasonal range. It carries a seed component (Pumpkin), so the plantable part can be grown after use. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Paddy Toran, Eco happy kites- set of 10 and Plantable Flags - Pack of 30. See the FAQ below for sizing, care and bulk-order questions.
 

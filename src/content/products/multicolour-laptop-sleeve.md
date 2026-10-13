@@ -26,7 +26,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/multicolour-laptop-sleeve/multicolour-laptop-sleeve-1.jpg
-  alt: Multicolor Laptop Sleeve, Upcycled Fabric, made in Pune by Eco Happy
+  alt: Multicolor Laptop Sleeve, Upcycled Fabric, packed in Pune by Eco Happy
   width: 1080
   height: 1080
   original: originals/assets/products/multicolour-laptop-sleeve/multicolour-laptop-sleeve-1.jpg
@@ -41,10 +41,10 @@ brand: Eco Happy
 seoTitle: Multicolor Laptop Sleeve | Upcycled Fabric | Eco Happy
 seoDescription: A padded laptop sleeve stitched from upcycled patchwork fabric offcuts,
   hand-sewn in Pune by Eco Happy's team, one-of-a-kind, since no two are cut alike.
-answer: "Multicolor Laptop Sleeve is a padded laptop sleeve stitched from upcycled patchwork fabric offcuts, hand-made by Eco Happy's women-led team in Pune."
+answer: "Multicolor Laptop Sleeve is a padded laptop sleeve stitched from upcycled patchwork fabric offcuts, packed in Pune by Eco Happy's women-led team."
 specs:
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse: []
 faq:
 - q: Can I buy Multicolor Laptop Sleeve in bulk for a gifting order?
@@ -84,6 +84,6 @@ Available in two convenient sizes: 15" x 11" and 13" x 11", these sleeves are pe
 
 Let's #MakeADifference together! Get your laptop sleeve now and be part of this incredible cause.
 
-Multicolor Laptop Sleeve is part of Eco Happy's Upcycled Fabric range. Made in Pune, India by Araatrika women-led production team.
+Multicolor Laptop Sleeve is part of Eco Happy's Upcycled Fabric range. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. It can be customised (name, logo, or message) for gifting and bulk orders, message us on WhatsApp to discuss options. If you're gifting or bulk-ordering, it's often paired with Foldable Cloth Bag, Upcycled Bedsheet and Upcycled Cloth Bags - Set of 10. See the FAQ below for sizing, care and bulk-order questions.

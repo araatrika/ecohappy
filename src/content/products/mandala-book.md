@@ -38,7 +38,7 @@ specs:
   material: Recycled paper
   pages: 20 mandala designs per book
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse: []
 faq:
 - q: Does this come with colour pencils?
@@ -65,4 +65,4 @@ Twenty mandala designs per book, printed on recycled paper and hand-packed in Pu
 
 We print two editions: a Beginner's edition (simpler, bolder line work, red cover) and an Advanced edition (finer detail, more intricate patterns, yellow cover), both shown in the photos. If you want a specific one, tell us on WhatsApp when you order.
 
-The Happy Mandala Book is part of Eco Happy's For Artists range. Made in Pune, India by Araatrika's women-led production team. It ships from stock, with dispatch usually within 3 working days. See the FAQ below for what's included and bulk-order questions.
+The Happy Mandala Book is part of Eco Happy's For Artists range. Packed in Pune, India by Araatrika's women-led team. It ships from stock, with dispatch usually within 3 working days. See the FAQ below for what's included and bulk-order questions.

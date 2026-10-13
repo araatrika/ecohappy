@@ -47,7 +47,7 @@ answer: Seed pencils are pencils hand-rolled from waste newspaper with a seed ca
 specs:
   material: 100% recycled newspaper body, graphite core, embedded seed capsule
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse:
 - Write with the pencil like any regular pencil until it's too short to sharpen.
 - Plant the stub about 1–2 cm deep in a small pot of soil or your garden.

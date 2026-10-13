@@ -17,7 +17,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/seed-rakhi-spinach-and-bittergourd/seed-rakhi-spinach-and-bittergourd-1.jpg
-  alt: Spinach and Bittergourd Rakhi, Festive & Seasonal, made in Pune by Eco Happy
+  alt: Spinach and Bittergourd Rakhi, Festive & Seasonal, packed in Pune by Eco Happy
   width: 876
   height: 1000
   original: originals/assets/products/seed-rakhi-spinach-and-bittergourd/seed-rakhi-spinach-and-bittergourd-1.jpg
@@ -45,7 +45,7 @@ specs:
   - Karela
   - Spinach
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse:
 - Use it as intended until you're ready to plant it.
 - Plant the seed-bearing part about 1–2 cm deep in soil.
@@ -91,7 +91,7 @@ Support Women
 
 Karela & Spinach Seeds
 
-Spinach and Bittergourd Rakhi is part of Eco Happy's Festive & Seasonal range. It carries a seed component (Karela, Spinach), so the plantable part can be grown after use. Made in Pune, India by Araatrika women-led production team.
+Spinach and Bittergourd Rakhi is part of Eco Happy's Festive & Seasonal range. It carries a seed component (Karela, Spinach), so the plantable part can be grown after use. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Paddy Toran, Eco happy kites- set of 10 and Plantable Flags - Pack of 30. See the FAQ below for sizing, care and bulk-order questions.
 

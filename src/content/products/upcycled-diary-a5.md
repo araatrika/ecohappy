@@ -18,7 +18,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/upcycled-diary-a5/upcycled-diary-a5-1.jpg
-  alt: Upcycled Diary - A5 Size, Notebooks, Diaries & Planners, made in Pune by Eco
+  alt: Upcycled Diary - A5 Size, Notebooks, Diaries & Planners, packed in Pune by Eco
     Happy
   width: 1800
   height: 1350
@@ -43,11 +43,11 @@ wixCollections:
 brand: Eco Happy
 seoTitle: Upcycled Diary - A5 Size | Eco Happy
 seoDescription: "Upcycled Diary - A5 Size: an A5 diary with 100% recycled paper pages and an upcycled fabric cover, so no two covers are identical. Made in Pune."
-answer: "Upcycled Diary - A5 Size is an A5 diary with 100% recycled paper pages bound in an upcycled fabric cover, so no two covers are identical. It's made in Pune by Araatrika's women-led production team for everyday notes, journaling or gifting, and it's a diary to keep rather than plant."
+answer: "Upcycled Diary - A5 Size is an A5 diary with 100% recycled paper pages bound in an upcycled fabric cover, so no two covers are identical. It's packed in Pune by Araatrika's women-led team for everyday notes, journaling or gifting, and it's a diary to keep rather than plant."
 specs:
   material: 100% Recycled Paper with Upcycled Fabric Cover
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse: []
 faq:
 - q: "What is the Upcycled Diary made of?"
@@ -83,12 +83,12 @@ Make a conscious choice with this Upcycled Diary from Eco Happy.
 Key Features:
 
 - Material: 100% Recycled Paper with Upcycled Fabric Cover
-- Made in Pune by Araatrika's women-led production team.
+- Packed in Pune by Araatrika's women-led team.
 
 Why Buy?
 
 Perfect for personal use. Made from 100% recycled paper with an upcycled-fabric cover, no two covers are identical.
 
-Upcycled Diary - A5 Size is part of Eco Happy's Notebooks, Diaries & Planners range. It's made from 100% Recycled Paper with Upcycled Fabric Cover. Made in Pune, India by Araatrika women-led production team.
+Upcycled Diary - A5 Size is part of Eco Happy's Notebooks, Diaries & Planners range. It's made from 100% Recycled Paper with Upcycled Fabric Cover. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Checkerboard Planner 2026, Plant Me Diary - A5 Notebook and Recycled Paper Notebook- Set of 2. See the FAQ below for sizing, care and bulk-order questions.

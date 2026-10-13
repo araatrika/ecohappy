@@ -19,7 +19,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/scrub-pads-set-of-4/scrub-pads-set-of-4-1.jpg
-  alt: Scrub Pads - Set of 4, Home & Travel, made in Pune by Eco Happy
+  alt: Scrub Pads - Set of 4, Home & Travel, packed in Pune by Eco Happy
   width: 1350
   height: 1800
   original: originals/assets/products/scrub-pads-set-of-4/scrub-pads-set-of-4-1.jpg
@@ -37,11 +37,11 @@ wixCollections:
 - HAPPY PLASTIC FREE ALTERNATIVES
 brand: Eco Happy
 seoTitle: Scrub Pads - Set of 4 | Home & Travel | Eco Happy
-seoDescription: "Scrub Pads - Set of 4: four scrub pads made from coconut fibre and latex, hand-made by Eco Happy's women-led team in Pune, for glassware to heavy pots."
-answer: "Scrub Pads - Set of 4 is a set of four scrub pads made from coconut fibre and latex, hand-made by Eco Happy's women-led team in Pune, for cleaning everything from glassware to heavy-duty pots and pans."
+seoDescription: "Scrub Pads - Set of 4: four scrub pads made from coconut fibre and latex, packed in Pune by Eco Happy's women-led team, for glassware to heavy pots."
+answer: "Scrub Pads - Set of 4 is a set of four scrub pads made from coconut fibre and latex, packed in Pune by Eco Happy's women-led team, for cleaning everything from glassware to heavy-duty pots and pans."
 specs:
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse: []
 faq:
 - q: Can I buy Scrub Pads - Set of 4 in bulk for a gifting order?
@@ -74,7 +74,7 @@ A set of 4 scrub pads made from coconut fibre and latex, for cleaning everything
 - Breathable, so they don't hold onto odours the way synthetic sponges do.
 - Ethically Handcrafted: Supports local craftsmanship and women’s empowerment in India.
 
-Scrub Pads - Set of 4 is part of Eco Happy's Home & Travel range. Made in Pune, India by Araatrika women-led production team.
+Scrub Pads - Set of 4 is part of Eco Happy's Home & Travel range. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Bamboo Toothbrush - Set of 2, Cutlery Kit and Plantable Coasters-  30 units. See the FAQ below for sizing, care and bulk-order questions.
 

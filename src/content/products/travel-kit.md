@@ -19,7 +19,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/travel-kit/travel-kit-1.jpg
-  alt: Travel Kit, Home & Travel, made in Pune by Eco Happy
+  alt: Travel Kit, Home & Travel, packed in Pune by Eco Happy
   width: 1800
   height: 1350
   original: originals/assets/products/travel-kit/travel-kit-1.jpg
@@ -52,7 +52,7 @@ seoDescription: "Travel Kit: a steel spoon, fork, straw and cleaner, a bamboo to
 answer: "Travel Kit is a reusable set of steel cutlery (spoon, fork, straw and cleaner), a bamboo toothbrush and plantable pencils, for commuters, hikers and travellers who'd rather carry their own than use disposables. Only the pencils can be planted, once they're too short to write with."
 specs:
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse:
 - "Write with the plantable pencils until they're too short to hold."
 - "Plant the seed end about 1 to 2 cm deep in soil."
@@ -96,6 +96,6 @@ Perfect for commuters, hikers, and global travelers.
 - Hygienic: Use your own personal kit instead of questionable restaurant/hotel cutlery.
 - Social Impact: Proudly Made in India, supporting local artisans and women empowerment.
 
-Travel Kit is part of Eco Happy's Home & Travel range. Made in Pune, India by Araatrika women-led production team.
+Travel Kit is part of Eco Happy's Home & Travel range. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Bamboo Toothbrush - Set of 2, Cutlery Kit and Plantable Coasters-  30 units. See the FAQ below for sizing, care and bulk-order questions.

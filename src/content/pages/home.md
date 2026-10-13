@@ -2,7 +2,7 @@
 title: "Eco Friendly Products In India | Eco Happy"
 slug: home
 newUrl: /
-description: "Eco Happy sells plantable seed pencils, upcycled diaries and sustainable gifting, hand-made in Pune since 2017."
+description: "Eco Happy sells plantable seed pencils, upcycled diaries and sustainable gifting, packed in Pune since 2017."
 
 forms: []
 productsListed:

@@ -18,7 +18,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/reusable-tea-infuser/reusable-tea-infuser-1.jpg
-  alt: Reusable Tea Infuser, Home & Travel, made in Pune by Eco Happy
+  alt: Reusable Tea Infuser, Home & Travel, packed in Pune by Eco Happy
   width: 1350
   height: 1800
   original: originals/assets/products/reusable-tea-infuser/reusable-tea-infuser-1.jpg

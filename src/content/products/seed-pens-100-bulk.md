@@ -19,7 +19,7 @@ customTextFields:
 variants: []
 images:
 - src: /assets/products/seed-pens-100-bulk/seed-pens-100-bulk-1.jpg
-  alt: Seed Pens - Set of 100 (Bulk Buy), Seed Pencils & Pens, made in Pune by Eco
+  alt: Seed Pens - Set of 100 (Bulk Buy), Seed Pencils & Pens, packed in Pune by Eco
     Happy
   width: 1350
   height: 1800
@@ -43,7 +43,7 @@ answer: "Seed Pens - Set of 100 (Bulk Buy) is a plantable product from Eco Happy
 specs:
   material: 100% Recycled Newspaper, turning yesterday's news into today's ideas
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse:
 - Use it as intended until you're ready to plant it.
 - Plant the seed-bearing part about 1–2 cm deep in soil.
@@ -86,8 +86,8 @@ Key Features:
 
 - Material: 100% Recycled Newspaper, turning yesterday's news into today's ideas.
 - Use & Grow: Once the ink is done, don't throw the pen away, plant it! The seeds embedded at the back will sprout into herbs, flowers, or vegetables.
-- Made in Pune by Araatrika's women-led production team.
+- Packed in Pune by Araatrika's women-led team.
 
-Seed Pens - Set of 100 (Bulk Buy) is part of Eco Happy's Seed Pencils & Pens range. It's made from 100% Recycled Newspaper, turning yesterday's news into today's ideas. Made in Pune, India by Araatrika women-led production team.
+Seed Pens - Set of 100 (Bulk Buy) is part of Eco Happy's Seed Pencils & Pens range. It's made from 100% Recycled Newspaper, turning yesterday's news into today's ideas. Packed in Pune, India by Araatrika women-led team.
 
 This is a made-to-order item with a lead time of about 3 days, since it's produced after you order rather than kept pre-stocked. It can be customised (name, logo, or message) for gifting and bulk orders, message us on WhatsApp to discuss options. If you're gifting or bulk-ordering, it's often paired with Customized Seed Pencils -Set of 100 (Bulk Buy) and Customized Seed Pencils - 50 units. See the FAQ below for sizing, care and bulk-order questions.

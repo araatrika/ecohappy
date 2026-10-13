@@ -18,7 +18,7 @@ customTextFields:
 variants: []
 images:
 - src: /assets/products/pawfect-pet-desk-calendar-2026/pawfect-pet-desk-calendar-2026-1.jpg
-  alt: Pawfect Pet Desk Calendar 2026, Calendars, made in Pune by Eco Happy
+  alt: Pawfect Pet Desk Calendar 2026, Calendars, packed in Pune by Eco Happy
   width: 1080
   height: 1350
   original: originals/assets/products/pawfect-pet-desk-calendar-2026/pawfect-pet-desk-calendar-2026-1.jpg
@@ -44,7 +44,7 @@ answer: Pawfect Pet Desk Calendar 2026 is a plantable, plastic-free product from
   a little sun, it can sprout depending on the season.
 specs:
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse:
 - Use it as intended until you're ready to plant it.
 - Plant the seed-bearing part about 1–2 cm deep in soil.
@@ -100,6 +100,6 @@ Once you've placed your order we, will reach out to you for pictures.
 
 We would also appreciate if you send them to us at hi@ecohappy.in
 
-Pawfect Pet Desk Calendar 2026 is part of Eco Happy's Calendars range. Made in Pune, India by Araatrika women-led production team.
+Pawfect Pet Desk Calendar 2026 is part of Eco Happy's Calendars range. Packed in Pune, India by Araatrika women-led team.
 
 It's made to order, with dispatch usually within 3 working days. It can be customised (name, logo, or message) for gifting and bulk orders, message us on WhatsApp to discuss options. If you're gifting or bulk-ordering, it's often paired with Desk Calendar 2024 and Desk Calendar 2026. See the FAQ below for sizing, care and bulk-order questions.

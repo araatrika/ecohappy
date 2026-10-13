@@ -19,7 +19,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/mandala-books-set-with-colour-pencils/mandala-books-set-with-colour-pencils-1.jpg
-  alt: One Beginner & one Advanced Mandala Book, Kits & Seeds, made in Pune by Eco
+  alt: One Beginner & one Advanced Mandala Book, Kits & Seeds, packed in Pune by Eco
     Happy
   width: 756
   height: 756
@@ -34,11 +34,10 @@ brand: Eco Happy
 seoTitle: One Beginner & one Advanced Mandala Book | Eco Happy
 seoDescription: A beginner and an advanced mandala colouring book with colour pencils,
   printed on recycled paper and hand-packed in Pune by Eco Happy's team.
-answer: One Beginner & one Advanced Mandala Book is a plastic-free product hand-made
-  by Eco Happy's women-led team in Pune.
+answer: One Beginner & one Advanced Mandala Book is a plastic-free product packed in Pune by Eco Happy's women-led team.
 specs:
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse: []
 faq:
 - q: Can I buy One Beginner & one Advanced Mandala Book in bulk for a gifting order?
@@ -77,7 +76,7 @@ Empowering Communities: Every purchase supports local Indian craftsmanship and w
 
 A recycled-paper colouring book instead of a virgin-paper one, same activity, lower material footprint.
 
-One Beginner & one Advanced Mandala Book is part of Eco Happy's Kits & Seeds range. Made in Pune, India by Araatrika women-led production team.
+One Beginner & one Advanced Mandala Book is part of Eco Happy's Kits & Seeds range. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Advanced Mandala Book + One box of Colour Pencils, Beginner's Mandala Book + One Box of Colour Pencils and DIY animal keychain kit. See the FAQ below for sizing, care and bulk-order questions.
 

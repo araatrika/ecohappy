@@ -3,7 +3,7 @@ title: "Corporate Gifting, Bulk Orders | Eco Happy"
 slug: gifting-corporate
 newUrl: /gifting/corporate/
 description: Bulk, customisable corporate gifting from Eco Happy, plantable pencils,
-  diaries and hampers, hand-made by a women-led team in Pune.
+  diaries and hampers, packed in Pune by a women-led team.
 h1: []
 forms: []
 productsListed:

@@ -51,7 +51,7 @@ answer: Customized Seed Pencils -Set of 100 (Bulk Buy) is a plantable, plastic-f
 specs:
   material: 100% Recycled Newspaper
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse:
 - Use it as intended until you're ready to plant it.
 - Plant the seed-bearing part about 1–2 cm deep in soil.
@@ -95,12 +95,12 @@ Key Features:
 
 - Material: 100% Recycled Newspaper.
 - Use & Grow: Don't throw it away, plant it!
-- Made in Pune by Araatrika's women-led production team.
+- Packed in Pune by Araatrika's women-led team.
 
 Why Buy in Bulk?
 
 A newspaper pencil replaces one made from virgin wood, see [do seed pencils actually grow?](/blogs/) for how the seed tip works.
 
-Customized Seed Pencils -Set of 100 (Bulk Buy) is part of Eco Happy's Seed Pencils & Pens range. It's made from 100% Recycled Newspaper. Made in Pune, India by Araatrika women-led production team.
+Customized Seed Pencils -Set of 100 (Bulk Buy) is part of Eco Happy's Seed Pencils & Pens range. It's made from 100% Recycled Newspaper. Packed in Pune, India by Araatrika women-led team.
 
 This is a made-to-order item with a lead time of about 3 days, since it's produced after you order rather than kept pre-stocked. It can be customised (name, logo, or message) for gifting and bulk orders, message us on WhatsApp to discuss options. If you're gifting or bulk-ordering, it's often paired with Customized Seed Pencils - 50 units and Pencil Box - Set of 2 boxes. See the FAQ below for sizing, care and bulk-order questions.

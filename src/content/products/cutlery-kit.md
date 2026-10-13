@@ -18,7 +18,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/cutlery-kit/cutlery-kit-1.jpg
-  alt: Cutlery Kit, Home & Travel, made in Pune by Eco Happy
+  alt: Cutlery Kit, Home & Travel, packed in Pune by Eco Happy
   width: 1350
   height: 1800
   original: originals/assets/products/cutlery-kit/cutlery-kit-1.jpg
@@ -38,11 +38,10 @@ brand: Eco Happy
 seoTitle: Cutlery Kit | Home & Travel | Eco Happy
 seoDescription: A reusable steel spoon-and-fork travel cutlery kit in a cloth pouch,
   hand-assembled in Pune, carry your own set instead of single-use plastic cutlery.
-answer: Cutlery Kit is a plastic-free product hand-made by Eco Happy's women-led team
-  in Pune. High-Grade Steel Spoon & Fork.
+answer: Cutlery Kit is a plastic-free product packed in Pune by Eco Happy's women-led team. High-Grade Steel Spoon & Fork.
 specs:
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse: []
 faq:
 - q: Can I buy Cutlery Kit in bulk for a gifting order?
@@ -77,6 +76,6 @@ What’s Inside the Kit:
 - Compact Travel Pouch
 
 
-Cutlery Kit is part of Eco Happy's Home & Travel range. Made in Pune, India by Araatrika women-led production team.
+Cutlery Kit is part of Eco Happy's Home & Travel range. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Bamboo Toothbrush - Set of 2, Plantable Coasters-  30 units and Reusable Tea Infuser. See the FAQ below for sizing, care and bulk-order questions.

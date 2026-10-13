@@ -18,7 +18,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/diy-animal-keychain-kit/diy-animal-keychain-kit-1.jpg
-  alt: DIY animal keychain kit, Kits & Seeds, made in Pune by Eco Happy
+  alt: DIY animal keychain kit, Kits & Seeds, packed in Pune by Eco Happy
   width: 1080
   height: 1350
   original: originals/assets/products/diy-animal-keychain-kit/diy-animal-keychain-kit-1.jpg
@@ -42,11 +42,11 @@ brand: Eco Happy
 seoTitle: DIY animal keychain kit | Kits & Seeds | Eco Happy
 seoDescription: A do-it-yourself keychain kit using upcycled fabric scraps, hand-packed
   in Pune by Eco Happy's team, a craft activity that turns offcuts into a keepsake.
-answer: DIY animal keychain kit is a plastic-free product hand-made by Eco Happy's
-  women-led team in Pune.
+answer: DIY animal keychain kit is a plastic-free product packed in Pune by Eco Happy's
+  women-led team.
 specs:
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse: []
 faq:
 - q: Can I buy DIY animal keychain kit in bulk for a gifting order?
@@ -85,7 +85,7 @@ One instruction sheet
 
 One paint brush
 
-DIY animal keychain kit is part of Eco Happy's Kits & Seeds range. Made in Pune, India by Araatrika women-led production team.
+DIY animal keychain kit is part of Eco Happy's Kits & Seeds range. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with The Happy Mandala Book and Grow Me Kit. See the FAQ below for sizing, care and bulk-order questions.
 

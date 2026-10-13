@@ -18,7 +18,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/seed-pens-set-of-10/seed-pens-set-of-10-1.jpg
-  alt: Seed Pen - Set of 10, Seed Pencils & Pens, made in Pune by Eco Happy
+  alt: Seed Pen - Set of 10, Seed Pencils & Pens, packed in Pune by Eco Happy
   width: 1800
   height: 1350
   original: originals/assets/products/seed-pens-set-of-10/seed-pens-set-of-10-1.jpg
@@ -46,7 +46,7 @@ answer: "Seed Pen - Set of 10 is a plantable product from Eco Happy's Pune works
 specs:
   material: 100% Recycled Newspaper, turning yesterday's news into today's ideas
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse:
 - Use it as intended until you're ready to plant it.
 - Plant the seed-bearing part about 1–2 cm deep in soil.
@@ -86,9 +86,9 @@ Key Features:
 
 - Material: 100% Recycled Newspaper, turning yesterday's news into today's ideas.
 - Use & Grow: Once the ink is done, don't throw the pen away, plant it! The seeds embedded at the back will sprout into herbs, flowers, or vegetables.
-- Made in Pune by Araatrika's women-led production team.
+- Packed in Pune by Araatrika's women-led team.
 
 Why Choose the Set of 10? Perfect for students, offices, or bulk gifting, each pen is made from recycled newspaper. These pens provide a smooth writing experience. Plant the seed tip once the pen runs out of ink, instead of throwing it away.
-Seed Pen - Set of 10 is part of Eco Happy's Seed Pencils & Pens range. It's made from 100% Recycled Newspaper, turning yesterday's news into today's ideas. Made in Pune, India by Araatrika women-led production team.
+Seed Pen - Set of 10 is part of Eco Happy's Seed Pencils & Pens range. It's made from 100% Recycled Newspaper, turning yesterday's news into today's ideas. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Customized Seed Pencils -Set of 100 (Bulk Buy) and Customized Seed Pencils - 50 units. See the FAQ below for sizing, care and bulk-order questions.

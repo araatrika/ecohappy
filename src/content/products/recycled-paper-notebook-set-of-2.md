@@ -36,12 +36,12 @@ images:
 wixCollections: []
 brand: Eco Happy
 seoTitle: Recycled Paper Notebook- Set of 2 | Eco Happy
-seoDescription: "Recycled Paper Notebook- Set of 2 is a plastic-free product hand-made by Eco Happy's women-led team in Pune. Made from 100% recycled paper."
-answer: "Recycled Paper Notebook- Set of 2 is a plastic-free product hand-made by Eco Happy's women-led team in Pune. Made from 100% recycled paper."
+seoDescription: "Recycled Paper Notebook- Set of 2 is a plastic-free product packed in Pune by Eco Happy's women-led team. Made from 100% recycled paper."
+answer: "Recycled Paper Notebook- Set of 2 is a plastic-free product packed in Pune by Eco Happy's women-led team. Made from 100% recycled paper."
 specs:
   pages: 50
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse: []
 faq:
 - q: Can I buy Recycled Paper Notebook- Set of 2 in bulk for a gifting order?
@@ -74,6 +74,6 @@ Writing with a conscience just got easier with this Recycled Paper Notebook Set 
 - The Look: Clean, earthy, and perfectly sized for your bag or desk.
 - Each book contains 50 pages
 
-Recycled Paper Notebook- Set of 2 is part of Eco Happy's Notebooks, Diaries & Planners range. It runs to 50 pages. Made in Pune, India by Araatrika women-led production team.
+Recycled Paper Notebook- Set of 2 is part of Eco Happy's Notebooks, Diaries & Planners range. It runs to 50 pages. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Checkerboard Planner 2026, Plant Me Diary - A5 Notebook and Sunshine Planner 2026. See the FAQ below for sizing, care and bulk-order questions.

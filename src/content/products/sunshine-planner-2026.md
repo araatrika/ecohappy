@@ -18,7 +18,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/sunshine-planner-2026/sunshine-planner-2026-1.jpg
-  alt: Sunshine Planner 2026, Notebooks, Diaries & Planners, made in Pune by Eco
+  alt: Sunshine Planner 2026, Notebooks, Diaries & Planners, packed in Pune by Eco
     Happy
   width: 1080
   height: 1350
@@ -52,7 +52,7 @@ specs:
   seeds:
   - Tulsi
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse:
 - Use it as intended until you're ready to plant it.
 - Plant the seed-bearing part about 1–2 cm deep in soil.
@@ -97,6 +97,6 @@ Why choose between organization and the environment? Our Sunshine Planner allows
 - Stay Mindful: Includes monthly overviews, daily to-do lists, and dedicated Mandala designs to help you destress during a busy day.
 - Compact & Durable: A5 size, perfect for on-the-go planning and travel.
 
-Sunshine Planner 2026 is part of Eco Happy's Notebooks, Diaries & Planners range. It carries a seed component (Tulsi), so the plantable part can be grown after use. It runs to 150 pages. Made in Pune, India by Araatrika women-led production team.
+Sunshine Planner 2026 is part of Eco Happy's Notebooks, Diaries & Planners range. It carries a seed component (Tulsi), so the plantable part can be grown after use. It runs to 150 pages. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Checkerboard Planner 2026, Plant Me Diary - A5 Notebook and Recycled Paper Notebook- Set of 2. See the FAQ below for sizing, care and bulk-order questions.

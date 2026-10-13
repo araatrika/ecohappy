@@ -46,7 +46,7 @@ answer: "The Grow Me Kit is a self-contained planting kit, soil mix, seeds and a
 specs:
   contents: "Ready-to-plant soil mix, seed packet, pot"
   madeIn: "Pune, India"
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse:
   - "Open the kit and empty the soil mix into the included pot."
   - "Sow the seeds from the packet at the depth shown on the instructions insert."

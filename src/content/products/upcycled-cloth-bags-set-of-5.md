@@ -17,7 +17,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/upcycled-cloth-bags-set-of-5/upcycled-cloth-bags-set-of-5-1.jpg
-  alt: Upcycled Cloth Bags - Set of 5, Upcycled Fabric, made in Pune by Eco Happy
+  alt: Upcycled Cloth Bags - Set of 5, Upcycled Fabric, packed in Pune by Eco Happy
   width: 1080
   height: 1080
   original: originals/assets/products/upcycled-cloth-bags-set-of-5/upcycled-cloth-bags-set-of-5-1.jpg
@@ -26,10 +26,10 @@ wixCollections:
 brand: Eco Happy
 seoTitle: Upcycled Cloth Bags - Set of 5 | Upcycled Fabric | Eco Happy
 seoDescription: "Upcycled Cloth Bags - Set of 5: reusable bags cut and stitched in Pune from reclaimed fabric offcuts by Eco Happy's women-led team. No two look the same."
-answer: "Upcycled Cloth Bags - Set of 5 is a plastic-free product hand-made by Eco Happy's women-led team in Pune. Cut and stitched in Pune from reclaimed fabric offcuts, so no two bags in a set look the same."
+answer: "Upcycled Cloth Bags - Set of 5 is a plastic-free product packed in Pune by Eco Happy's women-led team. Cut and stitched in Pune from reclaimed fabric offcuts, so no two bags in a set look the same."
 specs:
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse: []
 faq:
 - q: Can I buy Upcycled Cloth Bags - Set of 5 in bulk for a gifting order?
@@ -65,6 +65,6 @@ Made from upcycled fabric offcuts at our Pune workshop, a reusable swap for dail
 - Handmade with Love: Proudly Made in India, supporting local women’s empowerment and artisan livelihoods.
 - Unique & Assorted: Because they are upcycled, no two bags are the same, each set is a colorful surprise!
 
-Upcycled Cloth Bags - Set of 5 is part of Eco Happy's Upcycled Fabric range. Made in Pune, India by Araatrika women-led production team.
+Upcycled Cloth Bags - Set of 5 is part of Eco Happy's Upcycled Fabric range. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Foldable Cloth Bag, Multicolor Laptop Sleeve and Upcycled Bedsheet. See the FAQ below for sizing, care and bulk-order questions.

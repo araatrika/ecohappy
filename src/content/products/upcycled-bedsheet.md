@@ -17,7 +17,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/upcycled-bedsheet/upcycled-bedsheet-1.jpg
-  alt: Upcycled Bedsheet, Upcycled Fabric, made in Pune by Eco Happy
+  alt: Upcycled Bedsheet, Upcycled Fabric, packed in Pune by Eco Happy
   width: 1272
   height: 1800
   original: originals/assets/products/upcycled-bedsheet/upcycled-bedsheet-1.jpg
@@ -40,12 +40,12 @@ wixCollections:
 - HAPPY HOME DECOR
 brand: Eco Happy
 seoTitle: Upcycled Bedsheet | Upcycled Fabric | Eco Happy
-seoDescription: "Upcycled Bedsheet is a plastic-free product hand-made by Eco Happy's women-led team in Pune, upcycled from existing fabric stock, so prints vary by batch."
-answer: "Upcycled Bedsheet is a plastic-free product hand-made by Eco Happy's women-led team in Pune. Upcycled from existing fabric stock, so prints vary by batch."
+seoDescription: "Upcycled Bedsheet is a plastic-free product packed in Pune by Eco Happy's women-led team, upcycled from existing fabric stock, so prints vary by batch."
+answer: "Upcycled Bedsheet is a plastic-free product packed in Pune by Eco Happy's women-led team. Upcycled from existing fabric stock, so prints vary by batch."
 specs:
   size: 54*78 inches (single bedsheet)
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse: []
 faq:
 - q: Can I buy Upcycled Bedsheet in bulk for a gifting order?
@@ -80,6 +80,6 @@ Give your bedroom a makeover with the Eco Happy Upcycled Bedsheet.
 - The Look: prints vary by batch, since each bedsheet is upcycled from existing fabric stock.
 - Size : 54*78 inches (single bedsheet)
 
-Upcycled Bedsheet is part of Eco Happy's Upcycled Fabric range. It measures 54*78 inches (single bedsheet). Made in Pune, India by Araatrika women-led production team.
+Upcycled Bedsheet is part of Eco Happy's Upcycled Fabric range. It measures 54*78 inches (single bedsheet). Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Foldable Cloth Bag, Multicolor Laptop Sleeve and Upcycled Cloth Bags - Set of 10. See the FAQ below for sizing, care and bulk-order questions.

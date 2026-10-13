@@ -18,7 +18,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/desk-calendar-2024/desk-calendar-2024-1.jpg
-  alt: Desk Calendar 2024, Calendars, made in Pune by Eco Happy
+  alt: Desk Calendar 2024, Calendars, packed in Pune by Eco Happy
   width: 1350
   height: 1800
   original: originals/assets/products/desk-calendar-2024/desk-calendar-2024-1.jpg
@@ -46,7 +46,7 @@ answer: Desk Calendar 2024 is a plantable, plastic-free product from Eco Happy's
   as intended, then plant it in soil, with water and a little sun, it can sprout depending on the season.
 specs:
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse:
 - Use it as intended until you're ready to plant it.
 - Plant the seed-bearing part about 1–2 cm deep in soil.

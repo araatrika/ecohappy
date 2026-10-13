@@ -18,7 +18,7 @@ customTextFields: []
 variants: []
 images:
 - src: /assets/products/furbaby-premium-gift-box/furbaby-premium-gift-box-1.jpg
-  alt: Furbaby Premium Gift Box, Gift Hampers & Boxes, made in Pune by Eco Happy
+  alt: Furbaby Premium Gift Box, Gift Hampers & Boxes, packed in Pune by Eco Happy
   width: 1350
   height: 1800
   original: originals/assets/products/furbaby-premium-gift-box/furbaby-premium-gift-box-1.jpg
@@ -37,13 +37,13 @@ brand: Eco Happy
 seoTitle: Furbaby Premium Gift Box | Gift Hampers & Boxes | Eco Happy
 seoDescription: A gift box for pet lovers with upcycled-fabric and plantable-paper
   items, hand-packed by Eco Happy's Pune team, for a pet parent who cares about waste.
-answer: Furbaby Premium Gift Box is a plastic-free product hand-made by Eco Happy's
-  women-led team in Pune.
+answer: Furbaby Premium Gift Box is a plastic-free product packed in Pune by Eco Happy's
+  women-led team.
 specs:
   seeds:
   - Pumpkin
   madeIn: Pune, India
-  madeBy: Araatrika women-led production team
+  madeBy: Araatrika women-led team
 howToUse: []
 faq:
 - q: Can I buy Furbaby Premium Gift Box in bulk for a gifting order?
@@ -79,6 +79,6 @@ A Heartfelt Surprise: upcycled-fabric and plantable-paper items for a pet lover,
 - 5. Vegan Carrot & Pumpkin Treats
 	All of this is neatly packaged with a note for the Pawrent.
 
-Furbaby Premium Gift Box is part of Eco Happy's Gift Hampers & Boxes range. It carries a seed component (Pumpkin), so the plantable part can be grown after use. Made in Pune, India by Araatrika women-led production team.
+Furbaby Premium Gift Box is part of Eco Happy's Gift Hampers & Boxes range. It carries a seed component (Pumpkin), so the plantable part can be grown after use. Packed in Pune, India by Araatrika women-led team.
 
 It ships from stock, with dispatch usually within 3 working days. If you're gifting or bulk-ordering, it's often paired with Sunshine Hamper 2026. See the FAQ below for sizing, care and bulk-order questions.
