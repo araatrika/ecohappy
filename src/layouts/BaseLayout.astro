@@ -103,6 +103,19 @@ const orgSchema = {
 
     <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+
+    {/*
+      Netlify Identity invite, password-recovery and email-confirmation links all land on the
+      site root with their token in the URL hash, but only /admin/ loads the Identity widget
+      that can act on one -- so without this the link just shows the home page and the token is
+      lost. Forward it to /admin/ with the hash intact. Inlined deliberately: no third-party
+      script on the storefront, and it does nothing at all unless such a token is present.
+    */}
+    <script is:inline>
+      if (/[#&](invite_token|recovery_token|confirmation_token|email_change_token)=/.test(location.hash)) {
+        location.replace('/admin/' + location.hash);
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
