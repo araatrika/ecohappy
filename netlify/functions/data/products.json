@@ -100,6 +100,16 @@
     "retired": false
   },
   {
+    "slug": "EcoHappyDiwaliHamper",
+    "name": "Eco Happy Diwali hamper ",
+    "sku": "",
+    "price": 899,
+    "salePrice": null,
+    "currency": "INR",
+    "availability": "MadeToOrder",
+    "retired": false
+  },
+  {
     "slug": "foldable-cloth-bag",
     "name": "Foldable Cloth Bag",
     "sku": "EH-FCB-762",
