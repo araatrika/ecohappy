@@ -29,7 +29,7 @@ collections:
         widget: string
         hint: "Lowercase letters, numbers and hyphens only, e.g. diwali-hamper. This is the live URL, so don't change it after publishing."
         pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', "Use lowercase letters, numbers and hyphens only (e.g. diwali-hamper) — no capitals or spaces."]
-      - { label: "SKU", name: sku, widget: string, required: false }
+      - { label: "SKU", name: sku, widget: string, hint: "Your own stock code, e.g. HBT001. Shown on the invoice and used in bulk enquiries." }
       - label: "Category"
         name: category
         widget: select
@@ -77,19 +77,26 @@ collections:
         fields:
           - { label: Image, name: src, widget: image }
           - { label: Alt text, name: alt, widget: string }
+      # Required: the auto-generated FAQs and the specs table are both built from these, so a
+      # product with no specs gets a thinner page. Keys match the labels in shop/[slug].astro:
+      # material, size, pages, seeds, contents, packaging, madeIn, madeBy, soldBy.
       - label: "Specs"
         name: specs
         widget: keyvalue
-        required: false
+        hint: "Add what you know: material, size, seeds, contents, pages, madeIn, madeBy. 'material' is used to answer 'What is it made of?' automatically."
       - label: "How to use (steps)"
         name: howToUse
         widget: list
         field: { label: Step, name: step, widget: string }
         required: false
-      - label: "FAQs"
+      # Optional on purpose: shop/[slug].astro always generates FAQs from this product's real
+      # price, shipping, lead time, customisation and specs. Anything added here is shown first
+      # and wins over a generated answer on the same topic.
+      - label: "FAQs (optional — generated automatically if left empty)"
         name: faq
         widget: list
         required: false
+        hint: "Only add a question if you want to answer it in your own words, or it isn't covered by price, shipping, delivery time, customisation or materials."
         fields:
           - { label: Question, name: q, widget: string }
           - { label: Answer, name: a, widget: text }
@@ -103,11 +110,11 @@ collections:
       - { label: "Date modified", name: dateModified, widget: datetime, format: "YYYY-MM-DD" }
       # Raw mode only. The rich-text editor escapes markdown on save (\*\*bold\*\*, \- item),
       # which then renders as literal backslashes on the live product page.
-      - label: Body
+      - label: "Full description"
         name: body
         widget: markdown
         modes: [raw]
-        hint: "Plain text is fine. For bold wrap in **two stars**; for a bullet start the line with '- '."
+        hint: "Aim for 150+ words: what it is, what's included, who it suits, how it's packed. Plain text is fine — **two stars** for bold, '- ' at the start of a line for a bullet."
 
   - name: guides
     label: "Blog / Guides"

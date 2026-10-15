@@ -28,6 +28,13 @@ function shippingFor(amount) {
 }
 const shippingCost = shippingFor(effectivePrice);
 
+// Declared here rather than further down because the generated FAQs below format prices with it.
+const inr = (n) =>
+  '₹' + n.toLocaleString('en-IN', {
+    minimumFractionDigits: Number.isInteger(n) ? 0 : 2,
+    maximumFractionDigits: 2,
+  });
+
 const allProducts = await getCollection('products');
 const related = p.related
   .map((slug) => allProducts.find((r) => r.data.slug === slug))
@@ -95,23 +102,64 @@ const breadcrumbSchema = {
     { '@type': 'ListItem', position: 4, name: p.name, item: new URL(`/shop/${p.slug}/`, site.hosts.canonical).toString() },
   ],
 };
-const faqSchema = p.faq.length
+// Every product gets a FAQ block without anyone writing one in /admin. These are derived only
+// from facts already on this product -- its price, the shipping tier that price falls in, its
+// lead time, its bulk/customisable flags and its specs -- so each product's answers differ and
+// nothing here is a claim we can't substantiate. Anything hand-written in the CMS is shown
+// first and suppresses the generated question on the same topic (matched by `topic`).
+const generatedFaqs = [
+  p.specs?.material && {
+    topic: 'material',
+    q: `What is ${p.name} made of?`,
+    a: `${p.name} is made of ${String(p.specs.material).replace(/\.$/, '')}.${p.specs.seeds ? ` The seeds included are ${String(p.specs.seeds).replace(/\.$/, '')}.` : ''}`,
+  },
+  {
+    topic: 'shipping',
+    q: `How much is shipping on ${p.name}?`,
+    a: shippingCost > 0
+      ? `Shipping is ${inr(shippingCost)} on this order${typeof site.shipping?.freeAbove === 'number' ? `, and free on orders above ${inr(site.shipping.freeAbove)}` : ''}. Delivery is ${site.shipping?.deliveryEstimate || '5-7 business days across India'}.`
+      : `Shipping is free on ${p.name}. Delivery is ${site.shipping?.deliveryEstimate || '5-7 business days across India'}.`,
+  },
+  {
+    topic: 'delivery',
+    q: `How soon will ${p.name} be dispatched?`,
+    a: p.availability === 'InStock'
+      ? `${p.name} ships from stock, usually dispatched within ${p.leadTimeDays} working days, then ${site.shipping?.deliveryEstimate || '5-7 business days across India'}.`
+      : `${p.name} is made to order, usually ready in about ${p.leadTimeDays} days after we confirm your order, then ${site.shipping?.deliveryEstimate || '5-7 business days across India'}.`,
+  },
+  (p.bulk || p.customisable) && {
+    topic: 'bulk',
+    q: `Can I order ${p.name} in bulk${p.customisable ? ' or add our logo' : ''}?`,
+    a: `Yes.${p.customisable ? ` ${p.name} can be customised with your logo or name.` : ''} Message us on WhatsApp at ${site.whatsapp?.enquiries || ''} with the quantity you need and we'll confirm pricing and lead time.`,
+  },
+  {
+    topic: 'returns',
+    q: `Can I return ${p.name}?`,
+    a: `Returns aren't accepted on this product. If it arrives damaged or isn't what you ordered, message us on WhatsApp within 48 hours of delivery with photos and we'll put it right. Full terms are on our Shipping and Returns page.`,
+  },
+].filter(Boolean);
+
+// Hand-written FAQs win: drop a generated one if its topic or question is already covered.
+const manualFaqs = p.faq || [];
+const manualText = manualFaqs.map((f) => String(f.q).toLowerCase()).join(' | ');
+const faqs = [
+  ...manualFaqs.map((f) => ({ q: f.q, a: f.a })),
+  ...generatedFaqs
+    .filter((g) => !manualText.includes(g.topic) && !manualFaqs.some((m) => String(m.q).toLowerCase().trim() === g.q.toLowerCase().trim()))
+    .map((g) => ({ q: g.q, a: g.a })),
+];
+
+const faqSchema = faqs.length
   ? {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      mainEntity: p.faq.map((f) => ({
+      mainEntity: faqs.map((f) => ({
         '@type': 'Question',
         name: f.q,
         acceptedAnswer: { '@type': 'Answer', text: f.a },
       })),
     }
   : null;
-
-const inr = (n) =>
-  '₹' + n.toLocaleString('en-IN', {
-    minimumFractionDigits: Number.isInteger(n) ? 0 : 2,
-    maximumFractionDigits: 2,
-  });
 
 const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing for "${p.name}" (${p.sku || p.slug}).`);
 ---
@@ -234,10 +282,10 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
       <Content />
     </div>
 
-    {p.faq.length > 0 && (
+    {faqs.length > 0 && (
       <section class="faqs" aria-labelledby="faq-heading">
         <h2 id="faq-heading">Frequently asked questions</h2>
-        {p.faq.map((f) => (
+        {faqs.map((f) => (
           <details>
             <summary>{f.q}</summary>
             <p>{f.a}</p>
