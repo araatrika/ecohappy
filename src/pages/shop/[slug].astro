@@ -3,6 +3,7 @@ import { getCollection, getEntry, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import site from '../../data/site.json';
+import { buildProductFaqs, shippingFor, inr } from '../../lib/product-faqs.js';
 
 export async function getStaticPaths() {
   const products = await getCollection('products');
@@ -19,21 +20,7 @@ const cat = site.categories.find((c) => c.slug === p.category);
 // product's own price against the site-wide tiers in site.json -- kept in sync with the same
 // calculation in netlify/functions/create-order.js and generate-invoice.js.
 const effectivePrice = onSale ? p.salePrice : p.price;
-function shippingFor(amount) {
-  const shipping = site.shipping;
-  if (!shipping) return 0;
-  if (typeof shipping.freeAbove === 'number' && amount > shipping.freeAbove) return 0;
-  const tier = (shipping.tiers || []).find((t) => amount <= t.maxAmount);
-  return tier ? tier.cost : 0;
-}
-const shippingCost = shippingFor(effectivePrice);
-
-// Declared here rather than further down because the generated FAQs below format prices with it.
-const inr = (n) =>
-  '₹' + n.toLocaleString('en-IN', {
-    minimumFractionDigits: Number.isInteger(n) ? 0 : 2,
-    maximumFractionDigits: 2,
-  });
+const shippingCost = shippingFor(effectivePrice, site);
 
 const allProducts = await getCollection('products');
 const related = p.related
@@ -102,58 +89,31 @@ const breadcrumbSchema = {
     { '@type': 'ListItem', position: 4, name: p.name, item: new URL(`/shop/${p.slug}/`, site.hosts.canonical).toString() },
   ],
 };
-// Every product gets a FAQ block without anyone writing one in /admin. These are derived only
-// from facts already on this product -- its price, the shipping tier that price falls in, its
-// lead time, its bulk/customisable flags and its specs -- so each product's answers differ and
-// nothing here is a claim we can't substantiate. Anything hand-written in the CMS is shown
-// first and suppresses the generated question on the same topic (matched by `topic`).
-const generatedFaqs = [
-  p.specs?.material && {
-    topic: 'material',
-    q: `What is ${p.name} made of?`,
-    a: `${p.name} is made of ${String(p.specs.material).replace(/\.$/, '')}.${p.specs.seeds ? ` The seeds included are ${String(p.specs.seeds).replace(/\.$/, '')}.` : ''}`,
-  },
-  {
-    topic: 'shipping',
-    q: `How much is shipping on ${p.name}?`,
-    a: shippingCost > 0
-      ? `Shipping is ${inr(shippingCost)} on this order${typeof site.shipping?.freeAbove === 'number' ? `, and free on orders above ${inr(site.shipping.freeAbove)}` : ''}. Delivery is ${site.shipping?.deliveryEstimate || '5-7 business days across India'}.`
-      : `Shipping is free on ${p.name}. Delivery is ${site.shipping?.deliveryEstimate || '5-7 business days across India'}.`,
-  },
-  {
-    topic: 'delivery',
-    q: `How soon will ${p.name} be dispatched?`,
-    a: p.availability === 'InStock'
-      ? `${p.name} ships from stock, usually dispatched within ${p.leadTimeDays} working days, then ${site.shipping?.deliveryEstimate || '5-7 business days across India'}.`
-      : `${p.name} is made to order, usually ready in about ${p.leadTimeDays} days after we confirm your order, then ${site.shipping?.deliveryEstimate || '5-7 business days across India'}.`,
-  },
-  (p.bulk || p.customisable) && {
-    topic: 'bulk',
-    q: `Can I order ${p.name} in bulk${p.customisable ? ' or add our logo' : ''}?`,
-    a: `Yes.${p.customisable ? ` ${p.name} can be customised with your logo or name.` : ''} Message us on WhatsApp at ${site.whatsapp?.enquiries || ''} with the quantity you need and we'll confirm pricing and lead time.`,
-  },
-  {
-    topic: 'returns',
-    q: `Can I return ${p.name}?`,
-    a: `Returns aren't accepted on this product. If it arrives damaged or isn't what you ordered, message us on WhatsApp within 48 hours of delivery with photos and we'll put it right. Full terms are on our Shipping and Returns page.`,
-  },
-].filter(Boolean);
+// This product's FAQs: hand-written ones first, then generated from facts already on the
+// product. See src/lib/product-faqs.js.
+const faqs = buildProductFaqs(p, site);
 
-// Hand-written FAQs win: drop a generated one if its topic or question is already covered.
-const manualFaqs = p.faq || [];
-const manualText = manualFaqs.map((f) => String(f.q).toLowerCase()).join(' | ');
-const faqs = [
-  ...manualFaqs.map((f) => ({ q: f.q, a: f.a })),
-  ...generatedFaqs
-    .filter((g) => !manualText.includes(g.topic) && !manualFaqs.some((m) => String(m.q).toLowerCase().trim() === g.q.toLowerCase().trim()))
-    .map((g) => ({ q: g.q, a: g.a })),
-];
+// FAQPage schema must not repeat the same answer across dozens of URLs, so it carries only the
+// answers unique to this product. Build every live product's FAQs to count how often each
+// answer text occurs site-wide; anything appearing more than once is boilerplate (the returns
+// line, the shared shipping tier, the hand-written "message us on WhatsApp" reply) and is kept
+// visible for shoppers but left out of the structured data, where the canonical answer on
+// /faq/ and /shipping-and-returns/ is the one that should rank.
+const answerCounts = new Map();
+for (const prod of allProducts) {
+  if (prod.data.retired) continue;
+  for (const f of buildProductFaqs(prod.data, site)) {
+    const key = f.a.trim();
+    answerCounts.set(key, (answerCounts.get(key) || 0) + 1);
+  }
+}
+const schemaFaqs = faqs.filter((f) => answerCounts.get(f.a.trim()) === 1);
 
-const faqSchema = faqs.length
+const faqSchema = schemaFaqs.length
   ? {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      mainEntity: faqs.map((f) => ({
+      mainEntity: schemaFaqs.map((f) => ({
         '@type': 'Question',
         name: f.q,
         acceptedAnswer: { '@type': 'Answer', text: f.a },
@@ -288,7 +248,10 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
         {faqs.map((f) => (
           <details>
             <summary>{f.q}</summary>
-            <p>{f.a}</p>
+            <p>
+              {f.a}
+              {f.more && <> <a href={f.more.href}>{f.more.label}</a>.</>}
+            </p>
           </details>
         ))}
       </section>
