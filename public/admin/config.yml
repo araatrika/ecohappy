@@ -24,7 +24,11 @@ collections:
     summary: "{{name}} — ₹{{price}} — {{availability}}"
     fields:
       - { label: "Product name", name: name, widget: string }
-      - { label: "URL slug", name: slug, widget: string, hint: "Must match the filename, don't change after publishing — it's the live URL." }
+      - label: "URL slug"
+        name: slug
+        widget: string
+        hint: "Lowercase letters, numbers and hyphens only, e.g. diwali-hamper. This is the live URL, so don't change it after publishing."
+        pattern: ['^[a-z0-9]+(-[a-z0-9]+)*$', "Use lowercase letters, numbers and hyphens only (e.g. diwali-hamper) — no capitals or spaces."]
       - { label: "SKU", name: sku, widget: string, required: false }
       - label: "Category"
         name: category
@@ -36,7 +40,19 @@ collections:
           - client-gift-hampers
           - everyday-desk-essentials
           - for-artists
-      - { label: "Category display name", name: categoryName, widget: string }
+      # A select, not free text: this must match site.json's category names exactly or the
+      # product's breadcrumb and category heading disagree with the rest of the site.
+      - label: "Category display name"
+        name: categoryName
+        widget: select
+        hint: "Pick the one matching the category above."
+        options:
+          - "Bulk Gifting & Branding"
+          - "Festive & Seasonal Corporate Gifting"
+          - "Employee Welcome Kits"
+          - "Client & Leadership Hampers"
+          - "Everyday Desk Essentials"
+          - "For Artists"
       - { label: "Price (INR)", name: price, widget: number, value_type: float }
       - { label: "Sale price (INR, optional)", name: salePrice, widget: number, value_type: float, required: false }
       - label: "Availability"
@@ -85,7 +101,13 @@ collections:
       - { label: "Retired (hide from site)", name: retired, widget: boolean, default: false }
       - { label: "Date published", name: datePublished, widget: datetime, format: "YYYY-MM-DD" }
       - { label: "Date modified", name: dateModified, widget: datetime, format: "YYYY-MM-DD" }
-      - { label: Body, name: body, widget: markdown }
+      # Raw mode only. The rich-text editor escapes markdown on save (\*\*bold\*\*, \- item),
+      # which then renders as literal backslashes on the live product page.
+      - label: Body
+        name: body
+        widget: markdown
+        modes: [raw]
+        hint: "Plain text is fine. For bold wrap in **two stars**; for a bullet start the line with '- '."
 
   - name: guides
     label: "Blog / Guides"
@@ -120,7 +142,12 @@ collections:
           - { label: Question, name: q, widget: string }
           - { label: Answer, name: a, widget: text }
       - { label: "Draft (hide from site)", name: draft, widget: boolean, default: false }
-      - { label: Body, name: body, widget: markdown }
+      # Raw mode for the same reason as the product body above.
+      - label: Body
+        name: body
+        widget: markdown
+        modes: [raw]
+        hint: "Plain text is fine. For bold wrap in **two stars**; for a bullet start the line with '- '."
 
   - name: pages
     label: "Site Pages"

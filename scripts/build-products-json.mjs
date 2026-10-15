@@ -21,9 +21,11 @@ const products = files.map((file) => {
   const fm = raw.split('---')[1];
   const data = parse(fm);
   return {
-    slug: data.slug,
-    name: data.name,
-    sku: data.sku || '',
+    // Trimmed to match src/content.config.ts, so this slug still matches the page's own slug
+    // (a mismatch would make create-order's price lookup 404 on an otherwise fine product).
+    slug: String(data.slug ?? '').trim(),
+    name: String(data.name ?? '').trim(),
+    sku: String(data.sku ?? '').trim(),
     price: data.price,
     salePrice: typeof data.salePrice === 'number' ? data.salePrice : null,
     currency: data.currency || 'INR',
