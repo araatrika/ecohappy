@@ -154,7 +154,7 @@ const whatsappMsg = encodeURIComponent(`Hi, I'd like to ask about bulk pricing f
                     data-src={img.src}
                     data-alt={img.alt || `${p.name}, Eco Happy`}
                   >
-                    <img src={img.src} alt="" loading="lazy" width="140" height="140" decoding="async" />
+                    <img src={img.src} alt={img.alt || `${p.name}, Eco Happy`} loading="lazy" width="140" height="140" decoding="async" />
                   </button>
                 ))}
               </div>
