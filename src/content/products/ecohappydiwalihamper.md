@@ -10,6 +10,7 @@ leadTimeDays: 3
 bulk: true
 customisable: true
 brand: Eco Happy
+seoTitle: "Eco Happy Diwali hamper | Eco Happy"
 answer: >
   Celebrate Diwali with a hamper that's both thoughtful and sustainable,
   packed in Pune by Eco Happy's women-led team!
