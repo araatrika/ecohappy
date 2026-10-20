@@ -5,7 +5,7 @@ sku: EH-DC-746
 category: festive-corporate-gifting
 categoryName: Festive & Seasonal Corporate Gifting
 price: 499
-salePrice: 399.2
+salePrice: 399
 currency: INR
 availability: InStock
 trackInventory: false

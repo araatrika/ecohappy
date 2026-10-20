@@ -5,7 +5,7 @@ sku: EH-SH-202
 category: client-gift-hampers
 categoryName: Client & Leadership Hampers
 price: 999
-salePrice: 799.2
+salePrice: 799
 currency: INR
 availability: InStock
 trackInventory: false

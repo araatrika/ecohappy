@@ -14,7 +14,7 @@
     "name": "Bamboo Toothbrush - Set of 2",
     "sku": "HBT001",
     "price": 199,
-    "salePrice": 139.3,
+    "salePrice": 139,
     "currency": "INR",
     "availability": "InStock",
     "retired": false
@@ -34,7 +34,7 @@
     "name": "Checkerboard Planner 2026",
     "sku": "EH-CP-881",
     "price": 499,
-    "salePrice": 374.25,
+    "salePrice": 374,
     "currency": "INR",
     "availability": "InStock",
     "retired": false
@@ -84,7 +84,7 @@
     "name": "Desk Calendar 2026",
     "sku": "EH-DC-746",
     "price": 499,
-    "salePrice": 399.2,
+    "salePrice": 399,
     "currency": "INR",
     "availability": "InStock",
     "retired": false
@@ -154,7 +154,7 @@
     "name": "One Beginner & one Advanced Mandala Book",
     "sku": "EH-OBO-553",
     "price": 699,
-    "salePrice": 419.4,
+    "salePrice": 419,
     "currency": "INR",
     "availability": "InStock",
     "retired": true
@@ -194,7 +194,7 @@
     "name": "Paddy Toran",
     "sku": "ESPT001",
     "price": 649,
-    "salePrice": 551.65,
+    "salePrice": 552,
     "currency": "INR",
     "availability": "InStock",
     "retired": false
@@ -214,7 +214,7 @@
     "name": "Plant Me Diary - A5 Notebook",
     "sku": "HPT002",
     "price": 329,
-    "salePrice": 296.1,
+    "salePrice": 296,
     "currency": "INR",
     "availability": "InStock",
     "retired": false
@@ -274,7 +274,7 @@
     "name": "Scrub Pads - Set of 4",
     "sku": "HSCP001",
     "price": 149,
-    "salePrice": 104.3,
+    "salePrice": 104,
     "currency": "INR",
     "availability": "InStock",
     "retired": false
@@ -284,7 +284,7 @@
     "name": "Seed Balls - Set of 10 balls",
     "sku": "HSB001",
     "price": 249,
-    "salePrice": 186.75,
+    "salePrice": 187,
     "currency": "INR",
     "availability": "InStock",
     "retired": false
@@ -334,7 +334,7 @@
     "name": "Seed Rakhi-Evil Eye Band",
     "sku": "EH-SRE-177",
     "price": 119,
-    "salePrice": 107.1,
+    "salePrice": 107,
     "currency": "INR",
     "availability": "InStock",
     "retired": false
@@ -394,7 +394,7 @@
     "name": "Sunshine Hamper 2026",
     "sku": "EH-SH-202",
     "price": 999,
-    "salePrice": 799.2,
+    "salePrice": 799,
     "currency": "INR",
     "availability": "InStock",
     "retired": false
@@ -404,7 +404,7 @@
     "name": "Sunshine Planner 2026",
     "sku": "EH-SP-652",
     "price": 499,
-    "salePrice": 374.25,
+    "salePrice": 374,
     "currency": "INR",
     "availability": "InStock",
     "retired": false

@@ -14,12 +14,9 @@ export function shippingFor(amount, site) {
   return tier ? tier.cost : 0;
 }
 
-export const inr = (n) =>
-  '₹' +
-  n.toLocaleString('en-IN', {
-    minimumFractionDigits: Number.isInteger(n) ? 0 : 2,
-    maximumFractionDigits: 2,
-  });
+// Prices are shown in whole rupees sitewide. Rounded rather than truncated so a decimal typed
+// into /admin still displays as the nearest rupee instead of reintroducing paise.
+export const inr = (n) => '₹' + Math.round(n).toLocaleString('en-IN');
 
 // Canonical answers that already exist on the site, linked instead of duplicated.
 const SHIPPING_COST_ANSWER = '/faq/#how-much-does-shipping-cost';

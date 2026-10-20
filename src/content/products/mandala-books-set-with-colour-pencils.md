@@ -5,7 +5,7 @@ sku: EH-OBO-553
 category: employee-welcome-kits
 categoryName: Employee Welcome Kits
 price: 699
-salePrice: 419.4
+salePrice: 419
 currency: INR
 availability: InStock
 stockQuantity: 90

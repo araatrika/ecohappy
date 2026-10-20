@@ -16,14 +16,11 @@ const { product } = Astro.props;
 const { name, price, salePrice, images, ribbon, answer } = product.data;
 const img = images?.[0];
 const onSale = typeof salePrice === 'number' && salePrice < price;
-// 11 products carry percentage-derived sale prices (399.2, 104.3 ...) and
-// create-order.js charges those exact paise. Show the true amount, correctly
-// formatted -- integers plain, fractions to 2dp -- never a stray "₹399.2".
-const inr = (n: number) =>
-  '₹' + n.toLocaleString('en-IN', {
-    minimumFractionDigits: Number.isInteger(n) ? 0 : 2,
-    maximumFractionDigits: 2,
-  });
+// Prices are shown in whole rupees sitewide, and the percentage-derived sale prices that used
+// to carry paise (399.2, 104.3 ...) are now stored rounded, so this display and the amount
+// create-order.js charges agree. Rounded, not truncated, so a decimal typed into /admin still
+// shows as the nearest rupee.
+const inr = (n: number) => '₹' + Math.round(n).toLocaleString('en-IN');
 ---
 <a class="product-card card" href={`/shop/${product.data.slug}/`}>
   <div class="media">

@@ -5,7 +5,7 @@ sku: HSCP001
 category: employee-welcome-kits
 categoryName: Employee Welcome Kits
 price: 149
-salePrice: 104.3
+salePrice: 104
 currency: INR
 availability: InStock
 stockQuantity: 92

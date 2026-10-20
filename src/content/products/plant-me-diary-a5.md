@@ -5,7 +5,7 @@ sku: HPT002
 category: everyday-desk-essentials
 categoryName: Everyday Desk Essentials
 price: 329
-salePrice: 296.1
+salePrice: 296
 currency: INR
 availability: InStock
 stockQuantity: 96

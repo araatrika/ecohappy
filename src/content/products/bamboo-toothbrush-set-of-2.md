@@ -5,7 +5,7 @@ sku: HBT001
 category: employee-welcome-kits
 categoryName: Employee Welcome Kits
 price: 199
-salePrice: 139.3
+salePrice: 139
 currency: INR
 availability: InStock
 stockQuantity: 99

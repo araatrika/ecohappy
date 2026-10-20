@@ -5,7 +5,7 @@ sku: EH-SP-652
 category: festive-corporate-gifting
 categoryName: Festive & Seasonal Corporate Gifting
 price: 499
-salePrice: 374.25
+salePrice: 374
 currency: INR
 availability: InStock
 trackInventory: false

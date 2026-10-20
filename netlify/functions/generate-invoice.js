@@ -14,6 +14,12 @@ function escapeHtml(str) {
   }[c]));
 }
 
+// Amounts print in whole rupees, matching how prices are shown across the site. Rounded, so a
+// stray paise value in the catalogue still prints as a clean rupee figure on the invoice.
+function inrAmount(n) {
+  return Math.round(Number(n) || 0).toLocaleString('en-IN');
+}
+
 function invoiceNumber(paymentId, date) {
   const stamp = date.toISOString().slice(0, 10).replace(/-/g, '');
   const suffix = String(paymentId || 'MANUAL').slice(-8).toUpperCase();
@@ -153,17 +159,17 @@ export default async (req) => {
       <tr>
         <td>${escapeHtml(product.name)}${product.sku ? `<br><span style="color:var(--gray-500);font-size:0.8em">SKU: ${escapeHtml(product.sku)}</span>` : ''}</td>
         <td class="num">${qty}</td>
-        <td class="num">&#8377;${unitPrice.toFixed(2)}</td>
-        <td class="num">&#8377;${subtotal.toFixed(2)}</td>
+        <td class="num">&#8377;${inrAmount(unitPrice)}</td>
+        <td class="num">&#8377;${inrAmount(subtotal)}</td>
       </tr>
     </tbody>
   </table>
 
   <div class="totals">
     <table>
-      <tr><td>Subtotal</td><td class="num">&#8377;${subtotal.toFixed(2)}</td></tr>
-      <tr><td>Shipping${shippingCost === 0 ? ' (free)' : ''}</td><td class="num">&#8377;${shippingCost.toFixed(2)}</td></tr>
-      <tr class="grand"><td>Total paid</td><td class="num">&#8377;${total.toFixed(2)}</td></tr>
+      <tr><td>Subtotal</td><td class="num">&#8377;${inrAmount(subtotal)}</td></tr>
+      <tr><td>Shipping${shippingCost === 0 ? ' (free)' : ''}</td><td class="num">&#8377;${inrAmount(shippingCost)}</td></tr>
+      <tr class="grand"><td>Total paid</td><td class="num">&#8377;${inrAmount(total)}</td></tr>
     </table>
   </div>
 

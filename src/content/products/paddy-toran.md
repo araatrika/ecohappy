@@ -5,7 +5,7 @@ sku: ESPT001
 category: festive-corporate-gifting
 categoryName: Festive & Seasonal Corporate Gifting
 price: 649
-salePrice: 551.65
+salePrice: 552
 currency: INR
 availability: InStock
 stockQuantity: 96

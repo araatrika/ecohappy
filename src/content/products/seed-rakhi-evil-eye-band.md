@@ -5,7 +5,7 @@ sku: EH-SRE-177
 category: festive-corporate-gifting
 categoryName: Festive & Seasonal Corporate Gifting
 price: 119
-salePrice: 107.1
+salePrice: 107
 currency: INR
 availability: InStock
 stockQuantity: 100

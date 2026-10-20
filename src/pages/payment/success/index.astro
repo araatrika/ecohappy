@@ -39,8 +39,8 @@ import site from '../../../data/site.json';
   import { readResult } from '../../../scripts/payment-result';
 
   const $ = (id) => document.getElementById(id);
-  const inr = (n) =>
-    '₹' + n.toLocaleString('en-IN', { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 });
+  // Whole rupees, matching the rest of the site.
+  const inr = (n) => '₹' + Math.round(n).toLocaleString('en-IN');
 
   const result = readResult();
 
