@@ -49,8 +49,8 @@ wixCollections:
 brand: Eco Happy
 seoTitle: Desk Calendar 2026 | Calendars | Eco Happy
 seoDescription: A 2026 desk calendar printed on tree-free agri-waste paper, hand-assembled
-  in Pune. A plastic-free, tear-off desk accessory for the year ahead.
-answer: Desk Calendar 2026 is a plantable, plastic-free product from Eco Happy's Pune
+  in Pune. A tear-off desk accessory for the year ahead.
+answer: Desk Calendar 2026 is a plantable product from Eco Happy's Pune
   workshop. Use it as intended, then plant it in soil, with water and a little sun,
   it can sprout depending on the season.
 specs:

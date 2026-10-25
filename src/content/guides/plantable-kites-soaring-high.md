@@ -49,9 +49,3 @@ faq:
 Eco Happy's plantable kites are made from seed paper embedded with flower and herb seeds, you fly them like any ordinary kite during the Sankranti season, and once the string is cut or the season ends, the kite itself can be torn up and planted instead of thrown away. They're sold in sets of 10, hand-assembled at our Pune workshop, and are one of our few genuinely seasonal products: available in the run-up to Makar Sankranti (mid-January) each year.
 
 It's an honour to have been covered by the Indian Express for this offering, without paying for the placement.
-
-Grateful 🌱✨
-
-Onwards and upwards 2025!
-
-#momboss #entreprenuer #media #sustainable #eco #gifts #ecofriendly #seedpen

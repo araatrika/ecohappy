@@ -40,8 +40,8 @@ wixCollections:
 - HAPPY HOME DECOR
 brand: Eco Happy
 seoTitle: Upcycled Bedsheet | Upcycled Fabric | Eco Happy
-seoDescription: "Upcycled Bedsheet is a plastic-free product packed in Pune by Eco Happy's women-led team, upcycled from existing fabric stock, so prints vary by batch."
-answer: "Upcycled Bedsheet is a plastic-free product packed in Pune by Eco Happy's women-led team. Upcycled from existing fabric stock, so prints vary by batch."
+seoDescription: "Upcycled Bedsheet is a product packed in Pune by Eco Happy's women-led team, upcycled from existing fabric stock, so prints vary by batch."
+answer: "Upcycled Bedsheet is a product packed in Pune by Eco Happy's women-led team. Upcycled from existing fabric stock, so prints vary by batch."
 specs:
   size: 54*78 inches (single bedsheet)
   madeIn: Pune, India

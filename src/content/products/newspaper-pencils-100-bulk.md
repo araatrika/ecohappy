@@ -37,8 +37,8 @@ wixCollections:
 - HAPPY BUY IN BULK
 brand: Eco Happy
 seoTitle: Pencils - Set of 100 (Bulk Buy) | Eco Happy
-seoDescription: Pencils - Set of 100 (Bulk Buy) is a plastic-free product packed in Pune by Eco Happy's women-led team. 100% Recycled Newspaper.
-answer: Pencils - Set of 100 (Bulk Buy) is a plastic-free product packed in Pune by Eco Happy's women-led team. 100% Recycled Newspaper.
+seoDescription: Pencils - Set of 100 (Bulk Buy) is a product packed in Pune by Eco Happy's women-led team. 100% Recycled Newspaper. Made in small batches.
+answer: Pencils - Set of 100 (Bulk Buy) is a product packed in Pune by Eco Happy's women-led team. 100% Recycled Newspaper.
 specs:
   material: 100% Recycled Newspaper
   madeIn: Pune, India

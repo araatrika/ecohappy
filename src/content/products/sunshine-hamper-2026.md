@@ -37,7 +37,7 @@ brand: Eco Happy
 seoTitle: Sunshine Hamper 2026 | Gift Hampers & Boxes | Eco Happy
 seoDescription: A gift hamper with the Sunshine Planner, plantable seed pens and upcycled-fabric
   items, hand-packed in Pune by Eco Happy's team for festive gifting.
-answer: Sunshine Hamper 2026 is a plantable, plastic-free product from Eco Happy's
+answer: Sunshine Hamper 2026 is a plantable product from Eco Happy's
   Pune workshop. Use it as intended, then plant it in soil, with water and a little
   sun, it can sprout depending on the season.
 specs:

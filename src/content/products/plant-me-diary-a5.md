@@ -44,10 +44,10 @@ wixCollections:
 - HAPPY STATIONERY
 brand: Eco Happy
 seoTitle: Plant Me Diary - A5 Notebook | Eco Happy
-seoDescription: Plant Me Diary - A5 Notebook is a plantable, plastic-free product
+seoDescription: Plant Me Diary - A5 Notebook is a plantable product
   from Eco Happy's Pune workshop. Use it as intended, then plant it in soil, with
   water an
-answer: Plant Me Diary - A5 Notebook is a plantable, plastic-free product from Eco
+answer: Plant Me Diary - A5 Notebook is a plantable product from Eco
   Happy's Pune workshop. Use it as intended, then plant it in soil, with water and
   a little sun, it can sprout depending on the season.
 specs:

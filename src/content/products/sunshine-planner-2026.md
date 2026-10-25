@@ -44,7 +44,7 @@ seoTitle: Sunshine Planner 2026 | Eco Happy
 seoDescription: A 2026 planner with a tulsi-seed-paper cover, printed on tree-free
   agri-waste paper and hand-assembled in Pune, plant the cover once you're done with
   it.
-answer: Sunshine Planner 2026 is a plantable, plastic-free product from Eco Happy's
+answer: Sunshine Planner 2026 is a plantable product from Eco Happy's
   Pune workshop. Use it as intended, then plant it in soil, with water and a little
   sun, it can sprout depending on the season.
 specs:

@@ -34,10 +34,10 @@ images:
 wixCollections: []
 brand: Eco Happy
 seoTitle: Plantable Coasters-  30 units | Home & Travel | Eco Happy
-seoDescription: Plantable Coasters-  30 units is a plantable, plastic-free product
+seoDescription: Plantable Coasters-  30 units is a plantable product
   from Eco Happy's Pune workshop. Use it as intended, then plant it in soil, with
   water a
-answer: Plantable Coasters-  30 units is a plantable, plastic-free product from Eco
+answer: Plantable Coasters-  30 units is a plantable product from Eco
   Happy's Pune workshop. Use it as intended, then plant it in soil, with water and
   a little sun, it can sprout depending on the season.
 specs:

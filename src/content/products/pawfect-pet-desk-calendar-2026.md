@@ -39,7 +39,7 @@ brand: Eco Happy
 seoTitle: Pawfect Pet Desk Calendar 2026 | Calendars | Eco Happy
 seoDescription: A 2026 desk calendar featuring Indian street dogs, printed on tree-free
   agri-waste paper and hand-assembled in Pune by Eco Happy's women-led team.
-answer: Pawfect Pet Desk Calendar 2026 is a plantable, plastic-free product from Eco
+answer: Pawfect Pet Desk Calendar 2026 is a plantable product from Eco
   Happy's Pune workshop. Use it as intended, then plant it in soil, with water and
   a little sun, it can sprout depending on the season.
 specs:

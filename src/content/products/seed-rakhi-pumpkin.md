@@ -34,9 +34,9 @@ images:
 wixCollections: []
 brand: Eco Happy
 seoTitle: Pumpkin Seed Rakhi | Festive & Seasonal | Eco Happy
-seoDescription: Pumpkin Seed Rakhi is a plantable, plastic-free product from Eco Happy's
+seoDescription: Pumpkin Seed Rakhi is a plantable product from Eco Happy's
   Pune workshop. Use it as intended, then plant it in soil, with water and a little
-answer: Pumpkin Seed Rakhi is a plantable, plastic-free product from Eco Happy's Pune
+answer: Pumpkin Seed Rakhi is a plantable product from Eco Happy's Pune
   workshop. Use it as intended, then plant it in soil, with water and a little sun,
   it can sprout depending on the season.
 specs:

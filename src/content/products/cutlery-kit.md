@@ -38,7 +38,7 @@ brand: Eco Happy
 seoTitle: Cutlery Kit | Home & Travel | Eco Happy
 seoDescription: A reusable steel spoon-and-fork travel cutlery kit in a cloth pouch,
   hand-assembled in Pune, carry your own set instead of single-use plastic cutlery.
-answer: Cutlery Kit is a plastic-free product packed in Pune by Eco Happy's women-led team. High-Grade Steel Spoon & Fork.
+answer: Cutlery Kit is a product packed in Pune by Eco Happy's women-led team. High-Grade Steel Spoon & Fork.
 specs:
   madeIn: Pune, India
   madeBy: Araatrika women-led team

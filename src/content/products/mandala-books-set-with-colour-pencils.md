@@ -34,7 +34,7 @@ brand: Eco Happy
 seoTitle: One Beginner & one Advanced Mandala Book | Eco Happy
 seoDescription: A beginner and an advanced mandala colouring book with colour pencils,
   printed on recycled paper and hand-packed in Pune by Eco Happy's team.
-answer: One Beginner & one Advanced Mandala Book is a plastic-free product packed in Pune by Eco Happy's women-led team.
+answer: One Beginner & one Advanced Mandala Book is a product packed in Pune by Eco Happy's women-led team.
 specs:
   madeIn: Pune, India
   madeBy: Araatrika women-led team

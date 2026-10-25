@@ -1,6 +1,6 @@
 ---
 name: "Eco Happy Diwali hamper"
-slug: EcoHappyDiwaliHamper
+slug: ecohappydiwalihamper
 category: festive-corporate-gifting
 categoryName: "Festive & Seasonal Corporate Gifting"
 price: 899
@@ -11,6 +11,7 @@ bulk: true
 customisable: true
 brand: Eco Happy
 seoTitle: "Eco Happy Diwali hamper | Eco Happy"
+seoDescription: "Celebrate Diwali with a hamper that's both thoughtful and sustainable, packed in Pune by Eco Happy's women-led team! Seed paper diary, toran, diya and soap."
 answer: >
   Celebrate Diwali with a hamper that's both thoughtful and sustainable,
   packed in Pune by Eco Happy's women-led team!
@@ -27,7 +28,7 @@ related:
 faq: []
 retired: false
 datePublished: "2026-10-14"
-dateModified: "2026-10-18"
+dateModified: "2026-10-25"
 ---
 **Hamper Includes:**
 

@@ -36,8 +36,8 @@ wixCollections:
 - HAPPY PLASTIC FREE ALTERNATIVES
 brand: Eco Happy
 seoTitle: Reusable Tea Infuser | Home & Travel | Eco Happy
-seoDescription: 'Reusable Tea Infuser is a plastic-free product from Eco Happy. Made from high-grade, food-safe stainless steel that won''t '
-answer: Reusable Tea Infuser is a plastic-free product from Eco Happy. Made from high-grade, food-safe stainless steel that won't rust or
+seoDescription: 'Reusable Tea Infuser is a product from Eco Happy. Made from high-grade, food-safe stainless steel that won''t rust or leach.'
+answer: Reusable Tea Infuser is a product from Eco Happy. Made from high-grade, food-safe stainless steel that won't rust or
   leach.
 specs:
   soldBy: Araatrika (Eco Happy), Pune, India
@@ -65,7 +65,7 @@ migration:
   - write alt text (none in Wix)
 ---
 
-A reusable steel tea infuser, no disposable tea bags needed. Our tea infuser is the ultimate tool for a plastic-free kitchen.
+A reusable steel tea infuser, no disposable tea bags needed. Our tea infuser is the ultimate tool for a kitchen without disposable tea bags.
 
 - Premium Quality: Made from high-grade, food-safe stainless steel that won't rust or leach.
 - Fine Mesh Design: Ensures a smooth, sediment-free tea while allowing full flavor extraction.

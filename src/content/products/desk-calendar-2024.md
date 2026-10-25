@@ -40,9 +40,9 @@ images:
 wixCollections: []
 brand: Eco Happy
 seoTitle: Desk Calendar 2024 | Calendars | Eco Happy
-seoDescription: Desk Calendar 2024 is a plantable, plastic-free product from Eco Happy's Pune workshop.
+seoDescription: Desk Calendar 2024 is a plantable product from Eco Happy's Pune workshop.
   Use it as intended, then plant it in soil, with water and a little
-answer: Desk Calendar 2024 is a plantable, plastic-free product from Eco Happy's Pune workshop. Use it
+answer: Desk Calendar 2024 is a plantable product from Eco Happy's Pune workshop. Use it
   as intended, then plant it in soil, with water and a little sun, it can sprout depending on the season.
 specs:
   madeIn: Pune, India

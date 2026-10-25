@@ -31,7 +31,7 @@ brand: Eco Happy
 seoTitle: Eco happy kites- set of 10 | Festive & Seasonal | Eco Happy
 seoDescription: A set of 10 kites made from seed paper embedded with flower seeds,
   hand-assembled in Pune, fly them, then plant the paper instead of throwing it out.
-answer: Eco happy kites- set of 10 is a plantable, plastic-free product from Eco Happy's
+answer: Eco happy kites- set of 10 is a plantable product from Eco Happy's
   Pune workshop. Use it as intended, then plant it in soil, with water and a little
   sun, it can sprout depending on the season.
 specs:

@@ -42,7 +42,7 @@ brand: Eco Happy
 seoTitle: DIY animal keychain kit | Kits & Seeds | Eco Happy
 seoDescription: A do-it-yourself keychain kit using upcycled fabric scraps, hand-packed
   in Pune by Eco Happy's team, a craft activity that turns offcuts into a keepsake.
-answer: DIY animal keychain kit is a plastic-free product packed in Pune by Eco Happy's
+answer: DIY animal keychain kit is a product packed in Pune by Eco Happy's
   women-led team.
 specs:
   madeIn: Pune, India

@@ -26,7 +26,7 @@ wixCollections:
 brand: Eco Happy
 seoTitle: Upcycled Cloth Bags - Set of 10 | Eco Happy
 seoDescription: "Upcycled Cloth Bags - Set of 10: reusable bags cut and stitched in Pune from reclaimed fabric offcuts by Eco Happy's women-led team. No two look the same."
-answer: "Upcycled Cloth Bags - Set of 10 is a plastic-free product packed in Pune by Eco Happy's women-led team. Cut and stitched in Pune from reclaimed fabric offcuts, so no two bags in a set look the same."
+answer: "Upcycled Cloth Bags - Set of 10 is a product packed in Pune by Eco Happy's women-led team. Cut and stitched in Pune from reclaimed fabric offcuts, so no two bags in a set look the same."
 specs:
   madeIn: Pune, India
   madeBy: Araatrika women-led team

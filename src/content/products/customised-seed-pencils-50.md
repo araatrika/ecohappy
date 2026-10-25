@@ -45,10 +45,10 @@ wixCollections:
 - HAPPY STATIONERY
 brand: Eco Happy
 seoTitle: Customized Seed Pencils - 50 units | Eco Happy
-seoDescription: Customized Seed Pencils - 50 units is a plantable, plastic-free product
+seoDescription: Customized Seed Pencils - 50 units is a plantable product
   from Eco Happy's Pune workshop. Use it as intended, then plant it in soil, with
   wa
-answer: Customized Seed Pencils - 50 units is a plantable, plastic-free product from
+answer: Customized Seed Pencils - 50 units is a plantable product from
   Eco Happy's Pune workshop. Use it as intended, then plant it in soil, with water
   and a little sun, it can sprout depending on the season.
 specs:

@@ -41,10 +41,10 @@ images:
 wixCollections: []
 brand: Eco Happy
 seoTitle: Checkerboard Planner 2026 | Eco Happy
-seoDescription: Checkerboard Planner 2026 is a plantable, plastic-free product from
+seoDescription: Checkerboard Planner 2026 is a plantable product from
   Eco Happy's Pune workshop. Use it as intended, then plant it in soil, with water
   and a
-answer: Checkerboard Planner 2026 is a plantable, plastic-free product from Eco Happy's
+answer: Checkerboard Planner 2026 is a plantable product from Eco Happy's
   Pune workshop. Use it as intended, then plant it in soil, with water and a little
   sun, it can sprout depending on the season.
 specs:

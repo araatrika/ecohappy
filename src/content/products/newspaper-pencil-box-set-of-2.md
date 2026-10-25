@@ -36,8 +36,8 @@ wixCollections:
 - HAPPY STATIONERY
 brand: Eco Happy
 seoTitle: Pencil Box - Set of 2 boxes | Eco Happy
-seoDescription: Pencil Box - Set of 2 boxes is a plastic-free product packed in Pune by Eco Happy's women-led team. 100% Recycled Newspaper.
-answer: Pencil Box - Set of 2 boxes is a plastic-free product packed in Pune by Eco Happy's
+seoDescription: Pencil Box - Set of 2 boxes is a product packed in Pune by Eco Happy's women-led team. 100% Recycled Newspaper. Made in small batches.
+answer: Pencil Box - Set of 2 boxes is a product packed in Pune by Eco Happy's
   women-led team. 100% Recycled Newspaper.
 specs:
   material: 100% Recycled Newspaper

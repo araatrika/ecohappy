@@ -47,7 +47,7 @@ brand: Eco Happy
 seoTitle: Upcycled Patchwork Fabric | Upcycled Fabric | Eco Happy
 seoDescription: Offcut patchwork fabric panels upcycled from Eco Happy's Pune production
   floor, for sewing, patching, or craft projects instead of throwing scraps away.
-answer: Upcycled Patchwork Fabric is a plastic-free product packed in Pune by Eco Happy's
+answer: Upcycled Patchwork Fabric is a product packed in Pune by Eco Happy's
   women-led team.
 specs:
   size: 42" by 48"

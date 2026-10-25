@@ -44,10 +44,8 @@ wixCollections:
 - HAPPY BUY IN BULK
 brand: Eco Happy
 seoTitle: Customized Seed Pencils -Set of 100 (Bulk Buy) | Eco Happy
-seoDescription: Customized Seed Pencils -Set of 100 (Bulk Buy) is a plantable, plastic-free
-  product from Eco Happy's Pune workshop. Use it as intended, then plant it in so
-answer: Customized Seed Pencils -Set of 100 (Bulk Buy) is a plantable, plastic-free
-  product from Eco Happy's Pune workshop. Use it as intended, then plant it in soil, with water and a little sun, it can sprout depending on the season.
+seoDescription: Customized Seed Pencils -Set of 100 (Bulk Buy) is a plantable product from Eco Happy's Pune workshop. Use it as intended, then plant it in so
+answer: Customized Seed Pencils -Set of 100 (Bulk Buy) is a plantable product from Eco Happy's Pune workshop. Use it as intended, then plant it in soil, with water and a little sun, it can sprout depending on the season.
 specs:
   material: 100% Recycled Newspaper
   madeIn: Pune, India

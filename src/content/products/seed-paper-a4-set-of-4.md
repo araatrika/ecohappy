@@ -138,10 +138,10 @@ wixCollections:
 - HAPPY STATIONERY
 brand: Eco Happy
 seoTitle: Seed Paper A4 Size  - Set Of 4 | Kits & Seeds | Eco Happy
-seoDescription: 'Seed Paper A4 Size  - Set Of 4 is a plantable, plastic-free product
+seoDescription: 'Seed Paper A4 Size  - Set Of 4 is a plantable product
   from Eco Happy''s Pune workshop. Use it as intended, then plant it in soil, with
   water '
-answer: Seed Paper A4 Size  - Set Of 4 is a plantable, plastic-free product from Eco
+answer: Seed Paper A4 Size  - Set Of 4 is a plantable product from Eco
   Happy's Pune workshop. Use it as intended, then plant it in soil, with water and
   a little sun, it can sprout depending on the season.
 specs:

@@ -36,8 +36,8 @@ images:
 wixCollections: []
 brand: Eco Happy
 seoTitle: Recycled Paper Notebook- Set of 2 | Eco Happy
-seoDescription: "Recycled Paper Notebook- Set of 2 is a plastic-free product packed in Pune by Eco Happy's women-led team. Made from 100% recycled paper."
-answer: "Recycled Paper Notebook- Set of 2 is a plastic-free product packed in Pune by Eco Happy's women-led team. Made from 100% recycled paper."
+seoDescription: "Recycled Paper Notebook- Set of 2 is a product packed in Pune by Eco Happy's women-led team. Made from 100% recycled paper."
+answer: "Recycled Paper Notebook- Set of 2 is a product packed in Pune by Eco Happy's women-led team. Made from 100% recycled paper."
 specs:
   pages: 50
   madeIn: Pune, India

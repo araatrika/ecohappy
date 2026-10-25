@@ -33,7 +33,7 @@ wixCollections:
 brand: Eco Happy
 seoTitle: Paddy Toran | Festive & Seasonal | Eco Happy
 seoDescription: "Paddy Toran: a 3.5-foot festive door hanging woven from dried paddy (rice) stalks for main doors and pooja rooms. A décor piece, not a plantable product."
-answer: "Paddy Toran is a 3.5-foot door hanging woven from young, dried paddy (rice) stalks in a traditional style, sized for standard main doors and pooja rooms and made to stay beautiful for up to 5 years. It's a festive décor piece rather than a plantable product, and it ships within 7 days."
+answer: "Paddy Toran is a 3.5-foot door hanging woven from young, dried paddy (rice) stalks in a traditional style, sized for standard main doors and pooja rooms. It's a festive décor piece rather than a plantable product, and it ships within 7 days."
 specs:
   size: 3.5 Feet Length, perfectly sized for standard main doors and pooja rooms.
   madeIn: Pune, India
@@ -44,8 +44,6 @@ faq:
   a: "Young, dried paddy (rice) plants, woven into a 3.5-foot hanging using traditional techniques."
 - q: "Can I plant the Paddy Toran?"
   a: "No. It's a décor piece made from dried paddy stalks rather than a seed product, so it isn't meant to be planted."
-- q: "How long does it last?"
-  a: "It's designed to stay beautiful for up to 5 years."
 - q: "How soon does it ship?"
   a: "Within 7 days of your order."
 - q: "Can I buy Paddy Toran in bulk for a gifting order?"
@@ -75,8 +73,8 @@ Paddy (Rice-Stalk) Décor, Handcrafted by Rural Artisans 🌳
 
 Elevate your entrance with a product that supports local communities. Our Paddy Torans are meticulously crafted using traditional weaving techniques that have been passed down through generations.
 
-- Natural & Durable: Made from young, dried paddy plants; designed to stay beautiful for up to 5 years.
-- Biodegradable: made from paddy (rice-stalk) instead of the plastic buntings sold for the same use.
+- Natural: Made from young, dried paddy plants.
+- Plant-based: made from paddy (rice-stalk) instead of the plastic buntings sold for the same use.
 - Empowering Craft: Every toran is woven by rural artisans, directly supporting their livelihood and preserving Indian heritage.
 - Size: 3.5 Feet Length, perfectly sized for standard main doors and pooja rooms.
 - Ships within 7 days

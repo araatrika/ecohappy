@@ -41,10 +41,10 @@ images:
 wixCollections: []
 brand: Eco Happy
 seoTitle: Seed Rakhi-Evil Eye Band | Festive & Seasonal | Eco Happy
-seoDescription: 'Seed Rakhi-Evil Eye Band is a plantable, plastic-free product from
+seoDescription: 'Seed Rakhi-Evil Eye Band is a plantable product from
   Eco Happy''s Pune workshop. Use it as intended, then plant it in soil, with water
   and a '
-answer: Seed Rakhi-Evil Eye Band is a plantable, plastic-free product from Eco Happy's
+answer: Seed Rakhi-Evil Eye Band is a plantable product from Eco Happy's
   Pune workshop. Use it as intended, then plant it in soil, with water and a little
   sun, it can sprout depending on the season.
 specs:

@@ -31,10 +31,9 @@ images:
 wixCollections: []
 brand: Eco Happy
 seoTitle: Advanced Mandala Book + One box of Colour Pencils
-seoDescription: Advanced Mandala Book + One box of Colour Pencils is a plastic-free
-  product packed in Pune by Eco Happy's women-led team. High-quality paper featuring
+seoDescription: Advanced Mandala Book + One box of Colour Pencils is a product packed in Pune by Eco Happy's women-led team. High-quality paper featuring
   b
-answer: Advanced Mandala Book + One box of Colour Pencils is a plastic-free product
+answer: Advanced Mandala Book + One box of Colour Pencils is a product
   packed in Pune by Eco Happy's women-led team. High-quality paper featuring beautiful
   mandalas perfect for beginners.
 specs:

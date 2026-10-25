@@ -37,7 +37,7 @@ brand: Eco Happy
 seoTitle: Furbaby Premium Gift Box | Gift Hampers & Boxes | Eco Happy
 seoDescription: A gift box for pet lovers with upcycled-fabric and plantable-paper
   items, hand-packed by Eco Happy's Pune team, for a pet parent who cares about waste.
-answer: Furbaby Premium Gift Box is a plastic-free product packed in Pune by Eco Happy's
+answer: Furbaby Premium Gift Box is a product packed in Pune by Eco Happy's
   women-led team.
 specs:
   seeds:

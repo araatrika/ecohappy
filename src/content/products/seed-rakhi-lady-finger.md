@@ -34,10 +34,10 @@ images:
 wixCollections: []
 brand: Eco Happy
 seoTitle: Lady Finger Seed Rakhi | Festive & Seasonal | Eco Happy
-seoDescription: Lady Finger Seed Rakhi is a plantable, plastic-free product from Eco
+seoDescription: Lady Finger Seed Rakhi is a plantable product from Eco
   Happy's Pune workshop. Use it as intended, then plant it in soil, with water and
   a li
-answer: Lady Finger Seed Rakhi is a plantable, plastic-free product from Eco Happy's
+answer: Lady Finger Seed Rakhi is a plantable product from Eco Happy's
   Pune workshop. Use it as intended, then plant it in soil, with water and a little
   sun, it can sprout depending on the season.
 specs:

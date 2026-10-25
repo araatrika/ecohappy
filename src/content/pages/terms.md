@@ -25,7 +25,7 @@ Eco Happy is a Pune-based maker of plantable seed pencils, upcycled stationery a
 
 
 2. Products & Usage
-All products are made with sustainability in mind and are intended for personal, educational, or gifting purposes. Seed pencils are designed to be planted after use; germination depends on soil quality, climate, watering, and care. We do not guarantee 100% germination. Product images are for representation purposes. Slight variations in color, packaging, or design may occur.
+Our products are intended for personal, educational, or gifting purposes. Seed pencils are designed to be planted after use; germination depends on soil quality, climate, watering, and care. We do not guarantee 100% germination. Product images are for representation purposes. Slight variations in color, packaging, or design may occur.
 
 
 

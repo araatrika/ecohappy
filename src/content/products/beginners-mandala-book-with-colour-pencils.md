@@ -31,9 +31,8 @@ images:
 wixCollections: []
 brand: Eco Happy
 seoTitle: Beginner's Mandala Book + One Box of Colour Pencils
-seoDescription: Beginner's Mandala Book + One Box of Colour Pencils is a plastic-free
-  product packed in Pune by Eco Happy's women-led team. High-quality paper featuring
-answer: Beginner's Mandala Book + One Box of Colour Pencils is a plastic-free product
+seoDescription: Beginner's Mandala Book + One Box of Colour Pencils is a product packed in Pune by Eco Happy's women-led team. High-quality paper featuring
+answer: Beginner's Mandala Book + One Box of Colour Pencils is a product
   packed in Pune by Eco Happy's women-led team. High-quality paper featuring beautiful
   mandalas perfect for beginners.
 specs:

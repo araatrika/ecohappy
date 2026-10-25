@@ -34,10 +34,10 @@ images:
 wixCollections: []
 brand: Eco Happy
 seoTitle: Eco Seed Rakhi festive kit | Festive & Seasonal | Eco Happy
-seoDescription: 'Eco Seed Rakhi festive kit is a plantable, plastic-free product from
+seoDescription: 'Eco Seed Rakhi festive kit is a plantable product from
   Eco Happy''s Pune workshop. Use it as intended, then plant it in soil, with water
   and '
-answer: Eco Seed Rakhi festive kit is a plantable, plastic-free product from Eco Happy's
+answer: Eco Seed Rakhi festive kit is a plantable product from Eco Happy's
   Pune workshop. Use it as intended, then plant it in soil, with water and a little
   sun, it can sprout depending on the season.
 specs:

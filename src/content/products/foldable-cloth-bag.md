@@ -36,9 +36,9 @@ wixCollections:
 - HAPPY BAGS
 brand: Eco Happy
 seoTitle: Foldable Cloth Bag | Upcycled Fabric | Eco Happy
-seoDescription: Foldable Cloth Bag is a plastic-free product packed in Pune by Eco Happy's
+seoDescription: Foldable Cloth Bag is a product packed in Pune by Eco Happy's
   women-led team. Fits in the palm of your hand when not in use.
-answer: Foldable Cloth Bag is a plastic-free product packed in Pune by Eco Happy's women-led
+answer: Foldable Cloth Bag is a product packed in Pune by Eco Happy's women-led
   team. Fits in the palm of your hand when not in use.
 specs:
   madeIn: Pune, India

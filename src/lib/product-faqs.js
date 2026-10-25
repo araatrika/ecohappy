@@ -68,15 +68,13 @@ export function buildProductFaqs(p, site) {
     (p.bulk || p.customisable) && {
       topic: 'bulk',
       q: `Can I order ${p.name} in bulk${p.customisable ? ' or add our logo' : ''}?`,
-      a: `Yes.${p.customisable ? ` ${p.name} can be customised with your logo or name.` : ''} Message us on WhatsApp at ${
-        site.whatsapp?.enquiries || ''
-      } with the quantity you need and we'll confirm pricing and lead time.`,
+      a: `Yes.${p.customisable ? ` ${p.name} can be customised with your logo or name.` : ''} Message us on WhatsApp with the quantity you need and we'll confirm pricing and lead time.`,
       more: { href: BULK_ANSWER, label: 'Bulk and customisation terms' },
     },
     {
       topic: 'returns',
       q: `Can I return ${p.name}?`,
-      a: `Returns aren't accepted on this product, and damaged or incorrect items are put right if you contact us within 48 hours of delivery.`,
+      a: `Returns aren't accepted on this product. If an item arrives defective, contact us and we'll take it from there.`,
       more: { href: RETURNS_POLICY, label: 'Read the full returns policy' },
     },
   ].filter(Boolean);

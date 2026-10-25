@@ -45,10 +45,10 @@ images:
 wixCollections: []
 brand: Eco Happy
 seoTitle: Plantable Flags - Pack of 30 | Eco Happy
-seoDescription: Plantable Flags - Pack of 30 is a plantable, plastic-free product
+seoDescription: Plantable Flags - Pack of 30 is a plantable product
   from Eco Happy's Pune workshop. Use it as intended, then plant it in soil, with
   water an
-answer: Plantable Flags - Pack of 30 is a plantable, plastic-free product from Eco
+answer: Plantable Flags - Pack of 30 is a plantable product from Eco
   Happy's Pune workshop. Use it as intended, then plant it in soil, with water and
   a little sun, it can sprout depending on the season.
 specs:
