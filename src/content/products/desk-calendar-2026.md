@@ -71,7 +71,7 @@ faq:
 - q: Can I buy Desk Calendar 2026 in bulk for a gifting order?
   a: Yes, message us on WhatsApp for bulk pricing and lead times.
 related:
-- desk-calendar-2024
+- checkerboard-planner-2026
 - pawfect-pet-desk-calendar-2026
 retired: false
 datePublished: '2026-09-15'

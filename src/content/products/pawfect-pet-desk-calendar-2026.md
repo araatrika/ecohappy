@@ -63,7 +63,7 @@ faq:
   a: Yes, this product can be customised; message us on WhatsApp with what you have
     in mind.
 related:
-- desk-calendar-2024
+- sunshine-planner-2026
 - desk-calendar-2026
 retired: false
 datePublished: '2026-09-15'
@@ -98,7 +98,7 @@ Order yours and let your Indie shine!
 
 Once you've placed your order we, will reach out to you for pictures.
 
-We would also appreciate if you send them to us at hi@ecohappy.in
+We would also appreciate if you send them to us at contact@happypencils.in
 
 Pawfect Pet Desk Calendar 2026 is part of Eco Happy's Calendars range. Packed in Pune, India by Araatrika women-led team.
 

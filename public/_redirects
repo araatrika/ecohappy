@@ -101,6 +101,16 @@ https://happypencils.in/*  https://ecohappy.in/:splat  301!
 /shop/gift-hampers/  /shop/client-gift-hampers/  301
 
 # Learn renamed to Blogs, 17 Sep 2026 night pass
+# Retired products (Oct 2026): permanent redirects to the successor. Forced (!) so the retired page itself is bypassed.
+/shop/desk-calendar-2024  /shop/desk-calendar-2026/  301!
+/shop/desk-calendar-2024/  /shop/desk-calendar-2026/  301!
+/learn/desk-calendar-2024  /shop/desk-calendar-2026/  301!
+/shop/beginners-mandala-book-with-colour-pencils  /shop/mandala-book/  301!
+/shop/beginners-mandala-book-with-colour-pencils/  /shop/mandala-book/  301!
+/shop/advanced-mandala-book-with-colour-pencils  /shop/mandala-book/  301!
+/shop/advanced-mandala-book-with-colour-pencils/  /shop/mandala-book/  301!
+/shop/mandala-books-set-with-colour-pencils  /shop/mandala-book/  301!
+/shop/mandala-books-set-with-colour-pencils/  /shop/mandala-book/  301!
 /learn/  /blogs/  301
 /learn/*  /blogs/:splat  301
 # Draft posts that went live by mistake (audit 11 Oct): 301 to the Blogs index.

@@ -36,7 +36,7 @@ We take a lot of care to get every order right the first time. If you'd like a s
 
 ## Missing items
 
-- We take every precaution when packing your order. If you find that any item is missing from the package, please send a photo of the package to [hi@ecohappy.in](mailto:hi@ecohappy.in) or [on WhatsApp](https://wa.me/919422062333) within 12 hours of delivery.
+- We take every precaution when packing your order. If you find that any item is missing from the package, please send a photo of the package to [contact@happypencils.in](mailto:contact@happypencils.in) or [on WhatsApp](https://wa.me/919422062333) within 12 hours of delivery.
 
 
 
