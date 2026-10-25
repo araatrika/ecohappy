@@ -30,6 +30,15 @@ export function buildProductFaqs(p, site) {
   const shippingCost = shippingFor(effectivePrice, site);
   const deliveryEstimate = site.shipping?.deliveryEstimate || '5-7 business days across India';
 
+  // All three shipping tiers, in the same wording as the Shipping & Returns page, so a buyer
+  // with a cart between Rs 1,000 and Rs 1,500 sees the real charge (not just the free threshold).
+  const tierList = site.shipping?.tiers || [];
+  const freeAboveAmount = site.shipping?.freeAbove;
+  const shippingTiersAnswer =
+    tierList.length === 2 && typeof freeAboveAmount === 'number'
+      ? `Shipping is ${inr(tierList[0].cost)} on orders up to ${inr(tierList[0].maxAmount)}, ${inr(tierList[1].cost)} on orders from ${inr(tierList[0].maxAmount)} to ${inr(tierList[1].maxAmount)}, and free on orders above ${inr(freeAboveAmount)}.`
+      : `Shipping is ${inr(shippingCost)} on this product.`;
+
   const generated = [
     p.specs?.material && {
       topic: 'material',
@@ -43,11 +52,7 @@ export function buildProductFaqs(p, site) {
       q: `How much is shipping on ${p.name}?`,
       a:
         shippingCost > 0
-          ? `Shipping is ${inr(shippingCost)} on this product${
-              typeof site.shipping?.freeAbove === 'number'
-                ? `, and free on orders above ${inr(site.shipping.freeAbove)}`
-                : ''
-            }.`
+          ? shippingTiersAnswer
           : `Shipping is free on ${p.name}.`,
       more: { href: SHIPPING_COST_ANSWER, label: 'How shipping is charged' },
     },
