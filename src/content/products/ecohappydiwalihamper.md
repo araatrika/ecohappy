@@ -1,5 +1,5 @@
 ---
-name: "Eco Happy Diwali hamper "
+name: "Eco Happy Diwali hamper"
 slug: EcoHappyDiwaliHamper
 category: festive-corporate-gifting
 categoryName: "Festive & Seasonal Corporate Gifting"
@@ -19,10 +19,15 @@ images:
     alt: Diwali hamper
     width: 1179
     height: 1162
+related:
+- desk-calendar-2026
+- sunshine-planner-2026
+- paddy-toran
+- seed-rakhi-festive-kit
 faq: []
 retired: false
 datePublished: "2026-10-14"
-dateModified: "2026-10-14"
+dateModified: "2026-10-18"
 ---
 **Hamper Includes:**
 
