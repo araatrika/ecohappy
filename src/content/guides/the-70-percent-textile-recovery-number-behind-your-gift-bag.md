@@ -6,8 +6,8 @@ description: A Ministry of Textiles report says India recovers 70% of textile wa
 author: Jagruti Khabiya Jain
 datePublished: '2026-09-28'
 dateModified: '2026-09-28'
-cover: ''
-coverAlt: ''
+cover: /assets/blog/the-70-percent-textile-recovery-number-behind-your-gift-bag/cover.jpg
+coverAlt: "Upcycled cloth bags in printed and patchwork fabric"
 coverIsStock: false
 tags:
 - textilewaste

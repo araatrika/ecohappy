@@ -6,8 +6,8 @@ description: Seven ways to stay motivated as a small business owner, drawn from 
 author: Jagruti Khabiya Jain
 datePublished: '2022-05-16'
 dateModified: '2022-05-16'
-cover: ''
-coverAlt: 7 Best Ways to Stay Motivated as a Small Business Owner
+cover: /assets/blog/7-best-ways-to-stay-motivated-as-a-small-business-owner/cover.jpg
+coverAlt: "Ar. Jagruti Khabiya Jain, founder of Eco Happy, in Pune"
 coverIsStock: false
 tags: []
 timeToRead: 3 min read

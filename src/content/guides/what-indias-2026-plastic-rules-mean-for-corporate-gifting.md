@@ -6,8 +6,8 @@ description: India's 2026 plastic rules replace self-certified compliance with r
 author: Jagruti Khabiya Jain
 datePublished: '2026-09-21'
 dateModified: '2026-10-04'
-cover: ''
-coverAlt: ''
+cover: /assets/blog/what-indias-2026-plastic-rules-mean-for-corporate-gifting/cover.jpg
+coverAlt: "Eco Happy cutlery kit with a steel spoon, fork and straw in a cloth pouch"
 coverIsStock: false
 tags:
 - corporategifting

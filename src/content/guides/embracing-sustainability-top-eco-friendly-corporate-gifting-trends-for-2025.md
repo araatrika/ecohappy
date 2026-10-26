@@ -6,8 +6,8 @@ description: 'Corporate gifting trends for 2025: why plantable, reusable and upc
 author: Jagruti Khabiya Jain
 datePublished: '2025-03-08'
 dateModified: '2025-12-31'
-cover: ''
-coverAlt: Top Eco-Friendly Corporate Gifting Trends for 2025
+cover: /assets/blog/embracing-sustainability-top-eco-friendly-corporate-gifting-trends-for-2025/cover.jpg
+coverAlt: "Eco Happy seed pencils standing upright in a glass jar"
 coverIsStock: false
 tags: []
 category: "Corporate Gifting"

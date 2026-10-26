@@ -6,8 +6,8 @@ description: What makes a gift genuinely sustainable rather than just eco-brande
 author: Jagruti Khabiya Jain
 datePublished: '2025-04-13'
 dateModified: '2026-09-17'
-cover: ''
-coverAlt: What Are Sustainable Gifts? Why They Matter More Than Ever
+cover: /assets/blog/what-are-sustainable-gifts-why-they-matter-more-than-ever/cover.jpg
+coverAlt: "Sunshine Hamper 2026 with a planner, seed pens and Season's Greetings cards"
 coverIsStock: false
 tags: []
 category: "Sustainability & Greenwashing Guides"

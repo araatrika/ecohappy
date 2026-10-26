@@ -6,8 +6,8 @@ description: How hotels and resorts are using sustainable stationery for guest a
 author: Jagruti Khabiya Jain
 datePublished: '2023-04-07'
 dateModified: '2026-09-17'
-cover: ''
-coverAlt: Sustainable stationery for luxury resorts across the globe
+cover: /assets/blog/sustainable-stationery-for-luxury-resorts-across-the-globe/cover.jpg
+coverAlt: "Plant Me A5 notebook with a leaf illustration and the words Plant Me"
 coverIsStock: false
 tags:
 - ecofriendly

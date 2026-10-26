@@ -5,8 +5,8 @@ description: India drafted real numeric tests for an 'eco-friendly' paper label 
 author: Jagruti Khabiya Jain
 datePublished: '2026-10-19'
 dateModified: '2026-10-19'
-cover: ''
-coverAlt: ''
+cover: /assets/blog/what-indias-draft-ecomark-rules-mean-for-eco-friendly-paper/cover.jpg
+coverAlt: "Seed paper sheet with printed text, placed beside green leaves"
 coverIsStock: false
 tags:
 - ecomark

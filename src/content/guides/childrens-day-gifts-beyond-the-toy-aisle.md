@@ -5,8 +5,8 @@ description: "India's toy exports hit a record in 2026, but BIS safety rules say
 author: Jagruti Khabiya Jain
 datePublished: '2026-10-12'
 dateModified: '2026-10-12'
-cover: ''
-coverAlt: ''
+cover: /assets/blog/childrens-day-gifts-beyond-the-toy-aisle/cover.jpg
+coverAlt: "Eco Happy Grow Me Kit box beside a coir planting pot"
 coverIsStock: false
 tags:
 - childrensday

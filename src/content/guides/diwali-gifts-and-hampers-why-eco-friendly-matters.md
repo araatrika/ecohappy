@@ -5,8 +5,8 @@ description: "What makes a Diwali gift or hamper eco-friendly, and why that matt
 author: Jagruti Khabiya Jain
 datePublished: '2026-10-06'
 dateModified: '2026-10-06'
-cover: ''
-coverAlt: ''
+cover: /assets/blog/diwali-gifts-and-hampers-why-eco-friendly-matters/cover.jpg
+coverAlt: "Eco Happy Diwali hamper with a khunn toran, seed diary, seed pencil and pen, and ubtan soap"
 coverIsStock: false
 tags:
 - diwali

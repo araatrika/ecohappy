@@ -5,8 +5,8 @@ description: "India's plastic recycling data is mostly self-reported and hard to
 author: Jagruti Khabiya Jain
 datePublished: '2026-10-05'
 dateModified: '2026-10-05'
-cover: ''
-coverAlt: ''
+cover: /assets/blog/can-you-trust-the-recycled-claim-on-your-diwali-gift/cover.jpg
+coverAlt: "Eco Happy newspaper seed pencils in their boxes, with pencils laid out beside them"
 coverIsStock: false
 tags:
 - greenwashing
